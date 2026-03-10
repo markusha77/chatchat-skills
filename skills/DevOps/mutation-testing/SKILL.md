@@ -21,19 +21,19 @@ Use mutation testing to measure whether tests actually catch behavioral changes.
 
 ## Concrete Tool Patterns
 
-**JavaScript/TypeScript:** Stryker (`npx stryker run`) with `stryker.config.json`. Use `mutate` to scope files; `ignorePatterns` to exclude generated or third-party code. Mutators: arithmetic (`+`ΓåÆ`-`), block statement removal, conditional boundary (`<`ΓåÆ`<=`), string literal replacement.
+**JavaScript/TypeScript:** Stryker (`npx stryker run`) with `stryker.config.json`. Use `mutate` to scope files; `ignorePatterns` to exclude generated or third-party code. Mutators: arithmetic (`+`->`-`), block statement removal, conditional boundary (`<`->`<=`), string literal replacement.
 
 **Java:** PIT (pitest) via Maven/Gradle. Scope with `targetClasses` and `targetTests`. Mutators: `CONDITIONALS_BOUNDARY`, `INCREMENTS`, `MATH`, `NEGATE_CONDITIONALS`, `VOID_METHOD_CALLS`, `REMOVE_CONDITIONALS`.
 
 **Python:** mutmut (`mutmut run`) or cosmic-ray. Scope with `paths_to_mutate` or `--paths`. Mutators: arithmetic, comparison, logical operator replacement; constant replacement; argument removal.
 
-**Mutation operator types:** Arithmetic (e.g., `+`ΓåÆ`-`), relational (`<`ΓåÆ`<=`), logical (`&&`ΓåÆ`||`), conditional boundary, statement deletion, return value replacement. Some operators (e.g., constant replacement) produce many equivalent mutants; consider excluding them if they inflate noise.
+**Mutation operator types:** Arithmetic (e.g., `+`->`-`), relational (`<`->`<=`), logical (`&&`->`||`), conditional boundary, statement deletion, return value replacement. Some operators (e.g., constant replacement) produce many equivalent mutants; consider excluding them if they inflate noise.
 
 ## Surviving Mutant Analysis Techniques
 
 **Equivalent mutant detection:** Mutants that produce identical behavior are undetectable by tests. Look for mutations in dead code, constants used only for logging, or symmetric operations. Mark equivalent mutants and exclude from score calculation to avoid chasing impossible kills.
 
-**Boundary condition mutants:** Mutations like `x < 5` ΓåÆ `x <= 5` often survive when tests only hit one side of the boundary. Add explicit boundary tests (e.g., `x=4`, `x=5`, `x=6`).
+**Boundary condition mutants:** Mutations like `x < 5` -> `x <= 5` often survive when tests only hit one side of the boundary. Add explicit boundary tests (e.g., `x=4`, `x=5`, `x=6`).
 
 **Operator replacement mutants:** Surviving arithmetic or logical mutants indicate missing assertions or edge cases. Strengthen assertions to verify computed values, not just that code ran.
 
@@ -48,9 +48,9 @@ Use mutation testing to measure whether tests actually catch behavioral changes.
 ## Common Pitfalls
 
 - **Running on entire codebase:** Full-repo mutation is slow and produces noise. Start with critical modules; expand gradually.
-- **Chasing 100% score:** Equivalent mutants make 100% impossible in many codebases. Set practical targets (e.g., 80ΓÇô90%) and focus on high-risk survivors.
+- **Chasing 100% score:** Equivalent mutants make 100% impossible in many codebases. Set practical targets (e.g., 80-90%) and focus on high-risk survivors.
 - **Equivalent mutants inflating kill ratio:** If you count equivalent mutants as "survived," score looks worse than it is. Track and exclude them.
-- **Slow feedback loops:** Mutation is CPU-intensive. Use incremental runs, parallelization, and caching to keep feedback under 10ΓÇô15 minutes where possible.
+- **Slow feedback loops:** Mutation is CPU-intensive. Use incremental runs, parallelization, and caching to keep feedback under 10-15 minutes where possible.
 
 ## Workflow
 

@@ -35,7 +35,7 @@ Design actionable SAST enforcement that improves security without blocking deliv
 
 **Suppression with audit trail:** Every suppression must include: finding ID, justification, owner, and expiry date. Store in version-controlled config (e.g., `semgrep.yml` inline suppressions, CodeQL `codeql-config.yml`). Review suppressions quarterly.
 
-**Baseline modes:** ΓÇ£New findings onlyΓÇ¥ (recommended for adoption) vs ΓÇ£full scanΓÇ¥ (for mature teams). Start with new-only; migrate to full scan once backlog is manageable.
+**Baseline modes:** "New findings only" (recommended for adoption) vs "full scan" (for mature teams). Start with new-only; migrate to full scan once backlog is manageable.
 
 ## Rule Customization
 
@@ -83,7 +83,7 @@ Design actionable SAST enforcement that improves security without blocking deliv
 
 ## Rule Configuration
 - Custom rules: <count, location>
-- Severity mapping: <tool ΓåÆ policy>
+- Severity mapping: <tool -> policy>
 - Disabled rules: <list or reference>
 
 ## Triage Process

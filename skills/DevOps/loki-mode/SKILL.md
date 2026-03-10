@@ -40,7 +40,7 @@ Investigate incidents in Grafana Loki with a repeatable LogQL workflow that narr
 
 **unwrap:** Derive metrics from log fields. Example: `{app="api"} | json | unwrap duration_ms | __error__="" | sum by (path)` to aggregate latency by endpoint. Use `__error__=""` to drop parse failures.
 
-**Pattern matching:** Use `|~ "regex"` for flexible matching; anchor with `^` and `$` when needed. Prefer `|= "literal"` when possibleΓÇöit is faster and avoids regex cost.
+**Pattern matching:** Use `|~ "regex"` for flexible matching; anchor with `^` and `$` when needed. Prefer `|= "literal"` when possible; it is faster and avoids regex cost.
 
 **Multi-line logs:** Use `| regexp "(?P<msg>.*)"` or `| pattern` to parse stack traces. For JSON logs spanning lines, ensure your log pipeline emits single-line JSON or use `| json` with `line_format` to join continuation lines if supported.
 

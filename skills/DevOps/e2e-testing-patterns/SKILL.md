@@ -43,7 +43,7 @@ Create E2E suites that detect real regressions without becoming flaky or slow.
 
 **Video/trace capture:** Capture on first retry or failure only to save storage. Use `trace: 'on-first-retry'` (Playwright) or `video: true` with retention limits.
 
-**Retry budgets:** Allow 1ΓÇô2 retries for known-flaky tests while fixing root cause. Do not use high retries to mask deterministic bugs; treat flaky tests as defects.
+**Retry budgets:** Allow 1-2 retries for known-flaky tests while fixing root cause. Do not use high retries to mask deterministic bugs; treat flaky tests as defects.
 
 ## Common Pitfalls
 

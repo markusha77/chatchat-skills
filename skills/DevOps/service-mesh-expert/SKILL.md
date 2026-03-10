@@ -25,13 +25,13 @@ Plan, operate, and debug service mesh deployments with clear policy and reliabil
 
 **Control plane HA:** Run multiple control plane replicas across availability zones. Use leader election or active-passive where supported. Ensure etcd or backing stores are clustered and backed up. Validate failover behavior before production.
 
-**Data plane overhead measurement:** Baseline CPU and memory per pod before mesh injection. After rollout, measure delta per sidecar (typically 50ΓÇô200 mCPU and 128ΓÇô256 MiB per proxy). Use resource requests/limits and consider HPA for proxies if they become hot paths.
+**Data plane overhead measurement:** Baseline CPU and memory per pod before mesh injection. After rollout, measure delta per sidecar (typically 50-200 mCPU and 128-256 MiB per proxy). Use resource requests/limits and consider HPA for proxies if they become hot paths.
 
 ## mTLS Policy Design
 
 **Strict vs permissive rollout:** Start with permissive mode (accept both mTLS and plaintext) to validate connectivity. Gradually move to strict mode namespace-by-namespace or workload-by-workload. Use `PeerAuthentication` with `PERMISSIVE` first, then `STRICT` after validation. Never flip mesh-wide strict in one change.
 
-**Certificate rotation:** Align rotation windows with your CAΓÇÖs validity. Test rotation in staging; ensure workloads pick up new certs without downtime. Monitor for cert expiry alerts and automate renewal where possible.
+**Certificate rotation:** Align rotation windows with your CA's validity. Test rotation in staging; ensure workloads pick up new certs without downtime. Monitor for cert expiry alerts and automate renewal where possible.
 
 ## Authorization Policy Patterns
 
@@ -76,7 +76,7 @@ Plan, operate, and debug service mesh deployments with clear policy and reliabil
 - Control plane: <replicas, HA strategy>
 
 ## Policy Plan
-- Security policies: <list with rollout strategy: permissive ΓåÆ strict>
+- Security policies: <list with rollout strategy: permissive -> strict>
 - Traffic policies: <list>
 - Authorization: <namespace/workload-level, deny-by-default?>
 

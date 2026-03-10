@@ -53,7 +53,7 @@ Establish practical observability for Python services and background workers.
 
 ## Concrete Code Patterns
 
-**Logging:** `logger.info("payment_processed", order_id=order_id, amount=amount, currency=currency, request_id=request_id)` ΓÇö always include correlation IDs.
+**Logging:** `logger.info("payment_processed", order_id=order_id, amount=amount, currency=currency, request_id=request_id)`; always include correlation IDs.
 
 **Metrics:** `ERROR_COUNTER.labels(method="POST", path="/checkout").inc()` on error paths; `REQUEST_LATENCY.labels(method=method, path=path).observe(duration)` on completion.
 

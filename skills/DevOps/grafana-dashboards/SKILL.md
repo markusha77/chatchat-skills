@@ -25,7 +25,7 @@ Design dashboards that help operators decide what to do next, not just display c
 
 **RED method (Rate, Errors, Duration):** For request-driven services. Rate = requests/sec (graph). Errors = error rate % or count (stat or graph). Duration = latency percentiles (graph with p50, p95, p99). Best for APIs and microservices.
 
-**Stat vs gauge vs graph:** Use stat for single-value status (current error rate, SLO burn). Use gauge for bounded metrics (utilization 0ΓÇô100%). Use graph for time-series trends (latency over time, traffic patterns). Avoid graphs for values that rarely change.
+**Stat vs gauge vs graph:** Use stat for single-value status (current error rate, SLO burn). Use gauge for bounded metrics (utilization 0-100%). Use graph for time-series trends (latency over time, traffic patterns). Avoid graphs for values that rarely change.
 
 ## PromQL Query Patterns
 
@@ -51,13 +51,13 @@ Use `$__rate_interval` or `5m` for rate queries; align with scrape interval. Add
 
 ## Variables and Annotations
 
-**Variables:** Add `service`, `env`, `region` as dropdowns. Use `label_values(metric, label)` for dynamic options. Set sensible defaults (e.g. `All` or most common env). Avoid more than 4ΓÇô5 variables; each adds cognitive load.
+**Variables:** Add `service`, `env`, `region` as dropdowns. Use `label_values(metric, label)` for dynamic options. Set sensible defaults (e.g. `All` or most common env). Avoid more than 4-5 variables; each adds cognitive load.
 
 **Annotations:** Add deploy annotations (from CI/CD or release pipeline) and incident annotations (from PagerDuty, Opsgenie). Use distinct colors for deploys vs incidents. Annotations reduce "what changed?" guesswork during triage.
 
 ## Common Pitfalls
 
-- **Too many panels:** Dashboards with 20+ panels overwhelm. Limit to 8ΓÇô12 high-signal panels; use links to drill-down dashboards for deep dives.
+- **Too many panels:** Dashboards with 20+ panels overwhelm. Limit to 8-12 high-signal panels; use links to drill-down dashboards for deep dives.
 - **Unclear units:** Label axes (e.g. "ms", "req/s", "%"). Use `legendFormat` to clarify series.
 - **Missing thresholds:** Set threshold bands on gauges/stats (green/yellow/red) so status is visible at a glance.
 - **No drill-down links:** Add links from panels to logs (Loki), traces (Tempo/Jaeger), or runbooks. Use template variables in URLs.
@@ -109,8 +109,8 @@ Use `$__rate_interval` or `5m` for rate queries; align with scrape interval. Add
 - Incidents: <source>
 
 ## Drill-Down Links
-- Error panel ΓåÆ Loki: <URL pattern>
-- Latency panel ΓåÆ Tempo: <URL pattern>
+- Error panel -> Loki: <URL pattern>
+- Latency panel -> Tempo: <URL pattern>
 
 ## Gaps and Next Steps
 - Missing: <panels or alerts>

@@ -73,7 +73,7 @@ groups:
         expr: histogram_quantile(0.99, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, job))
 ```
 
-Do not duplicate raw metrics; record only aggregates. Keep `interval` aligned with scrape interval (e.g., 2ΓÇô4├ù scrape interval).
+Do not duplicate raw metrics; record only aggregates. Keep `interval` aligned with scrape interval (e.g., 2-4x scrape interval).
 
 ## Alert Rule Design
 
@@ -95,13 +95,13 @@ groups:
           runbook_url: "https://runbooks.example.com/high-error-rate"
 ```
 
-Always set `for` (e.g., 2ΓÇô5 minutes) for rate-based alerts. Include `runbook_url` for on-call handoff.
+Always set `for` (e.g., 2-5 minutes) for rate-based alerts. Include `runbook_url` for on-call handoff.
 
 ## Common Pitfalls
 
 - **High-cardinality labels**: Labels like `user_id`, `path` with many values bloat TSDB and slow queries. Use relabeling to drop or aggregate.
 - **Missing relabeling**: K8s discovery yields many meta-labels; use `relabel_configs` to keep only what you need.
-- **Scrape interval too aggressive**: Sub-15s intervals increase load; 15ΓÇô30s is typical for most targets.
+- **Scrape interval too aggressive**: Sub-15s intervals increase load; 15-30s is typical for most targets.
 - **Alerts without `for`**: Instant spikes cause alert storms; add `for: 2m` or more.
 - **Recording rules duplicating raw metrics**: Record only aggregates; avoid `record: http_requests_total` or similar.
 
@@ -121,7 +121,7 @@ Always set `for` (e.g., 2ΓÇô5 minutes) for rate-based alerts. Include `runboo
 - Discovery: static_configs | kubernetes_sd_configs | <other>
 - Targets: <list or discovery role>
 - Interval: <value, e.g. 15s>
-- Relabeling: <key actionsΓÇödrop high-cardinality, add env/team>
+- Relabeling: <key actions; drop high-cardinality labels, add env/team>
 
 ## Recording Rules
 - Rule name: <record name>

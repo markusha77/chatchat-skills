@@ -96,7 +96,7 @@ http:
 
 ## Progressive Delivery Workflow
 
-Use staged traffic shifts with SLO gates: 5% ΓåÆ 25% ΓåÆ 50% ΓåÆ 100%. At each stage, verify error rate and latency before advancing. If SLO degrades, roll back by setting canary weight to 0 and baseline to 100. Gate criteria: error rate below threshold (e.g., 0.1%), p99 latency within budget, no increase in 5xx.
+Use staged traffic shifts with SLO gates: 5% -> 25% -> 50% -> 100%. At each stage, verify error rate and latency before advancing. If SLO degrades, roll back by setting canary weight to 0 and baseline to 100. Gate criteria: error rate below threshold (e.g., 0.1%), p99 latency within budget, no increase in 5xx.
 
 ## Retry, Timeout, and Circuit-Breaker
 
@@ -119,7 +119,7 @@ Use staged traffic shifts with SLO gates: 5% ΓåÆ 25% ΓåÆ 50% ΓåÆ 100%. 
 1. Confirm service versions and desired traffic distribution.
 2. Define DestinationRule with subsets and resilience (connectionPool, outlierDetection).
 3. Define VirtualService with weight-based routing, retries, timeouts.
-4. Run staged traffic shifts (5%ΓåÆ25%ΓåÆ50%ΓåÆ100%) with SLO verification at each step.
+4. Run staged traffic shifts (5%->25%->50%->100%) with SLO verification at each step.
 5. Capture rollback conditions and action steps.
 
 ## Output Format
@@ -128,7 +128,7 @@ Use staged traffic shifts with SLO gates: 5% ΓåÆ 25% ΓåÆ 50% ΓåÆ 100%. 
 ## Traffic Strategy
 - Baseline version: <version>
 - Candidate version: <version>
-- Traffic split plan: 5% ΓåÆ 25% ΓåÆ 50% ΓåÆ 100% (with SLO gates)
+- Traffic split plan: 5% -> 25% -> 50% -> 100% (with SLO gates)
 
 ## DestinationRule
 - Subsets: <list with labels>

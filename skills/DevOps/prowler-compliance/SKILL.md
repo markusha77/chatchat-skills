@@ -38,7 +38,7 @@ Use Prowler findings to drive practical and prioritized compliance improvements.
 
 ## Remediation Wave Planning
 
-**Critical first:** Address critical and high findings before any medium/low work. Group by service for efficiencyΓÇöfix all IAM findings in one pass, then S3, then EC2, etc. This reduces context switching and re-scans.
+**Critical first:** Address critical and high findings before any medium/low work. Group by service for efficiency; fix all IAM findings in one pass, then S3, then EC2, etc. This reduces context switching and re-scans.
 
 **Wave structure:** Wave 1 = critical + high by service; Wave 2 = medium by service; Wave 3 = low and informational with policy exceptions documented. Assign owners per wave and set target dates with explicit re-scan criteria.
 
@@ -72,13 +72,13 @@ Use Prowler findings to drive practical and prioritized compliance improvements.
 - Controls partially satisfied: <list with gaps>
 
 ## Priority Actions
-1. <critical remediation action> ΓÇö Owner: <name> ΓÇö Control: <ID>
-2. <high priority remediation action> ΓÇö Owner: <name> ΓÇö Control: <ID>
+1. <critical remediation action> - Owner: <name> - Control: <ID>
+2. <high priority remediation action> - Owner: <name> - Control: <ID>
 
 ## Remediation Waves
-- Wave 1 (critical/high): <service> ΓÇö Target: <date>
-- Wave 2 (medium): <service> ΓÇö Target: <date>
-- Wave 3 (low/info): <service> ΓÇö Target: <date>
+- Wave 1 (critical/high): <service> - Target: <date>
+- Wave 2 (medium): <service> - Target: <date>
+- Wave 3 (low/info): <service> - Target: <date>
 
 ## Remediation Plan
 - Owner: <team/person>
