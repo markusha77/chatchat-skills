@@ -69,7 +69,7 @@ Use this skill for consistent execution of CN checks and clear failure triage.
 ## Re-run Evidence
 - Targeted re-run: <status>
 - Full suite re-run: <status>
-- Status transition: failed ΓåÆ passed / still failing
+- Status transition: failed -> passed / still failing
 
 ## Release Decision
 - **Ready** / **Conditionally ready** / **Blocked**

@@ -32,9 +32,9 @@ Use this skill to add experts in a controlled way with clear ownership and quali
 
 **Capability specification document.** Create a single source of truth for what the expert can and cannot do. Include: domain boundaries, allowed actions (e.g., read-only vs write), forbidden actions, input/output constraints, and dependencies on other systems or experts. Document non-goals explicitly so reviewers do not assume scope creep.
 
-**Test scenario design.** Build a test matrix with three categories: correctness (expected outputs for known inputs), safety (refusal behavior for harmful or out-of-scope requests), and edge cases (empty inputs, malformed data, boundary values). Each scenario must have a clear pass/fail criterion and expected outcome. Aim for at least 20ΓÇô30 scenarios before activation.
+**Test scenario design.** Build a test matrix with three categories: correctness (expected outputs for known inputs), safety (refusal behavior for harmful or out-of-scope requests), and edge cases (empty inputs, malformed data, boundary values). Each scenario must have a clear pass/fail criterion and expected outcome. Aim for at least 20-30 scenarios before activation.
 
-**Staged activation with shadow mode.** Run the expert in shadow mode first: traffic is routed to it but responses are logged and not surfaced to users. Compare shadow outputs against existing experts or gold-standard answers. Use a 7ΓÇô14 day shadow period to catch regressions before production activation.
+**Staged activation with shadow mode.** Run the expert in shadow mode first: traffic is routed to it but responses are logged and not surfaced to users. Compare shadow outputs against existing experts or gold-standard answers. Use a 7-14 day shadow period to catch regressions before production activation.
 
 **Feedback collection mechanisms.** Define how users and operators will report issues after launch. Options: in-app feedback forms, Slack/email channels, structured logging, or metrics dashboards. Ensure feedback flows back into the test backlog and triggers re-validation when patterns emerge.
 

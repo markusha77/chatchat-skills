@@ -33,7 +33,7 @@ Build upload pipelines that are secure, observable, and resilient under real net
 
 ## Upload Patterns
 
-**Presigned URL flow.** Client requests a short-lived URL from your API; API validates auth and quota, generates a signed URL for direct PUT to storage (S3, GCS, Azure Blob). Client uploads directly to storage, avoiding proxy bandwidth. After upload, client notifies API to trigger post-processing. Use for large files and high throughput. Ensure URL expiry is tight (5ΓÇô15 minutes) and scope to a single object key.
+**Presigned URL flow.** Client requests a short-lived URL from your API; API validates auth and quota, generates a signed URL for direct PUT to storage (S3, GCS, Azure Blob). Client uploads directly to storage, avoiding proxy bandwidth. After upload, client notifies API to trigger post-processing. Use for large files and high throughput. Ensure URL expiry is tight (5-15 minutes) and scope to a single object key.
 
 **Multipart upload with resume.** For files above a threshold (e.g. 100MB), use multipart: initiate upload, upload parts in parallel, complete when all parts are received. Track part ETags and support resuming failed parts without restarting. Implement cleanup of orphaned multipart uploads via lifecycle rules or scheduled jobs to avoid storage bloat.
 
@@ -53,7 +53,7 @@ Build upload pipelines that are secure, observable, and resilient under real net
 
 Return:
 
-- **Upload architecture and trust boundaries:** Diagram or description of client ΓåÆ API ΓåÆ storage flow; where validation occurs; which components hold credentials.
+- **Upload architecture and trust boundaries:** Diagram or description of client -> API -> storage flow; where validation occurs; which components hold credentials.
 - **Validation and security controls:** Size limits, MIME allowlist, magic-byte verification, auth model, post-upload scanning.
 - **Failure mode analysis with instrumentation gaps:** For each phase (auth, transfer, validation, processing), list observed failures and missing metrics/logs.
 - **Hardening actions with rollout order:** Prioritized list (e.g. add magic-byte check, then virus scan, then multipart cleanup) with dependencies noted.

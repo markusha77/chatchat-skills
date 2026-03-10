@@ -25,7 +25,7 @@ Create dashboard setup screens that are fast to complete and hard to misconfigur
 
 **Inline validation timing:** Validate on blur or after debounced input (e.g., 300ms). Avoid validating on every keystroke. Show success state (checkmark) for valid fields. Do not block typing with errors until user leaves the field.
 
-**Optimistic vs pessimistic submission:** Optimistic: show success immediately, sync in background; roll back on failure. Pessimistic: wait for API response. Use optimistic for low-risk actions (e.g., adding a widget). Use pessimistic for createΓÇöuser expects confirmation before navigating away.
+**Optimistic vs pessimistic submission:** Optimistic: show success immediately, sync in background; roll back on failure. Pessimistic: wait for API response. Use optimistic for low-risk actions (e.g., adding a widget). Use pessimistic for create flows; users expect confirmation before navigating away.
 
 **Template-based creation:** Offer "Start from template" (blank, sales, ops, custom). Pre-fill layout and widgets. Speeds first-time experience; user can customize after.
 

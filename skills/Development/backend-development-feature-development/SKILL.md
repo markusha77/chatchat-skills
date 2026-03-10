@@ -23,7 +23,7 @@ Use this skill to ship backend features safely from design to production rollout
 
 **API versioning:** Use URL path (`/v1/users`), header (`Accept: application/vnd.api+json;version=2`), or query param. Prefer path for major versions. Maintain old versions until deprecation window ends. Document sunset dates.
 
-**Schema migration safety (expand-contract):** Phase 1ΓÇöadd new column nullable or with default. Deploy. Phase 2ΓÇöbackfill data. Phase 3ΓÇömake required, drop old column. Never drop columns or change types in a single deploy. Use expand-contract to avoid downtime.
+**Schema migration safety (expand-contract):** Phase 1: add new column nullable or with default. Deploy. Phase 2: backfill data. Phase 3: make required, drop old column. Never drop columns or change types in a single deploy. Use expand-contract to avoid downtime.
 
 **Idempotency key design:** Client sends `Idempotency-Key: <uuid>` on mutating requests. Server stores key with result; duplicate requests return cached response. TTL keys (e.g., 24h). Use for payments, orders, and any retry-sensitive operation.
 
@@ -39,7 +39,7 @@ Use this skill to ship backend features safely from design to production rollout
 
 ## Architecture Patterns
 
-**Layered:** Controller ΓåÆ Service ΓåÆ Repository. Controllers handle HTTP; services contain logic; repositories abstract data access. Keeps concerns separated.
+**Layered:** Controller -> Service -> Repository. Controllers handle HTTP; services contain logic; repositories abstract data access. Keeps concerns separated.
 
 **CQRS (optional):** Separate read and write models when read patterns differ sharply from write patterns. Use for dashboards, reporting, or high-read scenarios.
 

@@ -23,7 +23,7 @@ Coordinate complex DevOps work by decomposing tasks into subagent workflows.
 
 **MECE task breakdown.** Split the objective into Mutually Exclusive, Collectively Exhaustive subtasks. Each subtask has a single owner (subagent), no overlap with others, and together they cover the full scope. If two subtasks could both modify the same file, refine the split (e.g., by layer, by feature flag, or by file prefix).
 
-**Dependency graph for ordering.** Build a directed graph: Task A ΓåÆ Task B means B depends on A's output. Identify the critical path and parallelizable branches. Run tasks with no dependencies first; fan-out to parallel tasks; fan-in when dependencies are satisfied. Use topological sort to determine merge order.
+**Dependency graph for ordering.** Build a directed graph: Task A -> Task B means B depends on A's output. Identify the critical path and parallelizable branches. Run tasks with no dependencies first; fan-out to parallel tasks; fan-in when dependencies are satisfied. Use topological sort to determine merge order.
 
 **Input/output contract per subagent.** For each subagent, define: (1) Inputs: files, config, or artifacts it receives. (2) Outputs: files created, config changes, or artifacts produced. (3) Success criteria: how to verify the output. (4) Side effects: what it must not touch. Write this as a short contract in the subagent prompt.
 
@@ -31,17 +31,17 @@ Coordinate complex DevOps work by decomposing tasks into subagent workflows.
 
 **Fan-out/fan-in.** One orchestrator splits work into N parallel subagent tasks. Each subagent produces an artifact. The orchestrator waits for all, then merges or reconciles. Use when tasks are independent and outputs can be combined (e.g., separate config files, different modules).
 
-**Pipeline chain.** Task 1 ΓåÆ Task 2 ΓåÆ Task 3. Each task consumes the previous output. Use when there is a clear sequence (e.g., schema migration ΓåÆ code update ΓåÆ test update). Hand off via shared artifacts or explicit output/input declarations.
+**Pipeline chain.** Task 1 -> Task 2 -> Task 3. Each task consumes the previous output. Use when there is a clear sequence (e.g., schema migration -> code update -> test update). Hand off via shared artifacts or explicit output/input declarations.
 
 **Shared artifact repository.** All subagents read from and write to a shared location (branch, directory, or doc). Define naming conventions and merge rules upfront. Use a single reconciliation step to resolve conflicts, standardize formatting, and produce the final integrated artifact.
 
 ## Task Decomposition Examples
 
-**CI hardening:** Task A (lint config) ΓåÆ outputs `.eslintrc`, `.prettierrc`. Task B (test config) ΓåÆ outputs `jest.config.js`, test scripts. Task C (pipeline YAML) ΓåÆ consumes A and B outputs, produces `.github/workflows/ci.yml`. Dependencies: C depends on A and B. Run A and B in parallel; then C.
+**CI hardening:** Task A (lint config) -> outputs `.eslintrc`, `.prettierrc`. Task B (test config) -> outputs `jest.config.js`, test scripts. Task C (pipeline YAML) -> consumes A and B outputs, produces `.github/workflows/ci.yml`. Dependencies: C depends on A and B. Run A and B in parallel; then C.
 
-**Observability:** Task A (metrics) ΓåÆ instrument app code, add Prometheus client. Task B (logging) ΓåÆ add structured logger, log format. Task C (dashboards) ΓåÆ create Grafana JSON. No file overlap; run in parallel. Reconciliation: ensure metric names and log fields align with dashboard queries.
+**Observability:** Task A (metrics) -> instrument app code, add Prometheus client. Task B (logging) -> add structured logger, log format. Task C (dashboards) -> create Grafana JSON. No file overlap; run in parallel. Reconciliation: ensure metric names and log fields align with dashboard queries.
 
-**Platform migration:** Task A (database) ΓåÆ migration scripts, connection config. Task B (API layer) ΓåÆ update routes for new DB. Task C (frontend) ΓåÆ update API calls. Dependency: B depends on A; C depends on B. Pipeline: A ΓåÆ B ΓåÆ C.
+**Platform migration:** Task A (database) -> migration scripts, connection config. Task B (API layer) -> update routes for new DB. Task C (frontend) -> update API calls. Dependency: B depends on A; C depends on B. Pipeline: A -> B -> C.
 
 ## Common Pitfalls
 
@@ -73,8 +73,8 @@ Coordinate complex DevOps work by decomposing tasks into subagent workflows.
 | B    | <scope> | <list> | <list> | <verification> |
 
 ## Dependency Graph
-A ΓöÇΓöÇΓö¼ΓöÇΓöÇ> C
-B ΓöÇΓöÇΓöÿ
+A ----\
+B ----+--> C
 (Parallel: A, B. Sequential: C after A and B.)
 
 ## Coordination Plan
@@ -85,7 +85,7 @@ B ΓöÇΓöÇΓöÿ
 
 ## Subagent Contracts (per task)
 - Task A prompt: <key instructions>
-- Task A I/O: <inputs> ΓåÆ <outputs>
+- Task A I/O: <inputs> -> <outputs>
 
 ## Completion Checklist
 - [ ] Each sub-task meets acceptance criteria

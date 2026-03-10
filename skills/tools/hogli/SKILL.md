@@ -23,7 +23,7 @@ Use Hogli effectively by applying scoped filters first, then correlating metrics
 
 ### Structured Query Building
 
-Build queries incrementally. Start with the narrowest known dimension (e.g., service name, pod ID, request ID), then add filters. Use AND logic to intersect constraints rather than OR. For time-bounded incidents, always anchor to a known event timestamp and expand symmetrically (e.g., ┬▒15 minutes). Include deployment markers or config-change timestamps as explicit boundaries in your query so you can compare before/after behavior.
+Build queries incrementally. Start with the narrowest known dimension (e.g., service name, pod ID, request ID), then add filters. Use AND logic to intersect constraints rather than OR. For time-bounded incidents, always anchor to a known event timestamp and expand symmetrically (e.g., +/-15 minutes). Include deployment markers or config-change timestamps as explicit boundaries in your query so you can compare before/after behavior.
 
 ### Metric-Log Correlation Patterns
 

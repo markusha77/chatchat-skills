@@ -32,9 +32,9 @@ Use this skill to run BlueBubbles as a stable service with predictable startup a
 
 **Service supervision with systemd/launchd.** Never run BlueBubbles as a bare process. Use systemd (Linux) or launchd (macOS) to manage the process: restart on crash, restart on failure, and proper cleanup on stop. Configure `Restart=on-failure` and `RestartSec=5` for systemd. For launchd, use `KeepAlive` with `SuccessfulExit=false`. Ensure the working directory and environment are set correctly in the unit file.
 
-**Health check endpoint monitoring.** If BlueBubbles exposes a health endpoint, poll it every 30ΓÇô60 seconds. Alert on consecutive failures (e.g., 3 in a row). Use the health check to drive automated restarts or failover. Document the expected response and failure modes.
+**Health check endpoint monitoring.** If BlueBubbles exposes a health endpoint, poll it every 30-60 seconds. Alert on consecutive failures (e.g., 3 in a row). Use the health check to drive automated restarts or failover. Document the expected response and failure modes.
 
-**Log rotation configuration.** Configure log rotation to prevent disk fill. Use logrotate (Linux) or newsyslog (macOS) with daily rotation, retention of 7ΓÇô14 days, and compression. Ensure logs are written to a dedicated path with sufficient space. Monitor disk usage.
+**Log rotation configuration.** Configure log rotation to prevent disk fill. Use logrotate (Linux) or newsyslog (macOS) with daily rotation, retention of 7-14 days, and compression. Ensure logs are written to a dedicated path with sufficient space. Monitor disk usage.
 
 **Notification pipeline verification.** After each deployment or config change, verify the full notification pipeline: send a test message, confirm delivery, and verify media handling. Check webhook delivery and retry behavior. Document the verification steps and expected outcomes.
 

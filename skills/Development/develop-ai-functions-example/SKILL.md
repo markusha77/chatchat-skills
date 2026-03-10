@@ -21,7 +21,7 @@ Build AI functions that are easy for models to call correctly and safe to operat
 
 ## Function-Calling Patterns
 
-Use OpenAI function schema format: `name`, `description`, `parameters` (JSON Schema). The description is the primary signal for model disambiguationΓÇöwrite it as a single sentence stating when to call the tool and what it does. Example: "Fetch current weather for a given city. Call when the user asks about temperature, conditions, or forecast."
+Use OpenAI function schema format: `name`, `description`, `parameters` (JSON Schema). The description is the primary signal for model disambiguation; write it as a single sentence stating when to call the tool and what it does. Example: "Fetch current weather for a given city. Call when the user asks about temperature, conditions, or forecast."
 
 Parameter validation: use JSON Schema `required`, `type`, `enum`, and `const` for restricted values. Prefer `enum` over free-form strings when the set is small and known. Example: `"unit": { "type": "string", "enum": ["celsius", "fahrenheit"], "default": "celsius" }`. Use `minLength`, `maxLength`, and `pattern` for strings; `minimum`/`maximum` for numbers. Always mark optional parameters explicitly; omit from `required` and provide `default` when sensible.
 

@@ -50,7 +50,7 @@ Use this skill to produce provider documentation that is accurate, actionable, a
 
 **Documenting happy path only.** Users hit errors, rate limits, and edge cases. Document failure modes and recovery steps. Include "what to do when X fails" for common failure points.
 
-**Outdated screenshots.** Screenshots that no longer match the UI confuse users and erode trust. Re-screenshot when UI changes or at least every 6ΓÇô12 months.
+**Outdated screenshots.** Screenshots that no longer match the UI confuse users and erode trust. Re-screenshot when UI changes or at least every 6-12 months.
 
 **Missing prerequisite steps.** Assume nothing. Document OS version, runtime version, dependencies, network requirements, and firewall rules. Users who skip prerequisites often fail silently.
 

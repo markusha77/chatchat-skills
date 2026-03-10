@@ -48,13 +48,13 @@ Use this skill to perform a focused codebase orientation and produce an actionab
 
 ## Command Patterns for Exploration
 
-- `rg "pattern" --type <ext> -l` ΓÇö list files containing a pattern.
-- `rg "pattern" -A 2 -B 2` ΓÇö show context around matches.
-- `rg "from .* import|import .*"` ΓÇö find imports for dependency analysis.
-- `git log --oneline -20 -- <path>` ΓÇö recent changes in a path.
-- `git log --follow -p -- <file>` ΓÇö full history of a file including renames.
-- `find . -name "*.test.*" -o -name "*_test.*"` ΓÇö locate test files.
-- `ls -la` or `dir` on key directories ΓÇö inspect structure before diving in.
+- `rg "pattern" --type <ext> -l` - list files containing a pattern.
+- `rg "pattern" -A 2 -B 2` - show context around matches.
+- `rg "from .* import|import .*"` - find imports for dependency analysis.
+- `git log --oneline -20 -- <path>` - recent changes in a path.
+- `git log --follow -p -- <file>` - full history of a file including renames.
+- `find . -name "*.test.*" -o -name "*_test.*"` - locate test files.
+- `ls -la` or `dir` on key directories - inspect structure before diving in.
 
 ## Common Pitfalls
 
@@ -88,10 +88,10 @@ Produce a structured report:
 - Feature flags / env vars: <list>
 
 ## Files Likely to Edit
-- <file> ΓÇö <reason>
+- <file> - <reason>
 
 ## Dependencies and Risks
-- <dependency or integration> ΓÇö <what may break>
+- <dependency or integration> - <what may break>
 
 ## Validation Plan
 - Unit tests: <paths or commands>

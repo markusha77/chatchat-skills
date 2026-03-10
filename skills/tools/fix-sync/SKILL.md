@@ -37,7 +37,7 @@ Stabilize synchronization pipelines by identifying drift sources, repairing stat
 
 ## Sync Debugging Patterns
 
-**Event sourcing replay.** Replay events from the event store into read models or downstream consumers. Verify consumers are idempotent (same event twice produces same result). Replay in bounded time windows; validate checksums or record counts before and after. Never replay without confirming idempotencyΓÇöduplicate processing can corrupt state.
+**Event sourcing replay.** Replay events from the event store into read models or downstream consumers. Verify consumers are idempotent (same event twice produces same result). Replay in bounded time windows; validate checksums or record counts before and after. Never replay without confirming idempotency; duplicate processing can corrupt state.
 
 **CDC lag monitoring.** For change-data-capture (Debezium, etc.), track consumer lag (offset behind producer). Alert when lag exceeds SLA. Correlate lag spikes with schema changes, backpressure, or consumer restarts. Use lag metrics to decide when to scale consumers or pause producers.
 
@@ -65,7 +65,7 @@ Stabilize synchronization pipelines by identifying drift sources, repairing stat
 Return:
 
 - **Drift summary:** What diverged, since when, affected record count, and business impact.
-- **Root-cause analysis by sync stage:** Producer, transport, consumer, persistenceΓÇöwhere the failure originated and why.
+- **Root-cause analysis by sync stage:** Producer, transport, consumer, persistence; where the failure originated and why.
 - **Recovery actions taken and validation evidence:** Replay windows, backfill scripts, conflict resolutions; checksums or sample queries proving parity.
 - **Preventive controls:** Idempotency enforcement, lag alerts, DLQ monitoring, reconciliation schedule.
 - **Conflict resolution decisions:** Strategy chosen (LWW, merge, vector clock) and rationale.

@@ -31,23 +31,23 @@ For each mode, define:
 
 ## Mode Design Patterns
 
-**State machine for mode transitions.** Model modes as states and transitions as edges. Each transition has a trigger (user command, explicit button, timeout) and optional guard (e.g., "only if user confirmed"). Invalid transitions return an error or prompt for clarification. Document the state machine as a table: Current Mode ├ù Requested Mode ΓåÆ Allowed (Y/N) + Action.
+**State machine for mode transitions.** Model modes as states and transitions as edges. Each transition has a trigger (user command, explicit button, timeout) and optional guard (e.g., "only if user confirmed"). Invalid transitions return an error or prompt for clarification. Document the state machine as a table: Current Mode x Requested Mode -> Allowed (Y/N) + Action.
 
-**Permission matrix implementation.** Maintain a matrix: Mode ├ù Action Type (read_file, write_file, run_command, call_api) ΓåÆ Allowed. Check this matrix before every tool invocation. Reject with a clear message ("Execute mode required for file writes") when the action is disallowed. Log blocked attempts for drift detection.
+**Permission matrix implementation.** Maintain a matrix: Mode x Action Type (read_file, write_file, run_command, call_api) -> Allowed. Check this matrix before every tool invocation. Reject with a clear message ("Execute mode required for file writes") when the action is disallowed. Log blocked attempts for drift detection.
 
 **Confirmation dialogs for mode escalation.** When transitioning from a lower-risk mode (ask, plan) to a higher-risk mode (execute), require explicit user confirmation. Present a summary of planned actions and a single "Proceed" or "Cancel" choice. Do not auto-escalate based on inferred intent.
 
 ## Mode Transition Examples
 
-- **ask ΓåÆ plan:** User says "I want to add a feature." Allowed; no confirmation.
-- **plan ΓåÆ execute:** User says "Do it." Require confirmation with action summary.
-- **execute ΓåÆ ask:** User says "Stop" or "Switch to ask." Allowed; cancel pending actions if any.
-- **debug ΓåÆ execute:** User approves a fix. Require confirmation; execute only the approved fix.
-- **execute ΓåÆ execute:** Same mode; no transition. Reject if user tries to switch to plan mid-execution without explicit cancel.
+- **ask -> plan:** User says "I want to add a feature." Allowed; no confirmation.
+- **plan -> execute:** User says "Do it." Require confirmation with action summary.
+- **execute -> ask:** User says "Stop" or "Switch to ask." Allowed; cancel pending actions if any.
+- **debug -> execute:** User approves a fix. Require confirmation; execute only the approved fix.
+- **execute -> execute:** Same mode; no transition. Reject if user tries to switch to plan mid-execution without explicit cancel.
 
 ## Mode Testing Strategies
 
-**Scenario scripts.** Write scripts that simulate user flows: "User in ask mode requests file edit" ΓåÆ expect blocked. "User in plan mode requests execution" ΓåÆ expect confirmation prompt. "User confirms" ΓåÆ expect execution. Run these as automated tests.
+**Scenario scripts.** Write scripts that simulate user flows: "User in ask mode requests file edit" -> expect blocked. "User in plan mode requests execution" -> expect confirmation prompt. "User confirms" -> expect execution. Run these as automated tests.
 
 **Boundary testing between modes.** Test transitions at boundaries: first message in a session, mode switch mid-conversation, rapid successive mode changes. Ensure no state leakage (e.g., execute permissions carrying over after switch to ask).
 
@@ -83,15 +83,15 @@ Return a structured specification:
 ## Mode Matrix
 | Mode   | read | write | execute | external | confirmation |
 |--------|------|-------|---------|----------|--------------|
-| ask    | Y    | N     | N       | N        | ΓÇö            |
-| plan   | Y    | N     | N       | N        | ΓÇö            |
-| debug  | Y    | N     | N       | Y (read) | ΓÇö            |
+| ask    | Y    | N     | N       | N        | -            |
+| plan   | Y    | N     | N       | N        | -            |
+| debug  | Y    | N     | N       | Y (read) | -            |
 | execute| Y    | Y     | Y       | Y        | before first write |
 
 ## Transition Graph
 | From   | To      | Trigger        | Guard              |
 |--------|---------|----------------|--------------------|
-| ask    | plan    | "plan" keyword  | ΓÇö                  |
+| ask    | plan    | "plan" keyword  | -                  |
 | plan   | execute | "execute" + UI  | user confirmation  |
 | execute| ask     | "stop" keyword  | cancel pending     |
 
@@ -101,9 +101,9 @@ Return a structured specification:
 - Ambiguous intent: <default mode + prompt>
 
 ## Test Scenarios
-- Scenario 1: <setup> ΓåÆ <action> ΓåÆ <expected outcome>
-- Scenario 2: <setup> ΓåÆ <action> ΓåÆ <expected outcome>
-- Boundary: <edge case> ΓåÆ <expected outcome>
+- Scenario 1: <setup> -> <action> -> <expected outcome>
+- Scenario 2: <setup> -> <action> -> <expected outcome>
+- Boundary: <edge case> -> <expected outcome>
 ```
 
 ## Constraints

@@ -25,7 +25,7 @@ Run several feature tracks in parallel while keeping delivery predictable and in
 
 2. **Choose a branch model and document merge direction.** Options: (a) **Feature flags + trunk-based:** all work merges to `main` behind flags; partial integration happens in production. (b) **Integration branch:** feature branches merge to an `integration/xyz` branch for combined testing before merging to `main`. (c) **Stacked PRs:** small PRs stack on each other; each merges to `main` in sequence. Document which branches flow where and who merges when.
 
-3. **Identify shared touchpoints and conflict hotspots.** List schemas, APIs, config files, and shared UI components. Use `git log` or conflict history to find files that change often across featuresΓÇöthese are hotspots. Assign owners or split files to reduce contention.
+3. **Identify shared touchpoints and conflict hotspots.** List schemas, APIs, config files, and shared UI components. Use `git log` or conflict history to find files that change often across features-these are hotspots. Assign owners or split files to reduce contention.
 
 4. **Add integration checkpoints.** Require daily (or twice-daily) rebase/merge from the base branch. Run smoke tests or a minimal integration suite after each sync. Catch conflicts early; do not defer integration until merge day.
 

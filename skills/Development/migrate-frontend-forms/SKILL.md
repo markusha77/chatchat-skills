@@ -21,7 +21,7 @@ Migrate forms incrementally, preserve user-visible behavior, and verify submissi
 
 ## Migration Patterns
 
-**Formik to React Hook Form**: Replace `useFormik` with `useForm`; map `values` to `watch`, `errors` to `formState.errors`, `handleChange` to `register` or `Controller`. Use `Controller` for custom components that need `value`/`onChange`. Preserve `submitCount` and `touched` semantics if used for UXΓÇöRHF uses `formState.isSubmitted` and `formState.touchedFields`.
+**Formik to React Hook Form**: Replace `useFormik` with `useForm`; map `values` to `watch`, `errors` to `formState.errors`, `handleChange` to `register` or `Controller`. Use `Controller` for custom components that need `value`/`onChange`. Preserve `submitCount` and `touched` semantics if used for UX; RHF uses `formState.isSubmitted` and `formState.touchedFields`.
 
 **Yup to Zod**: Convert `yup.object({ ... })` to `z.object({ ... })`. Yup's `string().required()` becomes `z.string().min(1)` or `z.string().nonempty()`. For async validation, use `z.refine()` or `z.superRefine()`. Map nested objects and arrays; preserve `transform` logic in Zod's `.transform()` or preprocessors. Run both schemas in parallel during migration to catch divergence.
 

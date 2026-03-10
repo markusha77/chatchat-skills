@@ -21,7 +21,7 @@ Turn diffs into focused, review-friendly commits and messages that explain inten
 
 ## Conventional Commits Deep Dive
 
-**Type and scope:** Use `type(scope): subject` ΓÇö e.g., `feat(auth): add OAuth callback`, `fix(api): handle null response`. Types: `feat`, `fix`, `refactor`, `docs`, `test`, `chore`, `style`, `perf`. Scope is optional but helps group changes (module, package, or area).
+**Type and scope:** Use `type(scope): subject` - e.g., `feat(auth): add OAuth callback`, `fix(api): handle null response`. Types: `feat`, `fix`, `refactor`, `docs`, `test`, `chore`, `style`, `perf`. Scope is optional but helps group changes (module, package, or area).
 
 **Breaking patterns:** Use `BREAKING CHANGE:` in the body or append `!` after type/scope: `feat(api)!: remove deprecated endpoint`. Always document migration steps in the body.
 

@@ -31,9 +31,9 @@ Create reproducible NetAlertX sample data that reflects real-world conditions wh
 
 **Faker/factory-based generation.** Use Faker (Python, JS) or factory libraries (Factory Boy, faker.js) to generate device names, IPs, MAC addresses, hostnames. Create factories that produce valid NetAlertX entities with realistic distributions. Parameterize counts and optional fields for flexibility.
 
-**Deterministic seeding for reproducibility.** Pass a fixed seed (e.g. `random.seed(42)`, `faker.Faker(seed=42)`) at script start. Same seed produces identical output across runsΓÇöcritical for CI. Document the seed in the script header and in test docs.
+**Deterministic seeding for reproducibility.** Pass a fixed seed (e.g. `random.seed(42)`, `faker.Faker(seed=42)`) at script start. Same seed produces identical output across runs; critical for CI. Document the seed in the script header and in test docs.
 
-**Realistic alert severity distributions.** Mirror production ratios: e.g. 70% info, 20% warning, 8% critical, 2% critical. Include edge cases: consecutive criticals, severity escalation over time, resolved vs active. Avoid uniform distributionΓÇöit does not exercise UI or logic correctly.
+**Realistic alert severity distributions.** Mirror production ratios: e.g. 70% info, 20% warning, 8% critical, 2% critical. Include edge cases: consecutive criticals, severity escalation over time, resolved vs active. Avoid uniform distribution; it does not exercise UI or logic correctly.
 
 **Time-series data patterns.** Generate alerts across a configurable time window (e.g. last 7 days). Use realistic patterns: bursts during business hours, quiet nights, occasional spikes. Support relative timestamps (e.g. "2 hours ago") for demos that stay current.
 

@@ -22,15 +22,15 @@ Operate issue workflows so backlog health and ownership stay clear.
 
 ## Triage Patterns
 
-**Label taxonomy.** Use a flat or hierarchical scheme: `type` (bug, feature, chore, docs), `priority` (P0/P1/P2 or critical/high/medium/low), `status` (backlog, in-progress, blocked, done), and `area` (frontend, backend, infra, docs). Avoid overlapping labels (e.g., donΓÇÖt mix "urgent" and "P0"). Define each label in the repo description so triagers use them consistently.
+**Label taxonomy.** Use a flat or hierarchical scheme: `type` (bug, feature, chore, docs), `priority` (P0/P1/P2 or critical/high/medium/low), `status` (backlog, in-progress, blocked, done), and `area` (frontend, backend, infra, docs). Avoid overlapping labels (e.g., don't mix "urgent" and "P0"). Define each label in the repo description so triagers use them consistently.
 
 **SLA by priority.** Tie response and resolution targets to priority: e.g., P0 triaged within 24h and resolved within 1 week; P1 within 3 days and 2 weeks; P2 within 1 week and 1 sprint. Document SLAs in CONTRIBUTING or a triage doc and enforce via automation or weekly review.
 
-**Template enforcement.** Require issue templates for bug reports and feature requests. Templates should capture: environment, steps to reproduce, expected vs actual behavior, and acceptance criteria. Use GitHubΓÇÖs template chooser and validate that new issues include required sections before labeling.
+**Template enforcement.** Require issue templates for bug reports and feature requests. Templates should capture: environment, steps to reproduce, expected vs actual behavior, and acceptance criteria. Use GitHub's template chooser and validate that new issues include required sections before labeling.
 
 ## Backlog Health Indicators
 
-- **Stale issue age:** Issues with no activity for 30ΓÇô90 days (configurable). Flag for triage: close, update, or move to backlog.
+- **Stale issue age:** Issues with no activity for 30-90 days (configurable). Flag for triage: close, update, or move to backlog.
 - **Unassigned rate:** Share of open issues without an assignee. High unassigned rate suggests unclear ownership or overload.
 - **Duplicate rate:** Issues marked as duplicate or with similar titles/descriptions. High rate indicates weak search before filing or missing templates.
 
@@ -38,7 +38,7 @@ Track these weekly and set thresholds (e.g., &lt;20% unassigned, &lt;10% stale) 
 
 ## Automation Patterns
 
-- **Auto-label from templates:** Use GitHub Actions or Probot to apply labels based on template choice or body keywords (e.g., "bug" template ΓåÆ `type: bug`).
+- **Auto-label from templates:** Use GitHub Actions or Probot to apply labels based on template choice or body keywords (e.g., "bug" template -> `type: bug`).
 - **Stale bot configuration:** Configure Stale bot with grace period (e.g., 60 days), exempt labels (e.g., `pinned`, `roadmap`), and a clear comment before closing. Avoid closing high-priority issues automatically.
 - **Milestone-based tracking:** Assign issues to milestones for releases or quarters. Use automation to move issues when milestones change or to close stale milestones.
 

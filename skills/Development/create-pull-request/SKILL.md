@@ -25,7 +25,7 @@ Create a reviewer-ready pull request that explains intent, impact, and validatio
 - Use imperative mood: "Add", "Fix", "Remove", "Refactor" (not "Added", "Fixes").
 - Prefix with scope when helpful: `auth: fix token refresh race`, `api: add pagination to list endpoint`.
 - Keep under 72 characters for clean git log and UI display.
-- Avoid vague titles like "Miscellaneous fixes" or "Various updates"ΓÇöbe specific.
+- Avoid vague titles like "Miscellaneous fixes" or "Various updates"-be specific.
 
 ## Description Writing Techniques
 

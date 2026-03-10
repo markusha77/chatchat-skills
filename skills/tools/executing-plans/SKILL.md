@@ -79,7 +79,7 @@ Return a structured execution report:
 | M2: <name> | <owner> | in progress | <current step> |
 
 ## Critical Path
-- Task A ΓåÆ Task B ΓåÆ Task C (current: Task B)
+- Task A -> Task B -> Task C (current: Task B)
 
 ## Blockers
 | Blocker | Severity | Owner | Mitigation | Escalation |
