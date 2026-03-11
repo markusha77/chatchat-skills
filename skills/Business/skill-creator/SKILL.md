@@ -2,7 +2,7 @@
 id: skill-creator
 name: "Skill Creator"
 description: "Step-by-step guidance for creator."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with skill creator."

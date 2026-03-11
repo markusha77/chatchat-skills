@@ -2,7 +2,7 @@
 id: videogames
 name: "Videogames"
 description: "A skill to lookup video game information and compare prices across multiple stores."
-category: Business
+category: Lifestyle
 requires: []
 examples:
   - "Help me with videogames."

@@ -2,7 +2,7 @@
 id: woocommerce
 name: "Woocommerce"
 description: "Guidelines for git and GitHub operations in the WooCommerce repository."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with woocommerce."

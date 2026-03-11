@@ -2,7 +2,7 @@
 id: railway-metrics
 name: "Railway Metrics"
 description: "Query resource usage metrics for Railway services."
-category: Business
+category: DevOps
 requires: []
 examples:
   - "Help me with railway metrics."

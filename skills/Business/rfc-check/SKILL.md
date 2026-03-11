@@ -2,7 +2,7 @@
 id: rfc-check
 name: "Rfc Check"
 description: "Determine if proposed changes require an RFC."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with rfc check."

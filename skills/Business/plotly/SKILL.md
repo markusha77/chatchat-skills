@@ -2,7 +2,7 @@
 id: plotly
 name: "Plotly"
 description: "Interactive scientific and statistical data visualization library for Python."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with plotly."

@@ -2,7 +2,7 @@
 id: shopify
 name: "Shopify"
 description: "Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid. TRIGGER: \\\"shopify\\\", \\\"shopify app\\\", \\\"checkout extension\\\", \\\"admin extension\\\", \\\"POS extension\\\", \\\"shopify theme\\\", \\\"liquid template\\\", \\\"polaris\\\", \\\"shopify graphql\\\", \\\"shopify webhook\\\", \\\"shopify billing\\\", \\\"app subscription\\\", \\\"metafields\\\", \\\"shopify functions\\\". Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid. TRIGGER: \"shopify\", \"shopify app\", \"checkout extension\", \"admin extension\", \"POS extension\", \"shopify theme\", \"liquid template\", \"polaris\", \"shopify graphql\", \"shopify webhook\", shopify billing\", \"app subscription\", \"metafields\", \"shopify functions"
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with shopify."

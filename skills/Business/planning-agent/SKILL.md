@@ -2,7 +2,7 @@
 id: planning-agent
 name: "Planning Agent"
 description: "Generates comprehensive, workable unit tests for any programming language using a multi-agent pipeline."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with planning agent."

@@ -2,7 +2,7 @@
 id: weather
 name: "Weather"
 description: "Get current weather and forecasts via wttr.in or Open-Meteo."
-category: Business
+category: Lifestyle
 requires: []
 examples:
   - "Help me with weather."

@@ -2,7 +2,7 @@
 id: team-composition-patterns
 name: "Team Composition Patterns"
 description: "Guidance and answers for team composition patterns."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with team composition patterns."

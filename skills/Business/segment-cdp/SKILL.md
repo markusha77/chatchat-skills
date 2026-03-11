@@ -2,7 +2,7 @@
 id: segment-cdp
 name: "Segment CDP"
 description: "Step-by-step guidance for segment cdp."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with segment cdp."

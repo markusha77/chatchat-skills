@@ -2,7 +2,7 @@
 id: plan-writing
 name: "Plan Writing"
 description: "Structured task planning with clear breakdowns, dependencies, and verification criteria."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with plan writing."

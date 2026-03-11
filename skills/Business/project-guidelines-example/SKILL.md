@@ -2,7 +2,7 @@
 id: project-guidelines-example
 name: "Project Guidelines Example"
 description: "Example project-specific skill template based on a real production application."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with project guidelines example."

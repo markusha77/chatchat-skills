@@ -2,7 +2,7 @@
 id: upgrade-stripe
 name: "Upgrade Stripe"
 description: "Guide for upgrading Stripe API versions and SDKs."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with upgrade stripe."

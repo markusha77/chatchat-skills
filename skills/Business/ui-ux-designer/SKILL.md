@@ -2,7 +2,7 @@
 id: ui-ux-designer
 name: "UI/UX Designer"
 description: "Step-by-step guidance for UI/UX designer. user research, accessibility standards, and modern design tools. Specializes in design tokens, component libraries, and inclusive design. Use PROACTIVELY for design systems, user flows, or interface optimization."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with ui/ux designer."

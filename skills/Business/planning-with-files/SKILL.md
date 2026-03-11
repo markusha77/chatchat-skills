@@ -2,7 +2,7 @@
 id: planning-with-files
 name: "Planning With Files"
 description: "Guidance and answers for planning with files."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with planning with files."

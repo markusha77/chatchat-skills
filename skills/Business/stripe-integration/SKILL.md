@@ -2,7 +2,7 @@
 id: stripe-integration
 name: "Stripe Integration"
 description: "Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with stripe integration."

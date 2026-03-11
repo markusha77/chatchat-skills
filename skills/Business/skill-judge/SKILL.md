@@ -2,7 +2,7 @@
 id: skill-judge
 name: "Skill Judge"
 description: "Step-by-step guidance for judge."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with skill judge."

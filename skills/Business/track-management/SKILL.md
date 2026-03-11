@@ -2,7 +2,7 @@
 id: track-management
 name: "Track Management"
 description: "Use this skill when creating, managing, or working with Conductor tracks - the logical work units for features, bugs, and refactors. Applies to spec.md, plan.md, and track lifecycle operations."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with track management."

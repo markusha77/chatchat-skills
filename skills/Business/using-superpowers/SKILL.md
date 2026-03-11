@@ -2,7 +2,7 @@
 id: using-superpowers
 name: "Using Superpowers"
 description: "Ensure relevant skills are invoked before any response or action."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with using superpowers."
