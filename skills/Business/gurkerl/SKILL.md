@@ -2,7 +2,7 @@
 id: gurkerl
 name: "Gurkerl"
 description: "Austrian online grocery shopping via gurkerl.at."
-category: Business
+category: Lifestyle
 requires: []
 examples:
   - "Help me with gurkerl."

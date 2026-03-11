@@ -1,8 +1,8 @@
 ---
 id: juicebox-prod-checklist
 name: "Juicebox Prod Checklist"
-description: "Execute Juicebox production deployment checklist. Execute Juicebox production deployment checklist. Use when preparing for production launch, validating deployment readiness, or performing pre-launch reviews. Trigger with phrases like \"juicebox production\", \"deploy juicebox prod\", \"juicebox launch checklist\", \"juicebox go-live\"."
-category: Business
+description: "Execute Juicebox production deployment checklist. Use when preparing for production launch, validating deployment readiness, or performing pre-launch reviews. Trigger with phrases like \"juicebox production\", \"deploy juicebox prod\", \"juicebox launch checklist\", \"juicebox go-live\"."
+category: DevOps
 requires: []
 examples:
   - "Help me with juicebox prod checklist."

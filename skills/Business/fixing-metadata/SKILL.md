@@ -2,7 +2,7 @@
 id: fixing-metadata
 name: "Fixing Metadata"
 description: "Ship correct, complete metadata."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with fixing metadata."

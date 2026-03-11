@@ -2,7 +2,7 @@
 id: pdp
 name: "Pdp"
 description: "Product Detail Page architecture, image gallery/carousel, caching, and add-to-cart flow."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with pdp."

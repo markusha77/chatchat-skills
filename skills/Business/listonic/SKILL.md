@@ -2,7 +2,7 @@
 id: listonic
 name: "Listonic"
 description: "Access Listonic shopping lists: list lists/items, add/check/delete items, and manage lists."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with listonic."

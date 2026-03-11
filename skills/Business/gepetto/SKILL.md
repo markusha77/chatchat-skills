@@ -2,7 +2,7 @@
 id: gepetto
 name: "Gepetto"
 description: "Creates detailed, sectionized implementation plans through research, stakeholder interviews, and multi-LLM review."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with gepetto."

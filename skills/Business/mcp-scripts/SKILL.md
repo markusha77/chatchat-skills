@@ -2,7 +2,7 @@
 id: mcp-scripts
 name: "Mcp Scripts"
 description: "Guidance and answers for mcp scripts."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with mcp scripts."

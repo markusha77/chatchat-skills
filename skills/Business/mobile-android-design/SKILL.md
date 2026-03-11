@@ -2,7 +2,7 @@
 id: mobile-android-design
 name: "Mobile Android Design"
 description: "Master Material Design 3 and Jetpack Compose patterns for building native Android apps."
-category: Business
+category: Development
 requires: []
 examples:
   - "Help me with mobile android design."

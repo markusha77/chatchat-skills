@@ -2,7 +2,7 @@
 id: on-call-handoff-patterns
 name: "On Call Handoff Patterns"
 description: "Master on-call shift handoffs with context transfer, escalation procedures, and documentation."
-category: Business
+category: DevOps
 requires: []
 examples:
   - "Help me with on call handoff patterns."
