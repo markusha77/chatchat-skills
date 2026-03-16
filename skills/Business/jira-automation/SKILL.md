@@ -1,7 +1,7 @@
 ---
 id: jira-automation
-name: "Jira Automation"
-description: "Guidance-only playbook for Jira operating workflows, including intake, backlog hygiene, sprint governance, and delivery reporting."
+name: Jira Automation
+description: Guidance-only playbook for Jira operating workflows, including intake, backlog hygiene, sprint governance, and delivery reporting.
 category: Business
 requires: []
 examples:

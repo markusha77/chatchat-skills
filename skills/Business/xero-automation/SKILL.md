@@ -1,7 +1,7 @@
 ---
 id: xero-automation
-name: "Xero Automation"
-description: "Guidance-only playbook for Xero accounting operations, including invoicing controls, reconciliation workflows, and close readiness."
+name: Xero Automation
+description: Guidance-only playbook for Xero accounting operations, including invoicing controls, reconciliation workflows, and close readiness.
 category: Business
 requires: []
 examples:

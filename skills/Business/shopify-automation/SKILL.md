@@ -1,7 +1,7 @@
 ---
 id: shopify-automation
-name: "Shopify Automation"
-description: "Guidance-only playbook for Shopify operations, including catalog governance, order exception handling, and merchandising performance reviews."
+name: Shopify Automation
+description: Guidance-only playbook for Shopify operations, including catalog governance, order exception handling, and merchandising performance reviews.
 category: Business
 requires: []
 examples:

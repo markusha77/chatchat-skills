@@ -1,7 +1,7 @@
 ---
 id: zoho-bigin-automation
-name: "Zoho Bigin Automation"
-description: "Guidance-only playbook for Zoho Bigin CRM operations, including pipeline hygiene, lead routing, and sales follow-up governance."
+name: Zoho Bigin Automation
+description: Guidance-only playbook for Zoho Bigin CRM operations, including pipeline hygiene, lead routing, and sales follow-up governance.
 category: Business
 requires: []
 examples:

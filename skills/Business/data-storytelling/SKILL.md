@@ -1,7 +1,7 @@
 ---
 id: data-storytelling
-name: "Data Storytelling"
-description: "Step-by-step guidance for data storytelling."
+name: Data Storytelling
+description: Step-by-step guidance for data storytelling.
 category: Business
 requires: []
 examples:

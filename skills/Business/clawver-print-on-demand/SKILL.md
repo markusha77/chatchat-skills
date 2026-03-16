@@ -1,7 +1,7 @@
 ---
 id: clawver-print-on-demand
-name: "Clawver Print On Demand"
-description: "Guidance-only playbook for planning and operating print-on-demand merchandise workflows, including variants, pricing, fulfillment, and shipping operations."
+name: Clawver Print On Demand
+description: Guidance-only playbook for planning and operating print-on-demand merchandise workflows, including variants, pricing, fulfillment, and shipping operations.
 category: Business
 requires: []
 examples:

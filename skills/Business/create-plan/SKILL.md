@@ -1,7 +1,7 @@
 ---
 id: create-plan
-name: "Create Plan"
-description: "Step-by-step guidance for create plan."
+name: Create Plan
+description: Step-by-step guidance for create plan.
 category: Development
 requires: []
 examples:

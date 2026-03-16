@@ -1,7 +1,7 @@
 ---
 id: calcom-api
-name: "Calcom API"
-description: "Guidance-only reference for planning Cal.com API v2 scheduling integrations, including bookings, event types, availability, calendars, and webhook design."
+name: Calcom API
+description: Guidance-only reference for planning Cal.com API v2 scheduling integrations, including bookings, event types, availability, calendars, and webhook design.
 category: Business
 requires: []
 examples:

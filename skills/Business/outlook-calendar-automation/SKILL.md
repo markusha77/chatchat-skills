@@ -1,7 +1,7 @@
 ---
 id: outlook-calendar-automation
-name: "Outlook Calendar Automation"
-description: "Guidance-only playbook for Outlook calendar and scheduling operations, including meeting governance, availability planning, and follow-up discipline."
+name: Outlook Calendar Automation
+description: Guidance-only playbook for Outlook calendar and scheduling operations, including meeting governance, availability planning, and follow-up discipline.
 category: Business
 requires: []
 examples:

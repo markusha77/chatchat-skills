@@ -1,7 +1,7 @@
 ---
 id: google-merchant
-name: "Google Merchant"
-description: "Guidance-only playbook for Google Merchant catalog operations, product quality checks, data source governance, and shopping performance analysis."
+name: Google Merchant
+description: Guidance-only playbook for Google Merchant catalog operations, product quality checks, data source governance, and shopping performance analysis.
 category: Business
 requires: []
 examples:

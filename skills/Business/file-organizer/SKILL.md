@@ -1,7 +1,7 @@
 ---
 id: file-organizer
-name: "File Organizer"
-description: "Step-by-step guidance for file organizer."
+name: File Organizer
+description: Step-by-step guidance for file organizer.
 category: Lifestyle
 requires: []
 examples:

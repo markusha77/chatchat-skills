@@ -1,7 +1,7 @@
 ---
 id: changelog-generator
-name: "Changelog Generator"
-description: "Step-by-step guidance for changelog."
+name: Changelog Generator
+description: Step-by-step guidance for changelog.
 category: Business
 requires: []
 examples:

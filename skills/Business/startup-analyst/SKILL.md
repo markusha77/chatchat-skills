@@ -1,7 +1,7 @@
 ---
 id: startup-analyst
-name: "Startup Analyst"
-description: "Guidance-only playbook for startup analysis, including market sizing, unit economics, growth assumptions, and investor-ready strategic narratives."
+name: Startup Analyst
+description: Guidance-only playbook for startup analysis, including market sizing, unit economics, growth assumptions, and investor-ready strategic narratives.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: ramp-automation
-name: "Ramp Automation"
-description: "Guidance-only playbook for Ramp finance operations, including spend controls, reimbursement governance, and monthly close readiness."
+name: Ramp Automation
+description: Guidance-only playbook for Ramp finance operations, including spend controls, reimbursement governance, and monthly close readiness.
 category: Business
 requires: []
 examples:

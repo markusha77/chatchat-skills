@@ -1,7 +1,7 @@
 ---
 id: salesforce-automation
-name: "Salesforce Automation"
-description: "Guidance-only playbook for Salesforce CRM operations, including lead flow governance, pipeline hygiene, and forecasting discipline."
+name: Salesforce Automation
+description: Guidance-only playbook for Salesforce CRM operations, including lead flow governance, pipeline hygiene, and forecasting discipline.
 category: Business
 requires: []
 examples:

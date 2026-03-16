@@ -1,7 +1,7 @@
 ---
 id: customer-support
-name: "Customer Support"
-description: "Guidelines for handling customer support interactions."
+name: Customer Support
+description: Guidelines for handling customer support interactions.
 category: Business
 requires: []
 examples:

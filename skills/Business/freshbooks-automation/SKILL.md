@@ -1,7 +1,7 @@
 ---
 id: freshbooks-automation
-name: "Freshbooks Automation"
-description: "Guidance-only playbook for FreshBooks operations, including business setup, project tracking, time logging, and billing workflows."
+name: Freshbooks Automation
+description: Guidance-only playbook for FreshBooks operations, including business setup, project tracking, time logging, and billing workflows.
 category: Business
 requires: []
 examples:

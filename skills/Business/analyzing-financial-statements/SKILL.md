@@ -1,7 +1,7 @@
 ---
 id: analyzing-financial-statements
-name: "Analyzing Financial Statements"
-description: "Analyze company financial statements using ratio frameworks, trend review, and risk interpretation. Use when users need profitability, liquidity, leverage, efficiency, or valuation analysis."
+name: Analyzing Financial Statements
+description: Analyze company financial statements using ratio frameworks, trend review, and risk interpretation. Use when users need profitability, liquidity, leverage, efficiency, or valuation analysis.
 category: Business
 requires: []
 examples:

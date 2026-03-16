@@ -1,7 +1,7 @@
 ---
 id: lawyer
-name: "Lawyer"
-description: "Draft contracts, review legal documents, and navigate compliance with practical legal patterns."
+name: Lawyer
+description: Draft contracts, review legal documents, and navigate compliance with practical legal patterns.
 category: Business
 requires: []
 examples:

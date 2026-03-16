@@ -1,7 +1,7 @@
 ---
 id: microsoft-teams-automation
-name: "Microsoft Teams Automation"
-description: "Guidance-only playbook for Microsoft Teams collaboration operations, including channel governance, meeting hygiene, and communication standards."
+name: Microsoft Teams Automation
+description: Guidance-only playbook for Microsoft Teams collaboration operations, including channel governance, meeting hygiene, and communication standards.
 category: Business
 requires: []
 examples:

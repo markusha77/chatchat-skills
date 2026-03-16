@@ -1,7 +1,7 @@
 ---
 id: whatsapp-automation
-name: "Whatsapp Automation"
-description: "Guidance-only playbook for WhatsApp Business operations, including template governance, response workflows, and customer communication quality."
+name: Whatsapp Automation
+description: Guidance-only playbook for WhatsApp Business operations, including template governance, response workflows, and customer communication quality.
 category: Business
 requires: []
 examples:

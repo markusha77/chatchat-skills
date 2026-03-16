@@ -1,7 +1,7 @@
 ---
 id: investor
-name: "Investor"
-description: "Executive guidance for strategic decision-making, board governance, fundraising readiness, and stakeholder communications."
+name: Investor
+description: Executive guidance for strategic decision-making, board governance, fundraising readiness, and stakeholder communications.
 category: Business
 requires: []
 examples:

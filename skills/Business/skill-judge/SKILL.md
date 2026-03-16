@@ -1,7 +1,7 @@
 ---
 id: skill-judge
-name: "Skill Judge"
-description: "Step-by-step guidance for judge."
+name: Skill Judge
+description: Step-by-step guidance for judge.
 category: Development
 requires: []
 examples:

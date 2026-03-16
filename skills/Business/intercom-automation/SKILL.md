@@ -1,7 +1,7 @@
 ---
 id: intercom-automation
-name: "Intercom Automation"
-description: "Guidance-only playbook for Intercom support operations, including inbox triage, assignment rules, SLA management, and quality reviews."
+name: Intercom Automation
+description: Guidance-only playbook for Intercom support operations, including inbox triage, assignment rules, SLA management, and quality reviews.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: lindy-prod-checklist
-name: "Lindy Prod Checklist"
-description: "Production readiness checklist for Lindy AI deployments. Use when preparing for production, reviewing deployment, or auditing production setup. Trigger with phrases like \"lindy production\", \"lindy prod ready\", \"lindy go live\", \"lindy deployment checklist\"."
+name: Lindy Prod Checklist
+description: Production readiness checklist for Lindy AI deployments. Use when preparing for production, reviewing deployment, or auditing production setup. Trigger with phrases like \"lindy production\", \"lindy prod ready\", \"lindy go live\", \"lindy deployment checklist\".
 category: DevOps
 requires: []
 examples:

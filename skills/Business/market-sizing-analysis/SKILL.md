@@ -1,7 +1,7 @@
 ---
 id: market-sizing-analysis
-name: "Market Sizing Analysis"
-description: "Step-by-step guidance for market sizing."
+name: Market Sizing Analysis
+description: Step-by-step guidance for market sizing.
 category: Business
 requires: []
 examples:

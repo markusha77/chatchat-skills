@@ -1,7 +1,7 @@
 ---
 id: startup-financial-modeling
-name: "Startup Financial Modeling"
-description: "Step-by-step guidance for startup financial modeling."
+name: Startup Financial Modeling
+description: Step-by-step guidance for startup financial modeling.
 category: Business
 requires: []
 examples:

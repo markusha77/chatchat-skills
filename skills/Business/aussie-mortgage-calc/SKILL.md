@@ -1,7 +1,7 @@
 ---
 id: aussie-mortgage-calc
-name: "Aussie Mortgage Calc"
-description: "Estimate Australian home-buying affordability using mortgage repayments, deposit scenarios, LVR, and fee planning checklists. Use when users need home loan budgeting and purchase planning support."
+name: Aussie Mortgage Calc
+description: Estimate Australian home-buying affordability using mortgage repayments, deposit scenarios, LVR, and fee planning checklists. Use when users need home loan budgeting and purchase planning support.
 category: Lifestyle
 requires: []
 examples:

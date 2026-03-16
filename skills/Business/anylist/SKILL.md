@@ -1,7 +1,7 @@
 ---
 id: anylist
-name: "Anylist"
-description: "Plan and organize grocery or shopping lists with clear categories, quantities, and checklist-ready output. Use when users need shopping preparation, meal-prep list building, or household list cleanup."
+name: Anylist
+description: Plan and organize grocery or shopping lists with clear categories, quantities, and checklist-ready output. Use when users need shopping preparation, meal-prep list building, or household list cleanup.
 category: Lifestyle
 requires: []
 examples:

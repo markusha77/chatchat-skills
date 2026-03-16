@@ -1,7 +1,7 @@
 ---
 id: plan-writing
-name: "Plan Writing"
-description: "Structured task planning with clear breakdowns, dependencies, and verification criteria."
+name: Plan Writing
+description: Structured task planning with clear breakdowns, dependencies, and verification criteria.
 category: Development
 requires: []
 examples:

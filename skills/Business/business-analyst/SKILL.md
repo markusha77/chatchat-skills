@@ -1,7 +1,7 @@
 ---
 id: business-analyst
-name: "Business Analyst"
-description: "Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build KPI frameworks, predictive models, and strategic recommendations. Use proactively for business intelligence and strategic analysis."
+name: Business Analyst
+description: Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build KPI frameworks, predictive models, and strategic recommendations. Use proactively for business intelligence and strategic analysis.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: postmortem-writing
-name: "Postmortem Writing"
-description: "Step-by-step guidance for postmortem."
+name: Postmortem Writing
+description: Step-by-step guidance for postmortem.
 category: Business
 requires: []
 examples:

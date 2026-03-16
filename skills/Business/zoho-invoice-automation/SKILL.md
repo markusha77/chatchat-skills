@@ -1,7 +1,7 @@
 ---
 id: zoho-invoice-automation
-name: "Zoho Invoice Automation"
-description: "Guidance-only playbook for invoice operations, including billing accuracy, collections workflow, and receivables reporting."
+name: Zoho Invoice Automation
+description: Guidance-only playbook for invoice operations, including billing accuracy, collections workflow, and receivables reporting.
 category: Business
 requires: []
 examples:

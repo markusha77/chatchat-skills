@@ -1,7 +1,7 @@
 ---
 id: finishing-a-development-branch
-name: "Finishing A Development Branch"
-description: "Guide the final steps to wrap up a development branch safely."
+name: Finishing A Development Branch
+description: Guide the final steps to wrap up a development branch safely.
 category: Development
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: ux-researcher-designer
-name: "UX Researcher Designer"
-description: "Step-by-step guidance for UX researcher designer."
+name: UX Researcher Designer
+description: Step-by-step guidance for UX researcher designer.
 category: Research
 requires: []
 examples:

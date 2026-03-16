@@ -1,7 +1,7 @@
 ---
 id: checkers-sixty60
-name: "Checkers Sixty60"
-description: "Shop on Checkers.co.za Sixty60 delivery service via browser automation."
+name: Checkers Sixty60
+description: Shop on Checkers.co.za Sixty60 delivery service via browser automation.
 category: Lifestyle
 requires: []
 examples:

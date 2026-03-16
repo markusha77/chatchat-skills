@@ -1,7 +1,7 @@
 ---
 id: signnow
-name: "Signnow"
-description: "Guidance-only playbook for e-signature operations with SignNow, including document lifecycle governance, signer workflows, and compliance controls."
+name: Signnow
+description: Guidance-only playbook for e-signature operations with SignNow, including document lifecycle governance, signer workflows, and compliance controls.
 category: Business
 requires: []
 examples:

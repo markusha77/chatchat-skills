@@ -1,7 +1,7 @@
 ---
 id: executing-marketing-campaigns
-name: "Executing Marketing Campaigns"
-description: "Plans, creates, and optimizes marketing campaigns including content strategy, social media, email, and analytics. Helps develop go-to-market strategies, campaign messaging, and performance measurement."
+name: Executing Marketing Campaigns
+description: Plans, creates, and optimizes marketing campaigns including content strategy, social media, email, and analytics. Helps develop go-to-market strategies, campaign messaging, and performance measurement.
 category: Business
 requires: []
 examples:

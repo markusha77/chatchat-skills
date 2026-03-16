@@ -1,7 +1,7 @@
 ---
 id: visualization-expert
-name: "Visualization Expert"
-description: "Step-by-step guidance for visualization expert. Chart selection and data visualization guidance for effective data communication. Use when: creating visualizations, choosing chart types, designing dashboards, or when user mentions data visualization, charts, graphs, or needs help presenting data visually."
+name: Visualization Expert
+description: Step-by-step guidance for visualization expert. Chart selection and data visualization guidance for effective data communication. Use when: creating visualizations, choosing chart types, designing dashboards, or when user mentions data visualization, charts, graphs, or needs help presenting data visually.
 category: Business
 requires: []
 examples:

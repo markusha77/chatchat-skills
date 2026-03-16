@@ -1,7 +1,7 @@
 ---
 id: seats-aero
-name: "Seats Aero"
-description: "Search award flight availability via seats.aero API. Triggers on: award flights, mileage bookings, points redemptions, finding business/first class availability, route availability searches."
+name: Seats Aero
+description: Search award flight availability via seats.aero API. Triggers on: award flights, mileage bookings, points redemptions, finding business/first class availability, route availability searches.
 category: Lifestyle
 requires: []
 examples:

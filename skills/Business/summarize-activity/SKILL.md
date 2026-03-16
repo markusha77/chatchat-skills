@@ -1,7 +1,7 @@
 ---
 id: summarize-activity
-name: "Summarize Activity"
-description: "Step-by-step guidance for summarize activity."
+name: Summarize Activity
+description: Step-by-step guidance for summarize activity.
 category: Development
 requires: []
 examples:

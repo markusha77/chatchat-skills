@@ -1,7 +1,7 @@
 ---
 id: data-engineering-data-driven-feature
-name: "Data Engineering Data Driven Feature"
-description: "Guidance-only playbook for designing data-driven features with experiment design, feature engineering, model evaluation, and production reliability practices."
+name: Data Engineering Data Driven Feature
+description: Guidance-only playbook for designing data-driven features with experiment design, feature engineering, model evaluation, and production reliability practices.
 category: Development
 requires: []
 examples:

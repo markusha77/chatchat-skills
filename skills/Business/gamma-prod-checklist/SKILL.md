@@ -1,7 +1,7 @@
 ---
 id: gamma-prod-checklist
-name: "Gamma Prod Checklist"
-description: "Production readiness checklist for Gamma integration. Use when preparing to deploy Gamma integration to production, or auditing existing production setup."
+name: Gamma Prod Checklist
+description: Production readiness checklist for Gamma integration. Use when preparing to deploy Gamma integration to production, or auditing existing production setup.
 category: DevOps
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: skill-creator
-name: "Skill Creator"
-description: "Step-by-step guidance for creator."
+name: Skill Creator
+description: Step-by-step guidance for creator.
 category: Development
 requires: []
 examples:

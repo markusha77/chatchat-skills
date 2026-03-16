@@ -1,7 +1,7 @@
 ---
 id: gumroad-pro
-name: "Gumroad Pro"
-description: "Expert in building and selling Notion templates as a business - not just making templates, but building a sustainable digital product business. Covers template design, pricing, marketplaces, marketing, and scaling to real revenue."
+name: Gumroad Pro
+description: Expert in building and selling Notion templates as a business - not just making templates, but building a sustainable digital product business. Covers template design, pricing, marketplaces, marketing, and scaling to real revenue.
 category: Business
 requires: []
 examples:

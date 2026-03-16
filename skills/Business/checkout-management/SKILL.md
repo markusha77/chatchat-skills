@@ -1,7 +1,7 @@
 ---
 id: checkout-management
-name: "Checkout Management"
-description: "Integrate PayPal payment processing with support for express checkout, subscriptions, and refund management."
+name: Checkout Management
+description: Integrate PayPal payment processing with support for express checkout, subscriptions, and refund management.
 category: Development
 requires: []
 examples:

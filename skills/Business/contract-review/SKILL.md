@@ -1,7 +1,7 @@
 ---
 id: contract-review
-name: "Contract Review"
-description: "Review contracts against your organization's negotiation playbook, flagging deviations and generating redline suggestions."
+name: Contract Review
+description: Review contracts against your organization's negotiation playbook, flagging deviations and generating redline suggestions.
 category: Business
 requires: []
 examples:

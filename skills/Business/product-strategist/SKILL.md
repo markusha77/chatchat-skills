@@ -1,7 +1,7 @@
 ---
 id: product-strategist
-name: "Product Strategist"
-description: "Guidance-only framework for product strategy, including market positioning, outcome planning, portfolio focus, and executive alignment."
+name: Product Strategist
+description: Guidance-only framework for product strategy, including market positioning, outcome planning, portfolio focus, and executive alignment.
 category: Business
 requires: []
 examples:

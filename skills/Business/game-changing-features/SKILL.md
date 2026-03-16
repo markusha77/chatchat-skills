@@ -1,7 +1,7 @@
 ---
 id: game-changing-features
-name: "Game Changing Features"
-description: "Find 10x product opportunities and high-leverage improvements."
+name: Game Changing Features
+description: Find 10x product opportunities and high-leverage improvements.
 category: Business
 requires: []
 examples:

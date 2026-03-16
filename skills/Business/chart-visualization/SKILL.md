@@ -1,7 +1,7 @@
 ---
 id: chart-visualization
-name: "Chart Visualization"
-description: "Guidance-only framework for selecting chart types, structuring chart parameters, and preparing clear data-visualization specs."
+name: Chart Visualization
+description: Guidance-only framework for selecting chart types, structuring chart parameters, and preparing clear data-visualization specs.
 category: Business
 requires: []
 examples:

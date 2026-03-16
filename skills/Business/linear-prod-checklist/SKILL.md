@@ -1,7 +1,7 @@
 ---
 id: linear-prod-checklist
-name: "Linear Prod Checklist"
-description: "Production readiness checklist for Linear integrations. Use when preparing to deploy a Linear integration to production, reviewing production requirements, or auditing existing deployments. Trigger with phrases like \"linear production checklist\", \"deploy linear\", \"linear production ready\", \"linear go live\", \"linear launch checklist\"."
+name: Linear Prod Checklist
+description: Production readiness checklist for Linear integrations. Use when preparing to deploy a Linear integration to production, reviewing production requirements, or auditing existing deployments. Trigger with phrases like \"linear production checklist\", \"deploy linear\", \"linear production ready\", \"linear go live\", \"linear launch checklist\".
 category: DevOps
 requires: []
 examples:

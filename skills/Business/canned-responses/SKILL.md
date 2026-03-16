@@ -1,7 +1,7 @@
 ---
 id: canned-responses
-name: "Canned Responses"
-description: "Guidance-only playbook for creating and governing canned support responses with consistent tone, escalation rules, and quality checks."
+name: Canned Responses
+description: Guidance-only playbook for creating and governing canned support responses with consistent tone, escalation rules, and quality checks.
 category: Business
 requires: []
 examples:

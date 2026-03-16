@@ -1,7 +1,7 @@
 ---
 id: fixing-metadata
-name: "Fixing Metadata"
-description: "Ship correct, complete metadata."
+name: Fixing Metadata
+description: Ship correct, complete metadata.
 category: Development
 requires: []
 examples:

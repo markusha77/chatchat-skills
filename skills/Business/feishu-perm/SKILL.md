@@ -1,7 +1,7 @@
 ---
 id: feishu-perm
-name: "Feishu Perm"
-description: "Guidance-only playbook for planning and reviewing Feishu document and folder permission management."
+name: Feishu Perm
+description: Guidance-only playbook for planning and reviewing Feishu document and folder permission management.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: todoist-automation
-name: "Todoist Automation"
-description: "Guidance-only playbook for Todoist task operations, including project structure, prioritization rules, and review cadences."
+name: Todoist Automation
+description: Guidance-only playbook for Todoist task operations, including project structure, prioritization rules, and review cadences.
 category: Business
 requires: []
 examples:

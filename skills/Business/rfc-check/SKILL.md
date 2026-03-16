@@ -1,7 +1,7 @@
 ---
 id: rfc-check
-name: "Rfc Check"
-description: "Determine if proposed changes require an RFC."
+name: Rfc Check
+description: Determine if proposed changes require an RFC.
 category: Development
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: google-calendar-automation
-name: "Google Calendar Automation"
-description: "Guidance-only workflow for planning calendar scheduling, availability checks, and attendee coordination."
+name: Google Calendar Automation
+description: Guidance-only workflow for planning calendar scheduling, availability checks, and attendee coordination.
 category: Business
 requires: []
 examples:

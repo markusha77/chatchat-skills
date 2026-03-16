@@ -1,7 +1,7 @@
 ---
 id: product-manager-toolkit
-name: "Product Manager Toolkit"
-description: "Guidance-only product management toolkit for prioritization, discovery synthesis, PRD quality, and go-to-market alignment."
+name: Product Manager Toolkit
+description: Guidance-only product management toolkit for prioritization, discovery synthesis, PRD quality, and go-to-market alignment.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: claude-scientific-skills
-name: "Claude Scientific Skills"
-description: "Scientific research and analysis skills."
+name: Claude Scientific Skills
+description: Scientific research and analysis skills.
 category: Research
 requires: []
 examples:

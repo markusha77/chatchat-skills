@@ -1,7 +1,7 @@
 ---
 id: databricks-prod-checklist
-name: "Databricks Prod Checklist"
-description: "Execute Databricks production deployment checklist and rollback procedures. Use when deploying Databricks jobs to production, preparing for launch, or implementing go-live procedures."
+name: Databricks Prod Checklist
+description: Execute Databricks production deployment checklist and rollback procedures. Use when deploying Databricks jobs to production, preparing for launch, or implementing go-live procedures.
 category: DevOps
 requires: []
 examples:

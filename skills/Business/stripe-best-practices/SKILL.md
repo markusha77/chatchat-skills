@@ -1,7 +1,7 @@
 ---
 id: stripe-best-practices
-name: "Stripe Best Practices"
-description: "Best practices for building Stripe integrations."
+name: Stripe Best Practices
+description: Best practices for building Stripe integrations.
 category: Development
 requires: []
 examples:

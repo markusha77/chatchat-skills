@@ -1,7 +1,7 @@
 ---
 id: adaptyv
-name: "Adaptyv"
-description: "Plan Adaptyv protein experiment workflows, choose assay strategy, and structure submission-ready requirements. Use when users need experiment planning, sequence readiness checks, or result interpretation frameworks for protein validation."
+name: Adaptyv
+description: Plan Adaptyv protein experiment workflows, choose assay strategy, and structure submission-ready requirements. Use when users need experiment planning, sequence readiness checks, or result interpretation frameworks for protein validation.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: videogames
-name: "Videogames"
-description: "A skill to lookup video game information and compare prices across multiple stores."
+name: Videogames
+description: A skill to lookup video game information and compare prices across multiple stores.
 category: Lifestyle
 requires: []
 examples:

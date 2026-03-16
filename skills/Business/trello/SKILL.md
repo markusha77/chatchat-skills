@@ -1,7 +1,7 @@
 ---
 id: trello
-name: "Trello"
-description: "Guidance-only playbook for Trello operations, including board design, workflow governance, and execution visibility."
+name: Trello
+description: Guidance-only playbook for Trello operations, including board design, workflow governance, and execution visibility.
 category: Business
 requires: []
 examples:

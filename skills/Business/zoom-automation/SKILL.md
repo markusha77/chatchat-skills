@@ -1,7 +1,7 @@
 ---
 id: zoom-automation
-name: "Zoom Automation"
-description: "Guidance-only playbook for Zoom meeting operations, including scheduling standards, webinar governance, and follow-up accountability."
+name: Zoom Automation
+description: Guidance-only playbook for Zoom meeting operations, including scheduling standards, webinar governance, and follow-up accountability.
 category: Business
 requires: []
 examples:

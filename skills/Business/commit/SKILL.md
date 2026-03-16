@@ -1,7 +1,7 @@
 ---
 id: commit
-name: "Commit"
-description: "Run verification steps and prepare a clean commit."
+name: Commit
+description: Run verification steps and prepare a clean commit.
 category: Development
 requires: []
 examples:

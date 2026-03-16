@@ -1,7 +1,7 @@
 ---
 id: clawver-store-analytics
-name: "Clawver Store Analytics"
-description: "Guidance-only framework for monitoring store performance using revenue, conversion, product, and customer-behavior analytics."
+name: Clawver Store Analytics
+description: Guidance-only framework for monitoring store performance using revenue, conversion, product, and customer-behavior analytics.
 category: Business
 requires: []
 examples:

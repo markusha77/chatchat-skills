@@ -1,7 +1,7 @@
 ---
 id: planning-with-files
-name: "Planning With Files"
-description: "Guidance and answers for planning with files."
+name: Planning With Files
+description: Guidance and answers for planning with files.
 category: Development
 requires: []
 examples:

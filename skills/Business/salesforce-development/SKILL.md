@@ -1,7 +1,7 @@
 ---
 id: salesforce-development
-name: "Salesforce Development"
-description: "Expert patterns for Salesforce platform development including Lightning Web Components (LWC), Apex triggers and classes, REST/Bulk APIs, Connected Apps, and Salesforce DX with scratch orgs and 2nd generation packages (2GP)."
+name: Salesforce Development
+description: Expert patterns for Salesforce platform development including Lightning Web Components (LWC), Apex triggers and classes, REST/Bulk APIs, Connected Apps, and Salesforce DX with scratch orgs and 2nd generation packages (2GP).
 category: Development
 requires: []
 examples:

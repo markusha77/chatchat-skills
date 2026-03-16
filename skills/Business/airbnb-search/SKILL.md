@@ -1,7 +1,7 @@
 ---
 id: airbnb-search
-name: "Airbnb Search"
-description: "Search Airbnb listings with prices, ratings, and direct links. No API key required."
+name: Airbnb Search
+description: Search Airbnb listings with prices, ratings, and direct links. No API key required.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: team-composition-patterns
-name: "Team Composition Patterns"
-description: "Guidance and answers for team composition patterns."
+name: Team Composition Patterns
+description: Guidance and answers for team composition patterns.
 category: Development
 requires: []
 examples:

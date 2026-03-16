@@ -1,7 +1,7 @@
 ---
 id: mcp-scripts
-name: "Mcp Scripts"
-description: "Guidance and answers for mcp scripts."
+name: Mcp Scripts
+description: Guidance and answers for mcp scripts.
 category: Development
 requires: []
 examples:

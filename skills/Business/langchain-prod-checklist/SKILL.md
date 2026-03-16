@@ -1,7 +1,7 @@
 ---
 id: langchain-prod-checklist
-name: "Langchain Prod Checklist"
-description: "Execute LangChain production deployment checklist. Use when preparing for production launch, validating deployment readiness, or auditing existing production LangChain applications. Trigger with phrases like \"langchain production\", \"langchain prod ready\", \"deploy langchain\", \"langchain launch checklist\", \"production checklist\"."
+name: Langchain Prod Checklist
+description: Execute LangChain production deployment checklist. Use when preparing for production launch, validating deployment readiness, or auditing existing production LangChain applications. Trigger with phrases like \"langchain production\", \"langchain prod ready\", \"deploy langchain\", \"langchain launch checklist\", \"production checklist\".
 category: DevOps
 requires: []
 examples:

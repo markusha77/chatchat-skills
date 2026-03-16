@@ -1,7 +1,7 @@
 ---
 id: things-mac
-name: "Things Mac"
-description: "Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database)."
+name: Things Mac
+description: Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database).
 category: Lifestyle
 requires: []
 examples:

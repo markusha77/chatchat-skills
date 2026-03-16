@@ -1,7 +1,7 @@
 ---
 id: paypal-integration
-name: "Paypal Integration"
-description: "Integrate PayPal payment processing with support for express checkout, subscriptions, and refund management."
+name: Paypal Integration
+description: Integrate PayPal payment processing with support for express checkout, subscriptions, and refund management.
 category: Development
 requires: []
 examples:

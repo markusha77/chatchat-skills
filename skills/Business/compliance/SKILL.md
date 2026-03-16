@@ -1,7 +1,7 @@
 ---
 id: compliance
-name: "Compliance"
-description: "Verify technical accuracy of JavaScript concept pages by checking code examples, MDN/ECMAScript compliance, and external resources to prevent misinformation."
+name: Compliance
+description: Verify technical accuracy of JavaScript concept pages by checking code examples, MDN/ECMAScript compliance, and external resources to prevent misinformation.
 category: Development
 requires: []
 examples:

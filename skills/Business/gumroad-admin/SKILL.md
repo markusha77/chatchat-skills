@@ -1,7 +1,7 @@
 ---
 id: gumroad-admin
-name: "Gumroad Admin"
-description: "Guidance-only runbook for managing Gumroad products, sales monitoring, and discount operations."
+name: Gumroad Admin
+description: Guidance-only runbook for managing Gumroad products, sales monitoring, and discount operations.
 category: Business
 requires: []
 examples:

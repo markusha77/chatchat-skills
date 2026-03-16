@@ -1,7 +1,7 @@
 ---
 id: daily-meeting-update
-name: "Daily Meeting Update"
-description: "Run a structured standup interview and produce a clear daily update covering yesterday, today, blockers, and discussion topics."
+name: Daily Meeting Update
+description: Run a structured standup interview and produce a clear daily update covering yesterday, today, blockers, and discussion topics.
 category: Business
 requires: []
 examples:

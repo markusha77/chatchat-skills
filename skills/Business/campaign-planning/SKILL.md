@@ -1,7 +1,7 @@
 ---
 id: campaign-planning
-name: "Campaign Planning"
-description: "Plan marketing campaigns with objectives, audience segmentation, channel strategy, content calendars, and success metrics."
+name: Campaign Planning
+description: Plan marketing campaigns with objectives, audience segmentation, channel strategy, content calendars, and success metrics.
 category: Business
 requires: []
 examples:

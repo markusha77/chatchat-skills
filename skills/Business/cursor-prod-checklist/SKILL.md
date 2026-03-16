@@ -1,7 +1,7 @@
 ---
 id: cursor-prod-checklist
-name: "Cursor Prod Checklist"
-description: "Production readiness checklist for Cursor IDE setup and team standards. Use for configuration, security, and launch-readiness reviews."
+name: Cursor Prod Checklist
+description: Production readiness checklist for Cursor IDE setup and team standards. Use for configuration, security, and launch-readiness reviews.
 category: Development
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: slo-implementation
-name: "Slo Implementation"
-description: "Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) with error budgets and alerting."
+name: Slo Implementation
+description: Define and implement Service Level Indicators (SLIs) and Service Level Objectives (SLOs) with error budgets and alerting.
 category: DevOps
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: powerbi-modeling
-name: "Power BI Modeling"
-description: "Guidance-only playbook for Power BI semantic modeling, including data model design, DAX governance, and reporting quality controls."
+name: Power BI Modeling
+description: Guidance-only playbook for Power BI semantic modeling, including data model design, DAX governance, and reporting quality controls.
 category: Business
 requires: []
 examples:

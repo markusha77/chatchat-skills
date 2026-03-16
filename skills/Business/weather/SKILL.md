@@ -1,7 +1,7 @@
 ---
 id: weather
-name: "Weather"
-description: "Get current weather and forecasts via wttr.in or Open-Meteo."
+name: Weather
+description: Get current weather and forecasts via wttr.in or Open-Meteo.
 category: Lifestyle
 requires: []
 examples:

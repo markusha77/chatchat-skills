@@ -1,7 +1,7 @@
 ---
 id: figma-automation
-name: "Figma Automation"
-description: "Guidance-only framework for planning Figma design operations, exports, token extraction, and collaboration workflows."
+name: Figma Automation
+description: Guidance-only framework for planning Figma design operations, exports, token extraction, and collaboration workflows.
 category: Development
 requires: []
 examples:

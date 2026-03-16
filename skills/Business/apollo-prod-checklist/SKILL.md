@@ -1,7 +1,7 @@
 ---
 id: apollo-prod-checklist
-name: "Apollo Prod Checklist"
-description: "Prepare Apollo.io integrations for production with a structured readiness checklist covering security, reliability, observability, and go-live controls."
+name: Apollo Prod Checklist
+description: Prepare Apollo.io integrations for production with a structured readiness checklist covering security, reliability, observability, and go-live controls.
 category: DevOps
 requires: []
 examples:

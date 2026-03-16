@@ -1,7 +1,7 @@
 ---
 id: helpdesk-automation
-name: "Helpdesk Automation"
-description: "Guidance-only playbook for support ticket workflows, contact/company operations, SLA management, and escalation design."
+name: Helpdesk Automation
+description: Guidance-only playbook for support ticket workflows, contact/company operations, SLA management, and escalation design.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: ceo-advisor
-name: "Ceo Advisor"
-description: "Executive leadership guidance for strategic decision-making, organizational development, and stakeholder management. Includes strategy analyzer, financial scenario modeling, board governance frameworks, and investor relations playbooks."
+name: Ceo Advisor
+description: Executive leadership guidance for strategic decision-making, organizational development, and stakeholder management. Includes strategy analyzer, financial scenario modeling, board governance frameworks, and investor relations playbooks.
 category: Business
 requires: []
 examples:

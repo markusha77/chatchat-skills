@@ -1,7 +1,7 @@
 ---
 id: email-best-practices
-name: "Email Best Practices"
-description: "Apply deliverability and compliance best practices for email systems."
+name: Email Best Practices
+description: Apply deliverability and compliance best practices for email systems.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: gurkerl
-name: "Gurkerl"
-description: "Austrian online grocery shopping via gurkerl.at."
+name: Gurkerl
+description: Austrian online grocery shopping via gurkerl.at.
 category: Lifestyle
 requires: []
 examples:

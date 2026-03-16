@@ -1,7 +1,7 @@
 ---
 id: quality-manager-qms-iso13485
-name: "Quality Manager Qms Iso13485"
-description: "Guidance-only playbook for ISO 13485 quality management operations, including QMS design, CAPA governance, audit preparation, and management review."
+name: Quality Manager Qms Iso13485
+description: Guidance-only playbook for ISO 13485 quality management operations, including QMS design, CAPA governance, audit preparation, and management review.
 category: Business
 requires: []
 examples:

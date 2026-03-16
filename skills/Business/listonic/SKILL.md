@@ -1,7 +1,7 @@
 ---
 id: listonic
-name: "Listonic"
-description: "Access Listonic shopping lists: list lists/items, add/check/delete items, and manage lists."
+name: Listonic
+description: Access Listonic shopping lists: list lists/items, add/check/delete items, and manage lists.
 category: Development
 requires: []
 examples:

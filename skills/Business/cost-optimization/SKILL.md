@@ -1,7 +1,7 @@
 ---
 id: cost-optimization
-name: "Cost Optimization"
-description: "Step-by-step guidance for cost optimization."
+name: Cost Optimization
+description: Step-by-step guidance for cost optimization.
 category: DevOps
 requires: []
 examples:

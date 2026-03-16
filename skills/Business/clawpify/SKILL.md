@@ -1,7 +1,7 @@
 ---
 id: clawpify
-name: "Clawpify"
-description: "Guidance-only playbook for planning Shopify Admin GraphQL workflows across products, orders, customers, inventory, and discounts."
+name: Clawpify
+description: Guidance-only playbook for planning Shopify Admin GraphQL workflows across products, orders, customers, inventory, and discounts.
 category: Business
 requires: []
 examples:

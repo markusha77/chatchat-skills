@@ -1,7 +1,7 @@
 ---
 id: productboard-automation
-name: "Productboard Automation"
-description: "Guidance-only playbook for Productboard operations, including feedback intake, prioritization governance, and roadmap communication."
+name: Productboard Automation
+description: Guidance-only playbook for Productboard operations, including feedback intake, prioritization governance, and roadmap communication.
 category: Business
 requires: []
 examples:

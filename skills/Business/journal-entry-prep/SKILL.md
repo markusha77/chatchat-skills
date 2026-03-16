@@ -1,7 +1,7 @@
 ---
 id: journal-entry-prep
-name: "Journal Entry Prep"
-description: "Prepare journal entries with proper debits, credits, and supporting documentation for month-end close."
+name: Journal Entry Prep
+description: Prepare journal entries with proper debits, credits, and supporting documentation for month-end close.
 category: Business
 requires: []
 examples:

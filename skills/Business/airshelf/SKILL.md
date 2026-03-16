@@ -1,7 +1,7 @@
 ---
 id: airshelf
-name: "Airshelf"
-description: "Search, compare, and buy products from verified merchants. Returns structured product data with Decision Packs (pros, cons, best_for, allergens, verified pricing) instead of raw web scraping. No CAPTCHAs, no auth required. ~980 products across 10 merchants."
+name: Airshelf
+description: Search, compare, and buy products from verified merchants. Returns structured product data with Decision Packs (pros, cons, best_for, allergens, verified pricing) instead of raw web scraping. No CAPTCHAs, no auth required. ~980 products across 10 merchants.
 category: Business
 requires: []
 examples:

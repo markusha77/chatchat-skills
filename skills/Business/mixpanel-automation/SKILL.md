@@ -1,7 +1,7 @@
 ---
 id: mixpanel-automation
-name: "Mixpanel Automation"
-description: "Guidance-only playbook for Mixpanel analytics operations, including event governance, funnel monitoring, and decision-oriented reporting."
+name: Mixpanel Automation
+description: Guidance-only playbook for Mixpanel analytics operations, including event governance, funnel monitoring, and decision-oriented reporting.
 category: Business
 requires: []
 examples:

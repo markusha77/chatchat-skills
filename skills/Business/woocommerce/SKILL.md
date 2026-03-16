@@ -1,7 +1,7 @@
 ---
 id: woocommerce
-name: "Woocommerce"
-description: "Guidelines for git and GitHub operations in the WooCommerce repository."
+name: Woocommerce
+description: Guidelines for git and GitHub operations in the WooCommerce repository.
 category: Development
 requires: []
 examples:

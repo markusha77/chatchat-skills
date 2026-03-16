@@ -1,7 +1,7 @@
 ---
 id: upgrade-stripe
-name: "Upgrade Stripe"
-description: "Guide for upgrading Stripe API versions and SDKs."
+name: Upgrade Stripe
+description: Guide for upgrading Stripe API versions and SDKs.
 category: Development
 requires: []
 examples:

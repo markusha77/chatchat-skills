@@ -1,7 +1,7 @@
 ---
 id: tailored-resume-generator
-name: "Tailored Resume Generator"
-description: "Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances."
+name: Tailored Resume Generator
+description: Analyzes job descriptions and generates tailored resumes that highlight relevant experience, skills, and achievements to maximize interview chances.
 category: Business
 requires: []
 examples:

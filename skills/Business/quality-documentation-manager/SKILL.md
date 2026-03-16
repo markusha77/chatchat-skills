@@ -1,7 +1,7 @@
 ---
 id: quality-documentation-manager
-name: "Quality Documentation Manager"
-description: "Guidance-only playbook for regulated quality documentation control, including lifecycle governance, change control, and audit readiness."
+name: Quality Documentation Manager
+description: Guidance-only playbook for regulated quality documentation control, including lifecycle governance, change control, and audit readiness.
 category: Business
 requires: []
 examples:

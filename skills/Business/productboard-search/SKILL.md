@@ -1,7 +1,7 @@
 ---
 id: productboard-search
-name: "Productboard Search"
-description: "Guidance-only skill for structuring Productboard search and discovery workflows across features, feedback, and product hierarchies."
+name: Productboard Search
+description: Guidance-only skill for structuring Productboard search and discovery workflows across features, feedback, and product hierarchies.
 category: Business
 requires: []
 examples:

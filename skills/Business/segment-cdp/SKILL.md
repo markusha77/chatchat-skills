@@ -1,7 +1,7 @@
 ---
 id: segment-cdp
-name: "Segment CDP"
-description: "Step-by-step guidance for segment cdp."
+name: Segment CDP
+description: Step-by-step guidance for segment cdp.
 category: Development
 requires: []
 examples:

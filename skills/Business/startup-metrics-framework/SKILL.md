@@ -1,7 +1,7 @@
 ---
 id: startup-metrics-framework
-name: "Startup Metrics Framework"
-description: "Step-by-step guidance for startup metrics framework."
+name: Startup Metrics Framework
+description: Step-by-step guidance for startup metrics framework.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: task-coordination-strategies
-name: "Task Coordination Strategies"
-description: "Guidance-only framework for coordinating multi-workstream execution, dependencies, ownership, and progress reporting."
+name: Task Coordination Strategies
+description: Guidance-only framework for coordinating multi-workstream execution, dependencies, ownership, and progress reporting.
 category: Business
 requires: []
 examples:

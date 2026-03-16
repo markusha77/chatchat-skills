@@ -1,7 +1,7 @@
 ---
 id: cto-advisor
-name: "Cto Advisor"
-description: "Technical leadership guidance for engineering teams, architecture decisions, and technology strategy. Includes tech debt analyzer, team scaling calculator, engineering metrics frameworks, technology evaluation tools, and ADR templates."
+name: Cto Advisor
+description: Technical leadership guidance for engineering teams, architecture decisions, and technology strategy. Includes tech debt analyzer, team scaling calculator, engineering metrics frameworks, technology evaluation tools, and ADR templates.
 category: Business
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: nda-triage
-name: "Nda Triage"
-description: "Screen incoming NDAs and classify them as GREEN (standard), YELLOW (needs review), or RED (significant issues)."
+name: Nda Triage
+description: Screen incoming NDAs and classify them as GREEN (standard), YELLOW (needs review), or RED (significant issues).
 category: Business
 requires: []
 examples:

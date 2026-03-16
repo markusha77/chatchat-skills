@@ -1,7 +1,7 @@
 ---
 id: workflow-orchestration-patterns
-name: "Workflow Orchestration Patterns"
-description: "Learn workflow orchestration patterns for reliable distributed systems."
+name: Workflow Orchestration Patterns
+description: Learn workflow orchestration patterns for reliable distributed systems.
 category: Development
 requires: []
 examples:

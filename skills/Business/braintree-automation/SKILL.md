@@ -1,7 +1,7 @@
 ---
 id: braintree-automation
-name: "Braintree Automation"
-description: "Guidance-only playbook for running Braintree payment operations with safe checks, audit controls, and support workflows."
+name: Braintree Automation
+description: Guidance-only playbook for running Braintree payment operations with safe checks, audit controls, and support workflows.
 category: Business
 requires: []
 examples:

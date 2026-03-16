@@ -1,7 +1,7 @@
 ---
 id: google-analytics-automation
-name: "Google Analytics Automation"
-description: "Guidance-only playbook for planning GA4 reporting workflows, KPI definitions, and analytics operations."
+name: Google Analytics Automation
+description: Guidance-only playbook for planning GA4 reporting workflows, KPI definitions, and analytics operations.
 category: Business
 requires: []
 examples:

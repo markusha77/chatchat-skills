@@ -1,7 +1,7 @@
 ---
 id: team-composition-analysis
-name: "Team Composition Analysis"
-description: "Step-by-step guidance for team composition."
+name: Team Composition Analysis
+description: Step-by-step guidance for team composition.
 category: Business
 requires: []
 examples:

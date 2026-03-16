@@ -1,7 +1,7 @@
 ---
 id: dnanexus-integration
-name: "Dnanexus Integration"
-description: "Guidance and answers for dnanexus integration."
+name: Dnanexus Integration
+description: Guidance and answers for dnanexus integration.
 category: Research
 requires: []
 examples:

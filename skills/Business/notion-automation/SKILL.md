@@ -1,7 +1,7 @@
 ---
 id: notion-automation
-name: "Notion Automation"
-description: "Guidance-only playbook for Notion workspace operations, including database design, documentation governance, and review cadences."
+name: Notion Automation
+description: Guidance-only playbook for Notion workspace operations, including database design, documentation governance, and review cadences.
 category: Business
 requires: []
 examples:

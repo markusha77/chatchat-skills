@@ -1,7 +1,7 @@
 ---
 id: exa-prod-checklist
-name: "Exa Prod Checklist"
-description: "Execute Exa production deployment checklist and rollback procedures. Use when deploying Exa integrations to production, preparing for launch, or implementing go-live procedures."
+name: Exa Prod Checklist
+description: Execute Exa production deployment checklist and rollback procedures. Use when deploying Exa integrations to production, preparing for launch, or implementing go-live procedures.
 category: DevOps
 requires: []
 examples:

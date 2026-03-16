@@ -1,7 +1,7 @@
 ---
 id: zoho-crm-automation
-name: "Zoho CRM Automation"
-description: "Guidance-only playbook for Zoho CRM operations, including lead lifecycle governance, opportunity discipline, and forecasting quality."
+name: Zoho CRM Automation
+description: Guidance-only playbook for Zoho CRM operations, including lead lifecycle governance, opportunity discipline, and forecasting quality.
 category: Business
 requires: []
 examples:
