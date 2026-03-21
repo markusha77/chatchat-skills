@@ -168,6 +168,8 @@ Find molecules containing specific functional groups or scaffolds.
 7. **Consider Prodrugs**: Molecules designed as prodrugs may intentionally violate standard medicinal chemistry rules.
 
 ## Output
-- A summarized signal detection plan including template parameters and threshold settings.
-- Processed time-series data showing the filtered output and identified detection peaks.
-- Performance metrics
+
+- **Filtering Reports**: Detailed pass/fail status for established drug-likeness rules (e.g., Lipinski's Rule of Five, Veber's rules).
+- **Structural Alert Logs**: Identification of problematic substructures, including PAINS, NIBR filters, and Lilly demerit scores.
+- **Molecular Metrics**: Calculated complexity indices (Bertz, Whitlock, etc.) and physicochemical properties (LogP, MW, TPSA).
+- **Prioritized Compound Lists**: A curated set of molecules that have passed the specified medicinal chemistry triage for lead optimization.
