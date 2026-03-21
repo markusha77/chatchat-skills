@@ -103,16 +103,6 @@ Perform structure-based analysis including molecular similarity searches, proper
 
 **When to use**: Structure-activity relationship (SAR) studies, drug similarity searches, QSAR modeling, drug-likeness assessment, ADMET prediction, chemical space exploration.
 
-## Typical Workflows
-
-### Drug Discovery Workflow
-
-### Polypharmacy Safety Analysis
-
-### Drug Repurposing Research
-
-### Pharmacology Study
-
 
 ## Installation Requirements
 
