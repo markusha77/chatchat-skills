@@ -26,18 +26,10 @@ Semantic search, similar content discovery, and structured research using Exa AP
 - Retrieve structured research data, including page summaries and key metadata, for automated synthesis workflows.
 - Integrate with other research tools like web scrapers or auto-research skills to deepen the analysis of discovered links.
 
-## Installation
-```bash
-npx skills add -g BenedictKing/exa-search
-```
-
 ## Step-by-Step Guide
 1. Install the skill using the command above
 2. Configure Exa API key
 3. Use naturally in Claude Code conversations
-
-## Examples
-See [GitHub Repository](https://github.com/BenedictKing/exa-search) for examples.
 
 ## Best Practices
 - Configure API keys via environment variables
