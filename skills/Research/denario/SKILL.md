@@ -45,15 +45,14 @@ Denario requires API keys from supported LLM providers. Supported providers incl
 - OpenAI
 - Other LLM services compatible with AG2/LangGraph
 
-Store API keys securely using environment variables or `.env` files. For detailed configuration instructions including Vertex AI setup, see `references/llm_configuration.md`.
-
+Store API keys securely using environment variables or `.env` files. 
 ## Core Research Workflow
 
-Denario follows a structured four-stage research pipeline:
+Denario follows a structured four-stage research pipeline.
 
 ### 1. Data Description
 
-Define the research context by specifying available data and tools:
+Define the research context by specifying available data and tools
 
 
 ### 2. Idea Generation
@@ -61,28 +60,28 @@ Define the research context by specifying available data and tools:
 Generate research hypotheses from the data description.
 
 
-This produces a research question or hypothesis based on the described data. Alternatively, provide a custom idea:
+This produces a research question or hypothesis based on the described data. Alternatively, provide a custom idea
 
 
 ### 3. Methodology Development
 
-Develop the research methodology:
+Develop the research methodology
 
 
-This creates a structured approach for investigating the hypothesis. Can also accept markdown files with custom methodologies:
+This creates a structured approach for investigating the hypothesis. Can also accept markdown files with custom methodologies
 
 
 ### 4. Results Generation
 
-Execute computational experiments and generate analysis:
+Execute computational experiments and generate analysis
 
 
-This runs the methodology, performs computations, creates visualizations, and produces findings. Can also provide pre-computed results:
+This runs the methodology, performs computations, creates visualizations, and produces findings. Can also provide pre-computed results
 
 
 ### 5. Paper Generation
 
-Create a publication-ready LaTeX paper:
+Create a publication-ready LaTeX paper
 
 
 The generated paper includes proper formatting for the specified journal, integrated figures, and complete LaTeX source.
@@ -98,7 +97,7 @@ The generated paper includes proper formatting for the specified journal, integr
 ## Troubleshooting
 
 Common issues and solutions:
-- **API key errors**: Ensure environment variables are set correctly (see `references/llm_configuration.md`)
+- **API key errors**: Ensure environment variables are set correctly 
 - **LaTeX compilation**: Install TeX distribution or use Docker image with pre-installed LaTeX
 - **Package conflicts**: Use virtual environments or Docker for isolation
 - **Python version**: Requires Python 3.12 or higher
