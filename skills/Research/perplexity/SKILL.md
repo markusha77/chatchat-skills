@@ -161,10 +161,6 @@ Perplexity models have different pricing tiers:
 4. Set `--max-tokens` to limit response length
 5. Monitor usage at https://openrouter.ai/activity
 6. Set spending limits in OpenRouter dashboard
-ttps://openrouter.ai/account
-- Enable auto-recharge to prevent interruptions
-
-See `references/openrouter_setup.md` for comprehensive troubleshooting guide.
 
 ## Integration with Other Skills
 
