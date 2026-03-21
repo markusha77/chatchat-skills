@@ -2,7 +2,7 @@
 id: agent-pagerank-analyzer
 name: Agent PageRank Analyzer
 description: Expert agent for graph analysis and PageRank calculations for network optimization.
-category: research
+category: Research
 requires: []
 examples:
   - Calculate the PageRank for this social network adjacency matrix.
