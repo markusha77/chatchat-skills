@@ -74,17 +74,6 @@
     ]
   },
   {
-    "skillId": "actions",
-    "name": "Actions",
-    "description": "Step-by-step guidance for actions.",
-    "instructions": "# Actions\n\nSupport actions workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with actions.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "activate-data-source",
     "name": "Activate Data Source",
     "description": "Safely activate a new data source by validating connectivity, schema mapping, permissions, and ingestion readiness before enabling it in production.",
@@ -166,20 +155,9 @@
     ]
   },
   {
-    "skillId": "add-entity",
-    "name": "Add Entity",
-    "description": "Step-by-step guidance for add entity.",
-    "instructions": "# Add Entity\n\nSupport add entity workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with add entity.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "add-expert",
     "name": "Add Expert",
-    "description": "Operational process for onboarding a new expert profile with scope, quality gates, and governance.",
+    "description": "Design a controlled expert onboarding workflow with clear scope, quality gates, and rollout safeguards.",
     "instructions": "# Add Expert\n\nUse this skill to add experts in a controlled way with clear ownership and quality checks.\n\n## When to Use\n\n- You are introducing a new expert persona/capability.\n- You need consistent onboarding and review standards.\n- You want to reduce quality variance after expert launch.\n\n## Workflow\n\n1. Define expert scope: domain boundaries, responsibilities, and non-goals.\n2. Prepare profile inputs: tone, constraints, required references, and escalation policy.\n3. Create acceptance tests covering correctness, safety, and edge-case handling.\n4. Run staged validation with representative scenarios and failure injection.\n5. Complete peer review and sign-off from technical/domain owners.\n6. Launch with monitoring, feedback loop, and rollback/deactivation procedure.\n\n## Expert Onboarding Patterns\n\n**Capability specification document.** Create a single source of truth for what the expert can and cannot do. Include: domain boundaries, allowed actions (e.g., read-only vs write), forbidden actions, input/output constraints, and dependencies on other systems or experts. Document non-goals explicitly so reviewers do not assume scope creep.\n\n**Test scenario design.** Build a test matrix with three categories: correctness (expected outputs for known inputs), safety (refusal behavior for harmful or out-of-scope requests), and edge cases (empty inputs, malformed data, boundary values). Each scenario must have a clear pass/fail criterion and expected outcome. Aim for at least 20-30 scenarios before activation.\n\n**Staged activation with shadow mode.** Run the expert in shadow mode first: traffic is routed to it but responses are logged and not surfaced to users. Compare shadow outputs against existing experts or gold-standard answers. Use a 7-14 day shadow period to catch regressions before production activation.\n\n**Feedback collection mechanisms.** Define how users and operators will report issues after launch. Options: in-app feedback forms, Slack/email channels, structured logging, or metrics dashboards. Ensure feedback flows back into the test backlog and triggers re-validation when patterns emerge.\n\n## Quality Gates\n\n**Accuracy benchmarks.** Set minimum accuracy thresholds (e.g., 95% on correctness scenarios, 100% on safety scenarios). Require sign-off only when benchmarks are met or exceeded. Document any exceptions and mitigation plans.\n\n**Safety checks.** Verify refusal behavior for harmful, biased, or out-of-scope requests. Include adversarial prompts and jailbreak attempts. No expert should activate without passing safety checks.\n\n**Edge case coverage.** Ensure the test suite covers: empty inputs, very long inputs, non-ASCII characters, special characters, concurrent requests, and rate limits. Document any known gaps and their risk level.\n\n## Common Pitfalls\n\n**Overlapping scope with existing experts.** Avoid launching experts that duplicate or contradict existing experts. Maintain a clear responsibility matrix: each expert owns a distinct domain. Overlap causes user confusion and inconsistent behavior.\n\n**Activation without sufficient testing.** Do not activate based on a handful of manual tests. Require a full test run with pass/fail results and unresolved risks documented. Activation without sufficient testing leads to production incidents.\n\n**No rollback procedure.** Define and document rollback before launch. Include: how to disable the expert, how to revert traffic, and how to verify rollback success. Without rollback, incidents become prolonged.\n\n**Missing feedback loop.** Launching without feedback collection means issues go unnoticed. Users abandon or work around the expert without you knowing. Always define feedback channels and ownership at launch.\n\n**Scope creep after launch.** Resist adding features or expanding scope without re-running the quality gates. New capabilities require new tests and validation. Scope creep without validation degrades quality.\n\n## Output / Checklist\n\n- **Expert definition document.** Scope, allowed actions, limitations, non-goals, and escalation policy.\n- **Capability specification.** Domain boundaries, inputs/outputs, dependencies, and forbidden actions.\n- **Test scenario matrix.** Correctness, safety, and edge-case scenarios with pass/fail criteria.\n\n- **Validation suite results.** Pass/fail counts, unresolved risks, and any known gaps with risk level.\n- **Shadow mode report.** Comparison summary, duration, and any regressions observed.\n\n- **Activation decision.** Go/no-go with owners, launch date, and post-launch monitoring plan.\n- **Monitoring plan.** Metrics, dashboards, alerts, and feedback channels for the first 30 days.\n\n- **Rollback criteria.** Conditions that trigger rollback (e.g., error rate spike, safety incident).\n- **Rollback procedure.** Step-by-step disable instructions, traffic revert, and verification steps.\n\n## Constraints\n\n- Avoid overlapping scope that conflicts with existing experts.\n- Enforce clear escalation for unsupported or high-risk requests.\n- Do not activate without documented quality and safety review.",
     "author": "community",
     "version": "1.0.0",
@@ -239,17 +217,6 @@
     ]
   },
   {
-    "skillId": "add-setting-env",
-    "name": "Add Setting Env",
-    "description": "Step-by-step guidance for add setting env.",
-    "instructions": "# Add Setting Env\n\nSupport add setting env workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with add setting env.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "add-uint-support",
     "name": "Add UInt Support",
     "description": "Add unsigned integer support across parsing, validation, storage, and API boundaries without introducing overflow bugs.",
@@ -265,17 +232,6 @@
       "\"Add uint support for this serializer and reject negative values consistently.\"",
       "\"Enable unsigned IDs in this API and storage layer while preserving backward compatibility.\""
     ]
-  },
-  {
-    "skillId": "addressing-pr-review-comments",
-    "name": "Addressing PR Review Comments",
-    "description": "Step-by-step guidance for addressing pr review comments.",
-    "instructions": "# Addressing PR Review Comments\n\nSupport addressing pr review comments workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with addressing pr review comments.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "adhd-body-doubling",
@@ -500,17 +456,6 @@
       "Analyze this agent workflow and identify the biggest performance bottlenecks.",
       "Create a performance investigation checklist for latency, cost, and failure rate."
     ]
-  },
-  {
-    "skillId": "agent-sessions-layout",
-    "name": "Agent Sessions Layout",
-    "description": "Step-by-step guidance for agent sessions layout.",
-    "instructions": "# Agent Sessions Layout\n\nSupport agent sessions layout workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with agent sessions layout.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "agent-shield",
@@ -820,17 +765,6 @@
     ]
   },
   {
-    "skillId": "aoti-debug",
-    "name": "AOTI Debug",
-    "description": "Step-by-step guidance for aoti debug.",
-    "instructions": "# AOTI Debug\n\nSupport aoti debug workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with aoti debug.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "aphorisms",
     "name": "Aphorisms",
     "description": "Match themes, situations, or draft content with concise aphorisms or quotes and explain why they fit.",
@@ -993,28 +927,6 @@
     ]
   },
   {
-    "skillId": "apple-notes",
-    "name": "Apple Notes",
-    "description": "Create, edit, search, and export Apple Notes on macOS.",
-    "instructions": "# Apple Notes\n\nCreate, edit, search, and export Apple Notes on macOS.\n\n## When to Use\n\n- You need to manage Apple Notes quickly.\n- You want to automate common note tasks.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "apple-reminders",
-    "name": "Apple Reminders",
-    "description": "Manage Apple Reminders (list, add, complete, delete) on macOS.",
-    "instructions": "# Apple Reminders\n\nManage Apple Reminders (list, add, complete, delete) on macOS.\n\n## When to Use\n\n- You need to manage reminders or lists.\n- You want clear next steps for reminder tasks.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "arabic",
     "name": "Arabic",
     "description": "Write Arabic that sounds human. Not formal, not robotic, not AI-generated.",
@@ -1136,17 +1048,6 @@
     ]
   },
   {
-    "skillId": "ask-user-question",
-    "name": "Ask User Question",
-    "description": "Step-by-step guidance for ask user question.",
-    "instructions": "# Ask User Question\n\nSupport ask user question workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with ask user question.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "assess-risk",
     "name": "Assess Risk",
     "description": "Used to review whether an Apache ShardingSphere PR truly fixes the root cause, assess side effects and regression risks, and determine whether it can be safely merged. If not mergeable, produce committer-tone change request suggestions.",
@@ -1188,17 +1089,6 @@
       "Read a multi-extension FITS file and visualize the data from the third HDU.",
       "Calculate the comoving distance for a galaxy at redshift $z=1.5$ using the Planck18 cosmology."
     ]
-  },
-  {
-    "skillId": "async-repl-protocol",
-    "name": "Async Repl Protocol",
-    "description": "Step-by-step guidance for async repl protocol.",
-    "instructions": "# Async Repl Protocol\n\nSupport async repl protocol workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with async repl protocol.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "audit-logging",
@@ -1479,17 +1369,6 @@
     ]
   },
   {
-    "skillId": "bear-notes",
-    "name": "Bear Notes",
-    "description": "Create, search, and manage Bear notes from the command line.",
-    "instructions": "# Bear Notes\n\nCreate, search, and manage Bear notes from the command line.\n\n## When to Use\n\n- You need to create, find, or update Bear notes.\n- You want quick, repeatable note actions.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "beautiful-prose",
     "name": "Beautiful Prose",
     "description": "Shape writing into forceful, timeless prose with sharper rhythm, stronger verbs, and less generic AI language.",
@@ -1610,17 +1489,6 @@
     ]
   },
   {
-    "skillId": "bird",
-    "name": "Bird",
-    "description": "Step-by-step guidance for bird.",
-    "instructions": "# Bird\n\nSupport bird workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with bird.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "blockchain-developer",
     "name": "Blockchain Developer",
     "description": "Guidance playbook for Blockchain Developer: plan and execute manually without requiring direct backend/API execution.",
@@ -1632,31 +1500,6 @@
     "examples": [
       "\"Implement a DeFi lending protocol with Compound patterns\"",
       "\"Build an NFT marketplace with ERC-721\""
-    ]
-  },
-  {
-    "skillId": "blogwatcher",
-    "name": "Blogwatcher",
-    "description": "Monitor blogs and RSS/Atom feeds for updates.",
-    "instructions": "# Blogwatcher\n\nMonitor blogs and RSS/Atom feeds for updates.\n\n## When to Use\n\n- You track updates across multiple blogs or feeds.\n- You want a lightweight monitoring workflow.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "bluebubbles",
-    "name": "BlueBubbles",
-    "description": "Deployment and operations workflow for BlueBubbles service setup, health checks, and incident response.",
-    "instructions": "# BlueBubbles\n\nUse this skill to run BlueBubbles as a stable service with predictable startup and health validation.\n\n## When to Use\n\n- You are deploying BlueBubbles for the first time.\n- Service startup succeeds but notifications or sync are inconsistent.\n- You need a repeatable operational runbook for maintenance windows.\n\n## Workflow\n\n1. Verify prerequisites: runtime version, host permissions, network access, and required credentials.\n2. Validate configuration: env values, connection endpoints, webhook URLs, and storage paths.\n3. Start the service with supervised process management and persistent logs.\n4. Run smoke checks: login/session validation, message flow, media handling, and reconnect behavior.\n5. Monitor runtime signals: error rates, reconnect loops, memory growth, and queue delays.\n6. Document remediation for common failures and define restart/escalation criteria.\n\n## Operational Patterns\n\n**Service supervision with systemd/launchd.** Never run BlueBubbles as a bare process. Use systemd (Linux) or launchd (macOS) to manage the process: restart on crash, restart on failure, and proper cleanup on stop. Configure `Restart=on-failure` and `RestartSec=5` for systemd. For launchd, use `KeepAlive` with `SuccessfulExit=false`. Ensure the working directory and environment are set correctly in the unit file.\n\n**Health check endpoint monitoring.** If BlueBubbles exposes a health endpoint, poll it every 30-60 seconds. Alert on consecutive failures (e.g., 3 in a row). Use the health check to drive automated restarts or failover. Document the expected response and failure modes.\n\n**Log rotation configuration.** Configure log rotation to prevent disk fill. Use logrotate (Linux) or newsyslog (macOS) with daily rotation, retention of 7-14 days, and compression. Ensure logs are written to a dedicated path with sufficient space. Monitor disk usage.\n\n**Notification pipeline verification.** After each deployment or config change, verify the full notification pipeline: send a test message, confirm delivery, and verify media handling. Check webhook delivery and retry behavior. Document the verification steps and expected outcomes.\n\n## Common Pitfalls\n\n**Running without process supervision.** A bare process dies on crash or reboot and does not restart. Use systemd or launchd. Unsupervised processes are a source of prolonged outages.\n\n**Ignoring reconnect loops as normal.** Frequent reconnect loops often indicate underlying issues: network instability, auth problems, or server-side changes. Investigate and fix rather than assuming it is normal. Document baseline reconnect frequency.\n\n**Not monitoring memory growth.** Memory leaks can cause gradual degradation and eventual OOM kills. Track memory usage over time. Set alerts for sustained growth or thresholds approaching limits. Restart with a memory cap if needed.\n\n**Stale webhook configurations.** Webhook URLs or secrets can change. If webhooks stop firing, verify URL, signature validation, and firewall rules. Test webhook delivery with a tool like curl or a webhook tester. Document the webhook verification procedure.\n\n**Missing TLS for remote access.** If BlueBubbles is accessed over the network, use TLS. Unencrypted HTTP exposes credentials and sensitive data. Configure reverse proxy (nginx, Caddy) with valid certificates.\n\n## Output / Checklist\n\n- **Prerequisite matrix.** Runtime version, host permissions, network access, and credential requirements. Verification results.\n\n- **Configuration matrix.** Env values, connection endpoints, webhook URLs, storage paths. Validation status (redacted where sensitive).\n\n- **Service unit file.** systemd or launchd unit with correct working directory, restart policy, and environment. Log path configuration.\n\n- **Log rotation config.** logrotate or newsyslog configuration. Retention and compression settings.\n\n- **Health check results.** Core user flows: login/session, message flow, media handling, reconnect behavior. Pass/fail status.\n\n- **Notification pipeline verification.** Test message sent and delivered. Webhook delivery confirmed. Media handling verified.\n\n- **Monitoring setup.** Metrics, error rate, reconnect frequency, memory usage. Alert thresholds and escalation.\n\n- **Known-failure playbook.** Common failures with exact recovery actions.\n  - Reconnect loop: steps to diagnose and fix.\n  - Webhook failure: verification and remediation.\n  - Memory growth: restart procedure and monitoring.\n  - Auth/session failure: re-auth flow.\n\n- **Operational handoff notes.** For on-call: restart commands, config location, log location, escalation contacts.\n\n## Constraints\n\n- Never expose credentials or tokens in logs or reports.\n- Keep changes reversible; snapshot config before modifications.\n- Prefer incremental fixes over full reinstall during incidents.",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": [
-      "\"Set up a reliable BlueBubbles deployment checklist for a new host.\"",
-      "\"BlueBubbles is unstable after restart; give me a recovery workflow.\""
     ]
   },
   {
@@ -1776,17 +1619,6 @@
     ]
   },
   {
-    "skillId": "brand-guidelines",
-    "name": "Brand Guidelines",
-    "description": "Step-by-step guidance for brand guidelines.",
-    "instructions": "# Brand Guidelines\n\nSupport brand guidelines workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with brand guidelines.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "brand-writer",
     "name": "Brand Writer",
     "description": "Write clear, developer-first copy for Zed — leading with facts, grounded in craft.",
@@ -1833,35 +1665,16 @@
   {
     "skillId": "browser-extension-developer",
     "name": "Browser Extension Developer",
-    "description": "Step-by-step guidance for browser extension developer.",
-    "instructions": "# Browser Extension Developer\n\nSupport browser extension developer workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with browser extension developer.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
+    "description": "Design and review browser extension architecture, permissions, messaging, storage, and release concerns with extension-specific constraints in mind.",
+    "instructions": "# Browser Extension Developer\n\nUse this skill when the user is building or reviewing a browser extension and needs guidance that accounts for extension-specific runtime boundaries, permissions, and distribution concerns.\n\n## Clarify First\n- Which browsers and extension model matter most.\n- What the extension actually does in the page, popup, options UI, and background context.\n- Which permissions are truly required versus just convenient.\n- How state, secrets, and user preferences should be stored.\n- What store-review, privacy, or performance constraints could block release.\n\n## Design Priorities\n- Keep permissions as narrow as possible.\n- Separate content-script behavior from background orchestration clearly.\n- Treat message passing as a real interface, not incidental glue.\n- Be deliberate about storage, caching, and sync behavior.\n- Design for least surprise in user-facing prompts and extension behavior.\n\n## Key Areas To Review\n- Manifest structure and permission footprint.\n- Messaging between popup, background, content scripts, and options pages.\n- DOM interaction safety and resilience on changing pages.\n- Storage strategy for settings, caches, and per-site state.\n- Error handling for restricted pages, browser differences, and revoked permissions.\n- Packaging, privacy disclosures, and release-readiness.\n\n## Common Mistakes\n- Asking for broad host or extension permissions without clear need.\n- Mixing background logic and UI logic until message flow becomes fragile.\n- Assuming the DOM is stable on third-party sites.\n- Storing sensitive or high-value data without clear threat thinking.\n- Forgetting store-review implications until the extension is nearly done.\n\n## Good Output\n- Recommended extension architecture by runtime context.\n- Permission and risk review.\n- Messaging and state-flow guidance.\n- Likely browser-compatibility or store-review issues.\n- Testing and release checklist for the extension lifecycle.\n\n## Boundaries\n- Do not imply the extension already passes browser store review or security review without evidence.\n- Prefer architectural guidance and risk analysis over pretending to inspect packaged extensions directly.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "browser-use",
-    "name": "Browser Use",
-    "description": "Step-by-step guidance for browser use.",
-    "instructions": "# Browser Use\n\nSupport browser use workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with browser use.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "build-tui-view",
-    "name": "Build Tui View",
-    "description": "Step-by-step guidance for build tui view.",
-    "instructions": "# Build Tui View\n\nSupport build tui view workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with build tui view.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
+    "examples": [
+      "\"Help me structure a browser extension with background scripts, content scripts, and settings storage.\"",
+      "\"Review this extension plan for permission risk, messaging complexity, and store-readiness issues.\""
+    ]
   },
   {
     "skillId": "bun-development",
@@ -1880,17 +1693,6 @@
       "\"Add a Bun API endpoint with validation and tests in this existing project.\"",
       "\"Migrate this Node.js script package to Bun and update build/test commands safely.\""
     ]
-  },
-  {
-    "skillId": "bun-file-io",
-    "name": "Bun File IO",
-    "description": "Step-by-step guidance for bun file io.",
-    "instructions": "# Bun File IO\n\nSupport bun file io workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with bun file io.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "business-analyst",
@@ -1970,17 +1772,6 @@
       "\"Help me build a Solana program with Anchor\"",
       "\"Teach me Token-2022 on Solana\""
     ]
-  },
-  {
-    "skillId": "cache-components",
-    "name": "Cache Components",
-    "description": "Step-by-step guidance for cache components.",
-    "instructions": "# Cache Components\n\nSupport cache components workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with cache components.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "cairo-vulnerability-scanner",
@@ -2097,17 +1888,6 @@
       "\"List my Canva designs in the 'Marketing' folder and export the latest one as a PDF.\"",
       "\"Create a new Canva design from a template, autofill it with this data, and export as PNG.\""
     ]
-  },
-  {
-    "skillId": "canvas",
-    "name": "Canvas",
-    "description": "Step-by-step guidance for canvas.",
-    "instructions": "# Canvas\n\nSupport canvas workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with canvas.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "canvas-design",
@@ -2635,39 +2415,6 @@
     ]
   },
   {
-    "skillId": "clojure-review",
-    "name": "Clojure Review",
-    "description": "Step-by-step guidance for clojure review.",
-    "instructions": "# Clojure Review\n\nSupport clojure review workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with clojure review.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "clojure-write",
-    "name": "Clojure Write",
-    "description": "Step-by-step guidance for clojure write.",
-    "instructions": "# Clojure Write\n\nSupport clojure write workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with clojure write.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "cloudflare",
-    "name": "Cloudflare",
-    "description": "Step-by-step guidance for cloudflare.",
-    "instructions": "# Cloudflare\n\nSupport cloudflare workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with cloudflare.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "cloudflare-deploy",
     "name": "Cloudflare Deploy",
     "description": "Deploy applications to Cloudflare environments with pre-deploy checks, edge configuration validation, and rollback readiness.",
@@ -2680,28 +2427,6 @@
       "Prepare a safe Cloudflare deployment checklist for this project.",
       "Create a Cloudflare release plan with verification and rollback criteria."
     ]
-  },
-  {
-    "skillId": "cloudflare-dns",
-    "name": "Cloudflare DNS",
-    "description": "Step-by-step guidance for cloudflare DNS.",
-    "instructions": "# Cloudflare DNS\n\nSupport cloudflare dns workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with cloudflare dns.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "cloudflare-dns-updater",
-    "name": "Cloudflare DNS Updater",
-    "description": "Step-by-step guidance for cloudflare DNS updater.",
-    "instructions": "# Cloudflare DNS Updater\n\nSupport cloudflare dns updater workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with cloudflare dns updater.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "cn-check",
@@ -2813,24 +2538,30 @@
   {
     "skillId": "code-review",
     "name": "Code Review",
-    "description": "Step-by-step guidance for code review.",
-    "instructions": "# Code Review\n\nSupport code review workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with code review.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
+    "description": "Review code changes for behavioral regressions, maintainability risks, unclear contracts, and missing verification with findings-first discipline.",
+    "instructions": "# Code Review\n\nUse this skill when the user wants help reviewing a code change for correctness, risk, maintainability, and missing verification rather than just style polish.\n\n## Start By Clarifying\n- What changed and why.\n- Which behavior is user-facing, stateful, or high-risk.\n- What assumptions the change makes about inputs, data flow, or external systems.\n- Which tests or verification steps already exist.\n- Whether the review should emphasize bugs, regressions, architecture, or readability.\n\n## Review Priorities\n- Behavioral correctness and regression risk.\n- Contract changes and hidden coupling.\n- Error handling, edge cases, and state transitions.\n- Clarity of abstractions and maintainability.\n- Adequacy of tests relative to the risk of the change.\n\n## What A Good Review Should Surface\n- Findings ordered by severity.\n- Why each issue matters in runtime or maintenance terms.\n- Missing tests where uncertainty remains high.\n- Places where the code is harder to reason about than it needs to be.\n- Explicit distinction between bugs, risks, and optional cleanup.\n\n## Common Mistakes\n- Focusing on naming and formatting while missing behavior changes.\n- Approving code that works only under happy-path assumptions.\n- Ignoring hidden contract changes because the types still compile.\n- Treating missing tests as optional even when the change is risky.\n- Giving generic feedback instead of tying comments to concrete impact.\n\n## Good Output\n- Findings-first review summary.\n- Open questions or assumptions that affect confidence.\n- Test gaps or verification concerns.\n- Secondary cleanup suggestions only after the important issues.\n\n## Boundaries\n- Do not claim a change is safe just because it looks clean or compiles.\n- Prefer bug finding, risk framing, and test scrutiny over generic style commentary.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Review this code change and tell me the highest-risk issues first.\"",
+      "\"What should I focus on in this pull request beyond style comments?\""
+    ]
   },
   {
     "skillId": "code-style",
     "name": "Code Style",
-    "description": "Step-by-step guidance for code style.",
-    "instructions": "# Code Style\n\nSupport code style workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with code style.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
+    "description": "Improve code readability and consistency by aligning naming, structure, formatting, and local conventions without losing sight of clarity.",
+    "instructions": "# Code Style\n\nUse this skill when the user wants guidance on code style in the meaningful sense: readability, consistency, naming, structure, and local convention fit.\n\n## Clarify First\n- Which language and local style conventions apply.\n- Whether the code is already constrained by formatter or linter rules.\n- Which style issues are hurting comprehension most.\n- Whether the goal is cleanup, consistency, or review feedback.\n- How much structural change is acceptable without altering behavior.\n\n## Style Priorities\n- Prefer readability over cleverness.\n- Keep naming aligned with the surrounding codebase.\n- Use structure to make intent obvious.\n- Reduce incidental complexity before polishing surface aesthetics.\n- Let automated formatting handle trivia so humans can focus on clarity.\n\n## What Good Style Guidance Includes\n- Naming improvements where intent is unclear.\n- Function and block structure that better matches the responsibility.\n- Better local consistency with existing patterns.\n- Removal of noise that obscures the important logic.\n- Clear distinction between subjective preference and project convention.\n\n## Common Mistakes\n- Treating formatter output as the whole of code style.\n- Chasing stylistic purity while leaving confusing control flow untouched.\n- Renaming aggressively without improving understanding.\n- Applying one preferred pattern everywhere regardless of local norms.\n- Giving feedback that is impossible to prioritize or justify.\n\n## Good Output\n- Most important readability issues first.\n- Naming or structural adjustments that would clarify intent.\n- Convention mismatches worth fixing for consistency.\n- Low-value nits only after higher-signal guidance.\n\n## Boundaries\n- Do not treat subjective preference as an objective defect.\n- Prefer clarity, local consistency, and maintainability over style dogma.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Help me improve the style and readability of this code without changing behavior.\"",
+      "\"What style issues matter here beyond automatic formatting?\""
+    ]
   },
   {
     "skillId": "codebase",
@@ -2849,28 +2580,6 @@
       "\"Map this repository and tell me where authentication, API routes, and DB access live.\"",
       "\"I need to add a feature fast; give me a codebase walk-through and risk areas first.\""
     ]
-  },
-  {
-    "skillId": "codex",
-    "name": "Codex",
-    "description": "Step-by-step guidance for codex.",
-    "instructions": "# Codex\n\nSupport codex workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with codex.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "codex-review",
-    "name": "Codex Review",
-    "description": "Step-by-step guidance for codex review.",
-    "instructions": "# Codex Review\n\nSupport codex review workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with codex review.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "coding-agent",
@@ -3074,17 +2783,6 @@
     ]
   },
   {
-    "skillId": "component-common-domain-detection",
-    "name": "Component Common Domain Detection",
-    "description": "Step-by-step guidance for component common domain detection.",
-    "instructions": "# Component Common Domain Detection\n\nSupport component common domain detection workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with component common domain detection.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "composio",
     "name": "Composio",
     "description": "Practical guidance for implementing app integrations with Composio.",
@@ -3275,17 +2973,6 @@
     ]
   },
   {
-    "skillId": "context-menu",
-    "name": "Context Menu",
-    "description": "Step-by-step guidance for context menu.",
-    "instructions": "# Context Menu\n\nSupport context menu workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with context menu.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "context-optimization",
     "name": "Context Optimization",
     "description": "Optimize context passed to coding agents by selecting relevant files, constraints, and task goals with minimal noise.",
@@ -3347,17 +3034,6 @@
     ]
   },
   {
-    "skillId": "conventions",
-    "name": "Conventions",
-    "description": "Step-by-step guidance for conventions.",
-    "instructions": "# Conventions\n\nSupport conventions workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with conventions.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "convergence",
     "name": "Convergence",
     "description": "Problem-solving strategies for convergence in real analysis.",
@@ -3403,17 +3079,6 @@
       "Audit this Anthropic Cookbook notebook against the narrative quality rubric.",
       "Run automated secrets detection and style checks on my notebook."
     ]
-  },
-  {
-    "skillId": "copilot",
-    "name": "Copilot",
-    "description": "Step-by-step guidance for copilot.",
-    "instructions": "# Copilot\n\nSupport copilot workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with copilot.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "cosmic-database",
@@ -3512,17 +3177,6 @@
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "create-command",
-    "name": "Create Command",
-    "description": "Step-by-step guidance for create command.",
-    "instructions": "# Create Command\n\nSupport create command workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with create command.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
     "requires": [],
     "examples": []
   },
@@ -3725,17 +3379,6 @@
     ]
   },
   {
-    "skillId": "cursor-common-errors",
-    "name": "Cursor Common Errors",
-    "description": "Step-by-step guidance for cursor common errors.",
-    "instructions": "# Cursor Common Errors\n\nSupport cursor common errors workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with cursor common errors.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "cursor-prod-checklist",
     "name": "Cursor Prod Checklist",
     "description": "Production readiness checklist for Cursor IDE setup and team standards. Use for configuration, security, and launch-readiness reviews.",
@@ -3748,17 +3391,6 @@
       "\"Help me with cursor prod checklist.\"",
       "\"Use cursor-prod-checklist for this task.\""
     ]
-  },
-  {
-    "skillId": "cursor-tab-completion",
-    "name": "Cursor Tab Completion",
-    "description": "Step-by-step guidance for cursor tab completion.",
-    "instructions": "# Cursor Tab Completion\n\nSupport cursor tab completion workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with cursor tab completion.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "customer-support",
@@ -4051,17 +3683,6 @@
     ]
   },
   {
-    "skillId": "dce-edge",
-    "name": "DCE Edge",
-    "description": "Step-by-step guidance for dce edge.",
-    "instructions": "# DCE Edge\n\nSupport dce edge workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with dce edge.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "dcf-valuation",
     "name": "DCF Valuation",
     "description": "Performs discounted cash flow (DCF) valuation analysis to estimate intrinsic value per share. Triggers when user asks for fair value, intrinsic value, DCF, valuation, \\\"what is X worth\\\", price target, undervalued/overvalued analysis, or wants to compare current price to fundamental value.",
@@ -4076,37 +3697,18 @@
     ]
   },
   {
-    "skillId": "debug",
-    "name": "Debug",
-    "description": "Step-by-step guidance for debug.",
-    "instructions": "# Debug\n\nSupport debug workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with debug.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "debugging",
     "name": "Debugging",
-    "description": "Step-by-step guidance for debugging.",
-    "instructions": "# Debugging\n\nSupport debugging workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with debugging.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
+    "description": "Structure debugging work around hypothesis-driven investigation, evidence gathering, reproduction quality, and safe narrowing of root causes.",
+    "instructions": "# Debugging\n\nUse this skill when the user needs a systematic debugging approach instead of random fixes, speculative edits, or shallow symptom chasing.\n\n## Clarify First\n- What the observed symptom actually is.\n- Whether the issue is reproducible, intermittent, or environment-specific.\n- What changed recently around the failure.\n- Which evidence already exists: logs, traces, screenshots, errors, inputs, or timing.\n- What would count as proof of root cause rather than coincidence.\n\n## Debugging Priorities\n- Reproduce the problem as reliably as possible.\n- Narrow the failure boundary before changing code.\n- Form one strong hypothesis at a time.\n- Separate observations from interpretation.\n- Use the smallest safe experiment that can disprove a theory.\n\n## Good Debugging Structure\n- Symptom summary and current confidence level.\n- Reproduction conditions and known variables.\n- Candidate causes ordered by likelihood and blast radius.\n- Next diagnostic step designed to eliminate possibilities.\n- Evidence required before calling the issue understood or fixed.\n\n## Common Mistakes\n- Changing multiple things at once and losing causality.\n- Confusing a correlated change with the actual cause.\n- Debugging from memory instead of from current evidence.\n- Treating one successful run as proof of resolution.\n- Jumping to a fix before the failure boundary is clear.\n\n## Good Output\n- Structured debugging plan.\n- Strongest current hypotheses and why.\n- Highest-value next checks or experiments.\n- Resolution criteria and regression-risk notes.\n\n## Boundaries\n- Do not pretend the root cause is known before the evidence supports it.\n- Prefer disciplined narrowing and proof-oriented investigation over guess-and-check advice.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "debugging-output-and-previewing-html",
-    "name": "Debugging Output And Previewing HTML",
-    "description": "Step-by-step guidance for debugging output and previewing html.",
-    "instructions": "# Debugging Output And Previewing HTML\n\nSupport debugging output and previewing html workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with debugging output and previewing html.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
+    "examples": [
+      "\"Help me debug this issue methodically instead of guessing fixes.\"",
+      "\"Turn this vague failure report into a disciplined debugging plan.\""
+    ]
   },
   {
     "skillId": "debugging-strategies",
@@ -4116,17 +3718,6 @@
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "debugging-streamlit",
-    "name": "Debugging Streamlit",
-    "description": "Step-by-step guidance for debugging streamlit.",
-    "instructions": "# Debugging Streamlit\n\nSupport debugging streamlit workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with debugging streamlit.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
     "requires": [],
     "examples": []
   },
@@ -4322,17 +3913,6 @@
     ]
   },
   {
-    "skillId": "design-principles",
-    "name": "Design Principles",
-    "description": "Step-by-step guidance for design principles.",
-    "instructions": "# Design Principles\n\nSupport design principles workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with design principles.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "design-system-patterns",
     "name": "Design System Patterns",
     "description": "Apply scalable design-system patterns for reusable components, tokens, variants, and accessibility consistency.",
@@ -4401,17 +3981,6 @@
     ]
   },
   {
-    "skillId": "developer-growth-analysis",
-    "name": "Developer Growth Analysis",
-    "description": "Step-by-step guidance for developer growth analysis.",
-    "instructions": "# Developer Growth Analysis\n\nSupport developer growth analysis workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with developer growth analysis.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "devops-iac-engineer",
     "name": "DevOps IaC Engineer",
     "description": "Design and review Infrastructure as Code changes for reliability, security, drift control, and safe environment promotion.",
@@ -4454,17 +4023,6 @@
     ]
   },
   {
-    "skillId": "dhmz-weather",
-    "name": "DHMZ Weather",
-    "description": "Step-by-step guidance for dhmz weather.",
-    "instructions": "# DHMZ Weather\n\nSupport dhmz weather workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with dhmz weather.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "dietitian",
     "name": "Dietitian",
     "description": "Structured meal planning — calorie targets, macro calculations, meal timing, and goal-specific diet protocols.",
@@ -4492,50 +4050,6 @@
       "Predict the binding pose for this ligand-protein complex using DiffDock.",
       "How do I run a virtual screening campaign for this compound library?"
     ]
-  },
-  {
-    "skillId": "discord",
-    "name": "Discord",
-    "description": "Manage Discord messages via the message tool.",
-    "instructions": "# Discord\n\nManage Discord messages via the message tool.\n\n## When to Use\n\n- You need to read or post messages in Discord.\n- You want to automate a Discord workflow.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "discordbot-automation",
-    "name": "Discord Bot Automation",
-    "description": "Step-by-step guidance for discord bot automation.",
-    "instructions": "# Discord Bot Automation\n\nSupport discord bot automation workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with discord bot automation.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "discourse-upcoming-changes",
-    "name": "Discourse Upcoming Changes",
-    "description": "Step-by-step guidance for discourse upcoming changes.",
-    "instructions": "# Discourse Upcoming Changes\n\nSupport discourse upcoming changes workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with discourse upcoming changes.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "discovering-make-commands",
-    "name": "Discovering Make Commands",
-    "description": "Step-by-step guidance for discovering make commands.",
-    "instructions": "# Discovering Make Commands\n\nSupport discovering make commands workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with discovering make commands.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "dispatching-parallel-agents",
@@ -4604,24 +4118,16 @@
   {
     "skillId": "dns",
     "name": "DNS",
-    "description": "Step-by-step guidance for DNS.",
-    "instructions": "# DNS\n\nSupport dns workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with dns.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
+    "description": "Reason about DNS records, propagation, resolution paths, and common misconfigurations when planning or troubleshooting domain behavior.",
+    "instructions": "# DNS\n\nUse this skill when the user needs help understanding or troubleshooting DNS behavior across records, delegation, caching, and propagation.\n\n## Clarify First\n- Which domain or subdomain is in scope.\n- What behavior is expected versus what is actually happening.\n- Which record types matter for the issue.\n- Whether the problem is resolution, delegation, verification, email delivery, or traffic routing.\n- What changed recently in registrar, nameserver, or record configuration.\n\n## Investigation Priorities\n- Confirm authority chain before focusing on individual records.\n- Distinguish authoritative answers from cached resolver behavior.\n- Check the exact record type and hostname involved.\n- Consider TTL and propagation before assuming a change failed.\n- Separate DNS-layer issues from application, CDN, or TLS issues.\n\n## Common Problem Areas\n- Wrong nameserver delegation.\n- Record collisions such as incompatible CNAME and other records at the same label.\n- Confusing root and subdomain behavior.\n- Email-related breakage from SPF, DKIM, MX, or DMARC mistakes.\n- Expecting instant global consistency after a DNS change.\n\n## Good Output\n- DNS diagnosis or setup review by layer.\n- Likely source of failure: delegation, record data, caching, or non-DNS system.\n- Safe next checks to confirm the theory.\n- Change-risk notes around propagation and rollback.\n\n## Common Mistakes\n- Looking only at one resolver and assuming it represents the whole internet.\n- Fixing records before confirming nameserver authority is correct.\n- Treating CDN or certificate issues as if they were purely DNS issues.\n- Overlooking TTL and stale caches during validation.\n- Making multiple DNS changes at once and obscuring the real fix.\n\n## Boundaries\n- Do not claim a DNS change has fully propagated without evidence from the right vantage points.\n- Prefer reasoning about authority, records, and resolution paths over pretending to query live DNS unless the user provides results.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "dns-networking",
-    "name": "DNS Networking",
-    "description": "Step-by-step guidance for DNS networking.",
-    "instructions": "# DNS Networking\n\nSupport dns networking workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with dns networking.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
+    "examples": [
+      "\"Help me troubleshoot why this domain is not resolving the way I expect.\"",
+      "\"Review this DNS setup for common mistakes around records, delegation, and propagation.\""
+    ]
   },
   {
     "skillId": "doc-coauthoring",
@@ -4807,94 +4313,6 @@
     ]
   },
   {
-    "skillId": "domain-analysis",
-    "name": "Domain Analysis",
-    "description": "Step-by-step guidance for domain analysis.",
-    "instructions": "# Domain Analysis\n\nSupport domain analysis workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domain analysis.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "domain-authority-auditor",
-    "name": "Domain Authority Auditor",
-    "description": "Step-by-step guidance for domain authority auditor.",
-    "instructions": "# Domain Authority Auditor\n\nSupport domain authority auditor workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domain authority auditor.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "domain-checker",
-    "name": "Domain Checker",
-    "description": "Step-by-step guidance for domain checker.",
-    "instructions": "# Domain Checker\n\nSupport domain checker workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domain checker.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "domain-dns-ops",
-    "name": "Domain DNS Ops",
-    "description": "Step-by-step guidance for domain DNS ops.",
-    "instructions": "# Domain DNS Ops\n\nSupport domain dns ops workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domain dns ops.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "domain-identification-grouping",
-    "name": "Domain Identification Grouping",
-    "description": "Step-by-step guidance for domain identification grouping.",
-    "instructions": "# Domain Identification Grouping\n\nSupport domain identification grouping workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domain identification grouping.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "domain-name-brainstormer",
-    "name": "Domain Name Brainstormer",
-    "description": "Step-by-step guidance for domain name brainstormer.",
-    "instructions": "# Domain Name Brainstormer\n\nSupport domain name brainstormer workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domain name brainstormer.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "domainkits",
-    "name": "Domainkits",
-    "description": "Step-by-step guidance for domainkits.",
-    "instructions": "# Domainkits\n\nSupport domainkits workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domainkits.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "domains",
-    "name": "Domains",
-    "description": "Step-by-step guidance for domains.",
-    "instructions": "# Domains\n\nSupport domains workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with domains.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "drizzle",
     "name": "Drizzle",
     "description": "Practical guidance for using Drizzle ORM in data-backed applications.",
@@ -4921,17 +4339,6 @@
       "Find all FDA-approved drug targets for a specific protein.",
       "Retrieve drug-drug interaction data for a list of pharmaceutical compounds."
     ]
-  },
-  {
-    "skillId": "dtek-light-check",
-    "name": "Dtek Light Check",
-    "description": "Step-by-step guidance for dtek light check.",
-    "instructions": "# Dtek Light Check\n\nSupport dtek light check workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with dtek light check.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "durable-objects",
@@ -5023,17 +4430,6 @@
       "\"Proofread and edit this document for clarity and grammar without changing the meaning.\"",
       "\"Revise this paragraph to be more concise and professional, and explain the key changes.\""
     ]
-  },
-  {
-    "skillId": "eightctl",
-    "name": "Eightctl",
-    "description": "Step-by-step guidance for eightctl.",
-    "instructions": "# Eightctl\n\nSupport eightctl workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with eightctl.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "electron-chromium-upgrade",
@@ -5509,15 +4905,15 @@
   {
     "skillId": "executing-plans",
     "name": "Executing Plans",
-    "description": "Execute implementation plans in controlled, verifiable increments with explicit checkpoints, risk tracking, and delivery evidence. Use when turning approved plans into production-ready changes.",
-    "instructions": "# Executing Plans\n\nTurn written plans into shipped outcomes with measurable progress and operationally safe sequencing.\n\n## When to Use\n\n- A plan has been approved and needs disciplined execution.\n- Work spans multiple services, teams, or rollout phases.\n- You need consistent progress reporting and gate-based decision points.\n\n## Workflow\n\n1. Break plan into milestones with owner, deadline, and acceptance criteria.\n2. Sequence tasks by dependency and risk, not just calendar order.\n3. Define verification gates for each milestone:\n   - Build/test pass conditions\n   - Runtime or rollout validation checks\n4. Execute in small increments and update status continuously.\n5. Track blockers with impact, owner, mitigation, and next decision point.\n6. Escalate scope/risk changes early and update the execution log.\n7. Close each milestone with evidence and explicit go/no-go note.\n\n## Concrete Execution Patterns\n\n**Milestone tracking with burndown.** Maintain a simple burndown view: total tasks, completed tasks, and remaining work per milestone. Update daily. If remaining work does not decrease over two consecutive updates, flag for review. Use this to detect scope creep or stalled work before it becomes critical.\n\n**Dependency graph sequencing.** Build a directed acyclic graph of task dependencies. Identify the critical path and schedule those tasks first. Never start a dependent task until all predecessors pass their verification gates. Use topological sort or a simple dependency matrix to enforce ordering.\n\n**Blocker escalation matrix.** For each blocker, record: severity (blocks critical path / blocks milestone / blocks task), owner (who resolves it), mitigation (workaround if any), and escalation deadline. If a blocker exceeds its deadline without resolution, escalate immediately. Do not let blockers age silently.\n\n**Evidence-based gate reviews.** Each gate requires concrete evidence: build logs, test results, deployment manifests, or runtime checks. No gate passes on verbal confirmation. Document the exact command or check used and its outcome. Store evidence in a shared location with timestamps.\n\n## Common Pitfalls\n\n**Tracking activity instead of outcomes.** Marking tasks \"in progress\" or \"90% done\" without measurable evidence. Replace with binary states: not started, blocked, or done-with-evidence. Done means acceptance criteria are met and evidence is attached.\n\n**Parallelizing dependent tasks.** Running tasks that share risky dependencies in parallel to \"save time.\" One failure cascades. Always respect the dependency graph; parallelize only independent branches.\n\n**Skipping verification gates under time pressure.** Declaring a milestone complete to meet a deadline without running the defined checks. Gates exist to catch regressions. Skipping them defers cost and increases risk. If time is short, reduce scope, not verification.\n\n**Not updating plan when scope changes.** New requirements or discovered constraints appear but the plan stays static. Re-baseline: update milestones, dependencies, and deadlines. Communicate changes to stakeholders. Do not silently absorb scope without adjusting the plan.\n\n**Declaring done without evidence.** Closing a task or milestone without attaching proof that acceptance criteria were met. Require links to logs, artifacts, or screenshots. \"Done\" is not a status; it is a verified state.\n\n## Execution Checklist\n\n- [ ] Every task has owner, due date, and measurable done criteria.\n- [ ] Dependencies and critical path are documented.\n- [ ] Verification gates are explicit and repeatable.\n- [ ] Blockers and risk decisions are recorded.\n- [ ] Burndown or progress metric is updated regularly.\n- [ ] Evidence is attached for every completed task.\n\n## Output Format\n\nReturn a structured execution report:\n\n```markdown\n## Execution Summary\n- Plan: <name or reference>\n- Status: on track | at risk | blocked\n- Burndown: X of Y tasks complete, Z remaining\n\n## Milestones\n| Milestone | Owner | Status | Evidence |\n|-----------|-------|--------|----------|\n| M1: <name> | <owner> | done | <link or summary> |\n| M2: <name> | <owner> | in progress | <current step> |\n\n## Critical Path\n- Task A -> Task B -> Task C (current: Task B)\n\n## Blockers\n| Blocker | Severity | Owner | Mitigation | Escalation |\n|---------|----------|-------|------------|------------|\n| <desc> | critical | <name> | <workaround> | <date> |\n\n## Verification Gates\n- M1: [ ] Build passes, [ ] Tests pass, [ ] Deploy validated\n- M2: [ ] Build passes, [ ] Tests pass\n\n## Next Actions\n1. <action>\n2. <action>\n```\n\n## Constraints\n\n- Do not mark progress without evidence tied to acceptance criteria.\n- Avoid parallelizing tasks that share risky dependencies.\n- Keep rollback or fallback options available for high-impact changes.\n- Re-baseline the plan when assumptions change materially.",
+    "description": "Turn approved plans into controlled execution steps with sequencing, decision gates, risk tracking, and verifiable progress.",
+    "instructions": "# Executing Plans\n\nUse this skill when the user already has an agreed plan and needs help turning it into disciplined execution rather than a loose status narrative.\n\n## Start By Clarifying\n- What has already been approved versus what is still uncertain.\n- Which milestones are truly dependent on earlier work.\n- What evidence counts as done for each stage.\n- Which blockers would change sequence, scope, or rollout safety.\n- What rollback or pause conditions matter most.\n\n## Execution Principles\n- Break plans into milestones with explicit done criteria.\n- Sequence by dependency and risk, not optimism.\n- Keep verification gates close to the work they validate.\n- Surface blockers early with owner, impact, and next decision point.\n- Re-baseline the plan when assumptions change materially.\n\n## Good Execution Structure\n- Milestones with owner, status, and acceptance criteria.\n- Critical-path tasks and dependency notes.\n- Verification gates for builds, tests, rollout checks, or review steps.\n- Blocker log with severity, mitigation, and escalation timing.\n- Next actions tied to evidence rather than vague progress labels.\n\n## Decision Guidance\n- Prefer smaller reversible increments over big-bang execution.\n- Do not parallelize tasks that share the same risky dependency.\n- Reduce scope before reducing verification.\n- Treat rollout evidence as mandatory for high-impact stages.\n- Mark work complete only when the acceptance criteria are demonstrated.\n\n## Common Mistakes\n- Tracking activity instead of outcome.\n- Calling work done without proof tied to acceptance criteria.\n- Letting blockers age without a clear owner or escalation path.\n- Continuing with an outdated plan after scope or constraints changed.\n- Compressing risky dependent work into one milestone for convenience.\n\n## Good Output\n- Execution summary with current status.\n- Milestone-by-milestone progress and gates.\n- Critical path and active blockers.\n- Verification evidence needed next.\n- Recommended next execution steps or re-baselining decisions.\n\n## Boundaries\n- Do not claim work is complete, validated, or shipped unless the user provides that evidence.\n- Prefer execution structure, progress discipline, and risk framing over pretending to update external trackers automatically.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
     "examples": [
-      "Convert a multi-phase migration plan into tracked execution steps with verification gates.",
-      "Run an agreed delivery plan while managing dependencies, blockers, and rollback decisions."
+      "\"Convert a multi-phase migration plan into tracked execution steps with verification gates.\"",
+      "\"Run an agreed delivery plan while managing dependencies, blockers, and rollback decisions.\""
     ]
   },
   {
@@ -5772,17 +5168,6 @@
     ]
   },
   {
-    "skillId": "feature-design-assistant",
-    "name": "Feature Design Assistant",
-    "description": "Step-by-step guidance for feature design assistant.",
-    "instructions": "# Feature Design Assistant\n\nSupport feature design assistant workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with feature design assistant.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "feishu-doc",
     "name": "Feishu Doc",
     "description": "Feishu doc read/write operations via the feishu_doc tool (read, write, append, create, and block APIs).",
@@ -5794,20 +5179,6 @@
     "examples": [
       "\"Read this Feishu doc and summarize key action items: https://xxx.feishu.cn/docx/ABC123def\"",
       "\"Append this update to our Feishu doc: <doc_url> (include a header and bullet points)\""
-    ]
-  },
-  {
-    "skillId": "feishu-drive",
-    "name": "Feishu Drive",
-    "description": "Integrate and operate Feishu Drive workflows for upload, permissioning, and document lifecycle automation with production-safe controls. Use when building or fixing Feishu Drive sync and automation pipelines.",
-    "instructions": "# Feishu Drive\n\nRun Feishu Drive automations with reliable API behavior, explicit ownership controls, and observable sync outcomes.\n\n## When to Use\n\n- You are implementing Feishu Drive-based document workflows or sync jobs.\n- API calls succeed inconsistently due to auth, scope, or quota constraints.\n- You need deployment and operational guardrails for enterprise file handling.\n\n## Workflow\n\n1. Confirm workflow scope: upload, sync, permission updates, or archival.\n2. Validate API credentials, token refresh behavior, and required scopes.\n3. Define deterministic folder mapping and naming conventions.\n4. Implement permission model:\n   - Owner/editor/viewer rules by role or group\n   - Least-privilege defaults\n5. Add retry/backoff for transient API failures and rate limits.\n6. Capture audit logs for file ID, actor, action, and result status.\n7. Run end-to-end validation with representative files and permission checks.\n\n## Feishu API Patterns\n\n**Tenant access token vs user access token.** Tenant access tokens are app-level and apply to app-authorized resources. User access tokens are user-level and apply to resources the user can access. Use tenant tokens for server-side automation (e.g., batch uploads to a shared folder). Use user tokens when acting on behalf of a specific user. Ensure the correct token type for the operation; mixing them causes failures.\n\n**Folder tree traversal.** Use the Drive API to list folders recursively. Start from root or a known folder token. Handle pagination: Feishu uses `page_token` and `page_size`. Build the tree in memory or cache it for repeated access. Respect rate limits during traversal.\n\n**File metadata operations.** Use `drive.v1.files` and `drive.v1.metas` for file operations. Metadata includes: file_token, name, parent_token, type, size, owner. For updates, use the correct endpoint and version. Check file type before operations (doc vs sheet vs file).\n\n**Permission inheritance model.** Folders inherit permissions from parents. New files inherit from the folder. Explicit permission grants on a file override inheritance for that file. Document the inheritance chain: who can access a file depends on folder hierarchy and explicit grants. Test permission changes on a copy before applying to production folders.\n\n## Common Pitfalls\n\n**Token expiry causing silent failures.** Feishu tokens expire (typically 2 hours). Implement proactive refresh before expiry. Use the refresh token or re-authenticate. Log token refresh events. If calls fail with auth errors, check expiry first.\n\n**Incorrect scope for file operations.** Some operations require specific scopes (e.g., `drive:drive:readonly` vs `drive:drive`). Request the minimum scope needed. Verify scope before deployment. Scope mismatches often cause 403 or partial failures.\n\n**Rate limit handling without exponential backoff.** Feishu returns 429 when rate limited. Use exponential backoff: 1s, 2s, 4s, etc., with a max retry count. Do not retry immediately with the same delay. Respect `Retry-After` header if present.\n\n**Folder permission inheritance surprises.** Changing folder permissions affects all descendants. Revoking access on a parent revokes access to children. Test permission changes in a sandbox before production. Document the inheritance model for operators.\n\n**Large file upload timeout.** Large files may timeout on single-request uploads. Use chunked upload or multipart upload when available. Set appropriate timeouts and retry logic. Consider file size limits and split large files if needed.\n\n## Output Format\n\nReturn:\n\n- **Integration architecture.** Diagram or description of components: sync job, scheduler, Feishu API client, auth flow. Data flow and failure points.\n\n- **Auth model.** Token type (tenant vs user), refresh flow, scope list, and storage (env vars, secrets manager). Verification steps.\n\n- **API reliability findings.** Rate limits observed, retry strategy (backoff, max retries), and error handling for 4xx/5xx.\n\n- **Permission mapping.** Owner/editor/viewer rules by role or group. Inheritance model. Governance risks (e.g., broad write access).\n\n- **Folder mapping.** Deterministic folder structure, naming conventions, and conflict resolution.\n\n- **Validation results.** End-to-end test outcomes: upload, permission check, metadata verification. Pass/fail status.\n\n- **Next operational steps.** Audit logging setup, monitoring, alerting, and incident response.\n\n## Constraints\n\n- Do not hardcode access tokens in code or CI configs.\n- Avoid broad shared-folder write access without ownership controls.\n- Respect API rate limits and implement bounded retries.\n- Keep auditability for every file mutation operation.",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": [
-      "Automate Feishu Drive file uploads with folder routing and permission assignment by team.",
-      "Diagnose Feishu Drive API failures caused by token scope, rate limits, or file metadata mismatches."
     ]
   },
   {
@@ -5881,15 +5252,15 @@
   {
     "skillId": "file-uploads",
     "name": "File Uploads",
-    "description": "Design and troubleshoot secure, reliable file upload flows across frontend, API, storage, and background processing. Use when implementing uploads, fixing failed transfers, or hardening validation and storage controls.",
-    "instructions": "# File Uploads\n\nBuild upload pipelines that are secure, observable, and resilient under real network and file-size conditions.\n\n## When to Use\n\n- You are implementing new upload capabilities or migrating storage providers.\n- Uploads fail, stall, or produce corrupted/inaccessible objects.\n- You need standardized controls for file type, size, and post-upload processing.\n\n## Workflow\n\n1. Define upload model (direct-to-storage, proxy-through-API, or hybrid).\n2. Specify constraints: max size, allowed MIME/types, retention, and ownership.\n3. Implement secure handoff:\n   - Authenticated upload tokens/presigned URLs\n   - Server-side validation of metadata and content type\n4. Add integrity checks (checksum/hash) and idempotent retry handling.\n5. Integrate post-upload pipeline (virus scan, thumbnail/transcode, indexing).\n6. Monitor failures by phase: auth, transfer, validation, processing.\n7. Validate with realistic file sizes, poor networks, and concurrent uploads.\n\n## Upload Patterns\n\n**Presigned URL flow.** Client requests a short-lived URL from your API; API validates auth and quota, generates a signed URL for direct PUT to storage (S3, GCS, Azure Blob). Client uploads directly to storage, avoiding proxy bandwidth. After upload, client notifies API to trigger post-processing. Use for large files and high throughput. Ensure URL expiry is tight (5-15 minutes) and scope to a single object key.\n\n**Multipart upload with resume.** For files above a threshold (e.g. 100MB), use multipart: initiate upload, upload parts in parallel, complete when all parts are received. Track part ETags and support resuming failed parts without restarting. Implement cleanup of orphaned multipart uploads via lifecycle rules or scheduled jobs to avoid storage bloat.\n\n**Chunked upload for large files.** Split files into fixed-size chunks (e.g. 5MB). Upload chunks sequentially or in parallel; reassemble server-side using chunk order and total count. Support resumable uploads by allowing clients to query which chunks are already received and retry only missing ones.\n\n**Server-side content-type verification with magic bytes.** Never trust `Content-Type` from the client. Read the first few bytes of the file and match against known magic-byte signatures (e.g. PDF: `%PDF`, JPEG: `FF D8 FF`, PNG: `89 50 4E 47`). Reject mismatches. Combine with extension and MIME allowlists for defense in depth.\n\n## Common Pitfalls\n\n- **Trusting client MIME type.** Attackers can send `Content-Type: image/png` with executable content. Always validate with magic bytes or a dedicated library.\n- **No size limits on public endpoints.** Unbounded uploads enable DoS via storage exhaustion or memory pressure. Enforce max size at API gateway, application, and storage layer.\n- **Missing virus scanning.** Uploaded files can contain malware. Integrate ClamAV, VirusTotal API, or cloud-native scanning before making objects accessible.\n- **Broken multipart cleanup on failure.** Failed or abandoned multipart uploads leave orphaned parts. Configure S3 lifecycle rules or run periodic cleanup jobs.\n- **CORS misconfiguration blocking browser uploads.** Ensure `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods` (PUT, POST), and `Access-Control-Allow-Headers` are correctly set for presigned or direct-to-storage flows.\n\n## Output Format\n\nReturn:\n\n- **Upload architecture and trust boundaries:** Diagram or description of client -> API -> storage flow; where validation occurs; which components hold credentials.\n- **Validation and security controls:** Size limits, MIME allowlist, magic-byte verification, auth model, post-upload scanning.\n- **Failure mode analysis with instrumentation gaps:** For each phase (auth, transfer, validation, processing), list observed failures and missing metrics/logs.\n- **Hardening actions with rollout order:** Prioritized list (e.g. add magic-byte check, then virus scan, then multipart cleanup) with dependencies noted.\n- **Concrete implementation notes:** Presigned URL expiry, multipart part size, chunk size, cleanup schedule, CORS config snippet.\n\n## Constraints\n\n- Never trust client-reported MIME type alone.\n- Do not expose permanent write credentials to clients.\n- Avoid unbounded file-size acceptance in public endpoints.\n- Ensure uploaded objects are private by default unless explicitly public.",
+    "description": "Design and troubleshoot secure, reliable file upload flows across clients, APIs, storage, validation, and post-upload processing.",
+    "instructions": "# File Uploads\n\nUse this skill to design, review, or debug file upload flows that need to be secure, reliable, and understandable across frontend, API, storage, and background processing.\n\n## Clarify First\n- What kinds of files are allowed and why.\n- Which trust boundaries exist between client, API, storage, and processing systems.\n- Whether uploads are small, large, resumable, high-volume, or latency-sensitive.\n- Which validations must happen before a file becomes usable.\n- What happens after upload: scanning, indexing, transformation, or review.\n\n## Core Design Choices\n- Direct-to-storage versus proxy-through-API versus hybrid handoff.\n- Single-request versus multipart or chunked upload strategy.\n- Private-by-default storage versus deliberate public access.\n- Immediate versus asynchronous post-upload processing.\n- Strict validation at one layer versus defense in depth across layers.\n\n## Good Upload Guidance\n- Keep credentials and write authority off the client whenever possible.\n- Validate size, type, and ownership explicitly.\n- Treat integrity and retry behavior as first-class design concerns.\n- Separate upload success from post-processing success.\n- Instrument each phase so failures are easy to localize.\n\n## Failure Modes To Look For\n- Browser or mobile clients timing out on large transfers.\n- Trusting client-provided MIME type or filename alone.\n- Orphaned multipart state after failed uploads.\n- Publicly accessible objects created before validation or scanning is complete.\n- CORS or auth mismatches that block otherwise valid upload flows.\n\n## What To Surface\n- Recommended upload architecture and trust boundaries.\n- Validation and hardening controls in rollout order.\n- Likely failure points by phase: auth, transfer, validation, processing.\n- Observability gaps that make upload incidents hard to debug.\n- Concrete implementation choices such as expiry windows, part sizes, or cleanup approach.\n\n## Common Mistakes\n- Using silent defaults that accept file types or sizes too broadly.\n- Treating upload completion as proof the file is safe or usable.\n- Letting clients hold long-lived write credentials.\n- Ignoring retry, resumability, and cleanup behavior until production failures appear.\n- Designing the happy path only and skipping weak-network conditions.\n\n## Boundaries\n- Do not present example architectures as already implemented unless the user confirms them.\n- Prefer guidance on validation, trust boundaries, and failure analysis over implying direct access to storage or upload infrastructure.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
     "examples": [
-      "Implement presigned upload flow with server-side validation and malware scanning hooks.",
-      "Debug intermittent large-file upload failures caused by timeout or multipart misconfiguration."
+      "\"Implement a presigned upload flow with server-side validation and malware scanning hooks.\"",
+      "\"Debug intermittent large-file upload failures caused by timeout or multipart misconfiguration.\""
     ]
   },
   {
@@ -5921,28 +5292,6 @@
     ]
   },
   {
-    "skillId": "finnish-humanizer",
-    "name": "Finnish Humanizer",
-    "description": "Step-by-step guidance for finnish humanizer.",
-    "instructions": "# Finnish Humanizer\n\nSupport finnish humanizer workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with finnish humanizer.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "fix",
-    "name": "Fix",
-    "description": "Step-by-step guidance for fix.",
-    "instructions": "# Fix\n\nSupport fix workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with fix.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "fix-cves",
     "name": "Fix CVEs",
     "description": "Triage and remediate CVEs in application and infrastructure dependencies with risk-based prioritization and verification. Use when security scans report vulnerabilities that must be fixed without destabilizing releases.",
@@ -5955,17 +5304,6 @@
       "Prioritize and patch critical CVEs in container base images and runtime libraries.",
       "Prepare a remediation plan for transitive dependency vulnerabilities with upgrade constraints."
     ]
-  },
-  {
-    "skillId": "fix-errors",
-    "name": "Fix Errors",
-    "description": "Step-by-step guidance for fix errors.",
-    "instructions": "# Fix Errors\n\nSupport fix errors workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with fix errors.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "fix-life-in-1-day",
@@ -5985,15 +5323,15 @@
   {
     "skillId": "fix-sync",
     "name": "Fix Sync",
-    "description": "Resolve data or state synchronization failures across services, workers, and queues with repeatable diagnostics and rollback-safe remediation. Use when systems drift, miss updates, or produce inconsistent replicas.",
-    "instructions": "# Fix Sync\n\nStabilize synchronization pipelines by identifying drift sources, repairing state safely, and adding guardrails against recurrence.\n\n## When to Use\n\n- Data between systems is inconsistent, delayed, or missing.\n- Background sync jobs fail intermittently or produce duplicates/conflicts.\n- You need an operationally safe recovery and verification plan.\n\n## Workflow\n\n1. Define expected source of truth and acceptable sync latency.\n2. Capture current divergence scope (records, time window, affected entities).\n3. Trace sync path end-to-end:\n   - Producer events or writes\n   - Queue/topic transport\n   - Consumer processing and persistence\n4. Check ordering, idempotency keys, retries, and dead-letter behavior.\n5. Apply targeted remediation:\n   - Replay safe range\n   - Backfill missing records\n   - Resolve conflicts with deterministic merge rules\n6. Reconcile state and verify parity through sampled and aggregate checks.\n7. Add monitors for lag, failure rates, and reconciliation drift.\n\n## Sync Debugging Patterns\n\n**Event sourcing replay.** Replay events from the event store into read models or downstream consumers. Verify consumers are idempotent (same event twice produces same result). Replay in bounded time windows; validate checksums or record counts before and after. Never replay without confirming idempotency; duplicate processing can corrupt state.\n\n**CDC lag monitoring.** For change-data-capture (Debezium, etc.), track consumer lag (offset behind producer). Alert when lag exceeds SLA. Correlate lag spikes with schema changes, backpressure, or consumer restarts. Use lag metrics to decide when to scale consumers or pause producers.\n\n**Idempotency key verification.** Ensure each sync record or event carries a unique idempotency key. Consumers must deduplicate by key before applying. Verify keys are present, unique, and used consistently. Gaps here cause duplicates or missed updates.\n\n**Dead-letter queue inspection.** Failed messages land in DLQ. Regularly inspect DLQ size and message content. Categorize failures (schema, validation, transient). Replay after fixing root cause; avoid blind replay that re-fails the same way.\n\n## Conflict Resolution Strategies\n\n**Last-write-wins (LWW).** Use a single timestamp (e.g. `updated_at`) and accept the latest write. Simple but loses concurrent updates. Only use when conflicts are rare or overwrites are acceptable.\n\n**Merge functions.** Define domain-specific merge logic (e.g. union of sets, max of numeric fields). Apply when both sides have valid updates. Document merge rules and test edge cases.\n\n**Vector clocks.** Attach a vector clock to each record; compare clocks to detect concurrent updates. Use when you need to detect and explicitly resolve concurrent writes (e.g. CRDTs, manual merge UI).\n\n## Common Pitfalls\n\n- **Replaying without idempotency.** Replay can re-apply events; non-idempotent consumers double-count or corrupt data. Always validate idempotency before replay.\n- **Manual data patches without audit trail.** One-off SQL fixes bypass sync pipeline and create drift. Document patches, add to reconciliation, and prefer pipeline fixes.\n- **Ignoring dead-letter backlog.** DLQ growth indicates systemic failure. Address root cause before backlog becomes unrecoverable.\n- **Clock drift in timestamp-based ordering.** NTP skew or server time differences break LWW and ordering. Prefer logical clocks or centralized sequence generators.\n\n## Output Format\n\nReturn:\n\n- **Drift summary:** What diverged, since when, affected record count, and business impact.\n- **Root-cause analysis by sync stage:** Producer, transport, consumer, persistence; where the failure originated and why.\n- **Recovery actions taken and validation evidence:** Replay windows, backfill scripts, conflict resolutions; checksums or sample queries proving parity.\n- **Preventive controls:** Idempotency enforcement, lag alerts, DLQ monitoring, reconciliation schedule.\n- **Conflict resolution decisions:** Strategy chosen (LWW, merge, vector clock) and rationale.\n\n## Constraints\n\n- Do not run broad replays without idempotency validation.\n- Avoid manual record edits unless fully audited and reversible.\n- Keep reconciliation scripts deterministic and scoped.\n- Confirm parity before declaring incident resolved.",
+    "description": "Diagnose and remediate synchronization failures across services, workers, queues, or replicas with safe recovery and verification steps.",
+    "instructions": "# Fix Sync\n\nUse this skill when data or state has drifted between systems and the user needs a safe way to diagnose the break, recover consistency, and reduce recurrence risk.\n\n## Clarify First\n- What system is the source of truth.\n- Which downstream systems or replicas are expected to stay in sync.\n- How much lag is acceptable before it becomes an incident.\n- Whether the break is caused by missing events, duplicate processing, bad conflict resolution, or manual patching.\n- What proof would show the systems are reconciled again.\n\n## Investigation Priorities\n- Bound the incident by time window, entities affected, and business impact.\n- Trace the sync path from producer through transport to consumer and persistence.\n- Check ordering, retries, idempotency, and dead-letter behavior before replaying anything.\n- Distinguish missing data from delayed data from conflicting data.\n- Prefer reversible, scoped remediation over broad repair attempts.\n\n## Recovery Guidance\n- Replay only when idempotency and scope are understood.\n- Backfill missing records in deterministic batches.\n- Use explicit conflict rules instead of silent last-write surprises.\n- Verify parity through both sampled records and aggregate checks.\n- Add monitors for lag, replay failures, and reconciliation drift after the immediate fix.\n\n## Common Failure Modes\n- Replaying events into consumers that are not actually idempotent.\n- Manual data fixes that bypass the sync path and create new drift.\n- Ignoring DLQ growth until the incident becomes much larger.\n- Relying on timestamps whose ordering is not trustworthy.\n- Declaring resolution before proving both systems match again.\n\n## Good Output\n- Drift summary and likely sync stage where failure began.\n- Safe remediation sequence in order.\n- Validation checks to prove reconciliation.\n- Preventive controls such as lag alerts, idempotency enforcement, or reconciliation jobs.\n- Conflict strategy rationale where multiple writes can compete.\n\n## Boundaries\n- Do not recommend broad replay or mutation without first surfacing idempotency and rollback concerns.\n- Prefer investigation structure, recovery sequencing, and verification logic over pretending to inspect live systems directly.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
     "examples": [
-      "Diagnose delayed event processing causing stale read models between API and worker services.",
-      "Fix bi-directional sync conflicts and define idempotent replay procedures."
+      "\"Diagnose delayed event processing causing stale read models between API and worker services.\"",
+      "\"Fix bi-directional sync conflicts and define idempotent replay procedures.\""
     ]
   },
   {
@@ -6025,17 +5363,6 @@
       "Fix a GitHub Actions Streamlit build failing due to dependency resolution or Python version mismatch.",
       "Stabilize flaky Streamlit CI by separating lint/test/package stages with deterministic caching."
     ]
-  },
-  {
-    "skillId": "flags",
-    "name": "Flags",
-    "description": "Step-by-step guidance for flags.",
-    "instructions": "# Flags\n\nSupport flags workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with flags.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "flight-tracker",
@@ -6176,28 +5503,6 @@
       "\"Reason through this proof step by step.\"",
       "\"Show whether this conclusion follows from the premises.\""
     ]
-  },
-  {
-    "skillId": "format-numbers",
-    "name": "Format Numbers",
-    "description": "Step-by-step guidance for format numbers.",
-    "instructions": "# Format Numbers\n\nSupport format numbers workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with format numbers.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "formatter-development",
-    "name": "Formatter Development",
-    "description": "Step-by-step guidance for formatter development.",
-    "instructions": "# Formatter Development\n\nSupport formatter development workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with formatter development.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "framework-migration-deps-upgrade",
@@ -6487,17 +5792,6 @@
     ]
   },
   {
-    "skillId": "gandi",
-    "name": "Gandi",
-    "description": "Step-by-step guidance for gandi.",
-    "instructions": "# Gandi\n\nSupport gandi workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with gandi.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "gardening",
     "name": "Gardening",
     "description": "Plant care, soil management, seasonal timing, pest control, and garden planning.",
@@ -6556,17 +5850,6 @@
     ]
   },
   {
-    "skillId": "generate-translations",
-    "name": "Generate Translations",
-    "description": "Step-by-step guidance for generate translations.",
-    "instructions": "# Generate Translations\n\nSupport generate translations workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with generate translations.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "geniml",
     "name": "GeniML",
     "description": "Machine learning on genomic interval data. Train region embeddings (Region2Vec), joint embeddings (BEDspace), and analyze scATAC-seq data.",
@@ -6607,17 +5890,6 @@
       "What is Generative Engine Optimization and how does it differ from SEO?",
       "How can I optimize my content to be cited by AI engines like Perplexity or Claude?"
     ]
-  },
-  {
-    "skillId": "geo-ip",
-    "name": "Geo IP",
-    "description": "Step-by-step guidance for geo IP.",
-    "instructions": "# Geo IP\n\nSupport geo ip workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with geo ip.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "geology",
@@ -6759,17 +6031,6 @@
     ]
   },
   {
-    "skillId": "godaddy",
-    "name": "Godaddy",
-    "description": "Step-by-step guidance for godaddy.",
-    "instructions": "# Godaddy\n\nSupport godaddy workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with godaddy.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "godot-gdscript-patterns",
     "name": "Godot GDScript Patterns",
     "description": "Apply idiomatic Godot GDScript patterns for scenes, signals, state flow, and maintainable gameplay code.",
@@ -6786,17 +6047,6 @@
       "\"Refactor this Godot gameplay script using cleaner signal and state patterns.\"",
       "\"Design GDScript architecture for this inventory and interaction system.\""
     ]
-  },
-  {
-    "skillId": "gog",
-    "name": "Gog",
-    "description": "Use the gog CLI to manage Google Workspace services.",
-    "instructions": "# Gog\n\nUse the gog CLI to manage Google Workspace services.\n\n## When to Use\n\n- You need to work across Gmail, Calendar, Drive, Contacts, Sheets, or Docs.\n- You want a consistent CLI workflow.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "golang-patterns",
@@ -7083,17 +6333,6 @@
     "examples": []
   },
   {
-    "skillId": "healthcheck",
-    "name": "Healthcheck",
-    "description": "Step-by-step guidance for healthcheck.",
-    "instructions": "# Healthcheck\n\nSupport healthcheck workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with healthcheck.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "hebrew",
     "name": "Hebrew",
     "description": "Write Hebrew that sounds human. Not formal, not robotic, not AI-generated.",
@@ -7196,17 +6435,6 @@
     ]
   },
   {
-    "skillId": "himalaya",
-    "name": "Himalaya",
-    "description": "Manage email via IMAP and SMTP with the himalaya CLI.",
-    "instructions": "# Himalaya\n\nManage email via IMAP and SMTP with the himalaya CLI.\n\n## When to Use\n\n- You need to read, send, or organize email from the terminal.\n- You want a repeatable email workflow.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "histolab",
     "name": "Histolab",
     "description": "Guidance and answers for Histolab tasks, including digital pathology slide preprocessing and analysis.",
@@ -7235,31 +6463,6 @@
     ]
   },
   {
-    "skillId": "hogli",
-    "name": "Hogli",
-    "description": "Build and refine Hogli observability views for log and metric correlation during troubleshooting. Use when investigating production behavior through Hogli queries, filters, and dashboards.",
-    "instructions": "# Hogli\n\nUse Hogli effectively by applying scoped filters first, then correlating metrics and logs to verify hypotheses.\n\n## When to Use\n\n- You need to investigate incidents using Hogli as the primary observability tool.\n- You want to isolate noisy logs to service-, env-, and timeframe-specific evidence.\n- You need shareable views that support incident handoff.\n\n## Investigation Workflow\n\n### Structured Query Building\n\nBuild queries incrementally. Start with the narrowest known dimension (e.g., service name, pod ID, request ID), then add filters. Use AND logic to intersect constraints rather than OR. For time-bounded incidents, always anchor to a known event timestamp and expand symmetrically (e.g., +/-15 minutes). Include deployment markers or config-change timestamps as explicit boundaries in your query so you can compare before/after behavior.\n\n### Metric-Log Correlation Patterns\n\nCorrelate in this order: (1) identify metric anomaly (latency, error rate, throughput); (2) align log query to the same time window; (3) filter logs by severity or error-type first; (4) look for log bursts that precede or coincide with metric inflection points. Use trace IDs or correlation IDs when available to link a single request across logs and metrics. For distributed issues, correlate across services by shared identifiers (trace_id, request_id) rather than time alone.\n\n### Time-Window Comparison Techniques\n\nCompare baseline vs incident windows. Define a \"normal\" window (e.g., same hour yesterday, same day last week) and an \"incident\" window. Run identical queries for both and diff the results. Look for new error signatures, changed volume ratios, or new log sources in the incident window. Use deployment timestamps to split \"pre-deploy\" vs \"post-deploy\" windows when investigating release-related issues.\n\n## Workflow Steps\n\n1. Define incident scope: service, environment, timeframe, deployment marker.\n2. Apply high-signal filters first (service, severity, tenant/region where relevant).\n3. Correlate key metrics with log signatures in the same time window.\n4. Pivot to representative traces/events to validate root-cause hypotheses.\n5. Save the view/query set and annotate findings for other responders.\n6. Capture one \"next action\" query for follow-up verification after mitigation.\n\n## Investigation Heuristics\n\n- Start with \"what changed\" around deploy/config windows.\n- Look for error bursts that precede saturation metrics.\n- Validate whether symptoms are isolated or cross-service.\n- Prefer one hypothesis at a time to avoid query thrash.\n- Use deployment markers as anchors; missing them leads to ambiguous timelines.\n- When correlating across services, verify causality (A before B) rather than mere coincidence.\n- Narrow by tenant, region, or shard when symptoms are partial to reduce noise.\n\n## Common Pitfalls\n\n- **Broad unfiltered queries**: Scanning all logs or metrics without filters wastes time and obscures signal. Always start with at least service + time + severity.\n- **Hypothesis confirmation bias**: Designing queries to confirm a favored theory instead of testing alternatives. Run disconfirming queries explicitly.\n- **Missing deploy markers**: Failing to include deployment or config-change timestamps makes before/after comparison impossible.\n- **Not saving queries for handoff**: Leaving queries in chat or local notes prevents the next responder from reproducing findings. Save and annotate every diagnostic view.\n\n## Output Format\n\nReturn:\n\n- **Scoped Hogli query/view definition**: Exact filter strings, time range, and any saved view name or link.\n- **Correlated evidence**: Metrics (name, value, timestamp) + matching log excerpts (message, severity, timestamp) with trace/request IDs where applicable.\n- **Root-cause hypothesis confidence level**: High / Medium / Low, with one-sentence rationale.\n- **Next diagnostic or mitigation action**: One concrete query or check to run after applying a fix.\n- **Baseline vs incident comparison summary**: If applicable, key differences between normal and incident windows.\n- **Saved view annotation**: What was saved, where, and what it demonstrates for handoff.\n\n## Constraints\n\n- Keep filters explicit; avoid broad wildcard scans by default.\n- Separate observed facts from hypotheses.\n- Preserve exact time ranges and query terms for reproducibility.",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": [
-      "Use Hogli to correlate request latency spikes with error logs for one service in production.",
-      "Create a focused Hogli view for deployment-window anomalies across multiple components."
-    ]
-  },
-  {
-    "skillId": "home-assistant-integration-knowledge",
-    "name": "Home Assistant Integration Knowledge",
-    "description": "Guidance for building, testing, and reviewing Home Assistant integrations.",
-    "instructions": "# Home Assistant Integration Knowledge\n\nGuidance for building, testing, and reviewing Home Assistant integrations.\n\n## When to Use\n\n- You are working on a Home Assistant integration.\n- You need best practices and review guidance.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "hook-development",
     "name": "Hook Development",
     "description": "Step-by-step guidance for hook development.",
@@ -7267,28 +6470,6 @@
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "hostinger",
-    "name": "Hostinger",
-    "description": "Step-by-step guidance for hostinger.",
-    "instructions": "# Hostinger\n\nSupport hostinger workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with hostinger.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "hotkey",
-    "name": "Hotkey",
-    "description": "Step-by-step guidance for hotkey.",
-    "instructions": "# Hotkey\n\nSupport hotkey workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with hotkey.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
     "requires": [],
     "examples": []
   },
@@ -7455,17 +6636,6 @@
       "\"Upscale this screenshot to 4K and improve text clarity without introducing artifacts.\"",
       "\"Enhance all PNGs in this folder for a presentation and keep file sizes reasonable.\""
     ]
-  },
-  {
-    "skillId": "imsg",
-    "name": "iMessage (imsg)",
-    "description": "Send and search iMessage or SMS chats via Messages.app.",
-    "instructions": "# iMessage (imsg)\n\nSend and search iMessage or SMS chats via Messages.app.\n\n## When to Use\n\n- You need to send or review Messages quickly.\n- You want to automate chat lookups.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "iminuit-statistical-fitter",
@@ -7740,17 +6910,6 @@
     ]
   },
   {
-    "skillId": "intodns",
-    "name": "IntoDNS",
-    "description": "Step-by-step guidance for intodns.",
-    "instructions": "# IntoDNS\n\nSupport intodns workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with intodns.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "inversion-exercise",
     "name": "Inversion Exercise",
     "description": "Flip core assumptions to reveal hidden constraints, tradeoffs, and alternative approaches.",
@@ -7806,28 +6965,6 @@
       "\"Help me with ios developer.\"",
       "\"Use ios-developer for this task.\""
     ]
-  },
-  {
-    "skillId": "ip-lookup",
-    "name": "IP Lookup",
-    "description": "Step-by-step guidance for IP lookup.",
-    "instructions": "# IP Lookup\n\nSupport ip lookup workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with ip lookup.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "ipinfo",
-    "name": "IPinfo",
-    "description": "Step-by-step guidance for ipinfo.",
-    "instructions": "# IPinfo\n\nSupport ipinfo workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with ipinfo.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "isabelle-hol-interface",
@@ -8126,20 +7263,6 @@
     ]
   },
   {
-    "skillId": "kh-assistant",
-    "name": "KH Assistant",
-    "description": "Operate and troubleshoot KH Assistant service workflows, including environment setup, runtime checks, and deployment safety. Use when integrating KH Assistant into CI/CD or resolving production readiness issues.",
-    "instructions": "# KH Assistant\n\nRun KH Assistant with clear operational guardrails, repeatable validation, and reliable handoff outputs.\n\n## When to Use\n\n- You are onboarding or hardening KH Assistant in a deployment pipeline.\n- You need a structured incident-style approach to KH Assistant failures.\n- You want a standard readiness checklist before promoting changes.\n\n## Workflow\n\n1. Confirm service scope, runtime entrypoints, and external dependencies.\n2. Validate configuration:\n   - Required environment variables are present and non-placeholder.\n   - Secrets are sourced from approved secret stores.\n3. Execute startup and health checks in the target environment.\n4. Run representative functional probes that cover core assistant behaviors.\n5. Capture logs/metrics for failed probes and map to likely config or dependency issues.\n6. Apply fixes in smallest safe increment and rerun probes.\n7. Document deployment decision with pass/fail evidence and rollback notes.\n\n## Operational Workflow\n\n**Dependency health matrix.** Build a matrix of KH Assistant dependencies (databases, APIs, message queues, auth providers). For each: name, expected endpoint, health check URL or probe, timeout, and failure impact (blocking vs degraded). Run checks before deployment and surface failures in a single view.\n\n**Configuration validation patterns.** Validate config at startup: required vars present, format correct (URLs, ports, booleans), no placeholder values (`changeme`, `xxx`). Fail fast with clear error messages. Use schema validation (JSON Schema, Pydantic) where possible.\n\n**Functional probe design.** Probes must exercise real code paths, not just liveness. Examples: send a test prompt and assert response structure; verify assistant can reach a configured API; check that auth tokens are accepted. Run probes in target environment with production-like config (minus real secrets).\n\n**Deployment decision framework.** Gate deployment on: (1) all dependency health checks pass, (2) startup succeeds, (3) functional probes pass. If any fail: hold deployment, document failure, apply fix, rerun. Only proceed when all gates pass. Document rollback steps (previous image, config revert) before promoting.\n\n## Common Pitfalls\n\n- **Deploying without health check verification.** Pushing without running checks in target env leads to runtime failures. Always run full validation in deployment pipeline.\n- **Debugging with production credentials exposed.** Logging secrets, env dumps, or debug endpoints in production risks exposure. Use redacted logs and non-prod credentials for debugging.\n- **Ignoring transient startup failures.** Intermittent failures (e.g. DB connection timeout) may pass on retry but indicate flaky dependencies. Investigate and add retries or circuit breakers.\n- **No structured logging for diagnosis.** Unstructured logs make incident diagnosis slow. Use structured fields (request_id, component, level) and consistent error codes.\n\n## Output Format\n\nReturn:\n\n- **Current environment and dependency status:** Table of dependencies with status (ok/degraded/failed), last check time, and failure details if any.\n- **Health check and probe results:** Liveness, readiness, and functional probe outcomes with timestamps and response snippets.\n- **Root-cause hypothesis with remediation steps:** For each failure, likely cause and ordered fix list (config change, dependency fix, code change).\n- **Release recommendation:** Proceed, hold, or rollback with rationale and evidence (e.g. \"Hold: DB health check failed; fix connection string and rerun\").\n- **Rollback notes:** Previous stable version, config backup location, rollback command.\n\n## Constraints\n\n- Do not deploy without passing health and functional probes.\n- Avoid debugging with production secrets exposed in logs.\n- Keep changes narrowly scoped during incident response.\n- Prefer reversible configuration fixes before code-level refactors.",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": [
-      "Validate KH Assistant environment variables and startup dependencies before deployment.",
-      "Diagnose KH Assistant runtime failures and produce a remediation checklist for release."
-    ]
-  },
-  {
     "skillId": "knuspr",
     "name": "Knuspr",
     "description": "Manage grocery shopping on Knuspr.de via the knuspr-cli. Use for product search, cart management, delivery slot reservation, shopping lists, order history, deals, favorites, and meal suggestions. Trigger when the user mentions Knuspr, groceries, Einkauf, Lebensmittel, Warenkorb, Lieferslot, or shopping list tasks.",
@@ -8353,17 +7476,6 @@
     ]
   },
   {
-    "skillId": "linear-issue",
-    "name": "Linear Issue",
-    "description": "Step-by-step guidance for linear issue.",
-    "instructions": "# Linear Issue\n\nSupport linear issue workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with linear issue.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "linear-prod-checklist",
     "name": "Linear Prod Checklist",
     "description": "Production readiness checklist for Linear integrations. Use when preparing to deploy a Linear integration to production, reviewing production requirements, or auditing existing deployments. Trigger with phrases like \\\"linear production checklist\\\", \\\"deploy linear\\\", \\\"linear production ready\\\", \\\"linear go live\\\", \\\"linear launch checklist\\\".",
@@ -8404,17 +7516,6 @@
       "Recommend Linkerd patterns to improve reliability for this microservice stack.",
       "Help troubleshoot Linkerd connectivity and latency regressions."
     ]
-  },
-  {
-    "skillId": "lint-and-validate",
-    "name": "Lint And Validate",
-    "description": "Step-by-step guidance for lint and validate.",
-    "instructions": "# Lint And Validate\n\nSupport lint and validate workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with lint and validate.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "listonic",
@@ -8517,17 +7618,6 @@
       "\"Help me design a practical LLM Evaluation workflow.\"",
       "\"What are best practices and trade-offs for LLM Evaluation?\""
     ]
-  },
-  {
-    "skillId": "local-places",
-    "name": "Local Places",
-    "description": "Step-by-step guidance for local places.",
-    "instructions": "# Local Places\n\nSupport local places workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with local places.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "lofy-fitness",
@@ -8881,17 +7971,6 @@
       "\"Help me with mcp scripts.\"",
       "\"Use mcp-scripts for this task.\""
     ]
-  },
-  {
-    "skillId": "mcporter",
-    "name": "MCPorter",
-    "description": "Step-by-step guidance for mcporter.",
-    "instructions": "# MCPorter\n\nSupport mcporter workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with mcporter.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "mdr-745-specialist",
@@ -9461,17 +8540,6 @@
     ]
   },
   {
-    "skillId": "modern-javascript-patterns",
-    "name": "Modern JavaScript Patterns",
-    "description": "Step-by-step guidance for modern javascript patterns.",
-    "instructions": "# Modern JavaScript Patterns\n\nSupport modern javascript patterns workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with modern javascript patterns.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "modern-python",
     "name": "Modern Python",
     "description": "Concrete workflow for modern python with specific inputs, execution steps, and deliverables.",
@@ -9506,17 +8574,6 @@
       "Help me plan and implement modern tools for this repository, including key decisions and checkpoints.",
       "Create a concise modern tools workflow with concrete steps, risks, and final deliverables for my project."
     ]
-  },
-  {
-    "skillId": "module-dependencies",
-    "name": "Module Dependencies",
-    "description": "Step-by-step guidance for module dependencies.",
-    "instructions": "# Module Dependencies\n\nSupport module dependencies workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with module dependencies.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "moe-training",
@@ -9853,27 +8910,30 @@
   {
     "skillId": "netalertx-sample-data",
     "name": "NetAlertX Sample Data",
-    "description": "Generate and manage realistic NetAlertX sample datasets for development, demos, and testing without exposing production data. Use when validating alert pipelines, UI flows, or onboarding environments.",
-    "instructions": "# NetAlertX Sample Data\n\nCreate reproducible NetAlertX sample data that reflects real-world conditions while staying safe.\n\n## When to Use\n\n- Local or CI environments need stable seed data.\n- Demo environments require believable alert history.\n- Production data cannot be shared due to privacy or compliance constraints.\n\n## Workflow\n\n1. Define dataset shape (devices, events, alert severities, time windows).\n2. Choose generation method (synthetic-only or anonymized production snapshot).\n3. Create seed scripts/files and ensure deterministic output from a fixed seed.\n4. Validate referential integrity and edge cases (offline devices, flapping alerts, duplicates).\n5. Document load/reset steps for local dev, CI, and demos.\n\n## Data Generation Patterns\n\n**Faker/factory-based generation.** Use Faker (Python, JS) or factory libraries (Factory Boy, faker.js) to generate device names, IPs, MAC addresses, hostnames. Create factories that produce valid NetAlertX entities with realistic distributions. Parameterize counts and optional fields for flexibility.\n\n**Deterministic seeding for reproducibility.** Pass a fixed seed (e.g. `random.seed(42)`, `faker.Faker(seed=42)`) at script start. Same seed produces identical output across runs; critical for CI. Document the seed in the script header and in test docs.\n\n**Realistic alert severity distributions.** Mirror production ratios: e.g. 70% info, 20% warning, 8% critical, 2% critical. Include edge cases: consecutive criticals, severity escalation over time, resolved vs active. Avoid uniform distribution; it does not exercise UI or logic correctly.\n\n**Time-series data patterns.** Generate alerts across a configurable time window (e.g. last 7 days). Use realistic patterns: bursts during business hours, quiet nights, occasional spikes. Support relative timestamps (e.g. \"2 hours ago\") for demos that stay current.\n\n## Common Pitfalls\n\n- **Non-deterministic seeds causing flaky tests.** If seed is time-based or missing, CI fails intermittently. Always use fixed seed and verify determinism.\n- **Datasets too small to exercise edge cases.** Minimal data (e.g. 5 devices, 10 alerts) misses pagination, filtering, bulk actions. Include enough data for realistic UI and performance testing.\n- **PII leakage from production snapshots.** Anonymization can miss fields (comments, metadata, logs). Audit all fields; use synthetic generation when in doubt.\n- **Schema drift between seed data and current model.** Seed data can become invalid after migrations. Add schema validation or migration steps; run seed generation in CI to catch drift.\n\n## Output Format\n\n```markdown\n## Sample Data Plan\n- Data source: <synthetic/anonymized>\n- Entities: <devices, alerts, events>\n- Volume: <counts per entity>\n- Time range: <days or timestamps>\n- Seed value: <fixed seed for reproducibility>\n\n## Data Quality Checklist\n- [ ] No real PII or secrets\n- [ ] Stable IDs for repeatable tests\n- [ ] Covers normal and edge-case alert patterns\n- [ ] Can reset and reload quickly\n- [ ] Deterministic output verified\n- [ ] Schema matches current model\n\n## Generation Details\n- Library: <faker/factory/other>\n- Severity distribution: <ratios>\n- Edge cases included: <flapping, offline, duplicates, etc.>\n\n## Usage Steps\n1. Generate: <command/script with seed>\n2. Load: <command/script>\n3. Verify: <query/check>\n4. Reset: <command for clean state>\n```\n\n## Constraints\n\n- Never include raw production credentials, hostnames, or user identifiers.\n- Keep dataset deterministic for CI reliability.\n- Balance realism with speed; oversized datasets slow feedback loops.",
+    "description": "Plan realistic, deterministic NetAlertX sample data for development, demos, and testing without leaking production-sensitive information.",
+    "instructions": "# NetAlertX Sample Data\n\nUse this skill when the user needs believable NetAlertX development or demo data without exposing real production identities, devices, or histories.\n\n## Clarify First\n- Whether the dataset is for UI demos, automated tests, local development, or onboarding.\n- Which entities matter most: devices, events, alerts, histories, or relationships.\n- How much realism is needed versus how fast the dataset must load.\n- Whether anonymized snapshots are acceptable or synthetic-only data is safer.\n- What edge cases the data must exercise.\n\n## Design Priorities\n- Keep the dataset deterministic so test runs stay reproducible.\n- Preserve structural realism without preserving sensitive details.\n- Include enough volume and variation to exercise real UI and workflow paths.\n- Model edge cases deliberately instead of hoping random generation produces them.\n- Keep reset and reload behavior simple for repeated use.\n\n## Good Dataset Guidance\n- Define entity counts, time ranges, and severity distributions explicitly.\n- Use fixed seeds for any generated values.\n- Include normal, noisy, and pathological alert patterns.\n- Validate schema compatibility whenever the product model changes.\n- Document generation, load, verification, and reset steps together.\n\n## Common Mistakes\n- Using tiny toy datasets that never exercise filtering, pagination, or bulk states.\n- Letting randomness change identifiers or counts between test runs.\n- Missing privacy leaks in comments, metadata, or copied identifiers.\n- Forgetting schema drift until seed data breaks after a migration.\n- Generating so much data that the development feedback loop slows down.\n\n## Good Output\n- Sample-data plan with source strategy and entity coverage.\n- Data quality checklist for determinism, privacy, and schema fit.\n- Edge cases and distributions worth modeling.\n- Load, verification, and reset workflow.\n- Risks if anonymized snapshots are used instead of synthetic data.\n\n## Boundaries\n- Do not imply that real production data is safe to reuse without explicit anonymization review.\n- Prefer data-shape guidance, coverage planning, and privacy constraints over pretending to generate or load datasets automatically.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
     "examples": [
-      "Create anonymized device and alert data for local UI testing.",
-      "Build a repeatable seed dataset for integration tests."
+      "\"Create anonymized device and alert data for local UI testing.\"",
+      "\"Build a repeatable seed dataset for NetAlertX integration tests.\""
     ]
   },
   {
     "skillId": "network-info",
     "name": "Network Info",
-    "description": "Step-by-step guidance for network info.",
-    "instructions": "# Network Info\n\nSupport network info workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with network info.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
+    "description": "Interpret network-related details such as IPs, routes, interfaces, connectivity clues, and likely failure boundaries without overclaiming certainty.",
+    "instructions": "# Network Info\n\nUse this skill when the user needs help interpreting network facts or deciding which network details matter during troubleshooting.\n\n## Clarify First\n- What is failing: DNS, reachability, latency, packet loss, service access, or routing.\n- Which endpoints, interfaces, or environments are involved.\n- What evidence exists already: IPs, traceroutes, interface status, logs, or screenshots.\n- Whether the issue is local, host-specific, network-wide, or region-specific.\n- What changed recently in network topology, firewalling, DNS, or deployment.\n\n## Reasoning Priorities\n- Separate name resolution from transport reachability.\n- Distinguish host-local issues from network-path issues.\n- Use each observed fact to narrow the failure boundary.\n- Be explicit about uncertainty when data is incomplete.\n- Prefer a few decisive checks over many low-signal ones.\n\n## Useful Angles\n- Interface and addressing sanity.\n- Public versus private path assumptions.\n- Route asymmetry or segment-specific failure.\n- Firewall or policy boundaries.\n- Service-listening versus network-reaching mismatch.\n\n## Common Mistakes\n- Treating an IP address alone as enough to explain the failure.\n- Mixing DNS, TLS, firewall, and application errors together.\n- Assuming the last visible hop in a trace is the cause.\n- Ignoring whether the service is actually listening where expected.\n- Jumping to infrastructure blame before narrowing the local host state.\n\n## Good Output\n- Most relevant network facts and what they imply.\n- Likely failure boundary and confidence level.\n- Highest-value next checks.\n- Alternate explanations that still fit the evidence.\n\n## Boundaries\n- Do not pretend to inspect live network state unless the user provides outputs or evidence.\n- Prefer careful interpretation of network clues over overstating what incomplete data proves.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Help me reason about these network details and where the failure boundary probably is.\"",
+      "\"What network information matters most when troubleshooting this connectivity issue?\""
+    ]
   },
   {
     "skillId": "network-spirituality",
@@ -9949,17 +9009,6 @@
       "\"Implement an ERC-721 collection with royalty support\"",
       "\"Create an ERC-1155 multi-token with on-chain metadata\""
     ]
-  },
-  {
-    "skillId": "nginx",
-    "name": "Nginx",
-    "description": "Step-by-step guidance for nginx.",
-    "instructions": "# Nginx\n\nSupport nginx workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with nginx.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "nginx-to-highgress-migration",
@@ -10110,17 +9159,6 @@
     ]
   },
   {
-    "skillId": "nx-workspace-patterns",
-    "name": "Nx Workspace Patterns",
-    "description": "Step-by-step guidance for nx workspace patterns.",
-    "instructions": "# Nx Workspace Patterns\n\nSupport nx workspace patterns workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with nx workspace patterns.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "object-counter",
     "name": "Object Counter",
     "description": "Step-by-step guidance for object counter workflows and best practices.",
@@ -10161,28 +9199,6 @@
       "Create an observability plan for this service with metrics, logs, traces, and alerts.",
       "Define SLO-driven alerting and dashboard checks for this backend before launch."
     ]
-  },
-  {
-    "skillId": "obsidian",
-    "name": "Obsidian",
-    "description": "Work with Obsidian vaults and Markdown notes via obsidian-cli.",
-    "instructions": "# Obsidian\n\nWork with Obsidian vaults and Markdown notes via obsidian-cli.\n\n## When to Use\n\n- You manage notes in Obsidian.\n- You want to automate vault operations.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "omc-setup",
-    "name": "OMC Setup",
-    "description": "Step-by-step guidance for omc setup.",
-    "instructions": "# OMC Setup\n\nSupport omc setup workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with omc setup.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "omero-integration",
@@ -10302,17 +9318,6 @@
       "Search for academic papers by a specific author using OpenAlex.",
       "Analyze research trends in machine learning over the last decade."
     ]
-  },
-  {
-    "skillId": "openhue",
-    "name": "OpenHue",
-    "description": "Step-by-step guidance for openhue.",
-    "instructions": "# OpenHue\n\nSupport openhue workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with openhue.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "openmeteo-weather",
@@ -10458,17 +9463,6 @@
       "\"Why is this app saturating its DB connections?\"",
       "\"Review this connection-pooling setup for bottlenecks.\""
     ]
-  },
-  {
-    "skillId": "oracle",
-    "name": "Oracle",
-    "description": "Step-by-step guidance for oracle.",
-    "instructions": "# Oracle\n\nSupport oracle workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with oracle.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "ordercli",
@@ -10660,17 +9654,6 @@
     ]
   },
   {
-    "skillId": "payload",
-    "name": "Payload",
-    "description": "Work with Payload CMS projects, configs, and data modeling.",
-    "instructions": "# Payload\n\nWork with Payload CMS projects, configs, and data modeling.\n\n## When to Use\n\n- You are building or maintaining a Payload CMS app.\n- You want guidance on configs or collections.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "payment-integration",
     "name": "Payment Integration",
     "description": "Implement Stripe payment processing for robust, PCI-compliant payment flows including checkout, subscriptions, and webhooks.",
@@ -10773,17 +9756,6 @@
       "\"Help me with pdp.\"",
       "\"Use pdp for this task.\""
     ]
-  },
-  {
-    "skillId": "peekaboo",
-    "name": "Peekaboo",
-    "description": "Step-by-step guidance for peekaboo.",
-    "instructions": "# Peekaboo\n\nSupport peekaboo workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with peekaboo.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "peer-review",
@@ -10977,17 +9949,6 @@
     ]
   },
   {
-    "skillId": "pingdom",
-    "name": "Pingdom",
-    "description": "Step-by-step guidance for pingdom.",
-    "instructions": "# Pingdom\n\nSupport pingdom workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with pingdom.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "plan-writing",
     "name": "Plan Writing",
     "description": "Structured task planning with clear breakdowns, dependencies, and verification criteria.",
@@ -11028,17 +9989,6 @@
       "\"Help me with planning with files.\"",
       "\"Use planning-with-files for this task.\""
     ]
-  },
-  {
-    "skillId": "playwright-cli",
-    "name": "Playwright CLI",
-    "description": "Automate browser interactions for testing, screenshots, and data extraction.",
-    "instructions": "# Playwright CLI\n\nAutomate browser interactions for testing, screenshots, and data extraction.\n\n## When to Use\n\n- You need to script browser workflows.\n- You want to capture screenshots or extract data.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "playwright-dev",
@@ -11084,17 +10034,6 @@
     ]
   },
   {
-    "skillId": "plugin-forge",
-    "name": "Plugin Forge",
-    "description": "Step-by-step guidance for plugin forge.",
-    "instructions": "# Plugin Forge\n\nSupport plugin forge workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with plugin forge.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "polars",
     "name": "Polars",
     "description": "Practical guidance for polars workflows.",
@@ -11121,17 +10060,6 @@
       "\"Connect to Polymarket WebSocket for live market data\"",
       "\"Build a trading strategy using Polymarket API\""
     ]
-  },
-  {
-    "skillId": "porkbun",
-    "name": "Porkbun",
-    "description": "Step-by-step guidance for porkbun.",
-    "instructions": "# Porkbun\n\nSupport porkbun workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with porkbun.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "port-c-module",
@@ -11240,17 +10168,6 @@
     ]
   },
   {
-    "skillId": "pr-status-triage",
-    "name": "PR Status Triage",
-    "description": "Step-by-step guidance for pr status triage.",
-    "instructions": "# PR Status Triage\n\nSupport pr status triage workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with pr status triage.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "pr-walkthrough",
     "name": "PR Walkthrough",
     "description": "Step-by-step guidance for pr walkthrough.",
@@ -11289,17 +10206,6 @@
       "\"Help me solve this predicate logic proof.\"",
       "\"Check whether this quantified argument is valid.\""
     ]
-  },
-  {
-    "skillId": "premium-domains",
-    "name": "Premium Domains",
-    "description": "Step-by-step guidance for premium domains.",
-    "instructions": "# Premium Domains\n\nSupport premium domains workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with premium domains.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "prepare-changelog",
@@ -11438,17 +10344,6 @@
       "\"Help me set up a Productboard search workflow for feature discovery.\"",
       "\"Use productboard-search to reduce duplicate feature proposals.\""
     ]
-  },
-  {
-    "skillId": "production-code-audit",
-    "name": "Production Code Audit",
-    "description": "Step-by-step guidance for production code audit.",
-    "instructions": "# Production Code Audit\n\nSupport production code audit workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with production code audit.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "project-guidelines-example",
@@ -11677,17 +10572,6 @@
     ]
   },
   {
-    "skillId": "pulsiverifier",
-    "name": "Pulsiverifier",
-    "description": "Step-by-step guidance for pulsiverifier.",
-    "instructions": "# Pulsiverifier\n\nSupport pulsiverifier workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with pulsiverifier.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "pycse",
     "name": "PyCSE",
     "description": "Python tools for chemical science and engineering, including numerical solutions for ODEs, regression, and data analysis.",
@@ -11784,17 +10668,6 @@
       "Set up a particle collision simulation in Pythia.",
       "What are the best practices for generating event catalogs?"
     ]
-  },
-  {
-    "skillId": "python-code-style",
-    "name": "Python Code Style",
-    "description": "Step-by-step guidance for python code style.",
-    "instructions": "# Python Code Style\n\nSupport python code style workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with python code style.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "python-configuration",
@@ -11930,17 +10803,6 @@
     ]
   },
   {
-    "skillId": "python-performance-optimization",
-    "name": "Python Performance Optimization",
-    "description": "Step-by-step guidance for python performance optimization.",
-    "instructions": "# Python Performance Optimization\n\nSupport python performance optimization workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with python performance optimization.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "python-pro",
     "name": "Python Pro",
     "description": "Concrete workflow for python pro with specific inputs, execution steps, and deliverables.",
@@ -12008,17 +10870,6 @@
       "\"What Python test cases are missing here?\"",
       "\"Review this pytest-style test plan for fixture and state issues.\""
     ]
-  },
-  {
-    "skillId": "python-type-safety",
-    "name": "Python Type Safety",
-    "description": "Step-by-step guidance for python type safety.",
-    "instructions": "# Python Type Safety\n\nSupport python type safety workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with python type safety.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "pytorch-fsdp",
@@ -12317,17 +11168,6 @@
     ]
   },
   {
-    "skillId": "railway-domain",
-    "name": "Railway Domain",
-    "description": "Step-by-step guidance for railway domain.",
-    "instructions": "# Railway Domain\n\nSupport railway domain workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with railway domain.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "railway-metrics",
     "name": "Railway Metrics",
     "description": "Query resource usage metrics for Railway services.",
@@ -12554,17 +11394,6 @@
     ]
   },
   {
-    "skillId": "recent-data",
-    "name": "Recent Data",
-    "description": "Use Recent Data to find and apply recently accessed topics and resources.",
-    "instructions": "# Recent Data\n\nUse Recent Data to find and apply recently accessed topics and resources.\n\n## When to Use\n\n- You need to reuse recent context or items.\n- You want to quickly locate recent data.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "recgov-availability",
     "name": "Recgov Availability",
     "description": "Check campsite availability on recreation.gov for federal campgrounds (National Parks, USFS, BLM). Requires campground ID(s) — get from ridb-search or recreation.gov URLs.",
@@ -12592,17 +11421,6 @@
       "\"Explain supply-chain risk in a cinematic voice\"",
       "\"Wake me up about AI security risks\""
     ]
-  },
-  {
-    "skillId": "reduce-unoptimized-query-oracle",
-    "name": "Reduce Unoptimized Query Oracle",
-    "description": "Step-by-step guidance for reduce unoptimized query oracle.",
-    "instructions": "# Reduce Unoptimized Query Oracle\n\nSupport reduce unoptimized query oracle workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with reduce unoptimized query oracle.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "reference-core",
@@ -12643,17 +11461,6 @@
     ]
   },
   {
-    "skillId": "registry",
-    "name": "Registry",
-    "description": "Step-by-step guidance for registry.",
-    "instructions": "# Registry\n\nSupport registry workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with registry.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "release",
     "name": "Release",
     "description": "Concrete workflow for release with specific inputs, execution steps, and deliverables.",
@@ -12688,28 +11495,6 @@
       "Help me plan and implement release publish for this repository, including key decisions and checkpoints.",
       "Create a concise release publish workflow with concrete steps, risks, and final deliverables for my project."
     ]
-  },
-  {
-    "skillId": "remote-browser",
-    "name": "Remote Browser",
-    "description": "Step-by-step guidance for remote browser.",
-    "instructions": "# Remote Browser\n\nSupport remote browser workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with remote browser.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "remote-dev",
-    "name": "Remote Dev",
-    "description": "Step-by-step guidance for remote dev.",
-    "instructions": "# Remote Dev\n\nSupport remote dev workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with remote dev.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "remotion-best-practices",
@@ -12858,17 +11643,6 @@
       "\"Help me with resume handoff.\"",
       "\"Use resume-handoff for this task.\""
     ]
-  },
-  {
-    "skillId": "retailed-automation",
-    "name": "Retailed Automation",
-    "description": "Step-by-step guidance for retailed automation.",
-    "instructions": "# Retailed Automation\n\nSupport retailed automation workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with retailed automation.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "rethink",
@@ -13022,28 +11796,6 @@
       "Help me plan and implement run device tests for this repository, including key decisions and checkpoints.",
       "Create a concise run device tests workflow with concrete steps, risks, and final deliverables for my project."
     ]
-  },
-  {
-    "skillId": "run-nx-generator",
-    "name": "Run Nx Generator",
-    "description": "Step-by-step guidance for run nx generator.",
-    "instructions": "# Run Nx Generator\n\nSupport run nx generator workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with run nx generator.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "runtime-debug",
-    "name": "Runtime Debug",
-    "description": "Step-by-step guidance for runtime debug.",
-    "instructions": "# Runtime Debug\n\nSupport runtime debug workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with runtime debug.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "rust-async-patterns",
@@ -13528,28 +12280,6 @@
     ]
   },
   {
-    "skillId": "security-review",
-    "name": "Security Review",
-    "description": "Step-by-step guidance for security review.",
-    "instructions": "# Security Review\n\nSupport security review workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with security review.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "security-scan",
-    "name": "Security Scan",
-    "description": "Step-by-step guidance for security scan.",
-    "instructions": "# Security Scan\n\nSupport security scan workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with security scan.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "segment-cdp",
     "name": "Segment CDP",
     "description": "Step-by-step guidance for segment cdp.",
@@ -13752,17 +12482,6 @@
     ]
   },
   {
-    "skillId": "session-logs",
-    "name": "Session Logs",
-    "description": "Step-by-step guidance for session logs.",
-    "instructions": "# Session Logs\n\nSupport session logs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with session logs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "sessions",
     "name": "Sessions",
     "description": "Concrete workflow for sessions with specific inputs, execution steps, and deliverables.",
@@ -13825,17 +12544,6 @@
       "\"Help me design a practical SHAP workflow.\"",
       "\"What are best practices and trade-offs for SHAP?\""
     ]
-  },
-  {
-    "skillId": "shellcheck-configuration",
-    "name": "Shellcheck Configuration",
-    "description": "Step-by-step guidance for shellcheck configuration.",
-    "instructions": "# Shellcheck Configuration\n\nSupport shellcheck configuration workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with shellcheck configuration.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "sherpa-onnx-tts",
@@ -14056,17 +12764,6 @@
     ]
   },
   {
-    "skillId": "slack",
-    "name": "Slack",
-    "description": "Control Slack messages, reactions, and pins from the Slack tool.",
-    "instructions": "# Slack\n\nControl Slack messages, reactions, and pins from the Slack tool.\n\n## When to Use\n\n- You need to read or post Slack messages.\n- You want to manage reactions or pins.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "slack-gif-creator",
     "name": "Slack GIF Creator",
     "description": "Step-by-step guidance for slack gif creator.",
@@ -14074,28 +12771,6 @@
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "slash-commands",
-    "name": "Slash Commands",
-    "description": "Step-by-step guidance for slash commands.",
-    "instructions": "# Slash Commands\n\nSupport slash commands workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with slash commands.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "slidev",
-    "name": "Slidev",
-    "description": "Step-by-step guidance for slidev.",
-    "instructions": "# Slidev\n\nSupport slidev workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with slidev.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
     "requires": [],
     "examples": []
   },
@@ -14365,28 +13040,6 @@
     ]
   },
   {
-    "skillId": "spec-change",
-    "name": "Spec Change",
-    "description": "Step-by-step guidance for spec change.",
-    "instructions": "# Spec Change\n\nSupport spec change workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with spec change.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "spotify-player",
-    "name": "Spotify Player",
-    "description": "Control Spotify playback and search from the terminal.",
-    "instructions": "# Spotify Player\n\nControl Spotify playback and search from the terminal.\n\n## When to Use\n\n- You want to play, pause, or search Spotify quickly.\n- You prefer a terminal-based workflow.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "springboot-patterns",
     "name": "Springboot Patterns",
     "description": "Concrete workflow for springboot patterns with specific inputs, execution steps, and deliverables.",
@@ -14464,17 +13117,6 @@
       "Help me plan and implement srs support for this repository, including key decisions and checkpoints.",
       "Create a concise srs support workflow with concrete steps, risks, and final deliverables for my project."
     ]
-  },
-  {
-    "skillId": "ssr",
-    "name": "SSR",
-    "description": "Step-by-step guidance for ssr.",
-    "instructions": "# SSR\n\nSupport ssr workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with ssr.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "stakeholder-comms",
@@ -14591,17 +13233,6 @@
       "\"Help me with startup metrics framework.\"",
       "\"Use startup-metrics-framework for this task.\""
     ]
-  },
-  {
-    "skillId": "static-files",
-    "name": "Static Files",
-    "description": "Step-by-step guidance for static files.",
-    "instructions": "# Static Files\n\nSupport static files workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with static files.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "statsmodels",
@@ -14912,17 +13543,6 @@
     ]
   },
   {
-    "skillId": "swiss-phone-directory",
-    "name": "Swiss Phone Directory",
-    "description": "Step-by-step guidance for swiss phone directory.",
-    "instructions": "# Swiss Phone Directory\n\nSupport swiss phone directory workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with swiss phone directory.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "swissweather",
     "name": "SwissWeather",
     "description": "Step-by-step guidance for fetching Swiss weather data and using local forecasting services.",
@@ -14996,39 +13616,6 @@
       "Help me plan and implement syncable entity integration for this repository, including key decisions and checkpoints.",
       "Create a concise syncable entity integration workflow with concrete steps, risks, and final deliverables for my project."
     ]
-  },
-  {
-    "skillId": "syncable-entity-types-and-constants",
-    "name": "Syncable Entity Types and Constants",
-    "description": "Reference types, entities, and constants for Twenty's workspace migration system.",
-    "instructions": "# Syncable Entity Types and Constants\n\nReference types, entities, and constants for Twenty's workspace migration system.\n\n## When to Use\n\n- You are working on syncable entities or migrations.\n- You need the canonical type and constant set.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "system-info",
-    "name": "System Info",
-    "description": "Step-by-step guidance for system info.",
-    "instructions": "# System Info\n\nSupport system info workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with system info.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "systematic-debugging",
-    "name": "Systematic Debugging",
-    "description": "Step-by-step guidance for systematic debugging.",
-    "instructions": "# Systematic Debugging\n\nSupport systematic debugging workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with systematic debugging.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "tailored-resume-generator",
@@ -15111,17 +13698,6 @@
       "\"Help me break down a complex initiative into coordinated workstreams.\"",
       "\"Use task-coordination-strategies to improve dependency and risk tracking.\""
     ]
-  },
-  {
-    "skillId": "task-management",
-    "name": "Task Management",
-    "description": "Step-by-step guidance for task management.",
-    "instructions": "# Task Management\n\nSupport task management workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with task management.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "tavily-web",
@@ -15393,28 +13969,6 @@
     ]
   },
   {
-    "skillId": "tmux",
-    "name": "tmux",
-    "description": "Step-by-step guidance for tmux.",
-    "instructions": "# tmux\n\nSupport tmux workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with tmux.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "tmux-terminal",
-    "name": "tmux Terminal",
-    "description": "Step-by-step guidance for tmux terminal.",
-    "instructions": "# tmux Terminal\n\nSupport tmux terminal workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with tmux terminal.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "todoist-automation",
     "name": "Todoist Automation",
     "description": "Guidance-only playbook for Todoist task operations, including project structure, prioritization rules, and review cadences.",
@@ -15624,17 +14178,6 @@
     ]
   },
   {
-    "skillId": "triage",
-    "name": "Triage",
-    "description": "Step-by-step guidance for triage.",
-    "instructions": "# Triage\n\nSupport triage workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with triage.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "triage-ci-flake",
     "name": "Triage CI Flake",
     "description": "Triage flaky CI failures by classifying root causes, isolating unstable tests/jobs, and driving targeted reliability fixes.",
@@ -15691,17 +14234,6 @@
     ]
   },
   {
-    "skillId": "turborepo",
-    "name": "Turborepo",
-    "description": "Step-by-step guidance for turborepo.",
-    "instructions": "# Turborepo\n\nSupport turborepo workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with turborepo.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "turborepo-caching",
     "name": "Turborepo Caching",
     "description": "Configure Turborepo local and remote caching to reduce CI and developer build times without sacrificing reproducibility.",
@@ -15723,17 +14255,6 @@
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "typescript",
-    "name": "TypeScript",
-    "description": "Step-by-step guidance for typescript.",
-    "instructions": "# TypeScript\n\nSupport typescript workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with typescript.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
     "requires": [],
     "examples": []
   },
@@ -15772,17 +14293,6 @@
       "Review this TypeScript change and identify type-safety risks.",
       "Create a TypeScript review checklist for strict typing and maintainability."
     ]
-  },
-  {
-    "skillId": "typescript-write",
-    "name": "TypeScript Write",
-    "description": "Step-by-step guidance for typescript write.",
-    "instructions": "# TypeScript Write\n\nSupport typescript write workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with typescript write.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "ui-ux-designer",
@@ -15859,17 +14369,6 @@
     ]
   },
   {
-    "skillId": "update-deps",
-    "name": "Update Deps",
-    "description": "Step-by-step guidance for update deps.",
-    "instructions": "# Update Deps\n\nSupport update deps workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with update deps.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "update-docs",
     "name": "Update Docs",
     "description": "Step-by-step guidance for update docs.",
@@ -15915,13 +14414,16 @@
   {
     "skillId": "update-release-notes",
     "name": "Update Release Notes",
-    "description": "Step-by-step guidance for update release notes.",
-    "instructions": "# Update Release Notes\n\nSupport update release notes workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with update release notes.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
+    "description": "Draft or refine release notes so they accurately explain user-facing changes, risk areas, migration concerns, and rollout context.",
+    "instructions": "# Update Release Notes\n\nUse this skill when the user needs release notes that explain what changed, who is affected, and what readers should actually do next.\n\n## Clarify First\n- Who the release notes are for: users, admins, developers, or internal teams.\n- Which changes are user-visible versus internal only.\n- Whether there are migrations, deprecations, or rollout caveats.\n- What risks, limitations, or known issues should be surfaced.\n- Whether the notes should summarize one release, a hotfix, or a larger train of changes.\n\n## Release Note Priorities\n- Focus on impact, not raw commit inventory.\n- Group changes in a way the reader can quickly scan.\n- Call out required actions, compatibility concerns, and known limitations.\n- Be honest about risk and incomplete rollout details.\n- Keep language specific enough to be useful without turning into an internal diff dump.\n\n## What Good Release Notes Include\n- Clear summary of notable changes.\n- Reader-relevant categories such as features, fixes, breaking changes, and operational notes.\n- Upgrade or migration guidance where needed.\n- Known issues or rollout caveats when they matter.\n- Audience-appropriate level of technical detail.\n\n## Common Mistakes\n- Repeating commit messages instead of explaining user impact.\n- Hiding breaking or risky changes in minor bullet points.\n- Mixing internal implementation detail with no reader benefit.\n- Omitting upgrade steps because they feel inconvenient.\n- Writing notes so vague that users cannot tell whether they are affected.\n\n## Good Output\n- Release summary tailored to the audience.\n- Well-grouped bullet points by change type or impact.\n- Explicit upgrade, migration, or rollback notes where applicable.\n- Known issues or cautionary notes when relevant.\n\n## Boundaries\n- Do not imply a feature is fully rolled out or stable unless the user confirms that status.\n- Prefer clear impact-focused writing over changelog noise or marketing filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Tools",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Help me turn this set of changes into clear release notes.\"",
+      "\"Review these release notes so they explain impact, risk, and upgrade implications clearly.\""
+    ]
   },
   {
     "skillId": "upgrade-stripe",
@@ -16128,28 +14630,6 @@
     ]
   },
   {
-    "skillId": "vercel-react-best-practices",
-    "name": "Vercel React Best Practices",
-    "description": "Step-by-step guidance for vercel react best practices.",
-    "instructions": "# Vercel React Best Practices\n\nSupport vercel react best practices workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with vercel react best practices.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "verification-before-completion",
-    "name": "Verification Before Completion",
-    "description": "Step-by-step guidance for verification before completion.",
-    "instructions": "# Verification Before Completion\n\nSupport verification before completion workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with verification before completion.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "veterinary",
     "name": "Veterinary",
     "description": "Support veterinary understanding from pet care to clinical practice and research.",
@@ -16258,17 +14738,6 @@
     ]
   },
   {
-    "skillId": "volcengine-network-dns",
-    "name": "Volcengine Network DNS",
-    "description": "Step-by-step guidance for volcengine network DNS.",
-    "instructions": "# Volcengine Network DNS\n\nSupport volcengine network dns workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with volcengine network dns.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "vr-ar",
     "name": "Vr Ar",
     "description": "Concrete workflow for vr ar with specific inputs, execution steps, and deliverables.",
@@ -16287,28 +14756,6 @@
     ]
   },
   {
-    "skillId": "vscode-ext-commands",
-    "name": "VS Code Ext Commands",
-    "description": "Step-by-step guidance for vs code ext commands.",
-    "instructions": "# VS Code Ext Commands\n\nSupport vs code ext commands workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with vs code ext commands.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "vscode-ext-localization",
-    "name": "VS Code Ext Localization",
-    "description": "Step-by-step guidance for vs code ext localization.",
-    "instructions": "# VS Code Ext Localization\n\nSupport vs code ext localization workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with vs code ext localization.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "vulnerability-scanner",
     "name": "Vulnerability Scanner",
     "description": "Interpret vulnerability scanner results, prioritize findings, and separate exploitable risk from noisy advisory output.",
@@ -16322,17 +14769,6 @@
       "\"Which findings here matter most?\"",
       "\"Review this scan output and tell me what is urgent.\""
     ]
-  },
-  {
-    "skillId": "wacli",
-    "name": "Wacli",
-    "description": "Send WhatsApp messages and sync or search history with the wacli CLI.",
-    "instructions": "# Wacli\n\nSend WhatsApp messages and sync or search history with the wacli CLI.\n\n## When to Use\n\n- You need to send WhatsApp messages programmatically.\n- You want to sync or search chat history.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "wagmi-development",
@@ -16403,17 +14839,6 @@
       "What is the weather forecast for London over the next three days?",
       "Show me the current temperature and humidity in Tokyo."
     ]
-  },
-  {
-    "skillId": "webapp-testing",
-    "name": "Web App Testing",
-    "description": "Step-by-step guidance for web app testing.",
-    "instructions": "# Web App Testing\n\nSupport web app testing workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with web app testing.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "web-artifacts-builder",
@@ -16808,17 +15233,6 @@
     "examples": []
   },
   {
-    "skillId": "write-issue",
-    "name": "Write Issue",
-    "description": "Draft and maintain GitHub issues with clear titles, bodies, and labels.",
-    "instructions": "# Write Issue\n\nDraft and maintain GitHub issues with clear titles, bodies, and labels.\n\n## When to Use\n\n- You need to create or update a GitHub issue.\n- You want consistent issue structure.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "write-release-notes",
     "name": "Write Release Notes",
     "description": "Step-by-step guidance for write release notes.",
@@ -17020,17 +15434,6 @@
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "writing-user-outputs",
-    "name": "Writing User Outputs",
-    "description": "Step-by-step guidance for writing user outputs.",
-    "instructions": "# Writing User Outputs\n\nSupport writing user outputs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with writing user outputs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Brief plan or checklist\n- Key recommendations and caveats",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Tools",
     "requires": [],
     "examples": []
   },
