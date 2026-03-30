@@ -421,13 +421,16 @@
   {
     "skillId": "agent-memory",
     "name": "Agent Memory",
-    "description": "Step-by-step guidance for agent memory.",
-    "instructions": "# Agent Memory\n\nSupport agent memory workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with agent memory.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Structure agent memory docs so context stays discoverable, bounded, and maintainable without implying hidden system state.",
+    "instructions": "# Agent Memory\n\nUse this skill when the user needs agent memory docs organized so important context can be captured, found, and updated without implying hidden memory or invisible indexed state.\n\n## Start By Clarifying\n- What information deserves durable capture versus short-lived discussion.\n- How readers should locate the right context later.\n- Which taxonomy, tags, or summary conventions will keep retrieval manageable.\n- What freshness signals or ownership rules prevent silent decay.\n- Where the boundaries are between documented knowledge and inferred context.\n\n## Workflow\n1. Define the knowledge objects, categories, and retrieval paths readers will use.\n2. Choose a structure for summaries, tags, links, and source references.\n3. Document what should be captured, what should be omitted, and how updates happen.\n4. Add examples of good entries, summaries, or indexing conventions.\n5. Review for taxonomy sprawl, stale knowledge, and unclear source-of-truth rules.\n\n## Good Output\n- Knowledge structure or taxonomy recommendation.\n- Rules for summaries, tags, references, and freshness.\n- Ambiguities where context capture could become misleading or too broad.\n- Maintenance guidance so the knowledge system stays usable.\n\n## Common Pitfalls\n- Documenting everything and creating an unsearchable memory dump.\n- Using vague labels that do not help future retrieval.\n- Failing to separate verified facts from interpretation or working notes.\n- Implying persistent memory or indexing capabilities that are not actually present.\n\n## Boundaries\n- Do not imply undocumented retrieval or memory systems exist.\n- Prefer explicit taxonomy and source references over invisible context magic.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Design agent memory docs so important context stays discoverable and appropriately scoped.\"",
+      "\"Review agent memory docs for taxonomy gaps, retrieval friction, and freshness risk.\""
+    ]
   },
   {
     "skillId": "agent-pagerank-analyzer",
@@ -503,13 +506,16 @@
   {
     "skillId": "ai-context",
     "name": "AI Context",
-    "description": "Step-by-step guidance for AI context.",
-    "instructions": "# AI Context\n\nSupport ai context workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with ai context.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Structure AI context docs so context stays discoverable, bounded, and maintainable without implying hidden system state.",
+    "instructions": "# AI Context\n\nUse this skill when the user needs AI context docs organized so important context can be captured, found, and updated without implying hidden memory or invisible indexed state.\n\n## Start By Clarifying\n- What information deserves durable capture versus short-lived discussion.\n- How readers should locate the right context later.\n- Which taxonomy, tags, or summary conventions will keep retrieval manageable.\n- What freshness signals or ownership rules prevent silent decay.\n- Where the boundaries are between documented knowledge and inferred context.\n\n## Workflow\n1. Define the knowledge objects, categories, and retrieval paths readers will use.\n2. Choose a structure for summaries, tags, links, and source references.\n3. Document what should be captured, what should be omitted, and how updates happen.\n4. Add examples of good entries, summaries, or indexing conventions.\n5. Review for taxonomy sprawl, stale knowledge, and unclear source-of-truth rules.\n\n## Good Output\n- Knowledge structure or taxonomy recommendation.\n- Rules for summaries, tags, references, and freshness.\n- Ambiguities where context capture could become misleading or too broad.\n- Maintenance guidance so the knowledge system stays usable.\n\n## Common Pitfalls\n- Documenting everything and creating an unsearchable memory dump.\n- Using vague labels that do not help future retrieval.\n- Failing to separate verified facts from interpretation or working notes.\n- Implying persistent memory or indexing capabilities that are not actually present.\n\n## Boundaries\n- Do not imply undocumented retrieval or memory systems exist.\n- Prefer explicit taxonomy and source references over invisible context magic.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Design AI context docs so important context stays discoverable and appropriately scoped.\"",
+      "\"Review AI context docs for taxonomy gaps, retrieval friction, and freshness risk.\""
+    ]
   },
   {
     "skillId": "ai-product",
@@ -782,13 +788,16 @@
   {
     "skillId": "api-design",
     "name": "API Design",
-    "description": "Step-by-step guidance for API design.",
-    "instructions": "# API Design\n\nSupport api design workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with api design.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Document API design docs with clear responsibilities, decision points, sequencing, and follow-through expectations.",
+    "instructions": "# API Design\n\nUse this skill when the user needs API design docs that turn an informal workflow into something reviewable, teachable, and easier to execute consistently.\n\n## Start By Clarifying\n- Who participates in the process and where responsibilities change hands.\n- What the entry criteria, checkpoints, and exit criteria should be.\n- Which decisions require sign-off, escalation, or documented rationale.\n- What artifacts, links, or evidence should exist at each stage.\n- How the process should stay lightweight enough to be followed in practice.\n\n## Workflow\n1. Define the objective of the process and the scenarios it is meant to cover.\n2. Map the stages, decision points, owners, and required artifacts.\n3. Make review gates, success criteria, and escalation rules explicit.\n4. Add examples, templates, or checklists where teams commonly drift.\n5. Document how the process is maintained when the system or team changes.\n\n## Good Output\n- Process outline with roles, sequence, and decision gates.\n- Required artifacts, examples, or checklists.\n- Open questions or edge cases that need policy rather than improvisation.\n- Maintenance notes so the process stays current.\n\n## Common Pitfalls\n- Describing the ideal path but omitting ownership and exception handling.\n- Adding heavy ceremony without clear value or decision support.\n- Failing to show what done looks like at each stage.\n- Letting the process drift from how teams actually work.\n\n## Boundaries\n- Do not confuse process guidance with proof that the process is already being followed.\n- Prefer concrete responsibilities and exit criteria over vague workflow prose.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Document API design docs so contributors know the flow, roles, and exit criteria.\"",
+      "\"Turn this loose workflow into API design docs with checkpoints, ownership, and review gates.\""
+    ]
   },
   {
     "skillId": "api-design-principles",
@@ -825,13 +834,16 @@
   {
     "skillId": "api-documentation-generator",
     "name": "API Documentation Generator",
-    "description": "Step-by-step guidance for API documentation.",
-    "instructions": "# API Documentation Generator\n\nSupport api documentation workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with api documentation generator.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Create and maintain API reference docs with accurate contracts, examples, edge cases, and version-aware detail.",
+    "instructions": "# API Documentation Generator\n\nUse this skill when the user needs API reference docs that readers can trust as a durable lookup source rather than a vague narrative summary.\n\n## Start By Clarifying\n- What entities, endpoints, fields, functions, or concepts are actually in scope.\n- Which versions, compatibility boundaries, or deprecations matter.\n- What inputs, outputs, defaults, and error cases readers most often misunderstand.\n- Which examples are necessary to make the reference usable, not just complete.\n- What surrounding guide material should be linked rather than duplicated.\n\n## Workflow\n1. Define the reference surface and group it into durable reader-facing sections.\n2. Document contracts, required fields, defaults, side effects, and failure modes explicitly.\n3. Add examples that show normal use, edge cases, and compatibility caveats.\n4. Call out version boundaries, deprecations, and non-obvious constraints.\n5. Review for omissions that would force readers back into code or guesswork.\n\n## Good Output\n- Reference structure by resource, concept, or API surface.\n- Missing contract details, examples, or compatibility notes.\n- Places where defaults, limits, or failure behavior need stronger explanation.\n- Cross-links needed to connect reference material to task-oriented guides.\n\n## Common Pitfalls\n- Documenting names without documenting behavior or constraints.\n- Skipping error cases because the happy path feels sufficient.\n- Hiding version-specific caveats until readers hit production issues.\n- Letting the reference drift from actual source behavior.\n\n## Boundaries\n- Do not imply undocumented behavior is guaranteed.\n- Prefer precise contracts and examples over broad marketing-style wording.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create API reference docs with examples, constraints, and edge-case coverage.\"",
+      "\"Review API reference docs for gaps in contracts, parameters, compatibility notes, or failure cases.\""
+    ]
   },
   {
     "skillId": "api-integration-specialist",
@@ -971,13 +983,16 @@
   {
     "skillId": "architecture-decision-records",
     "name": "Architecture Decision Records",
-    "description": "Step-by-step guidance for architecture decision records.",
-    "instructions": "# Architecture Decision Records\n\nSupport architecture decision records workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with architecture decision records.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Document architecture decision records with clear responsibilities, decision points, sequencing, and follow-through expectations.",
+    "instructions": "# Architecture Decision Records\n\nUse this skill when the user needs architecture decision records that turn an informal workflow into something reviewable, teachable, and easier to execute consistently.\n\n## Start By Clarifying\n- Who participates in the process and where responsibilities change hands.\n- What the entry criteria, checkpoints, and exit criteria should be.\n- Which decisions require sign-off, escalation, or documented rationale.\n- What artifacts, links, or evidence should exist at each stage.\n- How the process should stay lightweight enough to be followed in practice.\n\n## Workflow\n1. Define the objective of the process and the scenarios it is meant to cover.\n2. Map the stages, decision points, owners, and required artifacts.\n3. Make review gates, success criteria, and escalation rules explicit.\n4. Add examples, templates, or checklists where teams commonly drift.\n5. Document how the process is maintained when the system or team changes.\n\n## Good Output\n- Process outline with roles, sequence, and decision gates.\n- Required artifacts, examples, or checklists.\n- Open questions or edge cases that need policy rather than improvisation.\n- Maintenance notes so the process stays current.\n\n## Common Pitfalls\n- Describing the ideal path but omitting ownership and exception handling.\n- Adding heavy ceremony without clear value or decision support.\n- Failing to show what done looks like at each stage.\n- Letting the process drift from how teams actually work.\n\n## Boundaries\n- Do not confuse process guidance with proof that the process is already being followed.\n- Prefer concrete responsibilities and exit criteria over vague workflow prose.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Document architecture decision records so contributors know the flow, roles, and exit criteria.\"",
+      "\"Turn this loose workflow into architecture decision records with checkpoints, ownership, and review gates.\""
+    ]
   },
   {
     "skillId": "architecture-patterns",
@@ -1318,13 +1333,16 @@
   {
     "skillId": "backend-to-frontend-handoff-docs",
     "name": "Backend-to-Frontend Handoff Docs",
-    "description": "Step-by-step guidance for backend-to-frontend handoff docs.",
-    "instructions": "# Backend To Frontend Handoff Docs\n\nSupport backend to frontend handoff docs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with backend to frontend handoff docs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Document backend-to-frontend handoff docs with clear responsibilities, decision points, sequencing, and follow-through expectations.",
+    "instructions": "# Backend-to-Frontend Handoff Docs\n\nUse this skill when the user needs backend-to-frontend handoff docs that turn an informal workflow into something reviewable, teachable, and easier to execute consistently.\n\n## Start By Clarifying\n- Who participates in the process and where responsibilities change hands.\n- What the entry criteria, checkpoints, and exit criteria should be.\n- Which decisions require sign-off, escalation, or documented rationale.\n- What artifacts, links, or evidence should exist at each stage.\n- How the process should stay lightweight enough to be followed in practice.\n\n## Workflow\n1. Define the objective of the process and the scenarios it is meant to cover.\n2. Map the stages, decision points, owners, and required artifacts.\n3. Make review gates, success criteria, and escalation rules explicit.\n4. Add examples, templates, or checklists where teams commonly drift.\n5. Document how the process is maintained when the system or team changes.\n\n## Good Output\n- Process outline with roles, sequence, and decision gates.\n- Required artifacts, examples, or checklists.\n- Open questions or edge cases that need policy rather than improvisation.\n- Maintenance notes so the process stays current.\n\n## Common Pitfalls\n- Describing the ideal path but omitting ownership and exception handling.\n- Adding heavy ceremony without clear value or decision support.\n- Failing to show what done looks like at each stage.\n- Letting the process drift from how teams actually work.\n\n## Boundaries\n- Do not confuse process guidance with proof that the process is already being followed.\n- Prefer concrete responsibilities and exit criteria over vague workflow prose.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Document backend-to-frontend handoff docs so contributors know the flow, roles, and exit criteria.\"",
+      "\"Turn this loose workflow into backend-to-frontend handoff docs with checkpoints, ownership, and review gates.\""
+    ]
   },
   {
     "skillId": "backtesting-frameworks",
@@ -1981,17 +1999,6 @@
     ]
   },
   {
-    "skillId": "cc-skill-project-guidelines-example",
-    "name": "CC Skill Project Guidelines Example",
-    "description": "Step-by-step guidance for cc project guidelines example.",
-    "instructions": "# CC Skill Project Guidelines Example\n\nSupport cc project guidelines example workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with cc skill project guidelines example.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "ccxt",
     "name": "CCXT",
     "description": "Guidance playbook for CCXT: plan and execute manually without requiring direct backend/API execution.",
@@ -2206,17 +2213,6 @@
       "\"Give me general wellness guidance for this issue\"",
       "\"What details should I track for this health concern?\""
     ]
-  },
-  {
-    "skillId": "claude-code-guide",
-    "name": "Claude Code Guide",
-    "description": "Step-by-step guidance for claude code.",
-    "instructions": "# Claude Code Guide\n\nSupport claude code workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with claude code guide.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "claude-scientific-skills",
@@ -2514,28 +2510,6 @@
     ]
   },
   {
-    "skillId": "code-documentation-code-explain",
-    "name": "Code Documentation Code Explain",
-    "description": "Step-by-step guidance for code documentation code explain.",
-    "instructions": "# Code Documentation Code Explain\n\nSupport code documentation code explain workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with code documentation code explain.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "code-documentation-doc-generate",
-    "name": "Code Documentation Doc Generate",
-    "description": "Step-by-step guidance for code documentation doc generate.",
-    "instructions": "# Code Documentation Doc Generate\n\nSupport code documentation doc generate workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with code documentation doc generate.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "code-review",
     "name": "Code Review",
     "description": "Review code changes for behavioral regressions, maintainability risks, unclear contracts, and missing verification with findings-first discipline.",
@@ -2614,17 +2588,6 @@
     ]
   },
   {
-    "skillId": "coding-tutor",
-    "name": "Coding Tutor",
-    "description": "Step-by-step guidance for coding.",
-    "instructions": "# Coding Tutor\n\nSupport coding workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with coding tutor.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "coinbase-automation",
     "name": "Coinbase Automation",
     "description": "Universal browser wallet automation for AI agents. Supports 10 wallets including MetaMask, Rabby, Phantom, Trust Wallet, OKX, Coinbase, and more. EVM + Solana. Configurable guardrails with spend limits, chain allowlists, and approval thresholds.",
@@ -2670,13 +2633,16 @@
   {
     "skillId": "command-development",
     "name": "Command Development",
-    "description": "Step-by-step guidance for command development.",
-    "instructions": "# Command Development\n\nSupport command development workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with command development.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Develop command development handbooks with step-by-step guidance, examples, troubleshooting, and update ownership.",
+    "instructions": "# Command Development\n\nUse this skill when the user is building command development handbooks and needs a guide that people can actually follow under normal work and edge conditions.\n\n## Start By Clarifying\n- What tasks the handbook should support from start to finish.\n- Which readers are beginners versus experienced maintainers.\n- What tooling, environment, or safety assumptions must be explicit.\n- Which examples, troubleshooting paths, or validation steps are essential.\n- How the handbook will stay aligned with reality as systems evolve.\n\n## Workflow\n1. Define the handbook scope and the task sequence readers need most.\n2. Write the guide around workflows, checkpoints, and recovery paths rather than just concepts.\n3. Add examples, troubleshooting cues, and validation steps for common failure modes.\n4. Surface prerequisites, limits, and risky assumptions early.\n5. Review for stale steps, missing edge cases, and unclear ownership.\n\n## Good Output\n- Task-oriented handbook structure.\n- Examples, validation checkpoints, and troubleshooting sections worth adding.\n- Risks or stale assumptions that make the current guide hard to trust.\n- Update and ownership guidance for long-term maintenance.\n\n## Common Pitfalls\n- Explaining theory while leaving readers unable to execute the task.\n- Omitting troubleshooting because the happy path seems obvious.\n- Leaving commands, version assumptions, or paths to decay silently.\n- Packing too many unrelated workflows into one handbook.\n\n## Boundaries\n- Do not present unchecked steps as validated procedure.\n- Prefer practical workflows and failure handling over generic advice.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create command development handbooks with step-by-step workflows, examples, and troubleshooting.\"",
+      "\"Audit command development handbooks for missing validation steps, stale procedures, and weak edge-case guidance.\""
+    ]
   },
   {
     "skillId": "commit",
@@ -2817,13 +2783,16 @@
   {
     "skillId": "concept-workflow",
     "name": "Concept Workflow",
-    "description": "Step-by-step guidance for concept workflow.",
-    "instructions": "# Concept Workflow\n\nSupport concept workflow workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with concept workflow.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Document concept workflow docs with clear responsibilities, decision points, sequencing, and follow-through expectations.",
+    "instructions": "# Concept Workflow\n\nUse this skill when the user needs concept workflow docs that turn an informal workflow into something reviewable, teachable, and easier to execute consistently.\n\n## Start By Clarifying\n- Who participates in the process and where responsibilities change hands.\n- What the entry criteria, checkpoints, and exit criteria should be.\n- Which decisions require sign-off, escalation, or documented rationale.\n- What artifacts, links, or evidence should exist at each stage.\n- How the process should stay lightweight enough to be followed in practice.\n\n## Workflow\n1. Define the objective of the process and the scenarios it is meant to cover.\n2. Map the stages, decision points, owners, and required artifacts.\n3. Make review gates, success criteria, and escalation rules explicit.\n4. Add examples, templates, or checklists where teams commonly drift.\n5. Document how the process is maintained when the system or team changes.\n\n## Good Output\n- Process outline with roles, sequence, and decision gates.\n- Required artifacts, examples, or checklists.\n- Open questions or edge cases that need policy rather than improvisation.\n- Maintenance notes so the process stays current.\n\n## Common Pitfalls\n- Describing the ideal path but omitting ownership and exception handling.\n- Adding heavy ceremony without clear value or decision support.\n- Failing to show what done looks like at each stage.\n- Letting the process drift from how teams actually work.\n\n## Boundaries\n- Do not confuse process guidance with proof that the process is already being followed.\n- Prefer concrete responsibilities and exit criteria over vague workflow prose.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Document concept workflow docs so contributors know the flow, roles, and exit criteria.\"",
+      "\"Turn this loose workflow into concept workflow docs with checkpoints, ownership, and review gates.\""
+    ]
   },
   {
     "skillId": "conceptual-analysis",
@@ -3172,13 +3141,16 @@
   {
     "skillId": "crafting-effective-readmes",
     "name": "Crafting Effective READMEs",
-    "description": "Step-by-step guidance for crafting effective readmes.",
-    "instructions": "# Crafting Effective READMEs\n\nSupport crafting effective readmes workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with crafting effective readmes.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve README docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Crafting Effective READMEs\n\nUse this skill when the user is writing, reviewing, or restructuring README docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft README docs for this project so readers can act without guessing.\"",
+      "\"Review README docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "create-cowork-plugin",
@@ -3264,26 +3236,18 @@
     ]
   },
   {
-    "skillId": "createskill",
-    "name": "Create Skill",
-    "description": "Step-by-step guidance for createskill.",
-    "instructions": "# Create Skill\n\nSupport createskill workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with createskill.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "create-skill-file",
     "name": "Create Skill File",
-    "description": "Step-by-step guidance for create file.",
-    "instructions": "# Create Skill File\n\nSupport create file workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with create skill file.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and review skill file documentation with clear frontmatter, examples, boundaries, and maintenance expectations.",
+    "instructions": "# Create Skill File\n\nUse this skill when the user is authoring or reviewing a skill file and needs it to be structurally correct, readable, and aligned with repository expectations.\n\n## Start By Clarifying\n- What problem the skill is supposed to solve.\n- Whether the skill is guidance-only or depends on supported backend tooling.\n- Which audience will use the skill and what prompts should trigger it.\n- What examples best show the intended use without being redundant.\n- What boundaries should be explicit so the skill does not overclaim capability.\n\n## Workflow\n1. Define the skill's purpose, scope, and intended user requests.\n2. Write compliant frontmatter with `id`, `name`, `description`, `category`, `requires`, and `examples`.\n3. Draft instructions around user outcomes, decision points, and common failure modes.\n4. Add examples that demonstrate real usage patterns rather than generic filler.\n5. Review the file for overlap, unsupported claims, and missing boundaries before treating it as ready.\n\n## Good Output\n- Skill-file structure with correct frontmatter.\n- Clear instructions that explain when and how the skill should help.\n- Examples that improve discoverability and expectation-setting.\n- Boundary notes that prevent hidden-tool or hidden-state assumptions.\n- Review notes on overlap, clarity, or maintenance risk.\n\n## Common Pitfalls\n- Writing a skill name without giving the body a real workflow or job to do.\n- Using generic examples that could fit any skill in the repo.\n- Leaving unsupported backend assumptions in a guidance-only skill.\n- Creating a skill that duplicates an existing stronger canonical skill.\n- Treating frontmatter as valid while missing the actual reader-facing clarity.\n\n## Boundaries\n- Do not imply nonexistent tools, local services, hidden state, or privileged integrations.\n- Prefer clear scope, examples, and behavioral guidance over placeholder boilerplate.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Help me create a skill file that follows the repository format and reads clearly.\"",
+      "\"Review this skill file draft for frontmatter, examples, boundaries, and instruction quality.\""
+    ]
   },
   {
     "skillId": "create-view",
@@ -3713,13 +3677,16 @@
   {
     "skillId": "debugging-strategies",
     "name": "Debugging Strategies",
-    "description": "Step-by-step guidance for debugging strategies.",
-    "instructions": "# Debugging Strategies\n\nSupport debugging strategies workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with debugging strategies.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Develop debugging strategy docs with step-by-step guidance, examples, troubleshooting, and update ownership.",
+    "instructions": "# Debugging Strategies\n\nUse this skill when the user is building debugging strategy docs and needs a guide that people can actually follow under normal work and edge conditions.\n\n## Start By Clarifying\n- What tasks the handbook should support from start to finish.\n- Which readers are beginners versus experienced maintainers.\n- What tooling, environment, or safety assumptions must be explicit.\n- Which examples, troubleshooting paths, or validation steps are essential.\n- How the handbook will stay aligned with reality as systems evolve.\n\n## Workflow\n1. Define the handbook scope and the task sequence readers need most.\n2. Write the guide around workflows, checkpoints, and recovery paths rather than just concepts.\n3. Add examples, troubleshooting cues, and validation steps for common failure modes.\n4. Surface prerequisites, limits, and risky assumptions early.\n5. Review for stale steps, missing edge cases, and unclear ownership.\n\n## Good Output\n- Task-oriented handbook structure.\n- Examples, validation checkpoints, and troubleshooting sections worth adding.\n- Risks or stale assumptions that make the current guide hard to trust.\n- Update and ownership guidance for long-term maintenance.\n\n## Common Pitfalls\n- Explaining theory while leaving readers unable to execute the task.\n- Omitting troubleshooting because the happy path seems obvious.\n- Leaving commands, version assumptions, or paths to decay silently.\n- Packing too many unrelated workflows into one handbook.\n\n## Boundaries\n- Do not present unchecked steps as validated procedure.\n- Prefer practical workflows and failure handling over generic advice.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create debugging strategy docs with step-by-step workflows, examples, and troubleshooting.\"",
+      "\"Audit debugging strategy docs for missing validation steps, stale procedures, and weak edge-case guidance.\""
+    ]
   },
   {
     "skillId": "decision-helper",
@@ -4132,13 +4099,16 @@
   {
     "skillId": "doc-coauthoring",
     "name": "Doc Coauthoring",
-    "description": "Step-by-step guidance for doc coauthoring.",
-    "instructions": "# Doc Coauthoring\n\nSupport doc coauthoring workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with doc coauthoring.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve doc coauthoring workflows with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Doc Coauthoring\n\nUse this skill when the user is writing, reviewing, or restructuring doc coauthoring workflows and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft doc coauthoring workflows for this project so readers can act without guessing.\"",
+      "\"Review doc coauthoring workflows for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "docker-expert",
@@ -4175,13 +4145,16 @@
   {
     "skillId": "docs-architect",
     "name": "Docs Architect",
-    "description": "Step-by-step guidance for docs architect.",
-    "instructions": "# Docs Architect\n\nSupport docs architect workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with docs architect.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve documentation architecture plans with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Docs Architect\n\nUse this skill when the user is writing, reviewing, or restructuring documentation architecture plans and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft documentation architecture plans for this project so readers can act without guessing.\"",
+      "\"Review documentation architecture plans for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "docs-demo",
@@ -4204,35 +4177,30 @@
   {
     "skillId": "docs-style",
     "name": "Docs Style",
-    "description": "Step-by-step guidance for docs style.",
-    "instructions": "# Docs Style\n\nSupport docs style workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with docs style.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve docs style guides with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Docs Style\n\nUse this skill when the user is writing, reviewing, or restructuring docs style guides and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft docs style guides for this project so readers can act without guessing.\"",
+      "\"Review docs style guides for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "docs-sync",
     "name": "Docs Sync",
-    "description": "Step-by-step guidance for docs sync.",
-    "instructions": "# Docs Sync\n\nSupport docs sync workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with docs sync.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve docs sync workflows with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Docs Sync\n\nUse this skill when the user is writing, reviewing, or restructuring docs sync workflows and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "docstring",
-    "name": "Docstring",
-    "description": "Step-by-step guidance for docstring.",
-    "instructions": "# Docstring\n\nSupport docstring workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with docstring.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft docs sync workflows for this project so readers can act without guessing.\"",
+      "\"Review docs sync workflows for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "doctor",
@@ -4262,39 +4230,6 @@
       "Help me set up Prometheus metrics for my Documenso integration.",
       "Configure structured logging for debugging Documenso API requests."
     ]
-  },
-  {
-    "skillId": "documentation",
-    "name": "Documentation",
-    "description": "Step-by-step guidance for documentation.",
-    "instructions": "# Documentation\n\nSupport documentation workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with documentation.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "documentation-generation-doc-generate",
-    "name": "Documentation Generation Doc Generate",
-    "description": "Step-by-step guidance for documentation generation doc generate.",
-    "instructions": "# Documentation Generation Doc Generate\n\nSupport documentation generation doc generate workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with documentation generation doc generate.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "documentation-templates",
-    "name": "Documentation Templates",
-    "description": "Step-by-step guidance for documentation templates.",
-    "instructions": "# Documentation Templates\n\nSupport documentation templates workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with documentation templates.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "docx",
@@ -4593,13 +4528,16 @@
   {
     "skillId": "environment-setup-guide",
     "name": "Environment Setup Guide",
-    "description": "Step-by-step guidance for environment setup.",
-    "instructions": "# Environment Setup Guide\n\nSupport environment setup workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with environment setup guide.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve environment setup guides with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Environment Setup Guide\n\nUse this skill when the user is writing, reviewing, or restructuring environment setup guides and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft environment setup guides for this project so readers can act without guessing.\"",
+      "\"Review environment setup guides for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "environment-variables",
@@ -4862,17 +4800,6 @@
       "Find research papers similar to this article on CRISPR technology.",
       "Search for top companies in the solid-state battery industry using Exa."
     ]
-  },
-  {
-    "skillId": "example-skill",
-    "name": "Example Skill",
-    "description": "Step-by-step guidance for example.",
-    "instructions": "# Example Skill\n\nSupport example workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with example skill.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "excitation-signal-design",
@@ -5194,17 +5121,6 @@
       "\"Help me design Feishu sharing permissions for our team docs.\"",
       "\"Use feishu-perm to review access levels before sharing.\""
     ]
-  },
-  {
-    "skillId": "feishu-wiki",
-    "name": "Feishu Wiki",
-    "description": "Step-by-step guidance for feishu wiki.",
-    "instructions": "# Feishu Wiki\n\nSupport feishu wiki workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with feishu wiki.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "fields",
@@ -5667,17 +5583,6 @@
     ]
   },
   {
-    "skillId": "fuzzing-dictionary",
-    "name": "Fuzzing Dictionary",
-    "description": "Step-by-step guidance for fuzzing dictionary.",
-    "instructions": "# Fuzzing Dictionary\n\nSupport fuzzing dictionary workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with fuzzing dictionary.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "game-art",
     "name": "Game Art",
     "description": "Define and implement game-art pipelines covering style guides, asset production, optimization, and engine integration.",
@@ -5819,17 +5724,6 @@
       "\"Help me with gdpr dsgvo expert.\"",
       "\"Use gdpr-dsgvo-expert for this task.\""
     ]
-  },
-  {
-    "skillId": "gemini",
-    "name": "Gemini",
-    "description": "Step-by-step guidance for gemini.",
-    "instructions": "# Gemini\n\nSupport gemini workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with gemini.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "generate-sparkle-appcast",
@@ -6313,24 +6207,16 @@
   {
     "skillId": "harness-writing",
     "name": "Harness Writing",
-    "description": "Step-by-step guidance for harness.",
-    "instructions": "# Harness Writing\n\nSupport harness workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with harness writing.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Develop test harness docs with step-by-step guidance, examples, troubleshooting, and update ownership.",
+    "instructions": "# Harness Writing\n\nUse this skill when the user is building test harness docs and needs a guide that people can actually follow under normal work and edge conditions.\n\n## Start By Clarifying\n- What tasks the handbook should support from start to finish.\n- Which readers are beginners versus experienced maintainers.\n- What tooling, environment, or safety assumptions must be explicit.\n- Which examples, troubleshooting paths, or validation steps are essential.\n- How the handbook will stay aligned with reality as systems evolve.\n\n## Workflow\n1. Define the handbook scope and the task sequence readers need most.\n2. Write the guide around workflows, checkpoints, and recovery paths rather than just concepts.\n3. Add examples, troubleshooting cues, and validation steps for common failure modes.\n4. Surface prerequisites, limits, and risky assumptions early.\n5. Review for stale steps, missing edge cases, and unclear ownership.\n\n## Good Output\n- Task-oriented handbook structure.\n- Examples, validation checkpoints, and troubleshooting sections worth adding.\n- Risks or stale assumptions that make the current guide hard to trust.\n- Update and ownership guidance for long-term maintenance.\n\n## Common Pitfalls\n- Explaining theory while leaving readers unable to execute the task.\n- Omitting troubleshooting because the happy path seems obvious.\n- Leaving commands, version assumptions, or paths to decay silently.\n- Packing too many unrelated workflows into one handbook.\n\n## Boundaries\n- Do not present unchecked steps as validated procedure.\n- Prefer practical workflows and failure handling over generic advice.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "hbcreative",
-    "name": "HBCreative",
-    "description": "Step-by-step guidance for hbcreative.",
-    "instructions": "# HBCreative\n\nSupport hbcreative workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with hbcreative.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create test harness docs with step-by-step workflows, examples, and troubleshooting.\"",
+      "\"Audit test harness docs for missing validation steps, stale procedures, and weak edge-case guidance.\""
+    ]
   },
   {
     "skillId": "hebrew",
@@ -6465,13 +6351,16 @@
   {
     "skillId": "hook-development",
     "name": "Hook Development",
-    "description": "Step-by-step guidance for hook development.",
-    "instructions": "# Hook Development\n\nSupport hook development workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with hook development.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Develop hook development docs with step-by-step guidance, examples, troubleshooting, and update ownership.",
+    "instructions": "# Hook Development\n\nUse this skill when the user is building hook development docs and needs a guide that people can actually follow under normal work and edge conditions.\n\n## Start By Clarifying\n- What tasks the handbook should support from start to finish.\n- Which readers are beginners versus experienced maintainers.\n- What tooling, environment, or safety assumptions must be explicit.\n- Which examples, troubleshooting paths, or validation steps are essential.\n- How the handbook will stay aligned with reality as systems evolve.\n\n## Workflow\n1. Define the handbook scope and the task sequence readers need most.\n2. Write the guide around workflows, checkpoints, and recovery paths rather than just concepts.\n3. Add examples, troubleshooting cues, and validation steps for common failure modes.\n4. Surface prerequisites, limits, and risky assumptions early.\n5. Review for stale steps, missing edge cases, and unclear ownership.\n\n## Good Output\n- Task-oriented handbook structure.\n- Examples, validation checkpoints, and troubleshooting sections worth adding.\n- Risks or stale assumptions that make the current guide hard to trust.\n- Update and ownership guidance for long-term maintenance.\n\n## Common Pitfalls\n- Explaining theory while leaving readers unable to execute the task.\n- Omitting troubleshooting because the happy path seems obvious.\n- Leaving commands, version assumptions, or paths to decay silently.\n- Packing too many unrelated workflows into one handbook.\n\n## Boundaries\n- Do not present unchecked steps as validated procedure.\n- Prefer practical workflows and failure handling over generic advice.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create hook development docs with step-by-step workflows, examples, and troubleshooting.\"",
+      "\"Audit hook development docs for missing validation steps, stale procedures, and weak edge-case guidance.\""
+    ]
   },
   {
     "skillId": "hqq-quantization",
@@ -6772,13 +6661,16 @@
   {
     "skillId": "index-knowledge",
     "name": "Index Knowledge",
-    "description": "Step-by-step guidance for index knowledge.",
-    "instructions": "# Index Knowledge\n\nSupport index knowledge workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with index knowledge.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Structure knowledge indexing docs so context stays discoverable, bounded, and maintainable without implying hidden system state.",
+    "instructions": "# Index Knowledge\n\nUse this skill when the user needs knowledge indexing docs organized so important context can be captured, found, and updated without implying hidden memory or invisible indexed state.\n\n## Start By Clarifying\n- What information deserves durable capture versus short-lived discussion.\n- How readers should locate the right context later.\n- Which taxonomy, tags, or summary conventions will keep retrieval manageable.\n- What freshness signals or ownership rules prevent silent decay.\n- Where the boundaries are between documented knowledge and inferred context.\n\n## Workflow\n1. Define the knowledge objects, categories, and retrieval paths readers will use.\n2. Choose a structure for summaries, tags, links, and source references.\n3. Document what should be captured, what should be omitted, and how updates happen.\n4. Add examples of good entries, summaries, or indexing conventions.\n5. Review for taxonomy sprawl, stale knowledge, and unclear source-of-truth rules.\n\n## Good Output\n- Knowledge structure or taxonomy recommendation.\n- Rules for summaries, tags, references, and freshness.\n- Ambiguities where context capture could become misleading or too broad.\n- Maintenance guidance so the knowledge system stays usable.\n\n## Common Pitfalls\n- Documenting everything and creating an unsearchable memory dump.\n- Using vague labels that do not help future retrieval.\n- Failing to separate verified facts from interpretation or working notes.\n- Implying persistent memory or indexing capabilities that are not actually present.\n\n## Boundaries\n- Do not imply undocumented retrieval or memory systems exist.\n- Prefer explicit taxonomy and source references over invisible context magic.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Design knowledge indexing docs so important context stays discoverable and appropriately scoped.\"",
+      "\"Review knowledge indexing docs for taxonomy gaps, retrieval friction, and freshness risk.\""
+    ]
   },
   {
     "skillId": "indonesian",
@@ -6811,13 +6703,16 @@
   {
     "skillId": "install-skills",
     "name": "Install Skills",
-    "description": "Step-by-step guidance for install skills.",
-    "instructions": "# Install Skills\n\nSupport install skills workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with install skills.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Plan and maintain skill installation docs with clear information architecture, publishing workflow, and source-of-truth boundaries.",
+    "instructions": "# Install Skills\n\nUse this skill when the user is structuring or reviewing skill installation docs and needs documentation that fits the platform without pretending to have hidden publishing or backend powers.\n\n## Start By Clarifying\n- What content belongs on the platform and what should remain elsewhere.\n- Who owns publishing, review, and long-term maintenance.\n- How readers discover content through navigation, search, or links.\n- What source-of-truth rules prevent drift between platform pages and other docs.\n- Which examples, screenshots, or platform-specific conventions need active upkeep.\n\n## Workflow\n1. Define the information architecture and where each document type belongs.\n2. Set authorship, review, and publishing expectations before adding content at scale.\n3. Write or reorganize pages around reader tasks and stable navigation paths.\n4. Add freshness cues, ownership notes, and update triggers for high-change content.\n5. Review the platform for searchability, duplication, and stale or conflicting pages.\n\n## Good Output\n- Recommended page structure and navigation model.\n- Source-of-truth boundaries and ownership expectations.\n- Publishing or review workflow guidance.\n- Risks around stale content, duplicated pages, or misleading examples.\n\n## Common Pitfalls\n- Treating the platform as the information architecture instead of designing one.\n- Duplicating content in multiple places with no freshness rule.\n- Publishing screenshots or examples that age quickly without maintenance ownership.\n- Implying platform capabilities or automation that the user has not confirmed.\n\n## Boundaries\n- Do not imply direct access to publishing systems unless the user provides it.\n- Prefer platform-aware structure and governance over tool-magic claims.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Set up skill installation docs with structure, publishing rules, and maintenance ownership.\"",
+      "\"Review skill installation docs for navigation problems, stale content risk, and weak source-of-truth boundaries.\""
+    ]
   },
   {
     "skillId": "installing-mobile-preview-builds",
@@ -6998,13 +6893,16 @@
   {
     "skillId": "issue-triage",
     "name": "Issue Triage",
-    "description": "Step-by-step guidance for issue triage.",
-    "instructions": "# Issue Triage\n\nSupport issue triage workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with issue triage.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Document issue triage docs with clear responsibilities, decision points, sequencing, and follow-through expectations.",
+    "instructions": "# Issue Triage\n\nUse this skill when the user needs issue triage docs that turn an informal workflow into something reviewable, teachable, and easier to execute consistently.\n\n## Start By Clarifying\n- Who participates in the process and where responsibilities change hands.\n- What the entry criteria, checkpoints, and exit criteria should be.\n- Which decisions require sign-off, escalation, or documented rationale.\n- What artifacts, links, or evidence should exist at each stage.\n- How the process should stay lightweight enough to be followed in practice.\n\n## Workflow\n1. Define the objective of the process and the scenarios it is meant to cover.\n2. Map the stages, decision points, owners, and required artifacts.\n3. Make review gates, success criteria, and escalation rules explicit.\n4. Add examples, templates, or checklists where teams commonly drift.\n5. Document how the process is maintained when the system or team changes.\n\n## Good Output\n- Process outline with roles, sequence, and decision gates.\n- Required artifacts, examples, or checklists.\n- Open questions or edge cases that need policy rather than improvisation.\n- Maintenance notes so the process stays current.\n\n## Common Pitfalls\n- Describing the ideal path but omitting ownership and exception handling.\n- Adding heavy ceremony without clear value or decision support.\n- Failing to show what done looks like at each stage.\n- Letting the process drift from how teams actually work.\n\n## Boundaries\n- Do not confuse process guidance with proof that the process is already being followed.\n- Prefer concrete responsibilities and exit criteria over vague workflow prose.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Document issue triage docs so contributors know the flow, roles, and exit criteria.\"",
+      "\"Turn this loose workflow into issue triage docs with checkpoints, ownership, and review gates.\""
+    ]
   },
   {
     "skillId": "istio-traffic-management",
@@ -7051,17 +6949,6 @@
       "\"Create Java coding standards for this Spring Boot codebase with naming and layering rules.\"",
       "\"Review these Java modules and propose standards for error handling and test coverage.\""
     ]
-  },
-  {
-    "skillId": "javascript-mastery",
-    "name": "JavaScript Mastery",
-    "description": "Step-by-step guidance for javascript mastery.",
-    "instructions": "# JavaScript Mastery\n\nSupport javascript mastery workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with javascript mastery.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "javascript-testing-patterns",
@@ -7229,24 +7116,16 @@
   {
     "skillId": "jupyter-notebook",
     "name": "Jupyter Notebook",
-    "description": "Step-by-step guidance for jupyter notebook.",
-    "instructions": "# Jupyter Notebook\n\nSupport jupyter notebook workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with jupyter notebook.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Plan and maintain Jupyter notebook docs with clear information architecture, publishing workflow, and source-of-truth boundaries.",
+    "instructions": "# Jupyter Notebook\n\nUse this skill when the user is structuring or reviewing Jupyter notebook docs and needs documentation that fits the platform without pretending to have hidden publishing or backend powers.\n\n## Start By Clarifying\n- What content belongs on the platform and what should remain elsewhere.\n- Who owns publishing, review, and long-term maintenance.\n- How readers discover content through navigation, search, or links.\n- What source-of-truth rules prevent drift between platform pages and other docs.\n- Which examples, screenshots, or platform-specific conventions need active upkeep.\n\n## Workflow\n1. Define the information architecture and where each document type belongs.\n2. Set authorship, review, and publishing expectations before adding content at scale.\n3. Write or reorganize pages around reader tasks and stable navigation paths.\n4. Add freshness cues, ownership notes, and update triggers for high-change content.\n5. Review the platform for searchability, duplication, and stale or conflicting pages.\n\n## Good Output\n- Recommended page structure and navigation model.\n- Source-of-truth boundaries and ownership expectations.\n- Publishing or review workflow guidance.\n- Risks around stale content, duplicated pages, or misleading examples.\n\n## Common Pitfalls\n- Treating the platform as the information architecture instead of designing one.\n- Duplicating content in multiple places with no freshness rule.\n- Publishing screenshots or examples that age quickly without maintenance ownership.\n- Implying platform capabilities or automation that the user has not confirmed.\n\n## Boundaries\n- Do not imply direct access to publishing systems unless the user provides it.\n- Prefer platform-aware structure and governance over tool-magic claims.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "kaizen",
-    "name": "Kaizen",
-    "description": "Step-by-step guidance for kaizen.",
-    "instructions": "# Kaizen\n\nSupport kaizen workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with kaizen.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
+    "examples": [
+      "\"Set up Jupyter notebook docs with structure, publishing rules, and maintenance ownership.\"",
+      "\"Review Jupyter notebook docs for navigation problems, stale content risk, and weak source-of-truth boundaries.\""
+    ]
   },
   {
     "skillId": "kegg-database",
@@ -7421,13 +7300,16 @@
   {
     "skillId": "libraries-release-notes",
     "name": "Libraries Release Notes",
-    "description": "Step-by-step guidance for libraries release notes.",
-    "instructions": "# Libraries Release Notes\n\nSupport libraries release notes workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with libraries release notes.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write library release notes with clear impact, compatibility notes, rollout context, and reader actions.",
+    "instructions": "# Libraries Release Notes\n\nUse this skill when the user needs library release notes so readers understand what changed, why it matters, and what they need to do next.\n\n## Start By Clarifying\n- Who the release notes are for and what they care about most.\n- Which changes are user-visible, operationally significant, or compatibility-sensitive.\n- Whether migrations, deprecations, or rollout caveats need explicit treatment.\n- What risks, known issues, or support guidance should be surfaced.\n- How much implementation detail helps rather than distracts.\n\n## Workflow\n1. Collect the meaningful changes and group them by reader impact, not commit chronology.\n2. Highlight features, fixes, breaking changes, and operational notes separately where useful.\n3. Add migration or upgrade guidance wherever readers may need to take action.\n4. Call out known issues, rollout caveats, and audience-specific warnings honestly.\n5. Review the notes for clarity, completeness, and whether affected readers can recognize themselves.\n\n## Good Output\n- Release summary tailored to the intended audience.\n- Grouped notes by impact or change type.\n- Migration, rollback, or compatibility notes.\n- Known issues or rollout caveats that should not be hidden.\n\n## Common Pitfalls\n- Copying commit messages instead of explaining reader impact.\n- Burying breaking changes among minor fixes.\n- Leaving users unsure whether they need to act.\n- Overstating rollout completeness or stability without confirmation.\n\n## Boundaries\n- Do not imply a change is fully rolled out unless the user confirms it.\n- Prefer impact-focused communication over changelog noise.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft library release notes that explains impact, migration notes, and known issues clearly.\"",
+      "\"Review library release notes so readers can tell whether they are affected and what to do next.\""
+    ]
   },
   {
     "skillId": "library",
@@ -7737,17 +7619,6 @@
       "\"Compress this into a cleaner signal archive\"",
       "\"Help me create a verification-first persona pack summary\""
     ]
-  },
-  {
-    "skillId": "make-plan",
-    "name": "Make Plan",
-    "description": "Step-by-step guidance for make plan.",
-    "instructions": "# Make Plan\n\nSupport make plan workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with make plan.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "makepad-skills",
@@ -8215,28 +8086,6 @@
     ]
   },
   {
-    "skillId": "microsoft-code-reference",
-    "name": "Microsoft Code Reference",
-    "description": "Step-by-step guidance for microsoft code reference.",
-    "instructions": "# Microsoft Code Reference\n\nSupport microsoft code reference workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with microsoft code reference.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "microsoft-docs",
-    "name": "Microsoft Docs",
-    "description": "Step-by-step guidance for microsoft docs.",
-    "instructions": "# Microsoft Docs\n\nSupport microsoft docs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with microsoft docs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "microsoft-teams-automation",
     "name": "Microsoft Teams Automation",
     "description": "Guidance-only playbook for Microsoft Teams collaboration operations, including channel governance, meeting hygiene, and communication standards.",
@@ -8301,13 +8150,16 @@
   {
     "skillId": "mintlify",
     "name": "Mintlify",
-    "description": "Step-by-step guidance for mintlify.",
-    "instructions": "# Mintlify\n\nSupport mintlify workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with mintlify.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Plan and maintain Mintlify docs workflows with clear information architecture, publishing workflow, and source-of-truth boundaries.",
+    "instructions": "# Mintlify\n\nUse this skill when the user is structuring or reviewing Mintlify docs workflows and needs documentation that fits the platform without pretending to have hidden publishing or backend powers.\n\n## Start By Clarifying\n- What content belongs on the platform and what should remain elsewhere.\n- Who owns publishing, review, and long-term maintenance.\n- How readers discover content through navigation, search, or links.\n- What source-of-truth rules prevent drift between platform pages and other docs.\n- Which examples, screenshots, or platform-specific conventions need active upkeep.\n\n## Workflow\n1. Define the information architecture and where each document type belongs.\n2. Set authorship, review, and publishing expectations before adding content at scale.\n3. Write or reorganize pages around reader tasks and stable navigation paths.\n4. Add freshness cues, ownership notes, and update triggers for high-change content.\n5. Review the platform for searchability, duplication, and stale or conflicting pages.\n\n## Good Output\n- Recommended page structure and navigation model.\n- Source-of-truth boundaries and ownership expectations.\n- Publishing or review workflow guidance.\n- Risks around stale content, duplicated pages, or misleading examples.\n\n## Common Pitfalls\n- Treating the platform as the information architecture instead of designing one.\n- Duplicating content in multiple places with no freshness rule.\n- Publishing screenshots or examples that age quickly without maintenance ownership.\n- Implying platform capabilities or automation that the user has not confirmed.\n\n## Boundaries\n- Do not imply direct access to publishing systems unless the user provides it.\n- Prefer platform-aware structure and governance over tool-magic claims.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Set up Mintlify docs workflows with structure, publishing rules, and maintenance ownership.\"",
+      "\"Review Mintlify docs workflows for navigation problems, stale content risk, and weak source-of-truth boundaries.\""
+    ]
   },
   {
     "skillId": "mission-trajectory",
@@ -8811,13 +8663,16 @@
   {
     "skillId": "navigator",
     "name": "Navigator",
-    "description": "Step-by-step guidance for navigator.",
-    "instructions": "# Navigator\n\nSupport navigator workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with navigator.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Structure documentation navigation strategy so context stays discoverable, bounded, and maintainable without implying hidden system state.",
+    "instructions": "# Navigator\n\nUse this skill when the user needs documentation navigation strategy organized so important context can be captured, found, and updated without implying hidden memory or invisible indexed state.\n\n## Start By Clarifying\n- What information deserves durable capture versus short-lived discussion.\n- How readers should locate the right context later.\n- Which taxonomy, tags, or summary conventions will keep retrieval manageable.\n- What freshness signals or ownership rules prevent silent decay.\n- Where the boundaries are between documented knowledge and inferred context.\n\n## Workflow\n1. Define the knowledge objects, categories, and retrieval paths readers will use.\n2. Choose a structure for summaries, tags, links, and source references.\n3. Document what should be captured, what should be omitted, and how updates happen.\n4. Add examples of good entries, summaries, or indexing conventions.\n5. Review for taxonomy sprawl, stale knowledge, and unclear source-of-truth rules.\n\n## Good Output\n- Knowledge structure or taxonomy recommendation.\n- Rules for summaries, tags, references, and freshness.\n- Ambiguities where context capture could become misleading or too broad.\n- Maintenance guidance so the knowledge system stays usable.\n\n## Common Pitfalls\n- Documenting everything and creating an unsearchable memory dump.\n- Using vague labels that do not help future retrieval.\n- Failing to separate verified facts from interpretation or working notes.\n- Implying persistent memory or indexing capabilities that are not actually present.\n\n## Boundaries\n- Do not imply undocumented retrieval or memory systems exist.\n- Prefer explicit taxonomy and source references over invisible context magic.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Design documentation navigation strategy so important context stays discoverable and appropriately scoped.\"",
+      "\"Review documentation navigation strategy for taxonomy gaps, retrieval friction, and freshness risk.\""
+    ]
   },
   {
     "skillId": "nbodykit-cosmology-analyzer",
@@ -9231,13 +9086,16 @@
   {
     "skillId": "openai-docs",
     "name": "OpenAI Docs",
-    "description": "Step-by-step guidance for openai docs.",
-    "instructions": "# OpenAI Docs\n\nSupport openai docs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with openai docs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Plan and maintain OpenAI docs with clear information architecture, publishing workflow, and source-of-truth boundaries.",
+    "instructions": "# OpenAI Docs\n\nUse this skill when the user is structuring or reviewing OpenAI docs and needs documentation that fits the platform without pretending to have hidden publishing or backend powers.\n\n## Start By Clarifying\n- What content belongs on the platform and what should remain elsewhere.\n- Who owns publishing, review, and long-term maintenance.\n- How readers discover content through navigation, search, or links.\n- What source-of-truth rules prevent drift between platform pages and other docs.\n- Which examples, screenshots, or platform-specific conventions need active upkeep.\n\n## Workflow\n1. Define the information architecture and where each document type belongs.\n2. Set authorship, review, and publishing expectations before adding content at scale.\n3. Write or reorganize pages around reader tasks and stable navigation paths.\n4. Add freshness cues, ownership notes, and update triggers for high-change content.\n5. Review the platform for searchability, duplication, and stale or conflicting pages.\n\n## Good Output\n- Recommended page structure and navigation model.\n- Source-of-truth boundaries and ownership expectations.\n- Publishing or review workflow guidance.\n- Risks around stale content, duplicated pages, or misleading examples.\n\n## Common Pitfalls\n- Treating the platform as the information architecture instead of designing one.\n- Duplicating content in multiple places with no freshness rule.\n- Publishing screenshots or examples that age quickly without maintenance ownership.\n- Implying platform capabilities or automation that the user has not confirmed.\n\n## Boundaries\n- Do not imply direct access to publishing systems unless the user provides it.\n- Prefer platform-aware structure and governance over tool-magic claims.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Set up OpenAI docs with structure, publishing rules, and maintenance ownership.\"",
+      "\"Review OpenAI docs for navigation problems, stale content risk, and weak source-of-truth boundaries.\""
+    ]
   },
   {
     "skillId": "openai-image-gen",
@@ -9273,17 +9131,6 @@
       "\"Help me design a practical OpenAI Image Vision workflow.\"",
       "\"What are best practices and trade-offs for OpenAI Image Vision?\""
     ]
-  },
-  {
-    "skillId": "openai-knowledge",
-    "name": "OpenAI Knowledge",
-    "description": "Step-by-step guidance for openai knowledge.",
-    "instructions": "# OpenAI Knowledge\n\nSupport openai knowledge workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with openai knowledge.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "openai-whisper",
@@ -9531,13 +9378,16 @@
   {
     "skillId": "packages",
     "name": "Packages",
-    "description": "Step-by-step guidance for packages.",
-    "instructions": "# Packages\n\nSupport packages workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with packages.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Create and maintain package docs with accurate contracts, examples, edge cases, and version-aware detail.",
+    "instructions": "# Packages\n\nUse this skill when the user needs package docs that readers can trust as a durable lookup source rather than a vague narrative summary.\n\n## Start By Clarifying\n- What entities, endpoints, fields, functions, or concepts are actually in scope.\n- Which versions, compatibility boundaries, or deprecations matter.\n- What inputs, outputs, defaults, and error cases readers most often misunderstand.\n- Which examples are necessary to make the reference usable, not just complete.\n- What surrounding guide material should be linked rather than duplicated.\n\n## Workflow\n1. Define the reference surface and group it into durable reader-facing sections.\n2. Document contracts, required fields, defaults, side effects, and failure modes explicitly.\n3. Add examples that show normal use, edge cases, and compatibility caveats.\n4. Call out version boundaries, deprecations, and non-obvious constraints.\n5. Review for omissions that would force readers back into code or guesswork.\n\n## Good Output\n- Reference structure by resource, concept, or API surface.\n- Missing contract details, examples, or compatibility notes.\n- Places where defaults, limits, or failure behavior need stronger explanation.\n- Cross-links needed to connect reference material to task-oriented guides.\n\n## Common Pitfalls\n- Documenting names without documenting behavior or constraints.\n- Skipping error cases because the happy path feels sufficient.\n- Hiding version-specific caveats until readers hit production issues.\n- Letting the reference drift from actual source behavior.\n\n## Boundaries\n- Do not imply undocumented behavior is guaranteed.\n- Prefer precise contracts and examples over broad marketing-style wording.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create package docs with examples, constraints, and edge-case coverage.\"",
+      "\"Review package docs for gaps in contracts, parameters, compatibility notes, or failure cases.\""
+    ]
   },
   {
     "skillId": "pantun-indonesia",
@@ -9566,17 +9416,6 @@
       "\"Find canonical type definitions before creating new types\"",
       "\"Verify no type errors before marking agent task complete\""
     ]
-  },
-  {
-    "skillId": "parallel-debugging",
-    "name": "Parallel Debugging",
-    "description": "Step-by-step guidance for parallel debugging.",
-    "instructions": "# Parallel Debugging\n\nSupport parallel debugging workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with parallel debugging.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "parallel-feature-development",
@@ -9991,17 +9830,6 @@
     ]
   },
   {
-    "skillId": "playwright-dev",
-    "name": "Playwright Dev",
-    "description": "Step-by-step guidance for playwright dev.",
-    "instructions": "# Playwright Dev\n\nSupport playwright dev workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with playwright dev.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "playwright-roll",
     "name": "Playwright Roll",
     "description": "Concrete workflow for playwright roll with specific inputs, execution steps, and deliverables.",
@@ -10170,13 +9998,16 @@
   {
     "skillId": "pr-walkthrough",
     "name": "PR Walkthrough",
-    "description": "Step-by-step guidance for pr walkthrough.",
-    "instructions": "# PR Walkthrough\n\nSupport pr walkthrough workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with pr walkthrough.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Document PR walkthrough docs with clear responsibilities, decision points, sequencing, and follow-through expectations.",
+    "instructions": "# PR Walkthrough\n\nUse this skill when the user needs PR walkthrough docs that turn an informal workflow into something reviewable, teachable, and easier to execute consistently.\n\n## Start By Clarifying\n- Who participates in the process and where responsibilities change hands.\n- What the entry criteria, checkpoints, and exit criteria should be.\n- Which decisions require sign-off, escalation, or documented rationale.\n- What artifacts, links, or evidence should exist at each stage.\n- How the process should stay lightweight enough to be followed in practice.\n\n## Workflow\n1. Define the objective of the process and the scenarios it is meant to cover.\n2. Map the stages, decision points, owners, and required artifacts.\n3. Make review gates, success criteria, and escalation rules explicit.\n4. Add examples, templates, or checklists where teams commonly drift.\n5. Document how the process is maintained when the system or team changes.\n\n## Good Output\n- Process outline with roles, sequence, and decision gates.\n- Required artifacts, examples, or checklists.\n- Open questions or edge cases that need policy rather than improvisation.\n- Maintenance notes so the process stays current.\n\n## Common Pitfalls\n- Describing the ideal path but omitting ownership and exception handling.\n- Adding heavy ceremony without clear value or decision support.\n- Failing to show what done looks like at each stage.\n- Letting the process drift from how teams actually work.\n\n## Boundaries\n- Do not confuse process guidance with proof that the process is already being followed.\n- Prefer concrete responsibilities and exit criteria over vague workflow prose.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Document PR walkthrough docs so contributors know the flow, roles, and exit criteria.\"",
+      "\"Turn this loose workflow into PR walkthrough docs with checkpoints, ownership, and review gates.\""
+    ]
   },
   {
     "skillId": "prd",
@@ -10362,13 +10193,16 @@
   {
     "skillId": "project-overview",
     "name": "Project Overview",
-    "description": "Step-by-step guidance for project overview.",
-    "instructions": "# Project Overview\n\nSupport project overview workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with project overview.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve project overview docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Project Overview\n\nUse this skill when the user is writing, reviewing, or restructuring project overview docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft project overview docs for this project so readers can act without guessing.\"",
+      "\"Review project overview docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "project-planner",
@@ -10722,17 +10556,6 @@
       "Help me plan and implement python error handling for this repository, including key decisions and checkpoints.",
       "Create a concise python error handling workflow with concrete steps, risks, and final deliverables for my project."
     ]
-  },
-  {
-    "skillId": "python-expert",
-    "name": "Python Expert",
-    "description": "Step-by-step guidance for python expert.",
-    "instructions": "# Python Expert\n\nSupport python expert workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with python expert.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "python-observability",
@@ -11425,24 +11248,16 @@
   {
     "skillId": "reference-core",
     "name": "Reference Core",
-    "description": "Step-by-step guidance for reference core.",
-    "instructions": "# Reference Core\n\nSupport reference core workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with reference core.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Create and maintain core reference docs with accurate contracts, examples, edge cases, and version-aware detail.",
+    "instructions": "# Reference Core\n\nUse this skill when the user needs core reference docs that readers can trust as a durable lookup source rather than a vague narrative summary.\n\n## Start By Clarifying\n- What entities, endpoints, fields, functions, or concepts are actually in scope.\n- Which versions, compatibility boundaries, or deprecations matter.\n- What inputs, outputs, defaults, and error cases readers most often misunderstand.\n- Which examples are necessary to make the reference usable, not just complete.\n- What surrounding guide material should be linked rather than duplicated.\n\n## Workflow\n1. Define the reference surface and group it into durable reader-facing sections.\n2. Document contracts, required fields, defaults, side effects, and failure modes explicitly.\n3. Add examples that show normal use, edge cases, and compatibility caveats.\n4. Call out version boundaries, deprecations, and non-obvious constraints.\n5. Review for omissions that would force readers back into code or guesswork.\n\n## Good Output\n- Reference structure by resource, concept, or API surface.\n- Missing contract details, examples, or compatibility notes.\n- Places where defaults, limits, or failure behavior need stronger explanation.\n- Cross-links needed to connect reference material to task-oriented guides.\n\n## Common Pitfalls\n- Documenting names without documenting behavior or constraints.\n- Skipping error cases because the happy path feels sufficient.\n- Hiding version-specific caveats until readers hit production issues.\n- Letting the reference drift from actual source behavior.\n\n## Boundaries\n- Do not imply undocumented behavior is guaranteed.\n- Prefer precise contracts and examples over broad marketing-style wording.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "reference-signal-forms",
-    "name": "Reference Signal Forms",
-    "description": "Step-by-step guidance for reference signal forms.",
-    "instructions": "# Reference Signal Forms\n\nSupport reference signal forms workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with reference signal forms.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create core reference docs with examples, constraints, and edge-case coverage.\"",
+      "\"Review core reference docs for gaps in contracts, parameters, compatibility notes, or failure cases.\""
+    ]
   },
   {
     "skillId": "regex-vs-llm-structured-text",
@@ -11602,17 +11417,6 @@
     ]
   },
   {
-    "skillId": "resource-curator",
-    "name": "Resource Curator",
-    "description": "Step-by-step guidance for resource curator.",
-    "instructions": "# Resource Curator\n\nSupport resource curator workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with resource curator.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "responsive-design",
     "name": "Responsive Design",
     "description": "Concrete workflow for responsive design with specific inputs, execution steps, and deliverables.",
@@ -11662,13 +11466,16 @@
   {
     "skillId": "review-docs",
     "name": "Review Docs",
-    "description": "Step-by-step guidance for docs.",
-    "instructions": "# Review Docs\n\nSupport docs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with review docs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve doc review workflows with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Review Docs\n\nUse this skill when the user is writing, reviewing, or restructuring doc review workflows and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft doc review workflows for this project so readers can act without guessing.\"",
+      "\"Review doc review workflows for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "review-pr",
@@ -12095,13 +11902,16 @@
   {
     "skillId": "scientific-slides",
     "name": "Scientific Slides",
-    "description": "Step-by-step guidance for scientific slides.",
-    "instructions": "# Scientific Slides\n\nSupport scientific slides workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with scientific slides.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve scientific slide docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Scientific Slides\n\nUse this skill when the user is writing, reviewing, or restructuring scientific slide docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft scientific slide docs for this project so readers can act without guessing.\"",
+      "\"Review scientific slide docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "scientific-visualization",
@@ -12403,13 +12213,16 @@
   {
     "skillId": "seo-audit",
     "name": "SEO Audit",
-    "description": "Step-by-step guidance for seo audit.",
-    "instructions": "# SEO Audit\n\nSupport seo audit workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with seo audit.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve SEO audit docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# SEO Audit\n\nUse this skill when the user is writing, reviewing, or restructuring SEO audit docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft SEO audit docs for this project so readers can act without guessing.\"",
+      "\"Review SEO audit docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "seo-cannibalization-detector",
@@ -12664,17 +12477,6 @@
     ]
   },
   {
-    "skillId": "skill-builder",
-    "name": "Skill Builder",
-    "description": "Step-by-step guidance for builder.",
-    "instructions": "# Skill Builder\n\nSupport builder workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with skill builder.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "skill-creator",
     "name": "Skill Creator",
     "description": "Step-by-step guidance for creator.",
@@ -12687,17 +12489,6 @@
       "\"Help me with skill creator.\"",
       "\"Use skill-creator for this task.\""
     ]
-  },
-  {
-    "skillId": "skill-development",
-    "name": "Skill Development",
-    "description": "Step-by-step guidance for development.",
-    "instructions": "# Skill Development\n\nSupport development workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with skill development.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "skill-judge",
@@ -12728,28 +12519,6 @@
     ]
   },
   {
-    "skillId": "skill-seekers",
-    "name": "Skill Seekers",
-    "description": "Step-by-step guidance for seekers.",
-    "instructions": "# Skill Seekers\n\nSupport seekers workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with skill seekers.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "skill-share",
-    "name": "Skill Share",
-    "description": "Step-by-step guidance for share.",
-    "instructions": "# Skill Share\n\nSupport share workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with skill share.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "skypilot-multi-cloud-orchestration",
     "name": "SkyPilot Multi-Cloud Orchestration",
     "description": "Plan and operate SkyPilot workloads across cloud providers with cost controls, capacity fallback, and deployment reliability checks.",
@@ -12762,17 +12531,6 @@
       "Create a multi-cloud SkyPilot launch strategy with fallback regions and budgets.",
       "Troubleshoot SkyPilot provisioning failures and recover workloads safely."
     ]
-  },
-  {
-    "skillId": "slack-gif-creator",
-    "name": "Slack GIF Creator",
-    "description": "Step-by-step guidance for slack gif creator.",
-    "instructions": "# Slack GIF Creator\n\nSupport slack gif creator workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with slack gif creator.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "slo-implementation",
@@ -13851,13 +13609,16 @@
   {
     "skillId": "testing-handbook-generator",
     "name": "Testing Handbook Generator",
-    "description": "Step-by-step guidance for testing handbook.",
-    "instructions": "# Testing Handbook Generator\n\nSupport testing handbook workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with testing handbook generator.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Develop testing handbooks with step-by-step guidance, examples, troubleshooting, and update ownership.",
+    "instructions": "# Testing Handbook Generator\n\nUse this skill when the user is building testing handbooks and needs a guide that people can actually follow under normal work and edge conditions.\n\n## Start By Clarifying\n- What tasks the handbook should support from start to finish.\n- Which readers are beginners versus experienced maintainers.\n- What tooling, environment, or safety assumptions must be explicit.\n- Which examples, troubleshooting paths, or validation steps are essential.\n- How the handbook will stay aligned with reality as systems evolve.\n\n## Workflow\n1. Define the handbook scope and the task sequence readers need most.\n2. Write the guide around workflows, checkpoints, and recovery paths rather than just concepts.\n3. Add examples, troubleshooting cues, and validation steps for common failure modes.\n4. Surface prerequisites, limits, and risky assumptions early.\n5. Review for stale steps, missing edge cases, and unclear ownership.\n\n## Good Output\n- Task-oriented handbook structure.\n- Examples, validation checkpoints, and troubleshooting sections worth adding.\n- Risks or stale assumptions that make the current guide hard to trust.\n- Update and ownership guidance for long-term maintenance.\n\n## Common Pitfalls\n- Explaining theory while leaving readers unable to execute the task.\n- Omitting troubleshooting because the happy path seems obvious.\n- Leaving commands, version assumptions, or paths to decay silently.\n- Packing too many unrelated workflows into one handbook.\n\n## Boundaries\n- Do not present unchecked steps as validated procedure.\n- Prefer practical workflows and failure handling over generic advice.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create testing handbooks with step-by-step workflows, examples, and troubleshooting.\"",
+      "\"Audit testing handbooks for missing validation steps, stale procedures, and weak edge-case guidance.\""
+    ]
   },
   {
     "skillId": "theme-factory",
@@ -14067,17 +13828,6 @@
     ]
   },
   {
-    "skillId": "train-rl",
-    "name": "Train RL",
-    "description": "Step-by-step guidance for train rl.",
-    "instructions": "# Train RL\n\nSupport train rl workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with train rl.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "training-llms-megatron",
     "name": "Training LLMs Megatron",
     "description": "Practical guidance for training llms megatron workflows.",
@@ -14250,13 +14000,16 @@
   {
     "skillId": "tutorial-engineer",
     "name": "Tutorial Engineer",
-    "description": "Step-by-step guidance for tutorial engineer.",
-    "instructions": "# Tutorial Engineer\n\nSupport tutorial engineer workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with tutorial engineer.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve tutorial docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Tutorial Engineer\n\nUse this skill when the user is writing, reviewing, or restructuring tutorial docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft tutorial docs for this project so readers can act without guessing.\"",
+      "\"Review tutorial docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "typescript-advanced-types",
@@ -14367,17 +14120,6 @@
       "Help me plan and implement unreal engine cpp pro for this repository, including key decisions and checkpoints.",
       "Create a concise unreal engine cpp pro workflow with concrete steps, risks, and final deliverables for my project."
     ]
-  },
-  {
-    "skillId": "update-docs",
-    "name": "Update Docs",
-    "description": "Step-by-step guidance for update docs.",
-    "instructions": "# Update Docs\n\nSupport update docs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with update docs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "update-flaky-tests",
@@ -14879,24 +14621,30 @@
   {
     "skillId": "web-design-guidelines",
     "name": "Web Design Guidelines",
-    "description": "Step-by-step guidance for web design guidelines.",
-    "instructions": "# Web Design Guidelines\n\nSupport web design guidelines workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with web design guidelines.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve web design guideline docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Web Design Guidelines\n\nUse this skill when the user is writing, reviewing, or restructuring web design guideline docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft web design guideline docs for this project so readers can act without guessing.\"",
+      "\"Review web design guideline docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "web-design-reviewer",
     "name": "Web Design Reviewer",
-    "description": "Step-by-step guidance for web design reviewer.",
-    "instructions": "# Web Design Reviewer\n\nSupport web design reviewer workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with web design reviewer.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve web design review docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Web Design Reviewer\n\nUse this skill when the user is writing, reviewing, or restructuring web design review docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft web design review docs for this project so readers can act without guessing.\"",
+      "\"Review web design review docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "web-fetch",
@@ -15037,13 +14785,16 @@
   {
     "skillId": "wiki-onboarding",
     "name": "Wiki Onboarding",
-    "description": "Step-by-step guidance for wiki onboarding.",
-    "instructions": "# Wiki Onboarding\n\nSupport wiki onboarding workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with wiki onboarding.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write and improve wiki onboarding docs with clear structure, audience fit, useful examples, and maintenance guidance.",
+    "instructions": "# Wiki Onboarding\n\nUse this skill when the user is writing, reviewing, or restructuring wiki onboarding docs and needs the result to be readable, trustworthy, and genuinely useful after publication.\n\n## Start By Clarifying\n- Who the readers are and what they are trying to accomplish.\n- What source material or product truth the document should rely on.\n- Which prerequisites, assumptions, or environment details must be explicit.\n- What is likely to change over time and how freshness will be maintained.\n- Whether the document should teach, orient, review, or support troubleshooting.\n\n## Workflow\n1. Define the audience, the primary reader questions, and the desired outcome.\n2. Gather accurate source material from code, product behavior, or subject-matter owners.\n3. Organize the document around reader tasks, decisions, or mental models rather than internal org charts.\n4. Add concrete examples, checklists, or comparisons where they reduce ambiguity.\n5. Review for gaps, stale assumptions, and missing ownership before calling it complete.\n\n## Good Output\n- Recommended document structure and section order.\n- Gaps in reader context, prerequisites, or examples.\n- Suggested revisions for clarity, accuracy, and maintainability.\n- Update triggers or ownership notes for future freshness.\n\n## Common Pitfalls\n- Writing for insiders and assuming too much prior knowledge.\n- Burying prerequisites or caveats after the main steps.\n- Leaving examples too abstract to help real readers.\n- Publishing docs with no clear owner or update trigger.\n\n## Boundaries\n- Do not present guesses as verified facts.\n- Prefer reader tasks and decision support over internal jargon or filler.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft wiki onboarding docs for this project so readers can act without guessing.\"",
+      "\"Review wiki onboarding docs for missing prerequisites, stale assumptions, and unclear steps.\""
+    ]
   },
   {
     "skillId": "winapp-cli",
@@ -15144,13 +14895,16 @@
   {
     "skillId": "workflows-yaml-reference",
     "name": "Workflows YAML Reference",
-    "description": "Step-by-step guidance for workflows yaml reference.",
-    "instructions": "# Workflows YAML Reference\n\nSupport workflows yaml reference workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with workflows yaml reference.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Create and maintain workflow YAML reference docs with accurate contracts, examples, edge cases, and version-aware detail.",
+    "instructions": "# Workflows YAML Reference\n\nUse this skill when the user needs workflow YAML reference docs that readers can trust as a durable lookup source rather than a vague narrative summary.\n\n## Start By Clarifying\n- What entities, endpoints, fields, functions, or concepts are actually in scope.\n- Which versions, compatibility boundaries, or deprecations matter.\n- What inputs, outputs, defaults, and error cases readers most often misunderstand.\n- Which examples are necessary to make the reference usable, not just complete.\n- What surrounding guide material should be linked rather than duplicated.\n\n## Workflow\n1. Define the reference surface and group it into durable reader-facing sections.\n2. Document contracts, required fields, defaults, side effects, and failure modes explicitly.\n3. Add examples that show normal use, edge cases, and compatibility caveats.\n4. Call out version boundaries, deprecations, and non-obvious constraints.\n5. Review for omissions that would force readers back into code or guesswork.\n\n## Good Output\n- Reference structure by resource, concept, or API surface.\n- Missing contract details, examples, or compatibility notes.\n- Places where defaults, limits, or failure behavior need stronger explanation.\n- Cross-links needed to connect reference material to task-oriented guides.\n\n## Common Pitfalls\n- Documenting names without documenting behavior or constraints.\n- Skipping error cases because the happy path feels sufficient.\n- Hiding version-specific caveats until readers hit production issues.\n- Letting the reference drift from actual source behavior.\n\n## Boundaries\n- Do not imply undocumented behavior is guaranteed.\n- Prefer precise contracts and examples over broad marketing-style wording.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Create workflow YAML reference docs with examples, constraints, and edge-case coverage.\"",
+      "\"Review workflow YAML reference docs for gaps in contracts, parameters, compatibility notes, or failure cases.\""
+    ]
   },
   {
     "skillId": "workout-logger",
@@ -15200,48 +14954,18 @@
     ]
   },
   {
-    "skillId": "write-concept",
-    "name": "Write Concept",
-    "description": "Step-by-step guidance for write concept.",
-    "instructions": "# Write Concept\n\nSupport write concept workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with write concept.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "write-docs",
-    "name": "Write Docs",
-    "description": "Step-by-step guidance for write docs.",
-    "instructions": "# Write Docs\n\nSupport write docs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with write docs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
-    "skillId": "write-example",
-    "name": "Write Example",
-    "description": "Step-by-step guidance for write example.",
-    "instructions": "# Write Example\n\nSupport write example workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with write example.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
-  },
-  {
     "skillId": "write-release-notes",
     "name": "Write Release Notes",
-    "description": "Step-by-step guidance for write release notes.",
-    "instructions": "# Write Release Notes\n\nSupport write release notes workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with write release notes.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
+    "description": "Write release notes with clear impact, compatibility notes, rollout context, and reader actions.",
+    "instructions": "# Write Release Notes\n\nUse this skill when the user needs release notes so readers understand what changed, why it matters, and what they need to do next.\n\n## Start By Clarifying\n- Who the release notes are for and what they care about most.\n- Which changes are user-visible, operationally significant, or compatibility-sensitive.\n- Whether migrations, deprecations, or rollout caveats need explicit treatment.\n- What risks, known issues, or support guidance should be surfaced.\n- How much implementation detail helps rather than distracts.\n\n## Workflow\n1. Collect the meaningful changes and group them by reader impact, not commit chronology.\n2. Highlight features, fixes, breaking changes, and operational notes separately where useful.\n3. Add migration or upgrade guidance wherever readers may need to take action.\n4. Call out known issues, rollout caveats, and audience-specific warnings honestly.\n5. Review the notes for clarity, completeness, and whether affected readers can recognize themselves.\n\n## Good Output\n- Release summary tailored to the intended audience.\n- Grouped notes by impact or change type.\n- Migration, rollback, or compatibility notes.\n- Known issues or rollout caveats that should not be hidden.\n\n## Common Pitfalls\n- Copying commit messages instead of explaining reader impact.\n- Burying breaking changes among minor fixes.\n- Leaving users unsure whether they need to act.\n- Overstating rollout completeness or stability without confirmation.\n\n## Boundaries\n- Do not imply a change is fully rolled out unless the user confirms it.\n- Prefer impact-focused communication over changelog noise.",
     "author": "community",
     "version": "1.0.0",
     "category": "Documentation",
     "requires": [],
-    "examples": []
+    "examples": [
+      "\"Draft release notes that explains impact, migration notes, and known issues clearly.\"",
+      "\"Review release notes so readers can tell whether they are affected and what to do next.\""
+    ]
   },
   {
     "skillId": "write-script-duckdb",
@@ -15425,17 +15149,6 @@
       "\"What should I verify for watch mode and reload logic?\"",
       "\"Review this dev-server test plan for gaps.\""
     ]
-  },
-  {
-    "skillId": "writing-docs",
-    "name": "Writing Docs",
-    "description": "Step-by-step guidance for docs.",
-    "instructions": "# Writing Docs\n\nSupport docs workflows with clear steps and best practices.\n\n## When to Use\n\n- You need help with writing docs.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Documentation",
-    "requires": [],
-    "examples": []
   },
   {
     "skillId": "x402-watch",
