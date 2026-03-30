@@ -1,7 +1,7 @@
 ---
 id: add-expert
 name: Add Expert
-description: Operational process for onboarding a new expert profile with scope, quality gates, and governance.
+description: Design a controlled expert onboarding workflow with clear scope, quality gates, and rollout safeguards.
 category: Tools
 requires: []
 examples:
