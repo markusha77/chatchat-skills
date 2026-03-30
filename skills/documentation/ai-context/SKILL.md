@@ -1,20 +1,44 @@
 ---
 id: ai-context
 name: AI Context
-description: Step-by-step guidance for AI context.
+description: Structure AI context docs so context stays discoverable, bounded, and maintainable without implying hidden system state.
 category: Documentation
+requires: []
+examples:
+  - "Design AI context docs so important context stays discoverable and appropriately scoped."
+  - "Review AI context docs for taxonomy gaps, retrieval friction, and freshness risk."
 ---
 
 # AI Context
 
-Support ai context workflows with clear steps and best practices.
+Use this skill when the user needs AI context docs organized so important context can be captured, found, and updated without implying hidden memory or invisible indexed state.
 
-## When to Use
+## Start By Clarifying
+- What information deserves durable capture versus short-lived discussion.
+- How readers should locate the right context later.
+- Which taxonomy, tags, or summary conventions will keep retrieval manageable.
+- What freshness signals or ownership rules prevent silent decay.
+- Where the boundaries are between documented knowledge and inferred context.
 
-- You need help with ai context.
-- You want a clear, actionable next step.
+## Workflow
+1. Define the knowledge objects, categories, and retrieval paths readers will use.
+2. Choose a structure for summaries, tags, links, and source references.
+3. Document what should be captured, what should be omitted, and how updates happen.
+4. Add examples of good entries, summaries, or indexing conventions.
+5. Review for taxonomy sprawl, stale knowledge, and unclear source-of-truth rules.
 
-## Output
+## Good Output
+- Knowledge structure or taxonomy recommendation.
+- Rules for summaries, tags, references, and freshness.
+- Ambiguities where context capture could become misleading or too broad.
+- Maintenance guidance so the knowledge system stays usable.
 
-- Summary of goals and plan
-- Key tips and precautions
+## Common Pitfalls
+- Documenting everything and creating an unsearchable memory dump.
+- Using vague labels that do not help future retrieval.
+- Failing to separate verified facts from interpretation or working notes.
+- Implying persistent memory or indexing capabilities that are not actually present.
+
+## Boundaries
+- Do not imply undocumented retrieval or memory systems exist.
+- Prefer explicit taxonomy and source references over invisible context magic.
