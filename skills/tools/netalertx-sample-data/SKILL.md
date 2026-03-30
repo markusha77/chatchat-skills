@@ -1,81 +1,53 @@
 ---
 id: netalertx-sample-data
 name: NetAlertX Sample Data
-description: Generate and manage realistic NetAlertX sample datasets for development, demos, and testing without exposing production data. Use when validating alert pipelines, UI flows, or onboarding environments.
+description: Plan realistic, deterministic NetAlertX sample data for development, demos, and testing without leaking production-sensitive information.
 category: Tools
 requires: []
 examples:
-  - Create anonymized device and alert data for local UI testing.
-  - Build a repeatable seed dataset for integration tests.
+  - "Create anonymized device and alert data for local UI testing."
+  - "Build a repeatable seed dataset for NetAlertX integration tests."
 ---
 
 # NetAlertX Sample Data
 
-Create reproducible NetAlertX sample data that reflects real-world conditions while staying safe.
+Use this skill when the user needs believable NetAlertX development or demo data without exposing real production identities, devices, or histories.
 
-## When to Use
+## Clarify First
+- Whether the dataset is for UI demos, automated tests, local development, or onboarding.
+- Which entities matter most: devices, events, alerts, histories, or relationships.
+- How much realism is needed versus how fast the dataset must load.
+- Whether anonymized snapshots are acceptable or synthetic-only data is safer.
+- What edge cases the data must exercise.
 
-- Local or CI environments need stable seed data.
-- Demo environments require believable alert history.
-- Production data cannot be shared due to privacy or compliance constraints.
+## Design Priorities
+- Keep the dataset deterministic so test runs stay reproducible.
+- Preserve structural realism without preserving sensitive details.
+- Include enough volume and variation to exercise real UI and workflow paths.
+- Model edge cases deliberately instead of hoping random generation produces them.
+- Keep reset and reload behavior simple for repeated use.
 
-## Workflow
+## Good Dataset Guidance
+- Define entity counts, time ranges, and severity distributions explicitly.
+- Use fixed seeds for any generated values.
+- Include normal, noisy, and pathological alert patterns.
+- Validate schema compatibility whenever the product model changes.
+- Document generation, load, verification, and reset steps together.
 
-1. Define dataset shape (devices, events, alert severities, time windows).
-2. Choose generation method (synthetic-only or anonymized production snapshot).
-3. Create seed scripts/files and ensure deterministic output from a fixed seed.
-4. Validate referential integrity and edge cases (offline devices, flapping alerts, duplicates).
-5. Document load/reset steps for local dev, CI, and demos.
+## Common Mistakes
+- Using tiny toy datasets that never exercise filtering, pagination, or bulk states.
+- Letting randomness change identifiers or counts between test runs.
+- Missing privacy leaks in comments, metadata, or copied identifiers.
+- Forgetting schema drift until seed data breaks after a migration.
+- Generating so much data that the development feedback loop slows down.
 
-## Data Generation Patterns
+## Good Output
+- Sample-data plan with source strategy and entity coverage.
+- Data quality checklist for determinism, privacy, and schema fit.
+- Edge cases and distributions worth modeling.
+- Load, verification, and reset workflow.
+- Risks if anonymized snapshots are used instead of synthetic data.
 
-**Faker/factory-based generation.** Use Faker (Python, JS) or factory libraries (Factory Boy, faker.js) to generate device names, IPs, MAC addresses, hostnames. Create factories that produce valid NetAlertX entities with realistic distributions. Parameterize counts and optional fields for flexibility.
-
-**Deterministic seeding for reproducibility.** Pass a fixed seed (e.g. `random.seed(42)`, `faker.Faker(seed=42)`) at script start. Same seed produces identical output across runs; critical for CI. Document the seed in the script header and in test docs.
-
-**Realistic alert severity distributions.** Mirror production ratios: e.g. 70% info, 20% warning, 8% critical, 2% critical. Include edge cases: consecutive criticals, severity escalation over time, resolved vs active. Avoid uniform distribution; it does not exercise UI or logic correctly.
-
-**Time-series data patterns.** Generate alerts across a configurable time window (e.g. last 7 days). Use realistic patterns: bursts during business hours, quiet nights, occasional spikes. Support relative timestamps (e.g. "2 hours ago") for demos that stay current.
-
-## Common Pitfalls
-
-- **Non-deterministic seeds causing flaky tests.** If seed is time-based or missing, CI fails intermittently. Always use fixed seed and verify determinism.
-- **Datasets too small to exercise edge cases.** Minimal data (e.g. 5 devices, 10 alerts) misses pagination, filtering, bulk actions. Include enough data for realistic UI and performance testing.
-- **PII leakage from production snapshots.** Anonymization can miss fields (comments, metadata, logs). Audit all fields; use synthetic generation when in doubt.
-- **Schema drift between seed data and current model.** Seed data can become invalid after migrations. Add schema validation or migration steps; run seed generation in CI to catch drift.
-
-## Output Format
-
-```markdown
-## Sample Data Plan
-- Data source: <synthetic/anonymized>
-- Entities: <devices, alerts, events>
-- Volume: <counts per entity>
-- Time range: <days or timestamps>
-- Seed value: <fixed seed for reproducibility>
-
-## Data Quality Checklist
-- [ ] No real PII or secrets
-- [ ] Stable IDs for repeatable tests
-- [ ] Covers normal and edge-case alert patterns
-- [ ] Can reset and reload quickly
-- [ ] Deterministic output verified
-- [ ] Schema matches current model
-
-## Generation Details
-- Library: <faker/factory/other>
-- Severity distribution: <ratios>
-- Edge cases included: <flapping, offline, duplicates, etc.>
-
-## Usage Steps
-1. Generate: <command/script with seed>
-2. Load: <command/script>
-3. Verify: <query/check>
-4. Reset: <command for clean state>
-```
-
-## Constraints
-
-- Never include raw production credentials, hostnames, or user identifiers.
-- Keep dataset deterministic for CI reliability.
-- Balance realism with speed; oversized datasets slow feedback loops.
+## Boundaries
+- Do not imply that real production data is safe to reuse without explicit anonymization review.
+- Prefer data-shape guidance, coverage planning, and privacy constraints over pretending to generate or load datasets automatically.

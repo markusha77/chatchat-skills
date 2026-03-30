@@ -1,103 +1,60 @@
 ---
 id: executing-plans
 name: Executing Plans
-description: Execute implementation plans in controlled, verifiable increments with explicit checkpoints, risk tracking, and delivery evidence. Use when turning approved plans into production-ready changes.
+description: Turn approved plans into controlled execution steps with sequencing, decision gates, risk tracking, and verifiable progress.
 category: Tools
 requires: []
 examples:
-  - Convert a multi-phase migration plan into tracked execution steps with verification gates.
-  - Run an agreed delivery plan while managing dependencies, blockers, and rollback decisions.
+  - "Convert a multi-phase migration plan into tracked execution steps with verification gates."
+  - "Run an agreed delivery plan while managing dependencies, blockers, and rollback decisions."
 ---
 
 # Executing Plans
 
-Turn written plans into shipped outcomes with measurable progress and operationally safe sequencing.
+Use this skill when the user already has an agreed plan and needs help turning it into disciplined execution rather than a loose status narrative.
 
-## When to Use
+## Start By Clarifying
+- What has already been approved versus what is still uncertain.
+- Which milestones are truly dependent on earlier work.
+- What evidence counts as done for each stage.
+- Which blockers would change sequence, scope, or rollout safety.
+- What rollback or pause conditions matter most.
 
-- A plan has been approved and needs disciplined execution.
-- Work spans multiple services, teams, or rollout phases.
-- You need consistent progress reporting and gate-based decision points.
-
-## Workflow
-
-1. Break plan into milestones with owner, deadline, and acceptance criteria.
-2. Sequence tasks by dependency and risk, not just calendar order.
-3. Define verification gates for each milestone:
-   - Build/test pass conditions
-   - Runtime or rollout validation checks
-4. Execute in small increments and update status continuously.
-5. Track blockers with impact, owner, mitigation, and next decision point.
-6. Escalate scope/risk changes early and update the execution log.
-7. Close each milestone with evidence and explicit go/no-go note.
-
-## Concrete Execution Patterns
-
-**Milestone tracking with burndown.** Maintain a simple burndown view: total tasks, completed tasks, and remaining work per milestone. Update daily. If remaining work does not decrease over two consecutive updates, flag for review. Use this to detect scope creep or stalled work before it becomes critical.
-
-**Dependency graph sequencing.** Build a directed acyclic graph of task dependencies. Identify the critical path and schedule those tasks first. Never start a dependent task until all predecessors pass their verification gates. Use topological sort or a simple dependency matrix to enforce ordering.
-
-**Blocker escalation matrix.** For each blocker, record: severity (blocks critical path / blocks milestone / blocks task), owner (who resolves it), mitigation (workaround if any), and escalation deadline. If a blocker exceeds its deadline without resolution, escalate immediately. Do not let blockers age silently.
-
-**Evidence-based gate reviews.** Each gate requires concrete evidence: build logs, test results, deployment manifests, or runtime checks. No gate passes on verbal confirmation. Document the exact command or check used and its outcome. Store evidence in a shared location with timestamps.
-
-## Common Pitfalls
-
-**Tracking activity instead of outcomes.** Marking tasks "in progress" or "90% done" without measurable evidence. Replace with binary states: not started, blocked, or done-with-evidence. Done means acceptance criteria are met and evidence is attached.
-
-**Parallelizing dependent tasks.** Running tasks that share risky dependencies in parallel to "save time." One failure cascades. Always respect the dependency graph; parallelize only independent branches.
-
-**Skipping verification gates under time pressure.** Declaring a milestone complete to meet a deadline without running the defined checks. Gates exist to catch regressions. Skipping them defers cost and increases risk. If time is short, reduce scope, not verification.
-
-**Not updating plan when scope changes.** New requirements or discovered constraints appear but the plan stays static. Re-baseline: update milestones, dependencies, and deadlines. Communicate changes to stakeholders. Do not silently absorb scope without adjusting the plan.
-
-**Declaring done without evidence.** Closing a task or milestone without attaching proof that acceptance criteria were met. Require links to logs, artifacts, or screenshots. "Done" is not a status; it is a verified state.
-
-## Execution Checklist
-
-- [ ] Every task has owner, due date, and measurable done criteria.
-- [ ] Dependencies and critical path are documented.
-- [ ] Verification gates are explicit and repeatable.
-- [ ] Blockers and risk decisions are recorded.
-- [ ] Burndown or progress metric is updated regularly.
-- [ ] Evidence is attached for every completed task.
-
-## Output Format
-
-Return a structured execution report:
-
-```markdown
-## Execution Summary
-- Plan: <name or reference>
-- Status: on track | at risk | blocked
-- Burndown: X of Y tasks complete, Z remaining
-
-## Milestones
-| Milestone | Owner | Status | Evidence |
-|-----------|-------|--------|----------|
-| M1: <name> | <owner> | done | <link or summary> |
-| M2: <name> | <owner> | in progress | <current step> |
-
-## Critical Path
-- Task A -> Task B -> Task C (current: Task B)
-
-## Blockers
-| Blocker | Severity | Owner | Mitigation | Escalation |
-|---------|----------|-------|------------|------------|
-| <desc> | critical | <name> | <workaround> | <date> |
-
-## Verification Gates
-- M1: [ ] Build passes, [ ] Tests pass, [ ] Deploy validated
-- M2: [ ] Build passes, [ ] Tests pass
-
-## Next Actions
-1. <action>
-2. <action>
-```
-
-## Constraints
-
-- Do not mark progress without evidence tied to acceptance criteria.
-- Avoid parallelizing tasks that share risky dependencies.
-- Keep rollback or fallback options available for high-impact changes.
+## Execution Principles
+- Break plans into milestones with explicit done criteria.
+- Sequence by dependency and risk, not optimism.
+- Keep verification gates close to the work they validate.
+- Surface blockers early with owner, impact, and next decision point.
 - Re-baseline the plan when assumptions change materially.
+
+## Good Execution Structure
+- Milestones with owner, status, and acceptance criteria.
+- Critical-path tasks and dependency notes.
+- Verification gates for builds, tests, rollout checks, or review steps.
+- Blocker log with severity, mitigation, and escalation timing.
+- Next actions tied to evidence rather than vague progress labels.
+
+## Decision Guidance
+- Prefer smaller reversible increments over big-bang execution.
+- Do not parallelize tasks that share the same risky dependency.
+- Reduce scope before reducing verification.
+- Treat rollout evidence as mandatory for high-impact stages.
+- Mark work complete only when the acceptance criteria are demonstrated.
+
+## Common Mistakes
+- Tracking activity instead of outcome.
+- Calling work done without proof tied to acceptance criteria.
+- Letting blockers age without a clear owner or escalation path.
+- Continuing with an outdated plan after scope or constraints changed.
+- Compressing risky dependent work into one milestone for convenience.
+
+## Good Output
+- Execution summary with current status.
+- Milestone-by-milestone progress and gates.
+- Critical path and active blockers.
+- Verification evidence needed next.
+- Recommended next execution steps or re-baselining decisions.
+
+## Boundaries
+- Do not claim work is complete, validated, or shipped unless the user provides that evidence.
+- Prefer execution structure, progress discipline, and risk framing over pretending to update external trackers automatically.
