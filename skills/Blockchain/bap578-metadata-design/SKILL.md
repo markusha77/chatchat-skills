@@ -5,7 +5,7 @@ description: >
   Design agent personas, experiences, vault schemas, voice profiles, and
   metadata URIs for BAP-578 Non-Fungible Agents. Covers the AgentMetadata
   fields, persona format, vault integrity, and best practices.
-category: BAP-578
+category: Blockchain
 author: community
 version: 1.0.0
 examples:

@@ -5,7 +5,7 @@ description: >
   Deploy BAP-578 Non-Fungible Agents to testnet or mainnet. Covers environment
   setup, Hardhat configuration, proxy deployment, verification steps, and
   post-deployment checks. Use when deploying or configuring a BAP-578 contract.
-category: BAP-578
+category: Blockchain
 author: community
 version: 1.0.0
 examples:

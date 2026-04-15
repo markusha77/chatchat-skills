@@ -11,7 +11,7 @@ description: >
   on-chain/off-chain storage, composable intelligence, circuit breaker
   security, and full backward compatibility with existing ERC-721
   infrastructure.
-category: BAP-578
+category: Blockchain
 author: community
 version: 2.0.0
 examples:

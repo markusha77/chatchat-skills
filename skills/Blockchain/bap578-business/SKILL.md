@@ -5,7 +5,7 @@ description: >
   Business strategy, monetization models, treasury management, pricing,
   and go-to-market planning for BAP-578 Non-Fungible Agents on BNB Chain.
   Use when planning the commercial side of an NFA deployment.
-category: BAP-578
+category: Blockchain
 author: community
 version: 1.0.0
 examples:

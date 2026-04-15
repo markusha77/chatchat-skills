@@ -6,7 +6,7 @@ description: >
   ethers.js, viem, or direct RPC. Covers reading agent state, metadata,
   event history, vault verification, bulk scanning, and building indexers.
   Use when investigating agent data or building monitoring tools.
-category: BAP-578
+category: Blockchain
 author: community
 version: 1.0.0
 examples:

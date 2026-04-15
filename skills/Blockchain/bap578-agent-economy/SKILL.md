@@ -5,7 +5,7 @@ description: >
   Design and operate an agent-to-agent economy using BAP-578. Covers agent
   funding models, inter-agent payments, reputation systems, service
   marketplaces, and economic incentive design for NFA ecosystems.
-category: BAP-578
+category: Blockchain
 author: community
 version: 1.0.0
 examples:
