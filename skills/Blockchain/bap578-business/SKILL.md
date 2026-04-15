@@ -1,10 +1,7 @@
 ---
 id: bap578-business
 name: BAP-578 Business & Monetization
-description: >
-  Business strategy, monetization models, treasury management, pricing,
-  and go-to-market planning for BAP-578 Non-Fungible Agents on BNB Chain.
-  Use when planning the commercial side of an NFA deployment.
+description: Business strategy, monetization models, treasury management, pricing, and go-to-market planning for BAP-578 Non-Fungible Agents on BNB Chain. Use when planning the commercial side of an NFA deployment.
 category: Blockchain
 author: community
 version: 1.0.0

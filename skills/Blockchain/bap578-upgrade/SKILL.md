@@ -1,10 +1,7 @@
 ---
 id: bap578-upgrade
 name: BAP-578 Contract Upgrade
-description: >
-  Safely upgrade BAP-578 Non-Fungible Agents using the UUPS proxy pattern.
-  Covers storage safety, upgrade testing, deployment steps, and rollback
-  planning. Use when upgrading or planning upgrades to a deployed contract.
+description: Safely upgrade BAP-578 Non-Fungible Agents using the UUPS proxy pattern. Covers storage safety, upgrade testing, deployment steps, and rollback planning. Use when upgrading or planning upgrades to a deployed contract.
 category: Blockchain
 author: community
 version: 1.0.0

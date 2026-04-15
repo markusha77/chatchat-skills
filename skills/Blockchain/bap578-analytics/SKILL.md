@@ -1,10 +1,7 @@
 ---
 id: bap578-analytics
 name: BAP-578 Analytics & Indexing
-description: >
-  Build analytics dashboards and indexers for BAP-578 agents. Track minting
-  activity, agent funding, treasury revenue, and engagement using on-chain
-  events. Use when analyzing NFA data or building monitoring tools.
+description: Build analytics dashboards and indexers for BAP-578 agents. Track minting activity, agent funding, treasury revenue, and engagement using on-chain events. Use when analyzing NFA data or building monitoring tools.
 category: Blockchain
 author: community
 version: 1.0.0

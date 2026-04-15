@@ -1,16 +1,7 @@
 ---
 id: bap578
 name: BAP-578 Non-Fungible Agents
-description: >
-  Comprehensive BAP-578 Non-Fungible Agents (NFA) skill for BNB Chain.
-  BAP-578 extends ERC-721 to enable autonomous, intelligent digital entities
-  with optional learning capabilities. Features dual-path architecture
-  (JSON Light Memory for simple agents, Merkle Tree Learning for evolving
-  agents), cryptographically verifiable learning via Merkle proofs,
-  method-agnostic AI integration (RAG, MCP, fine-tuning, RL), hybrid
-  on-chain/off-chain storage, composable intelligence, circuit breaker
-  security, and full backward compatibility with existing ERC-721
-  infrastructure.
+description: Comprehensive BAP-578 Non-Fungible Agents (NFA) skill for BNB Chain. BAP-578 extends ERC-721 to enable autonomous, intelligent digital entities with optional learning capabilities. Features dual-path architecture (JSON Light Memory for simple agents, Merkle Tree Learning for evolving agents), cryptographically verifiable learning via Merkle proofs, method-agnostic AI integration (RAG, MCP, fine-tuning, RL), hybrid on-chain/off-chain storage, composable intelligence, circuit breaker security, and full backward compatibility with existing ERC-721 infrastructure.
 category: Blockchain
 author: community
 version: 2.0.0
