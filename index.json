@@ -249,20 +249,6 @@
     ]
   },
   {
-    "skillId": "aegis-security",
-    "name": "Aegis Security",
-    "description": "Guidance playbook for Aegis Security: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Aegis Security\n\nSupport Aegis Security as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: security hardening and risk reduction.\n- Skill context keywords: aegis, security.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Restate the user objective for security hardening and risk reduction in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Review Checklist\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Response Format\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Check if this token address is safe before I swap\"\n- \"Simulate this transaction for security risks\"",
-    "author": "community",
-    "version": "1.2.2",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Check if this token address is safe before I swap\"",
-      "\"Simulate this transaction for security risks\""
-    ]
-  },
-  {
     "skillId": "affirmations",
     "name": "Affirmations",
     "description": "Build a personal affirmation system for daily practice, custom affirmations, and mindset reinforcement.",
@@ -312,20 +298,6 @@
     ]
   },
   {
-    "skillId": "agent-byzantine-coordinator",
-    "name": "Agent Byzantine Coordinator",
-    "description": "Guidance playbook for Agent Byzantine Coordinator: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Agent Byzantine Coordinator\n\nOffer advisory support for Agent Byzantine Coordinator without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: security hardening and risk reduction.\n- Skill context keywords: agent, byzantine, coordinator.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Confirm scope boundaries for security hardening and risk reduction and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Validation Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## What to Return\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Implement PBFT consensus for distributed nodes\"\n- \"Detect and mitigate Byzantine actors in the consensus\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Implement PBFT consensus for distributed nodes\"",
-      "\"Detect and mitigate Byzantine actors in the consensus\""
-    ]
-  },
-  {
     "skillId": "agent-code-goal-planner",
     "name": "Agent Code Goal Planner",
     "description": "Convert coding requests into a goal-driven implementation plan with milestones, dependencies, and validation checkpoints.",
@@ -357,20 +329,6 @@
     "examples": [
       "\"Coordinate 4 specialist agents to design this feature and synthesize one final technical plan.\"",
       "\"Combine outputs from research, architecture, and QA agents into one conflict-resolved recommendation.\""
-    ]
-  },
-  {
-    "skillId": "agent-earner",
-    "name": "Agent Earner",
-    "description": "Guidance playbook for Agent Earner: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Agent Earner\n\nOffer advisory support for Agent Earner without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: agent, earner.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Clarify the target outcome, constraints, and timeline for project planning and implementation guidance.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Validation Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## What to Return\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"List open bounties and submit a proposal\"\n- \"Start autonomous mode for bounty discovery\"",
-    "author": "Prometheus_Prime",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"List open bounties and submit a proposal\"",
-      "\"Start autonomous mode for bounty discovery\""
     ]
   },
   {
@@ -532,20 +490,6 @@
     ]
   },
   {
-    "skillId": "aibtc-bitcoin-wallet",
-    "name": "AIBTC Bitcoin Wallet",
-    "description": "Guidance playbook for AIBTC Bitcoin Wallet: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# AIBTC Bitcoin Wallet\n\nSupport AIBTC Bitcoin Wallet as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: wallet operations and transaction safety.\n- Skill context keywords: aibtc, bitcoin, wallet.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Clarify the target outcome, constraints, and timeline for wallet operations and transaction safety.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Review Checklist\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Response Format\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Check my Bitcoin balance\"\n- \"Send BTC from my agent wallet\"",
-    "author": "aibtcdev",
-    "version": "1.14.2",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Check my Bitcoin balance\"",
-      "\"Send BTC from my agent wallet\""
-    ]
-  },
-  {
     "skillId": "airbnb-search",
     "name": "Airbnb Search",
     "description": "Search Airbnb listings with prices, ratings, and direct links. No API key required.",
@@ -585,20 +529,6 @@
     "examples": [
       "\"Help me compare product options for office chairs under a fixed budget.\"",
       "\"Create a shortlist and recommendation for safe baby sunscreen options.\""
-    ]
-  },
-  {
-    "skillId": "aiusd-skill",
-    "name": "AIUSD",
-    "description": "Guidance playbook for AIUSD: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# AIUSD\n\nSupport AIUSD as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: aiusd.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Clarify the target outcome, constraints, and timeline for project planning and implementation guidance.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Review Checklist\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Response Format\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Check my AIUSD account balance\"\n- \"Buy SOL with USDC on my AIUSD trading account\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Check my AIUSD account balance\"",
-      "\"Buy SOL with USDC on my AIUSD trading account\""
     ]
   },
   {
@@ -953,20 +883,6 @@
     ]
   },
   {
-    "skillId": "arbitrum-dapp-skill",
-    "name": "Arbitrum Dapp Skill",
-    "description": "Guidance playbook for Arbitrum Dapp Skill: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Arbitrum Dapp Skill\n\nProvide guidance-only support for Arbitrum Dapp Skill. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: arbitrum.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Set up a new Arbitrum dApp with Stylus and React\"\n- \"Deploy my Solidity contract to Arbitrum Sepolia testnet\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Set up a new Arbitrum dApp with Stylus and React\"",
-      "\"Deploy my Solidity contract to Arbitrum Sepolia testnet\""
-    ]
-  },
-  {
     "skillId": "arboreto",
     "name": "Arboreto",
     "description": "Infer gene regulatory networks from expression data using GRNBoost2 and GENIE3 algorithms.",
@@ -1010,20 +926,6 @@
     "examples": [
       "\"Given this SaaS backend context and reliability goals, recommend suitable architecture patterns and tradeoffs.\"",
       "\"Compare modular monolith, microservices, and event-driven options for this workload and team size.\""
-    ]
-  },
-  {
-    "skillId": "arena",
-    "name": "Arena",
-    "description": "Guidance playbook for Arena: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Arena\n\nAct as a guidance specialist for Arena. Keep responses practical, risk-aware, and independent of direct API/backend execution.\n\n## Use Case Focus\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: arena.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Step-by-Step Guidance\n\n1. Clarify the target outcome, constraints, and timeline for project planning and implementation guidance.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Sanity Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Output Package\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Check arena status\"\n- \"Start an arena competition\"",
-    "author": "above-capital",
-    "version": "1.1",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Check arena status\"",
-      "\"Start an arena competition\""
     ]
   },
   {
@@ -1710,20 +1612,6 @@
     ]
   },
   {
-    "skillId": "blockchain-developer",
-    "name": "Blockchain Developer",
-    "description": "Guidance playbook for Blockchain Developer: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Blockchain Developer\n\nOffer advisory support for Blockchain Developer without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: blockchain, developer.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Clarify the target outcome, constraints, and timeline for project planning and implementation guidance.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Validation Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## What to Return\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Implement a DeFi lending protocol with Compound patterns\"\n- \"Build an NFT marketplace with ERC-721\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Implement a DeFi lending protocol with Compound patterns\"",
-      "\"Build an NFT marketplace with ERC-721\""
-    ]
-  },
-  {
     "skillId": "bmad-os-changelog-social",
     "name": "Bmad Os Changelog Social",
     "description": "Generate social media announcements for Discord, Twitter, and LinkedIn from the latest changelog entry.",
@@ -1981,20 +1869,6 @@
     ]
   },
   {
-    "skillId": "cabin-sol",
-    "name": "Cabin Sol",
-    "description": "Guidance playbook for Cabin Sol: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Cabin Sol\n\nProvide guidance-only support for Cabin Sol. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: cabin, sol.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Clarify the target outcome, constraints, and timeline for project planning and implementation guidance.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Quality Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Deliverables\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Help me build a Solana program with Anchor\"\n- \"Teach me Token-2022 on Solana\"",
-    "author": "Ted",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Help me build a Solana program with Anchor\"",
-      "\"Teach me Token-2022 on Solana\""
-    ]
-  },
-  {
     "skillId": "cairo-vulnerability-scanner",
     "name": "Cairo Vulnerability Scanner",
     "description": "Scans Cairo/StarkNet smart contracts for 6 critical vulnerabilities including felt252 arithmetic overflow, L1-L2 messaging issues, address conversion problems, and signature replay.",
@@ -2145,48 +2019,6 @@
     ]
   },
   {
-    "skillId": "catalyst-dex-integration",
-    "name": "Catalyst DEX Integration",
-    "description": "Guidance playbook for Catalyst DEX Integration: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Catalyst DEX Integration\n\nProvide guidance-only support for Catalyst DEX Integration. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: catalyst, dex, integration.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Restate the user objective for market integration and execution strategy in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Quality Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Deliverables\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Add Kuru DEX to dex.trades for monad chain\"\n- \"Integrate Uniswap v3 into dex.trades for sonic\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Add Kuru DEX to dex.trades for monad chain\"",
-      "\"Integrate Uniswap v3 into dex.trades for sonic\""
-    ]
-  },
-  {
-    "skillId": "catalyst-foundational-metadata",
-    "name": "Catalyst Foundational Metadata",
-    "description": "Guidance playbook for Catalyst Foundational Metadata: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Catalyst Foundational Metadata\n\nProvide guidance-only support for Catalyst Foundational Metadata. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: catalyst, foundational, metadata.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Add xlayer chain foundational metadata\"\n- \"Set up evms_info and prices for new chain\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Add xlayer chain foundational metadata\"",
-      "\"Set up evms_info and prices for new chain\""
-    ]
-  },
-  {
-    "skillId": "catalyst-gas-and-transfers",
-    "name": "Catalyst Gas And Transfers",
-    "description": "Guidance playbook for Catalyst Gas And Transfers: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Catalyst Gas And Transfers\n\nSupport Catalyst Gas And Transfers as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: catalyst, gas, transfers.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Clarify the target outcome, constraints, and timeline for implementation design and integration planning.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Review Checklist\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Response Format\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Add gas fees model for monad chain\"\n- \"Set up token transfer models for new chain\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Add gas fees model for monad chain\"",
-      "\"Set up token transfer models for new chain\""
-    ]
-  },
-  {
     "skillId": "catholic-grounding",
     "name": "Catholic Grounding",
     "description": "Help answer questions about Catholicism accurately and respectfully (Catechism-first). Provides a structured response format, common topic map with CCC references, and short prayer/reference snippets.",
@@ -2199,23 +2031,6 @@
       "\"Explain this Catholic teaching clearly and respectfully.\"",
       "\"Give me a Catechism-first answer to this question.\"",
       "\"Help me summarize this issue from a Catholic perspective.\""
-    ]
-  },
-  {
-    "skillId": "ccxt",
-    "name": "CCXT",
-    "description": "Guidance playbook for CCXT: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# CCXT\n\nSupport CCXT as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: ccxt.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Restate the user objective for market integration and execution strategy in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Review Checklist\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Response Format\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Help me connect to Binance with CCXT in Python\"\n- \"Fetch ticker data using CCXT in TypeScript\"\n- \"Place an order with ccxt-php\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Help me connect to Binance with CCXT in Python\"",
-      "\"Fetch ticker data using CCXT in TypeScript\"",
-      "\"Place an order with ccxt-php\"",
-      "\"Use CCXT in Go to get order book data\"",
-      "\"Connect to exchange with ccxt-csharp in .NET\""
     ]
   },
   {
@@ -2358,20 +2173,6 @@
     "examples": [
       "Monitor our CI failures and suggest prioritized remediation.",
       "Create a CI health checklist with alert thresholds and owner actions."
-    ]
-  },
-  {
-    "skillId": "cifer-sdk",
-    "name": "Cifer SDK",
-    "description": "Guidance playbook for Cifer SDK: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Cifer SDK\n\nProvide guidance-only support for Cifer SDK. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: cifer.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Clarify the target outcome, constraints, and timeline for implementation design and integration planning.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Quality Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Deliverables\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Initialize CIFER SDK and create quantum-resistant secrets\"\n- \"Encrypt and decrypt text with CIFER on Ethereum\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Initialize CIFER SDK and create quantum-resistant secrets\"",
-      "\"Encrypt and decrypt text with CIFER on Ethereum\""
     ]
   },
   {
@@ -2802,20 +2603,6 @@
     "examples": [
       "\"Configure MetaMask for agent wallet automation\"",
       "\"Set up spend limits and chain allowlist for my agent wallet\""
-    ]
-  },
-  {
-    "skillId": "coingecko",
-    "name": "Coingecko",
-    "description": "Guidance playbook for Coingecko: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Coingecko\n\nSupport Coingecko as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: coingecko.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Confirm scope boundaries for market integration and execution strategy and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Review Checklist\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Response Format\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Get current price and market cap for a token\"\n- \"Fetch historical price data from CoinGecko API\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Get current price and market cap for a token\"",
-      "\"Fetch historical price data from CoinGecko API\""
     ]
   },
   {
@@ -3533,20 +3320,6 @@
     ]
   },
   {
-    "skillId": "cryptofeed",
-    "name": "Cryptofeed",
-    "description": "Guidance playbook for Cryptofeed: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Cryptofeed\n\nOffer advisory support for Cryptofeed without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: cryptofeed.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Clarify the target outcome, constraints, and timeline for market integration and execution strategy.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Validation Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## What to Return\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Set up real-time ticker feed from Coinbase and Kraken\"\n- \"Stream order book data for BTC-USD from multiple exchanges\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Set up real-time ticker feed from Coinbase and Kraken\"",
-      "\"Stream order book data for BTC-USD from multiple exchanges\""
-    ]
-  },
-  {
     "skillId": "cto-advisor",
     "name": "Cto Advisor",
     "description": "Technical leadership guidance for engineering teams, architecture decisions, and technology strategy. Includes tech debt analyzer, team scaling calculator, engineering metrics frameworks, technology evaluation tools, and ADR templates.",
@@ -4194,20 +3967,6 @@
     ]
   },
   {
-    "skillId": "dex-multichain-aggregator-teneo",
-    "name": "DEX Multichain Aggregator Teneo",
-    "description": "Guidance playbook for DEX Multichain Aggregator Teneo: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# DEX Multichain Aggregator Teneo\n\nProvide guidance-only support for DEX Multichain Aggregator Teneo. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: dex, multichain, aggregator, teneo.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for market integration and execution strategy and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Get best swap quote for USDC to WETH on Polygon\"\n- \"Find optimal route for 1000 USDC swap on Ethereum\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Get best swap quote for USDC to WETH on Polygon\"",
-      "\"Find optimal route for 1000 USDC swap on Ethereum\""
-    ]
-  },
-  {
     "skillId": "dietitian",
     "name": "Dietitian",
     "description": "Structured meal planning — calorie targets, macro calculations, meal timing, and goal-specific diet protocols.",
@@ -4673,20 +4432,6 @@
     ]
   },
   {
-    "skillId": "emblem-ai-agent-wallet",
-    "name": "Emblem AI Agent Wallet",
-    "description": "Connect to EmblemVault and manage crypto wallets via Emblem AI - Agent Hustle. Supports Solana, Ethereum, Base, BSC, Polygon, Hedera, and Bitcoin.",
-    "instructions": "# Emblem AI Agent Wallet\n\nConnect to EmblemVault and manage crypto wallets via Emblem AI - Agent Hustle. Supports Solana, Ethereum, Base, BSC, Polygon, Hedera, and Bitcoin.\n\n## When to Use\n\n- You need help with emblem ai agent wallet.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Connect to EmblemVault and manage my agent wallet\"",
-      "\"Set up Emblem AI Agent Wallet for multi-chain\""
-    ]
-  },
-  {
     "skillId": "ena-database",
     "name": "ENA Database",
     "description": "Access European Nucleotide Archive for DNA/RNA sequences, raw reads (FASTQ), and genome assemblies via API or FTP.",
@@ -4783,62 +4528,6 @@
     "examples": [
       "Configure an Input/Output Controller (IOC) for a new beamline instrument.",
       "Use caproto to script Channel Access monitoring for process variables."
-    ]
-  },
-  {
-    "skillId": "erigon-build",
-    "name": "Erigon Build",
-    "description": "Build the Erigon binary using make. Use this when you need to compile erigon before running any erigon commands.",
-    "instructions": "# Build Erigon Binary\n\nBuild the Erigon binary by running `make erigon` from the repository root.\n\n## Build Command\n\n```bash\nmake erigon\n```\n\nThis compiles the Erigon binary and places it at `./build/bin/erigon`.\n\n## What the Build Does\n\n- Compiles the main Erigon executable\n- Sets version information from git (commit, branch, tag)\n- Applies appropriate CGO flags for the platform\n- Outputs binary to `build/bin/erigon`\n\n## Prerequisites\n\n- Go (version specified in go.mod)\n- C compiler (gcc or clang)\n- Make\n\n## After Building\n\nThe binary will be available at:\n```\n./build/bin/erigon\n```\n\nYou can verify the build by running:\n```bash\n./build/bin/erigon --version\n```",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"How do I build the Erigon binary?\"",
-      "\"Compile erigon from source\""
-    ]
-  },
-  {
-    "skillId": "erigon-datadir",
-    "name": "Erigon Datadir",
-    "description": "Guidance playbook for Erigon Datadir: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Erigon Datadir\n\nSupport Erigon Datadir as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: node operations and reliability.\n- Skill context keywords: erigon, datadir.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Restate the user objective for node operations and reliability in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Review Checklist\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Response Format\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"How do I run erigon seg step-rebase?\"\n- \"Change step size of Erigon datadir\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"How do I run erigon seg step-rebase?\"",
-      "\"Change step size of Erigon datadir\""
-    ]
-  },
-  {
-    "skillId": "erigon-network-ports",
-    "name": "Erigon Network Ports",
-    "description": "Guidance playbook for Erigon Network Ports: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Erigon Network Ports\n\nProvide guidance-only support for Erigon Network Ports. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: node operations and reliability.\n- Skill context keywords: erigon, network, ports.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for node operations and reliability and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"What ports does Erigon use?\"\n- \"Avoid port conflicts for multiple Erigon instances\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"What ports does Erigon use?\"",
-      "\"Avoid port conflicts for multiple Erigon instances\""
-    ]
-  },
-  {
-    "skillId": "erigon-seg-retire",
-    "name": "Erigon Seg Retire",
-    "description": "Guidance playbook for Erigon Seg Retire: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Erigon Seg Retire\n\nProvide guidance-only support for Erigon Seg Retire. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: node operations and reliability.\n- Skill context keywords: erigon, seg, retire.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Clarify the target outcome, constraints, and timeline for node operations and reliability.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Quality Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Deliverables\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"How do I run erigon seg retire?\"\n- \"Prepare Erigon snapshots for publication\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"How do I run erigon seg retire?\"",
-      "\"Prepare Erigon snapshots for publication\""
     ]
   },
   {
@@ -4975,20 +4664,6 @@
     "examples": [
       "\"Design an event store schema for this order lifecycle with snapshots and projection rebuilds.\"",
       "\"Review this event-sourcing design for idempotency, versioning, and retention.\""
-    ]
-  },
-  {
-    "skillId": "evm-hardhat",
-    "name": "EVM Hardhat",
-    "description": "Guidance playbook for EVM Hardhat: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# EVM Hardhat\n\nOffer advisory support for EVM Hardhat without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: evm, hardhat.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Validation Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## What to Return\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Set up a new Hardhat project for Celo\"\n- \"Deploy a contract to Celo mainnet\"",
-    "author": "celo-org",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Set up a new Hardhat project for Celo\"",
-      "\"Deploy a contract to Celo mainnet\""
     ]
   },
   {
@@ -5153,34 +4828,6 @@
     "examples": [
       "\"Extract top recurring errors from these logs and group them by root cause signature.\"",
       "\"Summarize this incident error stream with likely causes and suggested next checks.\""
-    ]
-  },
-  {
-    "skillId": "eyebot-elite",
-    "name": "Eyebot Elite",
-    "description": "All 15 Elite AI Agents for complete crypto automation.",
-    "instructions": "# Eyebot Elite\n\nAll 15 Elite AI Agents for complete crypto automation.\n\n## When to Use\n\n- You want a full-suite crypto automation setup.\n- You need multiple agent workflows for trading and ops.\n\n## Output\n\n- Summary of selected agent workflows\n- Suggested next steps and safety checks",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Set up full-suite crypto automation with Eyebot Elite\"",
-      "\"Configure multiple agent workflows for trading\""
-    ]
-  },
-  {
-    "skillId": "eyebot-walletbot",
-    "name": "Eyebot Walletbot",
-    "description": "Wallet operations and portfolio management for crypto assets.",
-    "instructions": "# Eyebot Walletbot\n\nWallet operations and portfolio management for crypto assets.\n\n## When to Use\n\n- You need help with eyebot walletbot.\n- You want a quick, reliable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Manage my crypto wallet and view portfolio\"",
-      "\"Get portfolio summary across my assets\""
     ]
   },
   {
@@ -6427,20 +6074,6 @@
     ]
   },
   {
-    "skillId": "hardhat-deploy-migration",
-    "name": "Hardhat Deploy Migration",
-    "description": "Comprehensive guide for migrating projects from hardhat-deploy v1 to v2, including dependency updates, configuration restructuring, deploy script conversion, test updates, and troubleshooting.",
-    "instructions": "# Hardhat Deploy Migration\n\nComprehensive guide for migrating projects from hardhat-deploy v1 to v2, including dependency updates, configuration restructuring, deploy script conversion, test updates, and troubleshooting.\n\n## When to Use\n\n- You need help with hardhat deploy migration.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Migrate my project from hardhat-deploy v1 to v2\"",
-      "\"Convert deploy scripts for hardhat-deploy v2\""
-    ]
-  },
-  {
     "skillId": "harness-writing",
     "name": "Harness Writing",
     "description": "Develop test harness docs with step-by-step guidance, examples, troubleshooting, and update ownership.",
@@ -7230,20 +6863,6 @@
     ]
   },
   {
-    "skillId": "jb-revloans",
-    "name": "JB RevLoans",
-    "description": "Guidance playbook for JB RevLoans: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# JB RevLoans\n\nAct as a guidance specialist for JB RevLoans. Keep responses practical, risk-aware, and independent of direct API/backend execution.\n\n## Use Case Focus\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: jb, revloans.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Step-by-Step Guidance\n\n1. Confirm scope boundaries for project planning and implementation guidance and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Sanity Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Output Package\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Get all loans for my wallet address across revnets\"\n- \"Check if I have permission to borrow from this revnet\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Get all loans for my wallet address across revnets\"",
-      "\"Check if I have permission to borrow from this revnet\""
-    ]
-  },
-  {
     "skillId": "jb-terminal-wrapper",
     "name": "Jb Terminal Wrapper",
     "description": "Common Juicebox V5 design patterns for vesting, NFT treasuries, terminal wrappers, yield integration, and governance-minimal configurations. Common Juicebox V5 design patterns for vesting, NFT treasuries, terminal wrappers, yield integration, and governance-minimal configurations. Use when: (1) need treasury vesting without custom contracts, (2) building NFT-gated redemptions, (3) extending revnet functionality via pay wrappers, (4) implementing custom ERC20 tokens, (5) integrating yield protocols like Aave, (6) deciding between native mechanics vs custom code. Covers 11 patterns including terminal wrapper for dynamic pay-time splits, yield-generating hooks for Aave/DeFi integration, and token interception. Golden rule: prefer configuration over custom contracts.",
@@ -7502,20 +7121,6 @@
     "examples": [
       "\"Help me with legal advisor.\"",
       "\"Use legal-advisor for this task.\""
-    ]
-  },
-  {
-    "skillId": "lifi",
-    "name": "LI.FI",
-    "description": "Guidance playbook for LI.FI: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# LI.FI\n\nProvide guidance-only support for LI.FI. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: lifi.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Clarify the target outcome, constraints, and timeline for market integration and execution strategy.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Quality Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Deliverables\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Get a quote to bridge ETH from Ethereum to Polygon\"\n- \"Execute a cross-chain swap via LI.FI\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Get a quote to bridge ETH from Ethereum to Polygon\"",
-      "\"Execute a cross-chain swap via LI.FI\""
     ]
   },
   {
@@ -8091,20 +7696,6 @@
     "examples": [
       "\"Help me with mdr 745 specialist.\"",
       "\"Use mdr-745-specialist for this task.\""
-    ]
-  },
-  {
-    "skillId": "meatmarket",
-    "name": "Meatmarket",
-    "description": "Guidance playbook for Meatmarket: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Meatmarket\n\nAct as a guidance specialist for Meatmarket. Keep responses practical, risk-aware, and independent of direct API/backend execution.\n\n## Use Case Focus\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: meatmarket.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Step-by-Step Guidance\n\n1. Restate the user objective for market integration and execution strategy in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Sanity Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Output Package\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Post a job on Meatmarket\"\n- \"How do I pay workers with USDC on Meatmarket?\"",
-    "author": "community",
-    "version": "0.2.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Post a job on Meatmarket\"",
-      "\"How do I pay workers with USDC on Meatmarket?\""
     ]
   },
   {
@@ -8707,20 +8298,6 @@
     ]
   },
   {
-    "skillId": "moltmoon-sdk",
-    "name": "Moltmoon SDK",
-    "description": "Guidance playbook for Moltmoon SDK: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Moltmoon SDK\n\nProvide guidance-only support for Moltmoon SDK. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: moltmoon.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Launch a token on MoltMoon V2 with bonding curve\"\n- \"Configure staking allocation for my MoltMoon token\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Launch a token on MoltMoon V2 with bonding curve\"",
-      "\"Configure staking allocation for my MoltMoon token\""
-    ]
-  },
-  {
     "skillId": "money",
     "name": "Money",
     "description": "Personal finance guidance with practical rules for saving, investing, and avoiding common traps.",
@@ -8968,20 +8545,6 @@
     ]
   },
   {
-    "skillId": "nervepay",
-    "name": "Nervepay",
-    "description": "Guidance playbook for Nervepay: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Nervepay\n\nSupport Nervepay as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: wallet operations and transaction safety.\n- Skill context keywords: nervepay.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Confirm scope boundaries for wallet operations and transaction safety and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Review Checklist\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Response Format\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Register my agent identity with NervePay\"\n- \"Track an external API call for my agent's reputation\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Register my agent identity with NervePay\"",
-      "\"Track an external API call for my agent's reputation\""
-    ]
-  },
-  {
     "skillId": "nestjs-expert",
     "name": "Nestjs Expert",
     "description": "Concrete workflow for nestjs expert with specific inputs, execution steps, and deliverables.",
@@ -9100,20 +8663,6 @@
     "examples": [
       "Help me plan and implement nextjs app router patterns for this repository, including key decisions and checkpoints.",
       "Create a concise nextjs app router patterns workflow with concrete steps, risks, and final deliverables for my project."
-    ]
-  },
-  {
-    "skillId": "nft-standards",
-    "name": "Nft Standards",
-    "description": "Guidance playbook for Nft Standards: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Nft Standards\n\nOffer advisory support for Nft Standards without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: nft, standards.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Restate the user objective for project planning and implementation guidance in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Validation Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## What to Return\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Implement an ERC-721 collection with royalty support\"\n- \"Create an ERC-1155 multi-token with on-chain metadata\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Implement an ERC-721 collection with royalty support\"",
-      "\"Create an ERC-1155 multi-token with on-chain metadata\""
     ]
   },
   {
@@ -9516,20 +9065,6 @@
     ]
   },
   {
-    "skillId": "openwork",
-    "name": "Openwork",
-    "description": "Guidance playbook for Openwork: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Openwork\n\nOffer advisory support for Openwork without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: openwork.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Clarify the target outcome, constraints, and timeline for project planning and implementation guidance.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Validation Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## What to Return\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Publish openwork-orchestrator to npm\"\n- \"Bump openwork-orchestrator version and release\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Publish openwork-orchestrator to npm\"",
-      "\"Bump openwork-orchestrator version and release\""
-    ]
-  },
-  {
     "skillId": "optimizing-attention-flash",
     "name": "Optimizing Attention Flash",
     "description": "Concrete workflow for optimizing attention flash with specific inputs, execution steps, and deliverables.",
@@ -9655,20 +9190,6 @@
     ]
   },
   {
-    "skillId": "parallel-agent-contracts",
-    "name": "Parallel Agent Contracts",
-    "description": "Parallel Agent Type Contracts. Prevent type duplication when launching parallel agents for code implementation.",
-    "instructions": "# Parallel Agent Type Contracts\n\nWhen launching parallel agents for code implementation, prevent type duplication.\n\n## Required in Every Agent Prompt\n\n### 1. Verification Command (MANDATORY)\n```markdown\n## Before Marking Complete\nRun verification:\n\\`\\`\\`bash\nnpx tsc --noEmit 2>&1 | head -20\n\\`\\`\\`\nIf ANY type errors exist, fix them before completing.\n```\n\n### 2. Grep-Before-Create\n```markdown\n## Before Creating Any Type/Interface\nFirst check if it exists:\n\\`\\`\\`bash\ngrep -r \"interface YourTypeName\\|type YourTypeName\" src/\n\\`\\`\\`\nIf found, import it. NEVER duplicate existing types.\n```\n\n### 3. Canonical Type Map\nInclude relevant entries from this map in agent prompts:\n\n| Type | Owner File | Import From |\n|------|-----------|-------------|\n| `NormalizedTool` | `src/sdk/agent.ts` | `'./agent'` |\n| `ToolCall` | `src/sdk/agent.ts` | `'./agent'` |\n| `ToolResult` | `src/sdk/agent.ts` | `'./agent'` |\n| `ToolDefinition` | `src/sdk/agent.ts` | `'./agent'` |\n| `Message` | `src/sdk/types.ts` | `'./types'` |\n| `ContentBlock` | `src/sdk/types.ts` | `'./types'` |\n| `TokenUsage` | `src/sdk/types.ts` | `'./types'` |\n| `ProviderAdapter` | `src/sdk/providers/index.ts` | `'./providers'` |\n| `RiggClient` | `src/sdk/client.ts` | `'./client'` |\n\n## Prompt Template\n\nWhen spawning implementation agents:\n\n```markdown\n# Task: [Description]\n\n## Type Ownership (DO NOT recreate)\n- [List relevant types from canonical map]\n\n## Before Creating New Types\nRun: `grep -r \"interface TypeName\" src/` - if exists, import it.\n\n## Before Marking Complete\nRun: `npx tsc --noEmit 2>&1 | head -20`\nFix all type errors before completing.\n\n## Your Implementation\n[Actual task description]\n```\n\n## Why This Works\n\n1. **Type checker is the contract** - tsc catches conflicts automatically\n2. **Grep is fast** - 1 second to check if type exists\n3. **Explicit ownership** - No ambiguity about where types live\n4. **Fail fast** - Agent can't claim \"done\" with broken types",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Find canonical type definitions before creating new types\"",
-      "\"Verify no type errors before marking agent task complete\""
-    ]
-  },
-  {
     "skillId": "parallel-feature-development",
     "name": "Parallel Feature Development",
     "description": "Coordinate multiple in-flight features with branch strategy, dependency sequencing, and integration checkpoints that reduce merge risk. Use when several related features must ship concurrently without destabilizing the main branch.",
@@ -9684,20 +9205,6 @@
     "examples": [
       "Plan parallel work for three related features without blocking releases.",
       "Set up a branch and merge workflow that minimizes integration conflicts."
-    ]
-  },
-  {
-    "skillId": "paraswap",
-    "name": "ParaSwap",
-    "description": "DEX aggregator for best swap routes across major chains.",
-    "instructions": "# ParaSwap\n\nDEX aggregator for best swap routes across major chains.\n\n## When to Use\n\n- You need help with paraswap.\n- You want a quick, reliable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Get best swap route for USDC to ETH\"",
-      "\"Find optimal DEX route for my token swap\""
     ]
   },
   {
@@ -10124,20 +9631,6 @@
     "examples": [
       "\"Help me design a practical Polars workflow.\"",
       "\"What are best practices and trade-offs for Polars?\""
-    ]
-  },
-  {
-    "skillId": "polymarket-trading",
-    "name": "Polymarket Trading",
-    "description": "Guidance playbook for Polymarket Trading: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Polymarket Trading\n\nSupport Polymarket Trading as a planning and implementation guide. Prioritize concrete recommendations, trade-offs, and manual runbooks.\n\n## Objective\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: polymarket, trading.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Action Plan\n\n1. Restate the user objective for market integration and execution strategy in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Review Checklist\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Response Format\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Connect to Polymarket WebSocket for live market data\"\n- \"Build a trading strategy using Polymarket API\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Connect to Polymarket WebSocket for live market data\"",
-      "\"Build a trading strategy using Polymarket API\""
     ]
   },
   {
@@ -11007,20 +10500,6 @@
     "examples": [
       "Guide me through the QLM calibration process.",
       "What are the recommended steps for qubit gate calibration?"
-    ]
-  },
-  {
-    "skillId": "qlty-during-development",
-    "name": "QLTY During Development",
-    "description": "Guidance and answers for qlty during development. Run QLTY checks during code writing to catch issues early.",
-    "instructions": "# QLTY During Development\n\nRun QLTY checks during code writing to catch issues early.\n\n## When to Run\n\nRun QLTY after significant code changes:\n- After completing a new file\n- After substantial edits to existing files\n- Before committing changes\n\n## Commands\n\n```bash\n# Quick lint check\nqlty check\n\n# Format code\nqlty fmt\n\n# Check specific files\nqlty check src/sdk/providers.ts\n\n# Auto-fix issues\nqlty check --fix\n```\n\n## Integration Pattern\n\nAfter writing code:\n1. Run `qlty check` on changed files\n2. If errors, fix them before proceeding\n3. Run `qlty fmt` to ensure formatting\n\n## Don't Run When\n\n- Just reading/exploring code\n- Making single-line typo fixes\n- In the middle of multi-file refactoring (run at end)",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Run qlty check on my changed files\"",
-      "\"Format code with qlty fmt\""
     ]
   },
   {
@@ -12011,20 +11490,6 @@
     ]
   },
   {
-    "skillId": "sage-walletconnect",
-    "name": "Sage Walletconnect",
-    "description": "Guidance playbook for Sage Walletconnect: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Sage Walletconnect\n\nProvide guidance-only support for Sage Walletconnect. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: wallet operations and transaction safety.\n- Skill context keywords: sage, walletconnect.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Restate the user objective for wallet operations and transaction safety in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Quality Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Deliverables\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Verify Chia wallet ownership via Telegram and WalletConnect\"\n- \"Set up NFT-gated Telegram group with Chia verification\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Verify Chia wallet ownership via Telegram and WalletConnect\"",
-      "\"Set up NFT-gated Telegram group with Chia verification\""
-    ]
-  },
-  {
     "skillId": "sales-automator",
     "name": "Sales Automator",
     "description": "Draft cold emails, follow-ups, and proposal templates. Creates pricing pages, case studies, and sales scripts. Use PROACTIVELY for sales outreach or lead nurturing. pricing pages, case studies, and sales scripts. Use PROACTIVELY for sales outreach or lead nurturing.",
@@ -12563,20 +12028,6 @@
     ]
   },
   {
-    "skillId": "sequence-builder",
-    "name": "Sequence Builder",
-    "description": "Guidance playbook for Sequence Builder: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Sequence Builder\n\nOffer advisory support for Sequence Builder without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: sequence, builder.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Validation Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## What to Return\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Create a Sequence wallet and send an ERC20 transfer\"\n- \"Set up a new Sequence Builder project and get access keys\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Create a Sequence wallet and send an ERC20 transfer\"",
-      "\"Set up a new Sequence Builder project and get access keys\""
-    ]
-  },
-  {
     "skillId": "service-mesh-expert",
     "name": "Service Mesh Expert",
     "description": "Design and troubleshoot service mesh architectures for secure service-to-service communication, traffic policy, and operational resilience.",
@@ -12843,20 +12294,6 @@
     ]
   },
   {
-    "skillId": "slopwork",
-    "name": "Slopwork",
-    "description": "Solana-powered task marketplace with multisig escrow payments - post tasks, bid on work, escrow funds, and release payments via 2/3 multisig.",
-    "instructions": "# Slopwork\n\nSolana-powered task marketplace with multisig escrow payments - post tasks, bid on work, escrow funds, and release payments via 2/3 multisig.\n\n## When to Use\n\n- You need help with slopwork.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Post a task on Slopwork\"",
-      "\"Set up multisig escrow for a Solana task\""
-    ]
-  },
-  {
     "skillId": "slovak",
     "name": "Slovak",
     "description": "Write Slovak that sounds human. Not formal, not robotic, not AI-generated.",
@@ -12868,20 +12305,6 @@
     "examples": [
       "\"Translate this into Slovak\"",
       "\"Make this sound natural in Slovak\""
-    ]
-  },
-  {
-    "skillId": "smart-accounts-kit",
-    "name": "Smart Accounts Kit",
-    "description": "Web3 development using MetaMask Smart Accounts Kit.",
-    "instructions": "# Smart Accounts Kit\n\nWeb3 development using MetaMask Smart Accounts Kit.\n\n## When to Use\n\n- You need help with smart accounts kit.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Set up MetaMask Smart Accounts for my dApp\"",
-      "\"Implement account abstraction with Smart Accounts Kit\""
     ]
   },
   {
@@ -12911,48 +12334,6 @@
       "\"Lead me through this question Socratically.\"",
       "\"Ask me questions that expose my assumptions.\"",
       "\"Help me reason this through without answering too early.\""
-    ]
-  },
-  {
-    "skillId": "solana-funding-arb",
-    "name": "Solana Funding Arb",
-    "description": "Guidance playbook for Solana Funding Arb: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Solana Funding Arb\n\nProvide guidance-only support for Solana Funding Arb. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: solana, funding, arb.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Restate the user objective for implementation design and integration planning in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Quality Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## Deliverables\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Scan Drift and Flash Trade for funding rate arbitrage\"\n- \"Run funding arb in dry run mode\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Scan Drift and Flash Trade for funding rate arbitrage\"",
-      "\"Run funding arb in dry run mode\""
-    ]
-  },
-  {
-    "skillId": "solana-pay",
-    "name": "Solana Pay",
-    "description": "Guidance playbook for Solana Pay: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Solana Pay\n\nOffer advisory support for Solana Pay without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: wallet operations and transaction safety.\n- Skill context keywords: solana, pay.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Restate the user objective for wallet operations and transaction safety in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Validation Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## What to Return\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Create a pay link for 5 USDC payment\"\n- \"Generate a checkout URL for my payment request\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Create a pay link for 5 USDC payment\"",
-      "\"Generate a checkout URL for my payment request\""
-    ]
-  },
-  {
-    "skillId": "solana-vulnerability-scanner",
-    "name": "Solana Vulnerability Scanner",
-    "description": "Guidance playbook for Solana Vulnerability Scanner: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Solana Vulnerability Scanner\n\nProvide guidance-only support for Solana Vulnerability Scanner. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: security hardening and risk reduction.\n- Skill context keywords: solana, vulnerability, scanner.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Clarify the target outcome, constraints, and timeline for security hardening and risk reduction.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Quality Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Deliverables\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Scan my Solana program for CPI vulnerabilities\"\n- \"Audit this Anchor program for PDA validation issues\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Scan my Solana program for CPI vulnerabilities\"",
-      "\"Audit this Anchor program for PDA validation issues\""
     ]
   },
   {
@@ -13397,20 +12778,6 @@
     ]
   },
   {
-    "skillId": "streme-launcher",
-    "name": "Streme Launcher",
-    "description": "Guidance playbook for Streme Launcher: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Streme Launcher\n\nAct as a guidance specialist for Streme Launcher. Keep responses practical, risk-aware, and independent of direct API/backend execution.\n\n## Use Case Focus\n\n- Core focus: project planning and implementation guidance.\n- Skill context keywords: streme, launcher.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Step-by-Step Guidance\n\n1. Clarify the target outcome, constraints, and timeline for project planning and implementation guidance.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Sanity Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Output Package\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Deploy a SuperToken on Base via Streme V2\"\n- \"Create a token with Uniswap V3 liquidity and Superfluid streaming\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Deploy a SuperToken on Base via Streme V2\"",
-      "\"Create a token with Uniswap V3 liquidity and Superfluid streaming\""
-    ]
-  },
-  {
     "skillId": "string-database",
     "name": "String Database",
     "description": "Query STRING API for protein-protein interactions, network analysis, and functional enrichment across 5000+ species.",
@@ -13482,20 +12849,6 @@
     "examples": [
       "Break a platform migration into parallel subagent tasks with explicit deliverables.",
       "Coordinate subagent outputs for CI hardening, observability, and deployment checks."
-    ]
-  },
-  {
-    "skillId": "substrate-vulnerability-scanner",
-    "name": "Substrate Vulnerability Scanner",
-    "description": "Guidance playbook for Substrate Vulnerability Scanner: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Substrate Vulnerability Scanner\n\nAct as a guidance specialist for Substrate Vulnerability Scanner. Keep responses practical, risk-aware, and independent of direct API/backend execution.\n\n## Use Case Focus\n\n- Core focus: security hardening and risk reduction.\n- Skill context keywords: substrate, vulnerability, scanner.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Step-by-Step Guidance\n\n1. Clarify the target outcome, constraints, and timeline for security hardening and risk reduction.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Sanity Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## Output Package\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Scan my Substrate pallets for security vulnerabilities\"\n- \"Audit this FRAME runtime for weight and origin issues\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Scan my Substrate pallets for security vulnerabilities\"",
-      "\"Audit this FRAME runtime for weight and origin issues\""
     ]
   },
   {
@@ -13856,20 +13209,6 @@
     ]
   },
   {
-    "skillId": "telegram-mini-app",
-    "name": "Telegram Mini App",
-    "description": "Guidance playbook for Telegram Mini App: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Telegram Mini App\n\nOffer advisory support for Telegram Mini App without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: telegram, mini, app.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Clarify the target outcome, constraints, and timeline for implementation design and integration planning.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Validation Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## What to Return\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Build a Telegram Mini App with TON Connect\"\n- \"Set up in-app payments for my Telegram Mini App\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Build a Telegram Mini App with TON Connect\"",
-      "\"Set up in-app payments for my Telegram Mini App\""
-    ]
-  },
-  {
     "skillId": "templates",
     "name": "Templates",
     "description": "Create and maintain reusable infrastructure and pipeline templates for consistent service delivery and environment provisioning.",
@@ -14052,20 +13391,6 @@
     "examples": [
       "\"Help me design a Todoist operating system for team priorities.\"",
       "\"Use todoist-automation to improve recurring planning and follow-through.\""
-    ]
-  },
-  {
-    "skillId": "token-integration-analyzer",
-    "name": "Token Integration Analyzer",
-    "description": "Guidance playbook for Token Integration Analyzer: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Token Integration Analyzer\n\nOffer advisory support for Token Integration Analyzer without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: wallet operations and transaction safety.\n- Skill context keywords: token, integration, analyzer.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Restate the user objective for wallet operations and transaction safety in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Validation Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## What to Return\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Analyze my protocol for token integration safety\"\n- \"Check my ERC20 implementation for weird token patterns\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Analyze my protocol for token integration safety\"",
-      "\"Check my ERC20 implementation for weird token patterns\""
     ]
   },
   {
@@ -14293,20 +13618,6 @@
     "examples": [
       "Define trigger conditions for a deployment pipeline across pull requests, merges, and tags.",
       "Review an automation trigger setup that is running too often and causing unnecessary cost."
-    ]
-  },
-  {
-    "skillId": "trustra-escrow",
-    "name": "Trustra Escrow",
-    "description": "Guidance playbook for Trustra Escrow: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Trustra Escrow\n\nOffer advisory support for Trustra Escrow without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: wallet operations and transaction safety.\n- Skill context keywords: trustra, escrow.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Restate the user objective for wallet operations and transaction safety in one sentence.\n2. Identify prerequisites and dependency constraints up front.\n3. Propose a phased plan (baseline, improve, harden).\n4. Translate each phase into hands-on actions the user can execute.\n5. Include acceptance checks and post-change monitoring guidance.\n\n## Validation Checks\n\n- No claims of having executed commands, queries, transactions, or deployments.\n- Plan includes rollback or recovery guidance for mistakes.\n- Final answer is concise, ordered, and easy to hand off to implementation.\n\n## What to Return\n\n- Context recap\n- Implementation plan by phase\n- Acceptance tests and success metrics\n- Known pitfalls and mitigations\n\n## Example Prompts\n\n- \"Create a USDC escrow with the seller's wallet for payment\"\n- \"Check the status of my escrow and mark it as delivered\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Create a USDC escrow with the seller's wallet for payment\"",
-      "\"Check the status of my escrow and mark it as delivered\""
     ]
   },
   {
@@ -14746,20 +14057,6 @@
     ]
   },
   {
-    "skillId": "vincent-a-wallet-for-agents",
-    "name": "Vincent A Wallet For Agents",
-    "description": "Use this skill to create a Polymarket wallet for your agent and trade on prediction markets. Browse markets, place bets, manage positions — all without exposing private keys.",
-    "instructions": "# Vincent A Wallet For Agents\n\nUse this skill to create a Polymarket wallet for your agent and trade on prediction markets. Browse markets, place bets, manage positions — all without exposing private keys.\n\n## When to Use\n\n- You need help with vincent a wallet for agents.\n- You want a clear, actionable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Create a Polymarket wallet for my agent\"",
-      "\"Place a bet on a prediction market\""
-    ]
-  },
-  {
     "skillId": "viral-generator-builder",
     "name": "Viral Generator Builder",
     "description": "Concrete workflow for viral generator builder with specific inputs, execution steps, and deliverables.",
@@ -14836,20 +14133,6 @@
       "\"Help me triage these vulnerability scanner results.\"",
       "\"Which findings here matter most?\"",
       "\"Review this scan output and tell me what is urgent.\""
-    ]
-  },
-  {
-    "skillId": "wagmi-development",
-    "name": "Wagmi Development",
-    "description": "Guidance playbook for Wagmi Development: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Wagmi Development\n\nOffer advisory support for Wagmi Development without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: wagmi, development.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Validation Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## What to Return\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Add a new core action to Wagmi wrapping a Viem function\"\n- \"Create query options and React hooks for my Wagmi feature\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Add a new core action to Wagmi wrapping a Viem function\"",
-      "\"Create query options and React hooks for my Wagmi feature\""
     ]
   },
   {
@@ -15004,62 +14287,6 @@
     "examples": [
       "Help me plan and implement web games for this repository, including key decisions and checkpoints.",
       "Create a concise web games workflow with concrete steps, risks, and final deliverables for my project."
-    ]
-  },
-  {
-    "skillId": "web3-testing",
-    "name": "Web3 Testing",
-    "description": "Guidance playbook for Web3 Testing: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Web3 Testing\n\nProvide guidance-only support for Web3 Testing. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: security hardening and risk reduction.\n- Skill context keywords: testing.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for security hardening and risk reduction and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Write unit tests for my smart contract with Foundry\"\n- \"Fork mainnet for integration testing\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Write unit tests for my smart contract with Foundry\"",
-      "\"Fork mainnet for integration testing\""
-    ]
-  },
-  {
-    "skillId": "webf-native-plugin-dev",
-    "name": "WebF Native Plugin Dev",
-    "description": "Guidance playbook for WebF Native Plugin Dev: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# WebF Native Plugin Dev\n\nProvide guidance-only support for WebF Native Plugin Dev. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: webf, native, plugin.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Create a custom WebF native plugin for device sensors\"\n- \"Wrap a Flutter package as a WebF JavaScript API\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Create a custom WebF native plugin for device sensors\"",
-      "\"Wrap a Flutter package as a WebF JavaScript API\""
-    ]
-  },
-  {
-    "skillId": "webf-native-plugins",
-    "name": "WebF Native Plugins",
-    "description": "Guidance playbook for WebF Native Plugins: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# WebF Native Plugins\n\nAct as a guidance specialist for WebF Native Plugins. Keep responses practical, risk-aware, and independent of direct API/backend execution.\n\n## Use Case Focus\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: webf, native, plugins.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Step-by-Step Guidance\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Sanity Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Output Package\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"How do I install the WebF Share plugin for native sharing in my app?\"\n- \"Set up the camera plugin for WebF to access the device camera\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"How do I install the WebF Share plugin for native sharing in my app?\"",
-      "\"Set up the camera plugin for WebF to access the device camera\""
-    ]
-  },
-  {
-    "skillId": "webf-quickstart",
-    "name": "WebF Quickstart",
-    "description": "Guidance playbook for WebF Quickstart: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# WebF Quickstart\n\nProvide guidance-only support for WebF Quickstart. Focus on decision quality and practical next actions the user can perform in their own environment.\n\n## Scope\n\n- Core focus: implementation design and integration planning.\n- Skill context keywords: webf, quickstart.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Guidance Workflow\n\n1. Confirm scope boundaries for implementation design and integration planning and define success criteria.\n2. Map required inputs, assumptions, and missing information.\n3. Compare implementation options with trade-offs in complexity and risk.\n4. Draft ordered steps the user can run manually in their stack.\n5. End with verification steps and a short troubleshooting branch.\n\n## Quality Checks\n\n- Guidance remains tool-agnostic and executable by a human operator.\n- Trade-offs are stated before recommending a final approach.\n- Validation criteria are measurable (pass/fail), not vague.\n\n## Deliverables\n\n- Objective and scope boundaries\n- Option analysis and chosen path\n- Stepwise runbook for manual execution\n- Troubleshooting and next-iteration ideas\n\n## Example Prompts\n\n- \"Set up WebF Go and create my first React app\"\n- \"Create a Vue project with Vite for WebF\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Set up WebF Go and create my first React app\"",
-      "\"Create a Vue project with Vite for WebF\""
     ]
   },
   {
@@ -15477,20 +14704,6 @@
     ]
   },
   {
-    "skillId": "x402-watch",
-    "name": "X402 Watch",
-    "description": "DeFi risk analysis toolkit powered by x402 payments for token checks.",
-    "instructions": "# X402 Watch\n\nDeFi risk analysis toolkit powered by x402 payments for token checks.\n\n## When to Use\n\n- You need help with x402 watch.\n- You want a quick, reliable next step.\n\n## Output\n\n- Summary of goals and plan\n- Key tips and precautions",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Run DeFi risk analysis on this token\"",
-      "\"Check token safety using x402 watch\""
-    ]
-  },
-  {
     "skillId": "xero-automation",
     "name": "Xero Automation",
     "description": "Guidance-only playbook for Xero accounting operations, including invoicing controls, reconciliation workflows, and close readiness.",
@@ -15549,20 +14762,6 @@
     "examples": [
       "\"Download this YouTube video in 1080p MP4: https://www.youtube.com/watch?v=dQw4w9WgXcQ\"",
       "\"Download audio-only as MP3 from this link and save it to ./out/: https://youtu.be/dQw4w9WgXcQ\""
-    ]
-  },
-  {
-    "skillId": "zapper-api",
-    "name": "Zapper API",
-    "description": "Guidance playbook for Zapper API: plan and execute manually without requiring direct backend/API execution.",
-    "instructions": "# Zapper API\n\nOffer advisory support for Zapper API without executing systems directly. Help the user choose a clear path and execute manually.\n\n## Primary Goal\n\n- Core focus: market integration and execution strategy.\n- Skill context keywords: zapper.\n- Use this skill when the user wants recommendations, architecture choices, and manual execution steps.\n\n## Recommended Process\n\n1. Clarify the target outcome, constraints, and timeline for market integration and execution strategy.\n2. Break the work into phases and suggest 2-3 feasible approaches.\n3. Recommend a low-risk path first, then an optimized path if needed.\n4. Provide a manual checklist with checkpoints and rollback notes.\n5. Call out common failure modes and how to diagnose them quickly.\n\n## Validation Checks\n\n- No assumption of direct access to APIs, nodes, wallets, databases, or MCP tools.\n- Recommendations include at least one conservative fallback option.\n- Any security-sensitive step includes explicit risk and mitigation notes.\n\n## What to Return\n\n- Goal summary and assumptions\n- Recommended approach with trade-offs\n- Manual execution checklist\n- Risk notes and verification steps\n\n## Example Prompts\n\n- \"Get my DeFi portfolio summary across all chains\"\n- \"Show my unclaimed rewards and claimables\"",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Blockchain",
-    "requires": [],
-    "examples": [
-      "\"Get my DeFi portfolio summary across all chains\"",
-      "\"Show my unclaimed rewards and claimables\""
     ]
   },
   {
