@@ -5858,20 +5858,6 @@
     ]
   },
   {
-    "skillId": "gptq",
-    "name": "GPTQ",
-    "description": "Practical guidance for gptq workflows.",
-    "instructions": "# GPTQ\n\nHelp the agent provide practical guidance for gptq workflows.\n\n## When to Use\n\n- The user needs help implementing or improving gptq workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical GPTQ workflow.\"",
-      "\"What are best practices and trade-offs for GPTQ?\""
-    ]
-  },
-  {
     "skillId": "grafana-dashboards",
     "name": "Grafana Dashboards",
     "description": "Design Grafana dashboards that are actionable, low-noise, and aligned to service objectives. Use when building new dashboards or improving observability for incidents, SLOs, and on-call workflows.",
@@ -5916,20 +5902,6 @@
       "\"Help me do a gratitude check-in\"",
       "\"I am stuck and cannot think of anything good today\"",
       "\"Give me a few gratitude prompts for tonight\""
-    ]
-  },
-  {
-    "skillId": "grpo-rl-training",
-    "name": "GRPO RL Training",
-    "description": "Practical guidance for grpo rl training workflows.",
-    "instructions": "# GRPO RL Training\n\nHelp the agent provide practical guidance for grpo rl training workflows.\n\n## When to Use\n\n- The user needs help implementing or improving grpo rl training workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical GRPO RL Training workflow.\"",
-      "\"What are best practices and trade-offs for GRPO RL Training?\""
     ]
   },
   {
@@ -6173,62 +6145,6 @@
     "examples": [
       "\"Create hook development docs with step-by-step workflows, examples, and troubleshooting.\"",
       "\"Audit hook development docs for missing validation steps, stale procedures, and weak edge-case guidance.\""
-    ]
-  },
-  {
-    "skillId": "hqq-quantization",
-    "name": "HQQ Quantization",
-    "description": "Practical guidance for hqq quantization workflows.",
-    "instructions": "# HQQ Quantization\n\nHelp the agent provide practical guidance for hqq quantization workflows.\n\n## When to Use\n\n- The user needs help implementing or improving hqq quantization workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical HQQ Quantization workflow.\"",
-      "\"What are best practices and trade-offs for HQQ Quantization?\""
-    ]
-  },
-  {
-    "skillId": "hugging-face-datasets",
-    "name": "Hugging Face Datasets",
-    "description": "Practical guidance for hugging face datasets workflows.",
-    "instructions": "# Hugging Face Datasets\n\nHelp the agent provide practical guidance for hugging face datasets workflows.\n\n## When to Use\n\n- The user needs help implementing or improving hugging face datasets workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Hugging Face Datasets workflow.\"",
-      "\"What are best practices and trade-offs for Hugging Face Datasets?\""
-    ]
-  },
-  {
-    "skillId": "hugging-face-evaluation",
-    "name": "Hugging Face Evaluation",
-    "description": "Practical guidance for hugging face evaluation workflows.",
-    "instructions": "# Hugging Face Evaluation\n\nHelp the agent provide practical guidance for hugging face evaluation workflows.\n\n## When to Use\n\n- The user needs help implementing or improving hugging face evaluation workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Hugging Face Evaluation workflow.\"",
-      "\"What are best practices and trade-offs for Hugging Face Evaluation?\""
-    ]
-  },
-  {
-    "skillId": "hugging-face-model-trainer",
-    "name": "Hugging Face Model Trainer",
-    "description": "Practical guidance for hugging face model trainer workflows.",
-    "instructions": "# Hugging Face Model Trainer\n\nHelp the agent provide practical guidance for hugging face model trainer workflows.\n\n## When to Use\n\n- The user needs help implementing or improving hugging face model trainer workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Hugging Face Model Trainer workflow.\"",
-      "\"What are best practices and trade-offs for Hugging Face Model Trainer?\""
     ]
   },
   {
@@ -6732,20 +6648,6 @@
     ]
   },
   {
-    "skillId": "iterative-retrieval",
-    "name": "Iterative Retrieval",
-    "description": "Practical guidance for iterative retrieval workflows.",
-    "instructions": "# Iterative Retrieval\n\nHelp the agent provide practical guidance for iterative retrieval workflows.\n\n## When to Use\n\n- The user needs help implementing or improving iterative retrieval workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Iterative Retrieval workflow.\"",
-      "\"What are best practices and trade-offs for Iterative Retrieval?\""
-    ]
-  },
-  {
     "skillId": "java-coding-standards",
     "name": "Java Coding Standards",
     "description": "Define Java coding standards for readability, architecture consistency, exception handling, and maintainable testing practices.",
@@ -7143,20 +7045,6 @@
     ]
   },
   {
-    "skillId": "linkai-agent",
-    "name": "LinkAI Agent",
-    "description": "Practical guidance for linkai agent workflows.",
-    "instructions": "# LinkAI Agent\n\nHelp the agent provide practical guidance for linkai agent workflows.\n\n## When to Use\n\n- The user needs help implementing or improving linkai agent workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical LinkAI Agent workflow.\"",
-      "\"What are best practices and trade-offs for LinkAI Agent?\""
-    ]
-  },
-  {
     "skillId": "linkerd-patterns",
     "name": "Linkerd Patterns",
     "description": "Apply Linkerd operational patterns for secure traffic, reliability tuning, and service-level troubleshooting.",
@@ -7228,48 +7116,6 @@
     "examples": [
       "\"Implement a Livewire CRUD flow with inline validation and pagination.\"",
       "\"Refactor these Livewire components to reduce state bugs and improve testability.\""
-    ]
-  },
-  {
-    "skillId": "llama-factory",
-    "name": "Llama Factory",
-    "description": "Practical guidance for llama factory workflows.",
-    "instructions": "# Llama Factory\n\nHelp the agent provide practical guidance for llama factory workflows.\n\n## When to Use\n\n- The user needs help implementing or improving llama factory workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Llama Factory workflow.\"",
-      "\"What are best practices and trade-offs for Llama Factory?\""
-    ]
-  },
-  {
-    "skillId": "llm-app-patterns",
-    "name": "LLM App Patterns",
-    "description": "Practical guidance for llm app patterns workflows.",
-    "instructions": "# LLM App Patterns\n\nHelp the agent provide practical guidance for llm app patterns workflows.\n\n## When to Use\n\n- The user needs help implementing or improving llm app patterns workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical LLM App Patterns workflow.\"",
-      "\"What are best practices and trade-offs for LLM App Patterns?\""
-    ]
-  },
-  {
-    "skillId": "llm-evaluation",
-    "name": "LLM Evaluation",
-    "description": "Practical guidance for llm evaluation workflows.",
-    "instructions": "# LLM Evaluation\n\nHelp the agent provide practical guidance for llm evaluation workflows.\n\n## When to Use\n\n- The user needs help implementing or improving llm evaluation workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical LLM Evaluation workflow.\"",
-      "\"What are best practices and trade-offs for LLM Evaluation?\""
     ]
   },
   {
@@ -7424,20 +7270,6 @@
     ]
   },
   {
-    "skillId": "mamba-architecture",
-    "name": "Mamba Architecture",
-    "description": "Practical guidance for mamba architecture workflows.",
-    "instructions": "# Mamba Architecture\n\nHelp the agent provide practical guidance for mamba architecture workflows.\n\n## When to Use\n\n- The user needs help implementing or improving mamba architecture workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Mamba Architecture workflow.\"",
-      "\"What are best practices and trade-offs for Mamba Architecture?\""
-    ]
-  },
-  {
     "skillId": "management",
     "name": "Management",
     "description": "Management principles, team leadership, and organizational effectiveness.",
@@ -7556,34 +7388,6 @@
       "\"Give me a fake-profound math formula involving pi and e.\"",
       "\"Create some ridiculous but technically true math slop.\"",
       "\"Generate a meme-worthy LaTeX identity that looks deeper than it is.\""
-    ]
-  },
-  {
-    "skillId": "matplotlib",
-    "name": "Matplotlib",
-    "description": "Practical guidance for matplotlib workflows.",
-    "instructions": "# Matplotlib\n\nHelp the agent provide practical guidance for matplotlib workflows.\n\n## When to Use\n\n- The user needs help implementing or improving matplotlib workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Matplotlib workflow.\"",
-      "\"What are best practices and trade-offs for Matplotlib?\""
-    ]
-  },
-  {
-    "skillId": "mcp-builder",
-    "name": "MCP Builder",
-    "description": "Practical guidance for mcp builder workflows.",
-    "instructions": "# MCP Builder\n\nHelp the agent provide practical guidance for mcp builder workflows.\n\n## When to Use\n\n- The user needs help implementing or improving mcp builder workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical MCP Builder workflow.\"",
-      "\"What are best practices and trade-offs for MCP Builder?\""
     ]
   },
   {
@@ -7716,20 +7520,6 @@
       "Show newly created Solana meme tokens on Pump.fun with high bonding-curve progress.",
       "Find BSC meme tokens that are finalizing migration and filter out dev wash trading.",
       "List viral hot topics on Solana ranked by net inflow with top associated tokens."
-    ]
-  },
-  {
-    "skillId": "memory",
-    "name": "Memory",
-    "description": "Practical guidance for memory workflows.",
-    "instructions": "# Memory\n\nHelp the agent provide practical guidance for memory workflows.\n\n## When to Use\n\n- The user needs help implementing or improving memory workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Memory workflow.\"",
-      "\"What are best practices and trade-offs for Memory?\""
     ]
   },
   {
@@ -7976,20 +7766,6 @@
     ]
   },
   {
-    "skillId": "mlflow",
-    "name": "MLflow",
-    "description": "Practical guidance for mlflow workflows.",
-    "instructions": "# MLflow\n\nHelp the agent provide practical guidance for mlflow workflows.\n\n## When to Use\n\n- The user needs help implementing or improving mlflow workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical MLflow workflow.\"",
-      "\"What are best practices and trade-offs for MLflow?\""
-    ]
-  },
-  {
     "skillId": "mobile-android-design",
     "name": "Mobile Android Design",
     "description": "Master Material Design 3 and Jetpack Compose patterns for building native Android apps.",
@@ -8136,34 +7912,6 @@
     ]
   },
   {
-    "skillId": "model-pruning",
-    "name": "Model Pruning",
-    "description": "Practical guidance for model pruning workflows.",
-    "instructions": "# Model Pruning\n\nHelp the agent provide practical guidance for model pruning workflows.\n\n## When to Use\n\n- The user needs help implementing or improving model pruning workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Model Pruning workflow.\"",
-      "\"What are best practices and trade-offs for Model Pruning?\""
-    ]
-  },
-  {
-    "skillId": "model-usage",
-    "name": "Model Usage",
-    "description": "Practical guidance for model usage workflows.",
-    "instructions": "# Model Usage\n\nHelp the agent provide practical guidance for model usage workflows.\n\n## When to Use\n\n- The user needs help implementing or improving model usage workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Model Usage workflow.\"",
-      "\"What are best practices and trade-offs for Model Usage?\""
-    ]
-  },
-  {
     "skillId": "modern-python",
     "name": "Modern Python",
     "description": "Concrete workflow for modern python with specific inputs, execution steps, and deliverables.",
@@ -8197,20 +7945,6 @@
     "examples": [
       "Help me plan and implement modern tools for this repository, including key decisions and checkpoints.",
       "Create a concise modern tools workflow with concrete steps, risks, and final deliverables for my project."
-    ]
-  },
-  {
-    "skillId": "moe-training",
-    "name": "MoE Training",
-    "description": "Practical guidance for moe training workflows.",
-    "instructions": "# MoE Training\n\nHelp the agent provide practical guidance for moe training workflows.\n\n## When to Use\n\n- The user needs help implementing or improving moe training workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical MoE Training workflow.\"",
-      "\"What are best practices and trade-offs for MoE Training?\""
     ]
   },
   {
@@ -8335,20 +8069,6 @@
     ]
   },
   {
-    "skillId": "n8n-workflow-patterns",
-    "name": "n8n Workflow Patterns",
-    "description": "Practical guidance for n8n workflow patterns workflows.",
-    "instructions": "# n8n Workflow Patterns\n\nHelp the agent provide practical guidance for n8n workflow patterns workflows.\n\n## When to Use\n\n- The user needs help implementing or improving n8n workflow patterns workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical n8n Workflow Patterns workflow.\"",
-      "\"What are best practices and trade-offs for n8n Workflow Patterns?\""
-    ]
-  },
-  {
     "skillId": "nano-banana-pro",
     "name": "Nano Banana Pro",
     "description": "Step-by-step guidance for nano banana pro.",
@@ -8458,20 +8178,6 @@
     "examples": [
       "\"Help me with nda triage.\"",
       "\"Use nda-triage for this task.\""
-    ]
-  },
-  {
-    "skillId": "neon-instagres",
-    "name": "Neon Instagres",
-    "description": "Practical guidance for neon instagres workflows.",
-    "instructions": "# Neon Instagres\n\nHelp the agent provide practical guidance for neon instagres workflows.\n\n## When to Use\n\n- The user needs help implementing or improving neon instagres workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Neon Instagres workflow.\"",
-      "\"What are best practices and trade-offs for Neon Instagres?\""
     ]
   },
   {
@@ -8660,20 +8366,6 @@
     ]
   },
   {
-    "skillId": "nosql-expert",
-    "name": "NoSQL Expert",
-    "description": "Practical guidance for nosql expert workflows.",
-    "instructions": "# NoSQL Expert\n\nHelp the agent provide practical guidance for nosql expert workflows.\n\n## When to Use\n\n- The user needs help implementing or improving nosql expert workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical NoSQL Expert workflow.\"",
-      "\"What are best practices and trade-offs for NoSQL Expert?\""
-    ]
-  },
-  {
     "skillId": "notion-automation",
     "name": "Notion Automation",
     "description": "Guidance-only playbook for Notion workspace operations, including database design, documentation governance, and review cadences.",
@@ -8833,45 +8525,6 @@
     ]
   },
   {
-    "skillId": "openai-image-vision",
-    "name": "OpenAI Image Vision",
-    "description": "Practical guidance for openai image vision workflows.",
-    "instructions": "# OpenAI Image Vision\n\nHelp the agent provide practical guidance for openai image vision workflows.\n\n## When to Use\n\n- The user needs help implementing or improving openai image vision workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [
-      ".png",
-      ".jpg",
-      ".jpeg",
-      ".webp"
-    ],
-    "examples": [
-      "\"Help me design a practical OpenAI Image Vision workflow.\"",
-      "\"What are best practices and trade-offs for OpenAI Image Vision?\""
-    ]
-  },
-  {
-    "skillId": "openai-whisper",
-    "name": "OpenAI Whisper",
-    "description": "Practical guidance for openai whisper workflows.",
-    "instructions": "# OpenAI Whisper\n\nHelp the agent provide practical guidance for openai whisper workflows.\n\n## When to Use\n\n- The user needs help implementing or improving openai whisper workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [
-      ".mp3",
-      ".wav",
-      ".m4a",
-      ".mp4",
-      ".webm"
-    ],
-    "examples": [
-      "\"Help me design a practical OpenAI Whisper workflow.\"",
-      "\"What are best practices and trade-offs for OpenAI Whisper?\""
-    ]
-  },
-  {
     "skillId": "openalex-database",
     "name": "OpenAlex Database",
     "description": "Query and analyze scholarly literature using OpenAlex for research output analysis and bibliometric studies.",
@@ -8925,20 +8578,6 @@
     "examples": [
       "Create a first OpenSpec workflow for a small backend team.",
       "Standardize proposal, review, and approval criteria for new features."
-    ]
-  },
-  {
-    "skillId": "openspec-sync-specs",
-    "name": "OpenSpec Sync Specs",
-    "description": "Practical guidance for openspec sync specs workflows.",
-    "instructions": "# OpenSpec Sync Specs\n\nHelp the agent provide practical guidance for openspec sync specs workflows.\n\n## When to Use\n\n- The user needs help implementing or improving openspec sync specs workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical OpenSpec Sync Specs workflow.\"",
-      "\"What are best practices and trade-offs for OpenSpec Sync Specs?\""
     ]
   },
   {
@@ -9274,20 +8913,6 @@
     ]
   },
   {
-    "skillId": "peft-fine-tuning",
-    "name": "PEFT Fine Tuning",
-    "description": "Practical guidance for peft fine tuning workflows.",
-    "instructions": "# PEFT Fine Tuning\n\nHelp the agent provide practical guidance for peft fine tuning workflows.\n\n## When to Use\n\n- The user needs help implementing or improving peft fine tuning workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical PEFT Fine Tuning workflow.\"",
-      "\"What are best practices and trade-offs for PEFT Fine Tuning?\""
-    ]
-  },
-  {
     "skillId": "pennyLane",
     "name": "Pennylane",
     "description": "Concrete workflow for pennylane with specific inputs, execution steps, and deliverables.",
@@ -9423,34 +9048,6 @@
     ]
   },
   {
-    "skillId": "phoenix-observability",
-    "name": "Phoenix Observability",
-    "description": "Practical guidance for phoenix observability workflows.",
-    "instructions": "# Phoenix Observability\n\nHelp the agent provide practical guidance for phoenix observability workflows.\n\n## When to Use\n\n- The user needs help implementing or improving phoenix observability workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Phoenix Observability workflow.\"",
-      "\"What are best practices and trade-offs for Phoenix Observability?\""
-    ]
-  },
-  {
-    "skillId": "pinecone",
-    "name": "Pinecone",
-    "description": "Practical guidance for pinecone workflows.",
-    "instructions": "# Pinecone\n\nHelp the agent provide practical guidance for pinecone workflows.\n\n## When to Use\n\n- The user needs help implementing or improving pinecone workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Pinecone workflow.\"",
-      "\"What are best practices and trade-offs for Pinecone?\""
-    ]
-  },
-  {
     "skillId": "plan-writing",
     "name": "Plan Writing",
     "description": "Structured task planning with clear breakdowns, dependencies, and verification criteria.",
@@ -9525,20 +9122,6 @@
     ]
   },
   {
-    "skillId": "polars",
-    "name": "Polars",
-    "description": "Practical guidance for polars workflows.",
-    "instructions": "# Polars\n\nHelp the agent provide practical guidance for polars workflows.\n\n## When to Use\n\n- The user needs help implementing or improving polars workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Polars workflow.\"",
-      "\"What are best practices and trade-offs for Polars?\""
-    ]
-  },
-  {
     "skillId": "port-c-module",
     "name": "Port C Module",
     "description": "Concrete workflow for port c module with specific inputs, execution steps, and deliverables.",
@@ -9554,20 +9137,6 @@
     "examples": [
       "Help me plan and implement port c module for this repository, including key decisions and checkpoints.",
       "Create a concise port c module workflow with concrete steps, risks, and final deliverables for my project."
-    ]
-  },
-  {
-    "skillId": "postgres-patterns",
-    "name": "Postgres Patterns",
-    "description": "Practical guidance for postgres patterns workflows.",
-    "instructions": "# Postgres Patterns\n\nHelp the agent provide practical guidance for postgres patterns workflows.\n\n## When to Use\n\n- The user needs help implementing or improving postgres patterns workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Postgres Patterns workflow.\"",
-      "\"What are best practices and trade-offs for Postgres Patterns?\""
     ]
   },
   {
@@ -9742,20 +9311,6 @@
     ]
   },
   {
-    "skillId": "prisma-expert",
-    "name": "Prisma Expert",
-    "description": "Practical guidance for prisma expert workflows.",
-    "instructions": "# Prisma Expert\n\nHelp the agent provide practical guidance for prisma expert workflows.\n\n## When to Use\n\n- The user needs help implementing or improving prisma expert workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Prisma Expert workflow.\"",
-      "\"What are best practices and trade-offs for Prisma Expert?\""
-    ]
-  },
-  {
     "skillId": "product-manager-toolkit",
     "name": "Product Manager Toolkit",
     "description": "Guidance-only product management toolkit for prioritization, discovery synthesis, PRD quality, and go-to-market alignment.",
@@ -9854,20 +9409,6 @@
     ]
   },
   {
-    "skillId": "projection-patterns",
-    "name": "Projection Patterns",
-    "description": "Practical guidance for projection patterns workflows.",
-    "instructions": "# Projection Patterns\n\nHelp the agent provide practical guidance for projection patterns workflows.\n\n## When to Use\n\n- The user needs help implementing or improving projection patterns workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Projection Patterns workflow.\"",
-      "\"What are best practices and trade-offs for Projection Patterns?\""
-    ]
-  },
-  {
     "skillId": "prometheus-configuration",
     "name": "Prometheus Configuration",
     "description": "Configure Prometheus scraping, recording rules, and alerting to produce actionable service reliability signals.",
@@ -9879,20 +9420,6 @@
     "examples": [
       "Help configure Prometheus metrics and alerts for this service.",
       "Review our Prometheus setup for noisy alerts and missing coverage."
-    ]
-  },
-  {
-    "skillId": "prompt-engineering-patterns",
-    "name": "Prompt Engineering Patterns",
-    "description": "Practical guidance for prompt engineering patterns workflows.",
-    "instructions": "# Prompt Engineering Patterns\n\nHelp the agent provide practical guidance for prompt engineering patterns workflows.\n\n## When to Use\n\n- The user needs help implementing or improving prompt engineering patterns workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Prompt Engineering Patterns workflow.\"",
-      "\"What are best practices and trade-offs for Prompt Engineering Patterns?\""
     ]
   },
   {
@@ -9938,20 +9465,6 @@
       "\"Turn this argument into propositional logic.\"",
       "\"Help me build a truth table.\"",
       "\"Show whether this formula is satisfiable.\""
-    ]
-  },
-  {
-    "skillId": "prose",
-    "name": "Prose",
-    "description": "Practical guidance for prose workflows.",
-    "instructions": "# Prose\n\nHelp the agent provide practical guidance for prose workflows.\n\n## When to Use\n\n- The user needs help implementing or improving prose workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Prose workflow.\"",
-      "\"What are best practices and trade-offs for Prose?\""
     ]
   },
   {
@@ -10348,20 +9861,6 @@
     ]
   },
   {
-    "skillId": "pytorch-lightning",
-    "name": "PyTorch Lightning",
-    "description": "Practical guidance for pytorch lightning workflows.",
-    "instructions": "# PyTorch Lightning\n\nHelp the agent provide practical guidance for pytorch lightning workflows.\n\n## When to Use\n\n- The user needs help implementing or improving pytorch lightning workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical PyTorch Lightning workflow.\"",
-      "\"What are best practices and trade-offs for PyTorch Lightning?\""
-    ]
-  },
-  {
     "skillId": "pyzig",
     "name": "Pyzig",
     "description": "Concrete workflow for pyzig with specific inputs, execution steps, and deliverables.",
@@ -10462,20 +9961,6 @@
       "Show all token holdings for this wallet on BSC: 0x0000000000000000000000000000000000000001.",
       "Get this address portfolio on Base with token prices and 24h percent change.",
       "Query Solana wallet assets and summarize biggest positions by value."
-    ]
-  },
-  {
-    "skillId": "query-data",
-    "name": "Query Data",
-    "description": "Practical guidance for query data workflows.",
-    "instructions": "# Query Data\n\nHelp the agent provide practical guidance for query data workflows.\n\n## When to Use\n\n- The user needs help implementing or improving query data workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Query Data workflow.\"",
-      "\"What are best practices and trade-offs for Query Data?\""
     ]
   },
   {
@@ -10629,20 +10114,6 @@
     ]
   },
   {
-    "skillId": "railway-database",
-    "name": "Railway Database",
-    "description": "Practical guidance for railway database workflows.",
-    "instructions": "# Railway Database\n\nHelp the agent provide practical guidance for railway database workflows.\n\n## When to Use\n\n- The user needs help implementing or improving railway database workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Railway Database workflow.\"",
-      "\"What are best practices and trade-offs for Railway Database?\""
-    ]
-  },
-  {
     "skillId": "railway-deployment",
     "name": "Railway Deployment",
     "description": "Plan and execute reliable Railway deployments with environment checks, rollout verification, and rollback readiness.",
@@ -10718,34 +10189,6 @@
     "examples": [
       "Help me plan and implement raw app for this repository, including key decisions and checkpoints.",
       "Create a concise raw app workflow with concrete steps, risks, and final deliverables for my project."
-    ]
-  },
-  {
-    "skillId": "ray-data",
-    "name": "Ray Data",
-    "description": "Practical guidance for ray data workflows.",
-    "instructions": "# Ray Data\n\nHelp the agent provide practical guidance for ray data workflows.\n\n## When to Use\n\n- The user needs help implementing or improving ray data workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Ray Data workflow.\"",
-      "\"What are best practices and trade-offs for Ray Data?\""
-    ]
-  },
-  {
-    "skillId": "ray-train",
-    "name": "Ray ट्रेन",
-    "description": "Practical guidance for ray ट्रेन workflows.",
-    "instructions": "# Ray ट्रेन\n\nHelp the agent provide practical guidance for ray ट्रेन workflows.\n\n## When to Use\n\n- The user needs help implementing or improving ray ट्रेन workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Ray ट्रेन workflow.\"",
-      "\"What are best practices and trade-offs for Ray ट्रेन?\""
     ]
   },
   {
@@ -11307,20 +10750,6 @@
     ]
   },
   {
-    "skillId": "rwkv-architecture",
-    "name": "RWKV Architecture",
-    "description": "Practical guidance for rwkv architecture workflows.",
-    "instructions": "# RWKV Architecture\n\nHelp the agent provide practical guidance for rwkv architecture workflows.\n\n## When to Use\n\n- The user needs help implementing or improving rwkv architecture workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical RWKV Architecture workflow.\"",
-      "\"What are best practices and trade-offs for RWKV Architecture?\""
-    ]
-  },
-  {
     "skillId": "safety-interlocks",
     "name": "Safety Interlocks",
     "description": "Implement safety interlocks and protective mechanisms to prevent equipment damage and ensure safe control system operation.",
@@ -11346,20 +10775,6 @@
     "examples": [
       "Help me recover the system from a deadlock using control commands.",
       "How do I inspect the current task registry state and system health?"
-    ]
-  },
-  {
-    "skillId": "sag",
-    "name": "SAG",
-    "description": "Practical guidance for sag workflows.",
-    "instructions": "# SAG\n\nHelp the agent provide practical guidance for sag workflows.\n\n## When to Use\n\n- The user needs help implementing or improving sag workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical SAG workflow.\"",
-      "\"What are best practices and trade-offs for SAG?\""
     ]
   },
   {
@@ -11538,20 +10953,6 @@
     ]
   },
   {
-    "skillId": "scientific-schematics",
-    "name": "Scientific Schematics",
-    "description": "Practical guidance for scientific schematics workflows.",
-    "instructions": "# Scientific Schematics\n\nHelp the agent provide practical guidance for scientific schematics workflows.\n\n## When to Use\n\n- The user needs help implementing or improving scientific schematics workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Scientific Schematics workflow.\"",
-      "\"What are best practices and trade-offs for Scientific Schematics?\""
-    ]
-  },
-  {
     "skillId": "scientific-slides",
     "name": "Scientific Slides",
     "description": "Write and improve scientific slide docs with clear structure, audience fit, useful examples, and maintenance guidance.",
@@ -11563,20 +10964,6 @@
     "examples": [
       "\"Draft scientific slide docs for this project so readers can act without guessing.\"",
       "\"Review scientific slide docs for missing prerequisites, stale assumptions, and unclear steps.\""
-    ]
-  },
-  {
-    "skillId": "scientific-visualization",
-    "name": "Scientific Visualization",
-    "description": "Practical guidance for scientific visualization workflows.",
-    "instructions": "# Scientific Visualization\n\nHelp the agent provide practical guidance for scientific visualization workflows.\n\n## When to Use\n\n- The user needs help implementing or improving scientific visualization workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Scientific Visualization workflow.\"",
-      "\"What are best practices and trade-offs for Scientific Visualization?\""
     ]
   },
   {
@@ -11686,20 +11073,6 @@
     ]
   },
   {
-    "skillId": "seaborn",
-    "name": "Seaborn",
-    "description": "Practical guidance for seaborn workflows.",
-    "instructions": "# Seaborn\n\nHelp the agent provide practical guidance for seaborn workflows.\n\n## When to Use\n\n- The user needs help implementing or improving seaborn workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Seaborn workflow.\"",
-      "\"What are best practices and trade-offs for Seaborn?\""
-    ]
-  },
-  {
     "skillId": "search-specialist",
     "name": "Search Specialist",
     "description": "Expert web researcher using advanced search techniques and synthesis. Masters search operators, result filtering, and multi-source verification. Handles competitive analysis and fact-checking. Use PROACTIVELY for deep research, information gathering, or trend analysis. synthesis. Masters search operators, result filtering, and multi-source verification. Handles competitive analysis and fact-checking. Use PROACTIVELY for deep research, information gathering, or trend analysis.",
@@ -11803,34 +11176,6 @@
     ]
   },
   {
-    "skillId": "senior-data-engineer",
-    "name": "Senior Data Engineer",
-    "description": "Practical guidance for senior data engineer workflows.",
-    "instructions": "# Senior Data Engineer\n\nHelp the agent provide practical guidance for senior data engineer workflows.\n\n## When to Use\n\n- The user needs help implementing or improving senior data engineer workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Senior Data Engineer workflow.\"",
-      "\"What are best practices and trade-offs for Senior Data Engineer?\""
-    ]
-  },
-  {
-    "skillId": "senior-data-scientist",
-    "name": "Senior Data Scientist",
-    "description": "Practical guidance for senior data scientist workflows.",
-    "instructions": "# Senior Data Scientist\n\nHelp the agent provide practical guidance for senior data scientist workflows.\n\n## When to Use\n\n- The user needs help implementing or improving senior data scientist workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Senior Data Scientist workflow.\"",
-      "\"What are best practices and trade-offs for Senior Data Scientist?\""
-    ]
-  },
-  {
     "skillId": "senior-frontend",
     "name": "Senior Frontend",
     "description": "Concrete workflow for senior frontend with specific inputs, execution steps, and deliverables.",
@@ -11846,20 +11191,6 @@
     "examples": [
       "Help me plan and implement senior frontend for this repository, including key decisions and checkpoints.",
       "Create a concise senior frontend workflow with concrete steps, risks, and final deliverables for my project."
-    ]
-  },
-  {
-    "skillId": "senior-ml-engineer",
-    "name": "Senior ML Engineer",
-    "description": "Practical guidance for senior ml engineer workflows.",
-    "instructions": "# Senior ML Engineer\n\nHelp the agent provide practical guidance for senior ml engineer workflows.\n\n## When to Use\n\n- The user needs help implementing or improving senior ml engineer workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Senior ML Engineer workflow.\"",
-      "\"What are best practices and trade-offs for Senior ML Engineer?\""
     ]
   },
   {
@@ -11983,20 +11314,6 @@
     ]
   },
   {
-    "skillId": "shap",
-    "name": "SHAP",
-    "description": "Practical guidance for shap workflows.",
-    "instructions": "# SHAP\n\nHelp the agent provide practical guidance for shap workflows.\n\n## When to Use\n\n- The user needs help implementing or improving shap workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical SHAP workflow.\"",
-      "\"What are best practices and trade-offs for SHAP?\""
-    ]
-  },
-  {
     "skillId": "sherpa-onnx-tts",
     "name": "Sherpa ONNX TTS",
     "description": "Build, package, and troubleshoot Sherpa ONNX text-to-speech pipelines across local and CI environments. Use when integrating model assets, validating runtime output quality, or fixing deployment/runtime failures.",
@@ -12101,20 +11418,6 @@
     ]
   },
   {
-    "skillId": "skill-lookup",
-    "name": "Skill Lookup",
-    "description": "Practical guidance for skill lookup workflows.",
-    "instructions": "# Skill Lookup\n\nHelp the agent provide practical guidance for skill lookup workflows.\n\n## When to Use\n\n- The user needs help implementing or improving skill lookup workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Skill Lookup workflow.\"",
-      "\"What are best practices and trade-offs for Skill Lookup?\""
-    ]
-  },
-  {
     "skillId": "skypilot-multi-cloud-orchestration",
     "name": "SkyPilot Multi-Cloud Orchestration",
     "description": "Plan and operate SkyPilot workloads across cloud providers with cost controls, capacity fallback, and deployment reliability checks.",
@@ -12154,20 +11457,6 @@
     "examples": [
       "\"Translate this into Slovak\"",
       "\"Make this sound natural in Slovak\""
-    ]
-  },
-  {
-    "skillId": "snowflake-semanticview",
-    "name": "Snowflake Semantic View",
-    "description": "Practical guidance for snowflake semantic view workflows.",
-    "instructions": "# Snowflake Semantic View\n\nHelp the agent provide practical guidance for snowflake semantic view workflows.\n\n## When to Use\n\n- The user needs help implementing or improving snowflake semantic view workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Snowflake Semantic View workflow.\"",
-      "\"What are best practices and trade-offs for Snowflake Semantic View?\""
     ]
   },
   {
@@ -12310,20 +11599,6 @@
     ]
   },
   {
-    "skillId": "spark-optimization",
-    "name": "Spark Optimization",
-    "description": "Practical guidance for spark optimization workflows.",
-    "instructions": "# Spark Optimization\n\nHelp the agent provide practical guidance for spark optimization workflows.\n\n## When to Use\n\n- The user needs help implementing or improving spark optimization workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Spark Optimization workflow.\"",
-      "\"What are best practices and trade-offs for Spark Optimization?\""
-    ]
-  },
-  {
     "skillId": "spot",
     "name": "Spot",
     "description": "Binance Spot request using the Binance API. Authentication requires API key and secret key. Supports testnet and mainnet.",
@@ -12368,20 +11643,6 @@
     "examples": [
       "\"Help me with sprint planner.\"",
       "\"Use sprint-planner for this task.\""
-    ]
-  },
-  {
-    "skillId": "sql-optimization-patterns",
-    "name": "SQL Optimization Patterns",
-    "description": "Practical guidance for sql optimization patterns workflows.",
-    "instructions": "# SQL Optimization Patterns\n\nHelp the agent provide practical guidance for sql optimization patterns workflows.\n\n## When to Use\n\n- The user needs help implementing or improving sql optimization patterns workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical SQL Optimization Patterns workflow.\"",
-      "\"What are best practices and trade-offs for SQL Optimization Patterns?\""
     ]
   },
   {
@@ -12534,20 +11795,6 @@
     ]
   },
   {
-    "skillId": "statsmodels",
-    "name": "Statsmodels",
-    "description": "Practical guidance for statsmodels workflows.",
-    "instructions": "# Statsmodels\n\nHelp the agent provide practical guidance for statsmodels workflows.\n\n## When to Use\n\n- The user needs help implementing or improving statsmodels workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Statsmodels workflow.\"",
-      "\"What are best practices and trade-offs for Statsmodels?\""
-    ]
-  },
-  {
     "skillId": "stitch-ui-design",
     "name": "Stitch Ui Design",
     "description": "Concrete workflow for stitch ui design with specific inputs, execution steps, and deliverables.",
@@ -12596,20 +11843,6 @@
       "\"Help me develop this story idea.\"",
       "\"Create a character arc for this premise.\"",
       "\"Design a world, scene, or outline for this narrative.\""
-    ]
-  },
-  {
-    "skillId": "strategic-compact",
-    "name": "Strategic Compact",
-    "description": "Practical guidance for strategic compact workflows.",
-    "instructions": "# Strategic Compact\n\nHelp the agent provide practical guidance for strategic compact workflows.\n\n## When to Use\n\n- The user needs help implementing or improving strategic compact workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Strategic Compact workflow.\"",
-      "\"What are best practices and trade-offs for Strategic Compact?\""
     ]
   },
   {
@@ -12715,20 +11948,6 @@
     "examples": [
       "\"Help me with summarize activity.\"",
       "\"Use summarize-activity for this task.\""
-    ]
-  },
-  {
-    "skillId": "supabase-postgres-best-practices",
-    "name": "Supabase Postgres Best Practices",
-    "description": "Practical guidance for supabase postgres best practices workflows.",
-    "instructions": "# Supabase Postgres Best Practices\n\nHelp the agent provide practical guidance for supabase postgres best practices workflows.\n\n## When to Use\n\n- The user needs help implementing or improving supabase postgres best practices workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Supabase Postgres Best Practices workflow.\"",
-      "\"What are best practices and trade-offs for Supabase Postgres Best Practices?\""
     ]
   },
   {
@@ -12840,20 +12059,6 @@
     "examples": [
       "\"Create validation for syncable entities in Twenty\"",
       "\"Build migration actions for Twenty syncable entities\""
-    ]
-  },
-  {
-    "skillId": "syncable-entity-cache-and-transform",
-    "name": "Syncable Entity Cache and Transform",
-    "description": "Practical guidance for syncable entity cache and transform workflows.",
-    "instructions": "# Syncable Entity Cache and Transform\n\nHelp the agent provide practical guidance for syncable entity cache and transform workflows.\n\n## When to Use\n\n- The user needs help implementing or improving syncable entity cache and transform workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Syncable Entity Cache and Transform workflow.\"",
-      "\"What are best practices and trade-offs for Syncable Entity Cache and Transform?\""
     ]
   },
   {
@@ -13047,22 +12252,6 @@
     ]
   },
   {
-    "skillId": "tensorboard",
-    "name": "TensorBoard",
-    "description": "Practical guidance for tensorboard workflows.",
-    "instructions": "# TensorBoard\n\nHelp the agent provide practical guidance for tensorboard workflows.\n\n## When to Use\n\n- The user needs help implementing or improving tensorboard workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [
-      ".tfevents"
-    ],
-    "examples": [
-      "\"Help me design a practical TensorBoard workflow.\"",
-      "\"What are best practices and trade-offs for TensorBoard?\""
-    ]
-  },
-  {
     "skillId": "tensorrt-llm",
     "name": "Tensorrt Llm",
     "description": "Concrete workflow for tensorrt llm with specific inputs, execution steps, and deliverables.",
@@ -13232,20 +12421,6 @@
     ]
   },
   {
-    "skillId": "torch-geometric",
-    "name": "Torch Geometric",
-    "description": "Practical guidance for torch geometric workflows.",
-    "instructions": "# Torch Geometric\n\nHelp the agent provide practical guidance for torch geometric workflows.\n\n## When to Use\n\n- The user needs help implementing or improving torch geometric workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Torch Geometric workflow.\"",
-      "\"What are best practices and trade-offs for Torch Geometric?\""
-    ]
-  },
-  {
     "skillId": "torchdrug",
     "name": "Torchdrug",
     "description": "PyTorch-based drug discovery toolkit for molecular property prediction, protein modeling, and retrosynthesis using GNNs.",
@@ -13303,20 +12478,6 @@
     ]
   },
   {
-    "skillId": "training-llms-megatron",
-    "name": "Training LLMs Megatron",
-    "description": "Practical guidance for training llms megatron workflows.",
-    "instructions": "# Training LLMs Megatron\n\nHelp the agent provide practical guidance for training llms megatron workflows.\n\n## When to Use\n\n- The user needs help implementing or improving training llms megatron workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Training LLMs Megatron workflow.\"",
-      "\"What are best practices and trade-offs for Training LLMs Megatron?\""
-    ]
-  },
-  {
     "skillId": "transaction-correctness",
     "name": "Transaction Correctness",
     "description": "Review transactional workflows for atomicity, isolation, idempotency, and failure-safe state changes.",
@@ -13329,34 +12490,6 @@
       "\"Check this workflow for transaction bugs.\"",
       "\"What can go wrong with this database transaction design?\"",
       "\"Help me reason about isolation and idempotency here.\""
-    ]
-  },
-  {
-    "skillId": "transformer-lens-interpretability",
-    "name": "Transformer Lens Interpretability",
-    "description": "Practical guidance for transformer lens interpretability workflows.",
-    "instructions": "# Transformer Lens Interpretability\n\nHelp the agent provide practical guidance for transformer lens interpretability workflows.\n\n## When to Use\n\n- The user needs help implementing or improving transformer lens interpretability workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Transformer Lens Interpretability workflow.\"",
-      "\"What are best practices and trade-offs for Transformer Lens Interpretability?\""
-    ]
-  },
-  {
-    "skillId": "transformers",
-    "name": "Transformers",
-    "description": "Practical guidance for transformers workflows.",
-    "instructions": "# Transformers\n\nHelp the agent provide practical guidance for transformers workflows.\n\n## When to Use\n\n- The user needs help implementing or improving transformers workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Transformers workflow.\"",
-      "\"What are best practices and trade-offs for Transformers?\""
     ]
   },
   {
@@ -13534,20 +12667,6 @@
     "examples": [
       "\"Translate this into Ukrainian\"",
       "\"Make this sound natural in Ukrainian\""
-    ]
-  },
-  {
-    "skillId": "umap-learn",
-    "name": "UMAP Learn",
-    "description": "Practical guidance for umap learn workflows.",
-    "instructions": "# UMAP Learn\n\nHelp the agent provide practical guidance for umap learn workflows.\n\n## When to Use\n\n- The user needs help implementing or improving umap learn workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical UMAP Learn workflow.\"",
-      "\"What are best practices and trade-offs for UMAP Learn?\""
     ]
   },
   {
@@ -13760,20 +12879,6 @@
     ]
   },
   {
-    "skillId": "vaex",
-    "name": "Vaex",
-    "description": "Practical guidance for vaex workflows.",
-    "instructions": "# Vaex\n\nHelp the agent provide practical guidance for vaex workflows.\n\n## When to Use\n\n- The user needs help implementing or improving vaex workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Vaex workflow.\"",
-      "\"What are best practices and trade-offs for Vaex?\""
-    ]
-  },
-  {
     "skillId": "validating-ai-ethics-and-fairness",
     "name": "Validating AI Ethics And Fairness",
     "description": "Audit AI systems for bias, fairness, representation, and governance risk with clear tradeoff-aware guidance.",
@@ -13910,20 +13015,6 @@
     "examples": [
       "\"Help me with visualization expert.\"",
       "\"Use visualization-expert for this task.\""
-    ]
-  },
-  {
-    "skillId": "voice-call",
-    "name": "Voice Call",
-    "description": "Practical guidance for voice call workflows.",
-    "instructions": "# Voice Call\n\nHelp the agent provide practical guidance for voice call workflows.\n\n## When to Use\n\n- The user needs help implementing or improving voice call workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Voice Call workflow.\"",
-      "\"What are best practices and trade-offs for Voice Call?\""
     ]
   },
   {
@@ -14129,20 +13220,6 @@
     "examples": [
       "Help me plan and implement website maintainer for this repository, including key decisions and checkpoints.",
       "Create a concise website maintainer workflow with concrete steps, risks, and final deliverables for my project."
-    ]
-  },
-  {
-    "skillId": "weights-and-biases",
-    "name": "Weights & Biases",
-    "description": "Practical guidance for weights & biases workflows.",
-    "instructions": "# Weights & Biases\n\nHelp the agent provide practical guidance for weights & biases workflows.\n\n## When to Use\n\n- The user needs help implementing or improving weights & biases workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Weights & Biases workflow.\"",
-      "\"What are best practices and trade-offs for Weights & Biases?\""
     ]
   },
   {
@@ -14412,20 +13489,6 @@
     ]
   },
   {
-    "skillId": "write-script-snowflake",
-    "name": "Write Script Snowflake",
-    "description": "Practical guidance for write script snowflake workflows.",
-    "instructions": "# Write Script Snowflake\n\nHelp the agent provide practical guidance for write script snowflake workflows.\n\n## When to Use\n\n- The user needs help implementing or improving write script snowflake workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [],
-    "examples": [
-      "\"Help me design a practical Write Script Snowflake workflow.\"",
-      "\"What are best practices and trade-offs for Write Script Snowflake?\""
-    ]
-  },
-  {
     "skillId": "write-tbp",
     "name": "Write Tbp",
     "description": "Writing technical blog posts about tldraw features and implementation details.",
@@ -14575,22 +13638,6 @@
     "examples": [
       "\"Download this YouTube video in 1080p MP4: https://www.youtube.com/watch?v=dQw4w9WgXcQ\"",
       "\"Download audio-only as MP3 from this link and save it to ./out/: https://youtu.be/dQw4w9WgXcQ\""
-    ]
-  },
-  {
-    "skillId": "zarr-python",
-    "name": "Zarr Python",
-    "description": "Practical guidance for zarr python workflows.",
-    "instructions": "# Zarr Python\n\nHelp the agent provide practical guidance for zarr python workflows.\n\n## When to Use\n\n- The user needs help implementing or improving zarr python workflows.\n- The user asks for setup, architecture, optimization, or troubleshooting guidance.\n- The user wants actionable next steps with trade-offs.\n\n## Instructions\n\n1. Clarify goals, constraints, and current environment.\n2. Recommend an approach with key design decisions.\n3. Highlight trade-offs, pitfalls, and safeguards.\n4. Suggest validation checks and rollout strategy.\n5. End with a prioritized implementation checklist.\n\n## Output\n\n- Recommended approach with rationale\n- Step-by-step implementation checklist\n- Risks, assumptions, and validation notes",
-    "author": "community",
-    "version": "1.0.0",
-    "category": "Data & AI",
-    "requires": [
-      ".zarr"
-    ],
-    "examples": [
-      "\"Help me design a practical Zarr Python workflow.\"",
-      "\"What are best practices and trade-offs for Zarr Python?\""
     ]
   },
   {
