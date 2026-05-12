@@ -130,18 +130,9 @@ jobs:
                 }
               }
 
-              const body = content.slice(fmMatch[0].length).trim();
-
               skills.push({
-                skillId: fm.id || skillDir.name,
                 name: fm.name || skillDir.name,
                 description: fm.description || '',
-                instructions: body,
-                author: fm.author || 'community',
-                version: fm.version || '1.0.0',
-                category: fm.category || 'other',
-                requires: Array.isArray(fm.requires) ? fm.requires : [],
-                examples: Array.isArray(fm.examples) ? fm.examples : [],
               });
             }
           }
