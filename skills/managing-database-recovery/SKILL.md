@@ -1,7 +1,7 @@
 ---
 id: managing-database-recovery
 name: Managing Database Recovery
-description: Plan database recovery with backup validation, recovery objectives, incident triage, and controlled restore procedures.
+description: Use this skill when designing or reviewing database recovery plans for data loss, corruption, or operational incidents, including backups, RPO/RTO, restore sequencing, and integrity checks.
 category: Databases
 requires: []
 examples:

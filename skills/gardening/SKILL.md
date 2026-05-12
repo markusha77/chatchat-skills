@@ -1,7 +1,7 @@
 ---
 id: gardening
 name: Gardening
-description: Plant care, soil management, seasonal timing, pest control, and garden planning.
+description: Use this skill when answering gardening questions about plant care, soil management, seasonal timing, pest control, pruning, propagation, or garden planning.
 category: Lifestyle
 requires: []
 examples:

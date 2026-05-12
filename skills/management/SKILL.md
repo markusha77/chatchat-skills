@@ -1,7 +1,7 @@
 ---
 id: management
 name: Management
-description: Management principles, team leadership, and organizational effectiveness.
+description: Use this skill when giving management guidance on team leadership, operating cadence, delegation, feedback, planning, organizational effectiveness, or manager decision-making.
 category: Lifestyle
 requires: []
 examples:

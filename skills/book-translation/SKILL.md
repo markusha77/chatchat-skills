@@ -3,7 +3,7 @@ id: book-translation
 category: Content & Media
 author: f
 name: Book Translation
-description: Translate books and long-form documents into a target language while preserving structure, formatting, and terminology consistency.
+description: Use this skill when translating a book, chapter, or long-form document into another language while preserving structure, formatting, terminology consistency, and document continuity.
 requires: ["text", ".pdf"]
 examples:
   - "Translate this PDF chapter into French. Preserve headings and keep proper nouns consistent."

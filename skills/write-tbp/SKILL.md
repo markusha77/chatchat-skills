@@ -2,7 +2,7 @@
 category: Content & Media
 id: write-tbp
 name: Write Tbp
-description: Writing technical blog posts about tldraw features and implementation details.
+description: Use this skill when drafting technical blog posts about tldraw features, implementation details, engineering decisions, demos, release context, or product-facing technical narratives.
 requires: ["text"]
 examples:
   - "Write a technical blog post draft about tldraw's arrow routing implementation based on this research."

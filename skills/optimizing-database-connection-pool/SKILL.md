@@ -1,7 +1,7 @@
 ---
 id: optimizing-database-connection-pool
 name: Optimizing Database Connection Pool
-description: Tune database connection pooling with workload-aware sizing, timeout choices, and failure-mode analysis.
+description: Use this skill when reasoning about database connection-pool sizing and behavior before changing configuration, including workload-aware limits, timeouts, leak detection, saturation, and failure modes.
 category: Databases
 requires: []
 examples:

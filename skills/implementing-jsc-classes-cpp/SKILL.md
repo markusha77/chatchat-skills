@@ -1,7 +1,7 @@
 ---
 id: implementing-jsc-classes-cpp
 name: Implementing JSC Classes C++
-description: Implement JavaScriptCore-backed classes in C++ with correct bindings, memory management, and runtime behavior.
+description: Use this skill when implementing JavaScriptCore-backed classes in C++, including bindings, lifetime management, method exposure, property behavior, and runtime correctness.
 category: Development
 requires: ["jsc class interface definition", "c++ binding source files", "gc/lifecycle constraints"]
 examples:

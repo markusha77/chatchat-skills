@@ -1,7 +1,7 @@
 ---
 id: drizzle
 name: Drizzle
-description: Practical guidance for using Drizzle ORM in data-backed applications.
+description: Use this skill when using Drizzle ORM in data-backed applications, including schema definitions, migrations, typed queries, relations, transactions, and integration with application code.
 category: Data & AI
 requires: []
 examples:

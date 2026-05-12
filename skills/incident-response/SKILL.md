@@ -1,7 +1,7 @@
 ---
 id: incident-response
 name: Incident Response
-description: Lead incident response with clear triage, containment, communication, recovery, and post-incident follow-up.
+description: Use this skill when leading or structuring incident response, including triage, containment, communications, recovery, severity assessment, timelines, and post-incident follow-up.
 category: DevOps
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: write-script-mysql
 name: Write Script MySQL
-description: Draft MySQL SQL scripts with attention to engine behavior, locking risk, compatibility, and safe rollout sequencing.
+description: Use this skill when drafting or reviewing MySQL SQL scripts in a way that makes engine behavior, locking risk, compatibility, rollout sequencing, and reviewability visible.
 category: Databases
 requires: []
 examples:

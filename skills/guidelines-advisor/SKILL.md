@@ -1,7 +1,7 @@
 ---
 id: guidelines-advisor
 name: Guidelines Advisor
-description: Smart contract development advisor based on Trail of Bits' best practices. Analyzes codebase for architecture, upgradeability, implementation quality, pitfalls, and testing.
+description: Use this skill when reviewing smart contract architecture against Trail of Bits style best practices, including upgradeability, implementation quality, known pitfalls, testing, and codebase-level design risks.
 category: Blockchain
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: winapp-cli
 name: WinApp CLI
-description: Windows App Development CLI (winapp) for building, packaging, and deploying Windows applications.
+description: Use this skill when using the winapp CLI to initialize Windows app projects, generate manifests or certificates, build packages, create MSIX releases, sign artifacts, or deploy Windows applications.
 category: Development
 requires: []
 examples:

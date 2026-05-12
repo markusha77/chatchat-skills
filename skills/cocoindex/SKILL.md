@@ -1,7 +1,7 @@
 ---
 id: cocoindex
 name: Cocoindex
-description: Practical guidance for building data indexing workflows with CocoIndex.
+description: Use this skill when building data indexing workflows with CocoIndex, including source ingestion, transformations, incremental updates, schema choices, and retrieval-oriented pipeline behavior.
 category: Data & AI
 requires: []
 examples:

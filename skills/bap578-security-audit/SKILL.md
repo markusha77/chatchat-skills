@@ -1,7 +1,7 @@
 ---
 id: bap578-security-audit
 name: BAP-578 Security Audit
-description: Security audit checklist and threat model for BAP-578 Non-Fungible Agents. Covers reentrancy, access control, upgrade safety, fund management, logic contract risks, and off-chain integrity. Use when auditing or hardening NFA.
+description: Use this skill when auditing, hardening, or verifying the security posture of BAP-578 Non-Fungible Agent deployments, including threat models, NFA-specific vulnerabilities, and remediation guidance.
 category: Blockchain
 author: community
 version: 1.0.0

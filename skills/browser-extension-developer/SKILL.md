@@ -1,7 +1,7 @@
 ---
 id: browser-extension-developer
 name: Browser Extension Developer
-description: Design and review browser extension architecture, permissions, messaging, storage, and release concerns with extension-specific constraints in mind.
+description: Use this skill when building or reviewing browser extensions that need extension-specific guidance for runtime boundaries, permissions, content scripts, background scripts, messaging, storage, security, or distribution.
 category: Tools
 requires: []
 examples:

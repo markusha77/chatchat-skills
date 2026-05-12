@@ -1,7 +1,7 @@
 ---
 id: content-design
 name: Content Design
-description: Product content designer for UI copy. Product content designer for UI copy. Use when writing, reviewing, or auditing user-facing text: button labels, error messages, tooltips, empty states, modal copy, placeholder text, confirmation dialogs, onboarding flows, or i18n strings. Also use when the user says /copy, /content, or /ux-copy.
+description: Use this skill when writing, reviewing, or auditing product UI copy such as button labels, error messages, tooltips, empty states, modal copy, placeholders, confirmation dialogs, onboarding text, or i18n strings.
 category: Documentation
 requires: []
 examples:

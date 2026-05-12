@@ -3,7 +3,7 @@ category: Content & Media
 id: text-to-pdf-automation
 name: Canva
 version: 1.0.0
-description: Manage Canva designs, assets, exports, and folders via the Canva Connect API.
+description: Use this skill when using the Canva Connect API to manage Canva designs, assets, exports, folders, and template-driven document or PDF automation workflows.
 author: clawdbot
 requires: ["canva design id"]
 examples:

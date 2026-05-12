@@ -1,7 +1,7 @@
 ---
 id: e2e-testing-patterns
 name: E2E Testing Patterns
-description: Build reliable end-to-end testing plans that cover critical user journeys with stable selectors, test data control, and clear failure triage. Use when creating or refactoring browser-based E2E suites.
+description: Use this skill when building or refactoring end-to-end test suites that cover critical user journeys with stable selectors, controlled test data, reliable waits, and clear failure triage.
 category: DevOps
 requires: []
 examples:

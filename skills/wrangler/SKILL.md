@@ -1,7 +1,7 @@
 ---
 id: wrangler
 name: Wrangler
-description: Build and deploy Cloudflare Workers with Wrangler, covering local iteration, environment configuration, and release verification.
+description: Use this skill when building or deploying Cloudflare Workers with Wrangler, including local iteration, configuration, bindings, environments, secrets, and release verification.
 category: DevOps
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: nda-triage
 name: Nda Triage
-description: Screen incoming NDAs and classify them as GREEN (standard), YELLOW (needs review), or RED (significant issues).
+description: Use this skill when screening incoming NDAs and classifying clauses or whole agreements as standard, needs review, or significant risk based on practical legal triage signals.
 category: Business
 requires: []
 examples:

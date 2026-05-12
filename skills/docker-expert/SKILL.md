@@ -1,7 +1,7 @@
 ---
 id: docker-expert
 name: Docker Expert
-description: Build production-ready Docker images and Compose setups with reproducible builds, secure defaults, and efficient caching. Use when containerizing services or debugging container runtime issues.
+description: Use this skill when containerizing services or debugging Docker workflows, including production Dockerfiles, Compose setups, reproducible builds, secure defaults, image size, caching, and runtime behavior.
 category: DevOps
 requires: []
 examples:

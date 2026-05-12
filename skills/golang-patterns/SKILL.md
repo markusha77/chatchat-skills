@@ -1,7 +1,7 @@
 ---
 id: golang-patterns
 name: Golang Patterns
-description: Apply idiomatic Go patterns for concurrency, error handling, interfaces, and package design. Use when implementing or reviewing Go services for readability, correctness, and maintainability.
+description: Use this skill when implementing or reviewing Go code that needs idiomatic concurrency, error handling, interface design, package structure, service patterns, readability, correctness, or maintainability.
 category: Development
 requires: ["go module path", "target package or service", "performance or reliability constraints"]
 examples:

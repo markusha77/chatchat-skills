@@ -1,7 +1,7 @@
 ---
 id: evaluating-code-models
 name: Evaluating Code Models
-description: Practical guidance for evaluating code-generation and code-understanding models.
+description: Use this skill when evaluating code-generation or code-understanding models with benchmark design, task suites, scoring rubrics, failure analysis, and regression tracking.
 category: Data & AI
 requires: []
 examples:

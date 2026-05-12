@@ -1,7 +1,7 @@
 ---
 id: create-pull-request
 name: Create Pull Request
-description: Create high-quality pull requests on GitHub with clear change summaries, test plans, and reviewer-ready context.
+description: Use this skill when preparing GitHub pull requests with clear summaries, scoped changes, test plans, reviewer context, risk notes, and links to relevant issues or evidence.
 category: Development
 requires:
   - git branch with committed changes

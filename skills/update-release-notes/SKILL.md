@@ -1,7 +1,7 @@
 ---
 id: update-release-notes
 name: Update Release Notes
-description: Draft or refine release notes so they accurately explain user-facing changes, risk areas, migration concerns, and rollout context.
+description: Use this skill when release notes must explain what changed, who is affected, what readers should do next, and any user-facing impact, migration concern, rollout caveat, or risk area.
 category: Tools
 requires: []
 examples:

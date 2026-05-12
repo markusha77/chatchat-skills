@@ -1,7 +1,7 @@
 ---
 id: changelog-automation
 name: Changelog Automation
-description: Generate and maintain release changelogs from merged work with consistent formatting, version scope, and verification checks.
+description: Use this skill when generating or maintaining release changelogs from merged work, including version scope, grouped changes, breaking-change notes, formatting consistency, and verification checks.
 category: DevOps
 requires:
   - github

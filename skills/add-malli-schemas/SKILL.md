@@ -1,7 +1,7 @@
 ---
 id: add-malli-schemas
 name: Add Malli Schemas
-description: Add or update Malli schemas in Clojure projects with validation coverage, migration safety, and clear contract documentation.
+description: Use this skill when introducing or evolving Malli schemas in Clojure codebases, combining schema design, validation coverage, migration safety, and clear contract documentation.
 category: Development
 requires: ["clojure data shape examples", "validation rules"]
 examples:

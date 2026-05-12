@@ -1,7 +1,7 @@
 ---
 id: migrate-frontend-forms
 name: Migrate Frontend Forms
-description: Plan and execute frontend form migrations with minimal regressions across validation, submission, and accessibility behavior. Use when moving form libraries, schemas, or submission pipelines in production systems.
+description: Use this skill when migrating frontend forms, form libraries, validation schemas, submission flows, or accessibility behavior while minimizing regressions in production systems.
 category: Development
 requires: ["current form implementation files", "target form library/schema choice", "submission api contract"]
 examples:

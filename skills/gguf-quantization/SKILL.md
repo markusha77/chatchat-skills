@@ -1,7 +1,7 @@
 ---
 id: gguf-quantization
 name: Gguf Quantization
-description: Plan and execute GGUF model quantization with accuracy, latency, and memory tradeoff evaluation.
+description: Use this skill when planning or executing GGUF model quantization, including quantization type selection, accuracy checks, latency and memory tradeoffs, and deployment validation.
 category: Development
 requires: ["source model path", "target quantization format", "hardware/runtime target"]
 examples:

@@ -1,7 +1,7 @@
 ---
 id: geopandas
 name: GeoPandas
-description: Practical guidance for geospatial data workflows with GeoPandas.
+description: Use this skill when working with GeoPandas geospatial workflows, including CRS handling, joins, overlays, geometry cleanup, spatial indexing, file formats, and map-ready data preparation.
 category: Data & AI
 requires: []
 examples:

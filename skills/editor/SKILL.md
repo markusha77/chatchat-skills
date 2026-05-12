@@ -2,7 +2,7 @@
 id: editor
 category: Content & Media
 name: Editor
-description: Professional editing and proofreading for clarity, grammar, style, and readability.
+description: Use this skill when editing or proofreading prose for clarity, grammar, style, readability, tone, structure, or publication readiness.
 author: awesome-llm-apps
 version: "1.0.0"
 requires: ["text"]

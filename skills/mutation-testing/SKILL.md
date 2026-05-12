@@ -1,7 +1,7 @@
 ---
 id: mutation-testing
 name: Mutation Testing
-description: Plan and execute mutation testing to evaluate test suite effectiveness and prioritize meaningful test improvements. Use when test coverage is high but defect detection confidence is still low.
+description: Use this skill when planning or executing mutation testing to evaluate whether a test suite catches meaningful defects, especially when coverage is high but confidence is low.
 category: DevOps
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: context-degradation
 name: Context Degradation
-description: Recognize context-failure patterns including lost-in-middle, poisoning, distraction, and clash.
+description: Use this skill when diagnosing context-failure patterns in long agent workflows, including lost-in-middle, context poisoning, distraction, clash, degraded outputs, and context-engineering mitigations.
 category: Lifestyle
 requires: []
 examples:

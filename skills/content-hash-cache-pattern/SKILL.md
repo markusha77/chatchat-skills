@@ -1,7 +1,7 @@
 ---
 id: content-hash-cache-pattern
 name: Content Hash Cache Pattern
-description: Practical guidance for content-hash caching patterns in AI/data systems.
+description: Use this skill when implementing content-hash caching for AI or data systems, including cache keys, invalidation, reproducibility, artifact reuse, and avoiding stale outputs.
 category: Data & AI
 requires: []
 examples:

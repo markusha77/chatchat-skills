@@ -1,7 +1,7 @@
 ---
 id: geniml
 name: GeniML
-description: Machine learning on genomic interval data. Train region embeddings (Region2Vec), joint embeddings (BEDspace), and analyze scATAC-seq data.
+description: Use this skill when applying machine learning to genomic interval data, including Region2Vec embeddings, BEDspace joint embeddings, BED files, consensus intervals, and scATAC-seq analysis.
 category: Research
 requires: []
 examples:

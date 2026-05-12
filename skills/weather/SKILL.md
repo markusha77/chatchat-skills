@@ -1,7 +1,7 @@
 ---
 id: weather
 name: Weather
-description: Get current weather and forecasts via wttr.in or Open-Meteo.
+description: Use this skill when retrieving current weather or forecasts through wttr.in or Open-Meteo, including location-based conditions, forecast summaries, and lightweight weather lookup workflows.
 category: Lifestyle
 requires: []
 examples:

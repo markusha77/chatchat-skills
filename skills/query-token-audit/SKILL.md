@@ -1,7 +1,7 @@
 ---
 id: query-token-audit
 name: Query Token Audit
-description: Query token security audit details to detect scams, honeypots, malicious contract risks, and dangerous trading conditions before swapping.
+description: Use this skill when checking token security before swaps or trades, including honeypot risk, scam indicators, malicious contract functions, dangerous ownership settings, unusual taxes, and supported-chain audit data.
 category: Blockchain
 author: binance-web3-team
 version: 1.4.0

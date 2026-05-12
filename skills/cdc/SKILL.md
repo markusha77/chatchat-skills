@@ -1,7 +1,7 @@
 ---
 id: cdc
 name: CDC
-description: Practical guidance for change data capture (CDC) design and implementation.
+description: Use this skill when designing or implementing change data capture, including source logs, event ordering, snapshots, schema changes, downstream consumers, and replay-safe data pipelines.
 category: Data & AI
 requires: []
 examples:

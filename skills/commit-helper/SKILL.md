@@ -1,7 +1,7 @@
 ---
 id: commit-helper
 name: Commit Helper
-description: Generate high-quality commit messages and commit plans from actual code changes, with clear scope, intent, and risk notes. Use when preparing commits in active development workflows.
+description: Use this skill when turning actual code changes into focused commit plans or commit messages, splitting unrelated changes, applying Conventional Commits, or adding reviewer-ready scope and risk notes.
 category: Development
 requires: ["git diff or staged changes", "commit intent", "issue or ticket reference (optional)"]
 examples:

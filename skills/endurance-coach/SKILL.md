@@ -1,7 +1,7 @@
 ---
 id: endurance-coach
 name: Endurance Coach
-description: Create personalized triathlon, marathon, and ultra-endurance training plans.
+description: Use this skill when creating personalized triathlon, marathon, ultra-endurance, or long-distance training plans with periodization, recovery, intensity zones, and race-specific preparation.
 category: Lifestyle
 requires: []
 examples:

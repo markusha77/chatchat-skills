@@ -1,7 +1,7 @@
 ---
 id: dns
 name: DNS
-description: Reason about DNS records, propagation, resolution paths, and common misconfigurations when planning or troubleshooting domain behavior.
+description: Use this skill when understanding or troubleshooting DNS behavior across records, delegation, caching, propagation, resolution paths, and common domain misconfigurations.
 category: Tools
 requires: []
 examples:

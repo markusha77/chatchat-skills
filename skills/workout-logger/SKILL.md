@@ -1,7 +1,7 @@
 ---
 id: workout-logger
 name: Workout Logger
-description: Structure workout logs, compare progress from user-provided entries, suggest next sessions, and highlight likely PRs or trends.
+description: Use this skill when turning messy workout information into clear logs, comparing user-provided sessions, surfacing trends or likely PRs, and suggesting realistic next-session steps.
 category: Lifestyle
 requires: []
 examples:

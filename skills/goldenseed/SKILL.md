@@ -1,7 +1,7 @@
 ---
 id: goldenseed
 name: Goldenseed
-description: Deterministic entropy streams for reproducible testing and procedural generation. Perfect 50/50 statistical distribution with hash verification. Not cryptographically secure - use for testing, worldgen, and scenarios where reproducibility matters more than unpredictability.
+description: Use this skill when deterministic entropy streams are needed for reproducible tests, procedural generation, hash verification, or statistically balanced random-like sequences where cryptographic security is not required.
 category: Blockchain
 requires: []
 examples:

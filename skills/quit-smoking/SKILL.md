@@ -1,7 +1,7 @@
 ---
 id: quit-smoking
 name: Quit Smoking
-description: Quit cigarettes with craving support, trigger planning, practical replacement strategies, and recovery guidance.
+description: Use this skill when supporting cigarette or nicotine cessation with craving support, practical replacement strategies, trigger planning, smoke-free routines, relapse prevention, and recovery guidance.
 category: Lifestyle
 requires: []
 examples:

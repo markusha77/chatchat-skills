@@ -1,7 +1,7 @@
 ---
 id: parallel-feature-development
 name: Parallel Feature Development
-description: Coordinate multiple in-flight features with branch strategy, dependency sequencing, and integration checkpoints that reduce merge risk. Use when several related features must ship concurrently without destabilizing the main branch.
+description: Use this skill when coordinating multiple concurrent features, stacked PRs, branch strategy, dependency sequencing, integration checkpoints, feature flags, or release timing without destabilizing main.
 category: Development
 requires:
   - feature branch list and dependency map

@@ -1,7 +1,7 @@
 ---
 id: yoga
 name: Yoga
-description: Yoga instruction, pose alignment, sequencing, breathwork, and modifications for different levels.
+description: Use this skill when giving yoga guidance on pose alignment, sequencing, breathwork, modifications, props, level-appropriate practice planning, and safety-aware instruction.
 category: Lifestyle
 requires: []
 examples:

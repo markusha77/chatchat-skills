@@ -1,7 +1,7 @@
 ---
 id: sandbox-sdk
 name: Sandbox SDK
-description: Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs.
+description: Use this skill when building secure code-execution systems with a Sandbox SDK, including sandbox lifecycle, command execution, file operations, code interpreters, preview URLs, and untrusted-code boundaries.
 category: Development
 requires: []
 examples:

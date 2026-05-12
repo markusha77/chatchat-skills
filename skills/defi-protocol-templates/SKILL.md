@@ -1,7 +1,7 @@
 ---
 id: defi-protocol-templates
 name: DeFi Protocol Templates
-description: Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and lending systems.
+description: Use this skill when implementing DeFi protocol templates for staking, AMMs, governance, or lending systems with production-oriented contract structure and security considerations.
 category: Blockchain
 requires: []
 examples:

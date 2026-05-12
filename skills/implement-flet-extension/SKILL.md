@@ -1,7 +1,7 @@
 ---
 id: implement-flet-extension
 name: Implement Flet Extension
-description: Design and implement Flet extensions with clean APIs, cross-platform behavior, and packaging-ready integration.
+description: Use this skill when designing or implementing Flet extensions, including extension APIs, platform behavior, packaging, examples, and integration with Flet applications.
 category: Development
 requires: ["flet app source files", "extension api contract", "native platform bindings needed"]
 examples:

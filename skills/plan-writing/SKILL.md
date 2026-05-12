@@ -1,7 +1,7 @@
 ---
 id: plan-writing
 name: Plan Writing
-description: Structured task planning with clear breakdowns, dependencies, and verification criteria.
+description: Use this skill when turning a complex task into a structured execution plan with clear steps, dependencies, assumptions, risks, verification, and progress-tracking criteria.
 category: Development
 requires: []
 examples:

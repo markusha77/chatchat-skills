@@ -1,7 +1,7 @@
 ---
 id: bonero-miner
 name: Bonero Miner
-description: Mine Bonero - private cryptocurrency for AI agents. RandomX CPU mining, Monero-based privacy.
+description: Use this skill when setting up or troubleshooting Bonero mining, wallets, daemons, RandomX CPU mining, or Monero-style private cryptocurrency workflows for AI agents.
 category: Blockchain
 requires: []
 examples:

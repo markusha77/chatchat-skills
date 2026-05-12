@@ -1,7 +1,7 @@
 ---
 id: desktop-release
 name: Desktop Release
-description: Plan and execute desktop application releases with repeatable build, signing, packaging, and rollout processes across platforms. Use when preparing a production desktop release candidate.
+description: Use this skill when planning or executing desktop application releases, including repeatable builds, signing, packaging, release candidates, rollout checks, and cross-platform production readiness.
 category: DevOps
 requires: []
 examples:

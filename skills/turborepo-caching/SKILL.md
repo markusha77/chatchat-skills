@@ -1,7 +1,7 @@
 ---
 id: turborepo-caching
 name: Turborepo Caching
-description: Configure Turborepo local and remote caching to reduce CI and developer build times without sacrificing reproducibility.
+description: Use this skill when configuring or debugging Turborepo local and remote caching, including task outputs, cache keys, CI reproducibility, cache misses, and developer build performance.
 category: DevOps
 requires: []
 examples:

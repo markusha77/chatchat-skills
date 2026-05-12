@@ -1,7 +1,7 @@
 ---
 id: render-deploy
 name: Render Deploy
-description: Plan and execute Render deployments with environment validation, health checks, and clear rollback conditions.
+description: Use this skill when deploying to Render, including environment validation, service settings, health checks, logs, rollout verification, and rollback conditions.
 category: DevOps
 requires: []
 examples:

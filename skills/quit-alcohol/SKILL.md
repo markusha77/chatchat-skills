@@ -1,7 +1,7 @@
 ---
 id: quit-alcohol
 name: Quit Alcohol
-description: Support alcohol reduction or sobriety with craving planning, trigger review, safer next steps, and recovery milestones.
+description: Use this skill when supporting alcohol reduction or sobriety with planning, craving management, trigger review, safer next steps, relapse prevention, and recovery milestones.
 category: Lifestyle
 requires: []
 examples:

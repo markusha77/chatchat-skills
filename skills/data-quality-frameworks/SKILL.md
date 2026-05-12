@@ -1,7 +1,7 @@
 ---
 id: data-quality-frameworks
 name: Data Quality Frameworks
-description: Practical guidance for data quality frameworks and production checks.
+description: Use this skill when designing production data quality checks, validation rules, anomaly detection, freshness tests, lineage-aware controls, and governance for data pipelines.
 category: Data & AI
 requires: []
 examples:

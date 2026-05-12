@@ -1,7 +1,7 @@
 ---
 id: devops-troubleshooter
 name: DevOps Troubleshooter
-description: Troubleshoot DevOps failures across CI/CD, infrastructure, runtime services, and deployment pipelines using a structured incident workflow.
+description: Use this skill when troubleshooting DevOps failures across CI/CD, infrastructure, runtime services, and deployment pipelines with evidence-driven incident triage and remediation steps.
 category: DevOps
 requires: []
 examples:

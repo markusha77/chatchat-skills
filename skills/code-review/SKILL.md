@@ -1,7 +1,7 @@
 ---
 id: code-review
 name: Code Review
-description: Review code changes for behavioral regressions, maintainability risks, unclear contracts, and missing verification with findings-first discipline.
+description: Use this skill when reviewing a code change for correctness, behavioral risk, maintainability, unclear contracts, missing verification, and findings-first feedback rather than style polish.
 category: Tools
 requires: []
 examples:

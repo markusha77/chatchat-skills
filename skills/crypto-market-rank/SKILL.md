@@ -1,7 +1,7 @@
 ---
 id: crypto-market-rank
 name: Crypto Market Rank
-description: Crypto market rankings and leaderboards for trending tokens, social hype, smart money inflow, meme ranks, and top trader PnL.
+description: Use this skill when retrieving or interpreting crypto market rankings and leaderboards for trending tokens, social hype, smart-money inflow, meme ranks, or top-trader PnL.
 category: Blockchain
 author: binance-web3-team
 version: 2.0.0

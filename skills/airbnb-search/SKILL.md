@@ -1,7 +1,7 @@
 ---
 id: airbnb-search
 name: Airbnb Search
-description: Search Airbnb listings with prices, ratings, and direct links. No API key required.
+description: Use this skill when comparing Airbnb-style accommodation options or short-term stays, using prices, ratings, locations, availability context, direct links, and recommendation tradeoffs.
 category: Business
 requires: []
 examples:

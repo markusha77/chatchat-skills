@@ -1,7 +1,7 @@
 ---
 id: gh-issues
 name: GH Issues
-description: Manage GitHub issues with structured triage, prioritization, assignment, and status tracking.
+description: Use this skill when managing GitHub issues with structured triage, prioritization, assignment, labels, status tracking, duplicates, and actionable next steps.
 category: Development
 requires:
   - repository owner/name

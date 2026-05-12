@@ -1,7 +1,7 @@
 ---
 id: subagent-driven-development
 name: Subagent-driven Development
-description: Orchestrate multi-step DevOps implementation tasks using focused subagents with clear handoffs, validation, and integration checks.
+description: Use this skill when decomposing and coordinating multi-step implementation or DevOps work across focused subagents with explicit ownership, handoffs, validation, and final integration checks.
 category: Development
 requires:
   - overall delivery objective and success criteria

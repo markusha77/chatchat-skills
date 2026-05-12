@@ -1,7 +1,7 @@
 ---
 id: dust-hive
 name: Dust Hive
-description: Information about dust-hive, a CLI tool for running multiple isolated Dust development environments. ALWAYS enable this skill when the working directory is under ~/dust-hive/. Use for understanding port allocation, running tests, and working with the environment.
+description: Use this skill when working in or reasoning about dust-hive development environments, including isolated Dust instances, port allocation, test execution, and repository-specific environment behavior.
 category: Development
 requires: []
 examples:

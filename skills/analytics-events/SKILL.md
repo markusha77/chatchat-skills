@@ -1,7 +1,7 @@
 ---
 id: analytics-events
 name: Analytics Events
-description: End-to-end workflow for defining, implementing, validating, and governing analytics events.
+description: Use this skill when keeping analytics instrumentation accurate, consistent, and release-ready across event definitions, tracking plans, schemas, implementation, QA, and governance.
 category: DevOps
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: planning-agent
 name: Planning Agent
-description: Generates comprehensive, workable unit tests for any programming language using a multi-agent pipeline.
+description: Use this skill when generating project-aware unit tests through a research, planning, implementation, and verification pipeline that must fit the target language and repository conventions.
 category: Development
 requires: []
 examples:

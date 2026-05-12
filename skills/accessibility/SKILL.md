@@ -1,7 +1,7 @@
 ---
 id: accessibility
 name: Accessibility
-description: Accessibility guidelines for VS Code features — covers accessibility help dialogs, accessible views, verbosity settings, accessibility signals, ARIA alerts/status announcements, keyboard navigation, and ARIA labels/roles. Applies to both new interactive UI surfaces and updates to existing features.
+description: Use this skill when implementing or reviewing VS Code accessibility surfaces, including help dialogs, accessible views, verbosity settings, accessibility signals, ARIA alerts, keyboard navigation, labels, and roles.
 category: Development
 requires: []
 examples:

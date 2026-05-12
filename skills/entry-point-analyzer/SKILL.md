@@ -1,7 +1,7 @@
 ---
 id: entry-point-analyzer
 name: Entry Point Analyzer
-description: Analyzes smart contract codebases to identify state-changing entry points for security auditing. Detects externally callable functions that modify state, categorizes them by access level (public, admin, role-restricted, contract-only), and generates structured audit reports. Excludes view/pure/read-only functions.
+description: Use this skill when analyzing smart contract codebases to identify externally callable state-changing entry points, categorize access levels, exclude read-only functions, and produce structured audit findings.
 category: Blockchain
 requires: []
 examples:

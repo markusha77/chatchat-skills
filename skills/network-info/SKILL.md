@@ -1,7 +1,7 @@
 ---
 id: network-info
 name: Network Info
-description: Interpret network-related details such as IPs, routes, interfaces, connectivity clues, and likely failure boundaries without overclaiming certainty.
+description: Use this skill when interpreting network facts during troubleshooting, including IPs, routes, interfaces, DNS, connectivity clues, failure boundaries, and which details matter before drawing conclusions.
 category: Tools
 requires: []
 examples:

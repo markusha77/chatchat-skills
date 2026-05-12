@@ -1,7 +1,7 @@
 ---
 id: dailydev
 name: Daily.dev
-description: Access real-time developer content and community signals from daily.dev to stay updated with the latest tech trends.
+description: Use this skill when accessing current developer content from daily.dev, including popular or personalized feeds, community-validated articles, tech trend briefings, stack-based feeds, and API-token-safe workflows.
 category: Research
 requires: []
 examples:

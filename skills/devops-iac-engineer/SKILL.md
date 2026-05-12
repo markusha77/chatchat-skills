@@ -1,7 +1,7 @@
 ---
 id: devops-iac-engineer
 name: DevOps IaC Engineer
-description: Design and review Infrastructure as Code changes for reliability, security, drift control, and safe environment promotion.
+description: Use this skill when designing or reviewing Infrastructure as Code for reliability, security, drift control, modularity, environment promotion, and operational maintainability.
 category: DevOps
 requires: []
 examples:

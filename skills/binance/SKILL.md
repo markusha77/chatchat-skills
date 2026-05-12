@@ -1,7 +1,7 @@
 ---
 id: binance
 name: Binance
-description: Build, evaluate, and tune a Polymarket BTC 1h Up/Down trading strategy using Binance (resolution source) as the anchor.
+description: Use this skill when building, evaluating, or tuning a Polymarket BTC 1h Up/Down trading strategy that uses Binance market data as the resolution or pricing anchor.
 category: Blockchain
 requires: []
 examples:

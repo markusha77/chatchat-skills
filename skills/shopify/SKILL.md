@@ -1,7 +1,7 @@
 ---
 id: shopify
 name: Shopify
-description: Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid. TRIGGER: \\\"shopify\\\", \\\"shopify app\\\", \\\"checkout extension\\\", \\\"admin extension\\\", \\\"POS extension\\\", \\\"shopify theme\\\", \\\"liquid template\\\", \\\"polaris\\\", \\\"shopify graphql\\\", \\\"shopify webhook\\\", \\\"shopify billing\\\", \\\"app subscription\\\", \\\"metafields\\\", \\\"shopify functions\\\". Build Shopify apps, extensions, themes using GraphQL Admin API, Shopify CLI, Polaris UI, and Liquid. TRIGGER: \"shopify\", \"shopify app\", \"checkout extension\", \"admin extension\", \"POS extension\", \"shopify theme\", \"liquid template\", \"polaris\", \"shopify graphql\", \"shopify webhook\", shopify billing\", \"app subscription\", \"metafields\", \"shopify functions
+description: Use this skill when building Shopify apps, themes, checkout/admin/POS extensions, Shopify Functions, Liquid templates, Polaris UIs, GraphQL Admin API integrations, webhooks, billing, or metafields.
 category: Development
 requires: []
 examples:

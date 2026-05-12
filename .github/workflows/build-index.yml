@@ -120,7 +120,17 @@ jobs:
 
                   fm[key] = arr;
                 } else {
-                  fm[key] = val.replace(/^['\"]|['\"]$/g, '');
+                  let scalar = trimmed;
+                  if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
+                    try {
+                      scalar = JSON.parse(trimmed);
+                    } catch (_) {
+                      scalar = trimmed.replace(/^['\"]|['\"]$/g, '');
+                    }
+                  } else {
+                    scalar = trimmed.replace(/^['\"]|['\"]$/g, '');
+                  }
+                  fm[key] = scalar;
                 }
                 currentKey = null;
               }

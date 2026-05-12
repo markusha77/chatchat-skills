@@ -1,7 +1,7 @@
 ---
 id: contract-review
 name: Contract Review
-description: Review contracts against your organization's negotiation playbook, flagging deviations and generating redline suggestions.
+description: Use this skill when reviewing contracts against an organization-specific negotiation playbook, flagging deviations, summarizing risk, and drafting redline or fallback language.
 category: Business
 requires: []
 examples:

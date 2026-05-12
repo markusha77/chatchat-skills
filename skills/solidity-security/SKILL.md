@@ -1,7 +1,7 @@
 ---
 id: solidity-security
 name: Solidity Security
-description: Master smart contract security best practices to prevent common vulnerabilities and implement secure Solidity patterns.
+description: Use this skill when auditing or hardening Solidity smart contracts against reentrancy, access-control flaws, arithmetic bugs, unsafe upgrades, oracle risks, fund-management failures, or common EVM vulnerabilities.
 category: Blockchain
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: audit-logging
 name: Audit Logging
-description: Implement database audit logging for tracking changes and ensuring compliance via triggers, app-level logging, or CDC.
+description: Use this skill when implementing database audit logging, change tracking, compliance trails, trigger-based logs, app-level audit events, or CDC-backed history tables.
 category: Research
 requires: []
 examples:

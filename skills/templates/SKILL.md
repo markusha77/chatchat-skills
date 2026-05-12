@@ -1,7 +1,7 @@
 ---
 id: templates
 name: Templates
-description: Create and maintain reusable infrastructure and pipeline templates for consistent service delivery and environment provisioning.
+description: Use this skill when creating or maintaining reusable infrastructure, CI/CD, service, or pipeline templates with governance, versioning, rollout consistency, and environment provisioning.
 category: Documentation
 requires: []
 examples:

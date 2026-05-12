@@ -1,7 +1,7 @@
 ---
 id: bap578-scanner
 name: BAP-578 On-Chain Scanner
-description: Scan, query, and verify BAP-578 Non-Fungible Agents on BNB Chain using ethers.js, viem, or direct RPC. Covers reading agent state, metadata, event history, vault verification, bulk scanning, and building indexers. Use when investigating agent data or building monitoring tools.
+description: Use this skill when reading, verifying, scanning, querying, indexing, or monitoring BAP-578 agent data directly from BNB Chain, including metadata, event history, vault integrity, and bulk RPC workflows.
 category: Blockchain
 author: community
 version: 1.0.0

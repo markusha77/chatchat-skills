@@ -1,7 +1,7 @@
 ---
 id: postgresql-table-design
 name: PostgreSQL Table Design
-description: Design PostgreSQL tables with clear keys, constraints, column choices, and query-aware indexing.
+description: Use this skill when reasoning about individual PostgreSQL tables and nearby relationships, including keys, constraints, column types, normalization, query-aware indexes, and migration-ready schema decisions.
 category: Databases
 requires: []
 examples:

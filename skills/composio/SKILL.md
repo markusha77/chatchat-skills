@@ -1,7 +1,7 @@
 ---
 id: composio
 name: Composio
-description: Practical guidance for implementing app integrations with Composio.
+description: Use this skill when implementing app integrations with Composio, including tool configuration, auth flows, connected accounts, action execution, and integration reliability.
 category: Data & AI
 requires: []
 examples:

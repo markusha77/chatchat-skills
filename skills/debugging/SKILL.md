@@ -1,7 +1,7 @@
 ---
 id: debugging
 name: Debugging
-description: Structure debugging work around hypothesis-driven investigation, evidence gathering, reproduction quality, and safe narrowing of root causes.
+description: Use this skill when a systematic debugging approach is needed, using hypothesis-driven investigation, evidence gathering, reproduction quality, and safe narrowing instead of random fixes or shallow symptom chasing.
 category: Tools
 requires: []
 examples:

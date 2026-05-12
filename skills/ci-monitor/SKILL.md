@@ -1,7 +1,7 @@
 ---
 id: ci-monitor
 name: CI Monitor
-description: Monitor CI pipelines for failures, regressions, and instability, then prioritize fixes with clear ownership.
+description: Use this skill when monitoring CI pipelines for failures, regressions, instability, flaky jobs, and ownership signals, then prioritizing fixes with clear evidence and next actions.
 category: DevOps
 requires: []
 examples:

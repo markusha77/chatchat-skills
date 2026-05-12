@@ -1,7 +1,7 @@
 ---
 id: triggers
 name: Triggers
-description: Design and validate event and schedule triggers for CI/CD pipelines, automation jobs, and deployment workflows.
+description: Use this skill when designing, reviewing, or validating event triggers, schedule triggers, automation jobs, CI/CD pipeline triggers, deployment workflows, and their edge cases.
 category: DevOps
 requires: []
 examples:

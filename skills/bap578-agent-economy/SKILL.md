@@ -1,7 +1,7 @@
 ---
 id: bap578-agent-economy
 name: BAP-578 Agent Economy
-description: Design and operate an agent-to-agent economy using BAP-578. Covers agent funding models, inter-agent payments, reputation systems, service marketplaces, and economic incentive design for NFA ecosystems.
+description: Use this skill when designing, modeling, or operating BAP-578 agent economies where NFAs transact, collaborate, compete, provide services, handle funding, build reputation, or align incentives.
 category: Blockchain
 author: community
 version: 1.0.0

@@ -1,7 +1,7 @@
 ---
 id: personal-trainer
 name: Personal Trainer
-description: Design workout programs, explain exercises, track progress, and adapt training based on user feedback.
+description: Use this skill when designing workout programs, explaining exercises, tracking progress, adapting training based on feedback, or planning strength and conditioning routines.
 category: Lifestyle
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: github-automation
 name: GitHub Automation
-description: Automate common GitHub workflows for issues, pull requests, labeling, and repository hygiene with clear operational guardrails.
+description: Use this skill when automating GitHub workflows for issues, pull requests, labels, releases, repository hygiene, or operational guardrails around GitHub actions and repository maintenance.
 category: DevOps
 requires:
   - github

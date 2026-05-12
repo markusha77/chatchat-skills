@@ -3,7 +3,7 @@ id: openai-image-gen
 category: Content & Media
 author: openclaw
 name: OpenAI Image Gen
-description: Step-by-step guidance for openai image gen.
+description: Use this skill when implementing OpenAI image generation workflows, including request structure, prompt handling, image creation, editing, variants, and integration steps.
 requires: ["prompt"]
 examples:
   - "Generate 8 images with model gpt-image-1 and save them to ./out/images."

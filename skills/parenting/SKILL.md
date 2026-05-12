@@ -1,7 +1,7 @@
 ---
 id: parenting
 name: Parenting
-description: Help parents with age-appropriate guidance, behavior challenges, and avoiding common parenting advice pitfalls.
+description: Use this skill when giving parenting guidance on age-appropriate behavior support, family routines, communication strategies, child context, burnout, and avoiding common advice pitfalls.
 category: Lifestyle
 requires: []
 examples:

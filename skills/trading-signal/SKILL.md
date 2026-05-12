@@ -1,7 +1,7 @@
 ---
 id: trading-signal
 name: Trading Signal
-description: Retrieve on-chain smart money trading signals, including buy or sell direction, trigger and current price, max gain, exit rate, and token tags.
+description: Use this skill when retrieving or interpreting on-chain smart-money trading signals, including buy or sell direction, trigger price, current price, max gain, exit rate, and token tags.
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0

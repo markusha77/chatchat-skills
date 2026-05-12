@@ -1,7 +1,7 @@
 ---
 id: ab-test-setup
 name: A/B Test Setup
-description: When the user wants to set up, improve, or audit analytics tracking and measurement.
+description: Use this skill when setting up, improving, or auditing analytics measurement for experiments, conversion tracking, event instrumentation, funnel analysis, or A/B test readiness.
 category: Research
 requires: []
 examples:

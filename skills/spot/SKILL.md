@@ -1,7 +1,7 @@
 ---
 id: spot
 name: Spot
-description: Binance Spot request using the Binance API. Authentication requires API key and secret key. Supports testnet and mainnet.
+description: Use this skill when making Binance Spot API requests, signing authenticated calls, choosing testnet versus mainnet endpoints, handling API keys and secrets, or working with Spot market data and orders.
 category: Blockchain
 author: Binance
 version: 1.0.1

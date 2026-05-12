@@ -1,7 +1,7 @@
 ---
 id: deployment-pipeline-design
 name: Deployment Pipeline Design
-description: Design deployment pipelines with safe promotion stages, quality gates, rollback strategy, and environment consistency checks.
+description: Use this skill when designing deployment pipelines with safe promotion stages, quality gates, environment consistency, rollout strategy, rollback paths, and release verification.
 category: DevOps
 requires: []
 examples:

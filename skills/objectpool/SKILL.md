@@ -1,7 +1,7 @@
 ---
 id: objectpool
 name: Objectpool
-description: Implements Zero Allocation patterns using Span, ArrayPool, and ObjectPool for memory efficiency in .NET.
+description: Use this skill when implementing low-allocation .NET patterns with Span, ArrayPool, ObjectPool, pooling lifecycles, memory reuse, or allocation-sensitive performance work.
 category: Development
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: bap578-logic-contracts
 name: BAP-578 Logic Contracts
-description: Build, deploy, and bind logic contracts to BAP-578 Non-Fungible Agents. Logic contracts define autonomous agent behavior on-chain. Covers architecture, binding rules, security considerations, and example patterns.
+description: Use this skill when designing, building, deploying, binding, or reviewing logic contracts that define autonomous on-chain behavior for BAP-578 Non-Fungible Agents.
 category: Blockchain
 author: community
 version: 1.0.0

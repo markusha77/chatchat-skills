@@ -1,7 +1,7 @@
 ---
 id: observability-engineer
 name: Observability Engineer
-description: Design practical observability for services using logs, metrics, traces, and actionable alerting with clear incident response signals.
+description: Use this skill when designing observability for services with logs, metrics, traces, alert thresholds, dashboards, SLO signals, and actionable incident-response context.
 category: DevOps
 requires: []
 examples:

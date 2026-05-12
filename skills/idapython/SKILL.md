@@ -1,7 +1,7 @@
 ---
 id: idapython
 name: Idapython
-description: Automate reverse engineering workflows in IDA using IDAPython for analysis, renaming, and pattern extraction.
+description: Use this skill when automating reverse-engineering workflows in IDA with IDAPython, including analysis scripts, renaming, pattern extraction, navigation, and repeatable binary-inspection tasks.
 category: Development
 requires: ["ida .i64/.idb database path", "target function/address range", "script output format requirements"]
 examples:

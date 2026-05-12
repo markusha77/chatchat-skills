@@ -1,7 +1,7 @@
 ---
 id: assess-risk
 name: Assess Risk
-description: Used to review whether an Apache ShardingSphere PR truly fixes the root cause, assess side effects and regression risks, and determine whether it can be safely merged. If not mergeable, produce committer-tone change request suggestions.
+description: Use this skill when reviewing Apache ShardingSphere pull requests for root-cause fixes, side effects, regression risk, merge readiness, and committer-tone change requests.
 category: Development
 requires: []
 examples:

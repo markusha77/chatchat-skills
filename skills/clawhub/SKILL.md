@@ -1,7 +1,7 @@
 ---
 id: clawhub
 name: ClawHub
-description: Practical guidance for building and operating workflows with ClawHub.
+description: Use this skill when configuring, operating, or troubleshooting ClawHub integrations and workflow execution, including auth setup, trigger strategy, secure credentials, observability, recovery, and implementation checklists.
 category: Data & AI
 requires: []
 examples:

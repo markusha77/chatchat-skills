@@ -1,7 +1,7 @@
 ---
 id: gitlab-ci-patterns
 name: GitLab CI Patterns
-description: Apply reliable GitLab CI pipeline patterns for faster feedback, safer deploys, and maintainable CI configuration.
+description: Use this skill when applying reliable GitLab CI pipeline patterns for faster feedback, safer deploys, maintainable configuration, caching, stages, rules, and runner behavior.
 category: DevOps
 requires: []
 examples:

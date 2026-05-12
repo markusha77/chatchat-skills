@@ -1,7 +1,7 @@
 ---
 id: airflow-dag-patterns
 name: Airflow DAG Patterns
-description: Practical guidance for building reliable Apache Airflow DAG patterns.
+description: Use this skill when designing or reviewing Apache Airflow DAGs for scheduling, retries, task dependencies, idempotency, backfills, sensors, and production reliability.
 category: Data & AI
 requires: []
 examples:

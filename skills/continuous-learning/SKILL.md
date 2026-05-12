@@ -1,7 +1,7 @@
 ---
 id: continuous-learning
 name: Continuous Learning
-description: Practical guidance for continuous learning workflows in ML systems.
+description: Use this skill when designing continuous learning workflows for ML systems, including feedback loops, data refresh, evaluation gates, model updates, drift monitoring, and deployment controls.
 category: Data & AI
 requires: []
 examples:

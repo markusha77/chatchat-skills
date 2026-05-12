@@ -1,7 +1,7 @@
 ---
 id: cirq
 name: Cirq
-description: Framework for building, simulating, and executing quantum circuits. Supports VQE, QAOA, and noise modeling.
+description: Use this skill when building, simulating, or executing quantum circuits with Cirq, including VQE, QAOA, noise modeling, circuit construction, and quantum workflow guidance.
 category: Research
 requires: []
 examples:

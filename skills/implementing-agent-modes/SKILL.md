@@ -1,7 +1,7 @@
 ---
 id: implementing-agent-modes
 name: Implementing Agent Modes
-description: Implement mode-aware agent behavior with explicit mode triggers, permissions, and response contracts. Use when adding plan/ask/debug/execute style modes to an AI agent workflow.
+description: Use this skill when adding mode-aware behavior to an AI agent, including explicit triggers, permissions, response contracts, and plan, ask, debug, or execute style interaction modes.
 category: Development
 requires: ["mode matrix specification", "tool/action permission table", "mode transition guard conditions"]
 examples:

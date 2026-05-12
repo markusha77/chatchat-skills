@@ -1,7 +1,7 @@
 ---
 id: generate-sparkle-appcast
 name: Generate Sparkle Appcast
-description: Generate and validate Sparkle appcast metadata for macOS auto-updates with proper signatures, versions, and release notes.
+description: Use this skill when generating or validating Sparkle appcast metadata for macOS auto-updates, including signatures, versions, release notes, enclosure URLs, and update compatibility.
 category: Development
 requires: ["release artifact url/path", "sparkle signing key details", "app version and changelog text"]
 examples:

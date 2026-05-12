@@ -1,7 +1,7 @@
 ---
 id: add-provider-doc
 name: Add Provider Doc
-description: Documentation workflow for adding a new provider guide with setup, usage, limits, and troubleshooting.
+description: Use this skill when producing provider documentation that must be accurate, actionable, and support-friendly, including setup, usage, limits, troubleshooting, and release-ready structure.
 category: Documentation
 requires: []
 examples:

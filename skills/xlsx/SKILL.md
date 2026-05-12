@@ -1,7 +1,7 @@
 ---
 id: xlsx
 name: XLSX
-description: Create, edit, and audit .xlsx files with financial-modeling conventions and zero formula errors.
+description: Use this skill when creating, editing, or auditing .xlsx spreadsheets, especially financial models, formulas, formatting, workbook structure, validation, and zero-error spreadsheet outputs.
 category: Business
 requires: [".xlsx"]
 examples:

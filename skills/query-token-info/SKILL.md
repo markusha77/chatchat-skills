@@ -1,7 +1,7 @@
 ---
 id: query-token-info
 name: Query Token Info
-description: Query token details by keyword, contract address, or chain, including metadata, social links, real-time market data, and K-line candlestick charts.
+description: Use this skill when searching or researching tokens by keyword, contract address, or chain, including metadata, social links, real-time market data, holder/liquidity signals, and K-line candlestick data.
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0

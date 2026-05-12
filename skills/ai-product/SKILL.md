@@ -1,7 +1,7 @@
 ---
 id: ai-product
 name: AI Product
-description: Practical guidance for planning, shipping, and improving AI products.
+description: Use this skill when planning, shipping, or improving AI products, including product strategy, user workflows, evaluation loops, model capability boundaries, UX risks, and release tradeoffs.
 category: Data & AI
 requires: []
 examples:

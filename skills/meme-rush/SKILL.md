@@ -1,7 +1,7 @@
 ---
 id: meme-rush
 name: Meme Rush
-description: Fast meme-token market tracking for launch lifecycle and hot-topic narratives, with filters for migration, holders, and net inflow.
+description: Use this skill when tracking meme-token launches, hot narratives, migration status, holder counts, net inflow, and fast market filters around early token activity.
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0

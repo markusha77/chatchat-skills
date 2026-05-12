@@ -1,7 +1,7 @@
 ---
 id: add-uint-support
 name: Add UInt Support
-description: Add unsigned integer support across parsing, validation, storage, and API boundaries without introducing overflow bugs.
+description: Use this skill when introducing unsigned integer handling into an existing codebase, covering parsing, validation, storage, serialization, APIs, arithmetic boundaries, and overflow compatibility risks.
 category: Development
 requires: ["schema or model definitions", "affected api endpoints"]
 examples:

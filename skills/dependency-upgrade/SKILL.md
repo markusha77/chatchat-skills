@@ -1,7 +1,7 @@
 ---
 id: dependency-upgrade
 name: Dependency Upgrade
-description: Upgrade dependencies with risk-aware batching, compatibility checks, and verification steps that minimize regressions. Use when planning routine updates or major-version migrations.
+description: Use this skill when upgrading dependencies with risk-aware batching, compatibility checks, lockfile review, migration notes, and verification steps for routine updates or major-version changes.
 category: DevOps
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: query-address-info
 name: Query Address Info
-description: Query on-chain wallet addresses for token balances and positions, including token metadata, price, 24h change, and holding quantity.
+description: Use this skill when querying on-chain wallet addresses for active token positions, balances, token metadata, prices, 24-hour change, holding quantities, and portfolio summaries across supported chains.
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0

@@ -1,7 +1,7 @@
 ---
 id: dietitian
 name: Dietitian
-description: Structured meal planning — calorie targets, macro calculations, meal timing, and goal-specific diet protocols.
+description: Use this skill when creating structured meal plans, calorie targets, macro calculations, meal timing, or goal-specific diet protocols for nutrition planning.
 category: Lifestyle
 requires: []
 examples:

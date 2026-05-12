@@ -1,7 +1,7 @@
 ---
 id: chroma
 name: Chroma
-description: Genomic interval ML for BED files. Use for region embeddings (Region2Vec), scATAC-seq analysis, and consensus peaks.
+description: Use this skill when applying Geniml-style genomic interval machine learning to BED files, including Region2Vec embeddings, scATAC-seq analysis, BEDspace-style workflows, or consensus peak analysis.
 category: Research
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: mcp-scripts
 name: Mcp Scripts
-description: Guidance and answers for mcp scripts.
+description: Use this skill when operating the Unity Editor through MCP tools and resources, including resource-first workflows, GameObject operations, script edits, console checks, screenshots, and reusable Unity automation templates.
 category: Development
 requires: []
 examples:

@@ -1,7 +1,7 @@
 ---
 id: intimate-wellbeing
 name: Intimate Wellbeing
-description: Professional, non-explicit guidance on intimate wellbeing and sexual performance, including communication, stress reduction, sleep, exercise, habits, medical red flags, and relationship health. Use for wellness-focused questions; avoid explicit content.
+description: Use this skill when providing respectful, non-explicit intimate wellbeing guidance focused on practical help, communication, stress, sleep, exercise, habits, medical red flags, relationship health, or sexual performance concerns.
 category: Lifestyle
 requires: []
 examples:

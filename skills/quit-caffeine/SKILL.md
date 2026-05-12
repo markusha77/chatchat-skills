@@ -1,7 +1,7 @@
 ---
 id: quit-caffeine
 name: Quit Caffeine
-description: Reduce or quit caffeine with taper plans, withdrawal guidance, substitution ideas, and energy-support habits.
+description: Use this skill when helping reduce caffeine gradually, manage withdrawal, replace the habit with lower-friction alternatives, protect sleep, and maintain energy during tapering.
 category: Lifestyle
 requires: []
 examples:

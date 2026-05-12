@@ -2,7 +2,7 @@
 id: content-creator
 category: Content & Media
 name: Content Creator
-description: Create blog posts, social media content, and marketing copy with audience focus, strong hooks, and clear calls to action.
+description: Use this skill when creating audience-focused blog posts, social posts, newsletters, marketing copy, hooks, outlines, and calls to action.
 author: awesome-llm-apps
 version: "1.0.0"
 requires: ["text"]

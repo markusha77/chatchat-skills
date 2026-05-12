@@ -1,7 +1,7 @@
 ---
 id: distributed-tracing
 name: Distributed Tracing
-description: Instrument distributed systems with traces that expose latency, errors, and dependency bottlenecks across service boundaries. Use when introducing tracing or improving incident diagnostics.
+description: Use this skill when instrumenting distributed systems with traces that expose latency, errors, dependency bottlenecks, service boundaries, and incident diagnostics.
 category: DevOps
 requires: []
 examples:

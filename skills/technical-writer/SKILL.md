@@ -2,7 +2,7 @@
 id: technical-writer
 category: Content & Media
 name: Technical Writer
-description: Write clear documentation, READMEs, API references, tutorials, and user guides for technical products.
+description: Use this skill when writing or improving technical documentation, including READMEs, API references, tutorials, user guides, conceptual docs, examples, and developer-facing explanations.
 author: awesome-llm-apps
 version: "1.0.0"
 requires: ["text"]

@@ -3,7 +3,7 @@ id: summarize
 category: Content & Media
 author: openclaw
 name: Summarize
-description: Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).
+description: Use this skill when summarizing URLs, local files, podcasts, YouTube links, videos, or transcripts, including link overviews, best-effort transcript extraction, and summarize.sh workflows.
 requires: ["url", "document"]
 examples:
   - "Summarize this URL in 10 bullet points: https://example.com"

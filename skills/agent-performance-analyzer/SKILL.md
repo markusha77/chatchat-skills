@@ -1,7 +1,7 @@
 ---
 id: agent-performance-analyzer
 name: Agent Performance Analyzer
-description: Analyze AI agent performance using latency, success rate, cost, and quality signals to identify bottlenecks and improvement opportunities.
+description: Use this skill when analyzing AI agent performance with latency, success rate, cost, quality, throughput, and failure signals to identify bottlenecks and improvement opportunities.
 category: DevOps
 requires: []
 examples:
