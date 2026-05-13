@@ -172,8 +172,12 @@
     "description": "Use this skill when configuring, operating, or troubleshooting ClawHub integrations and workflow execution, including auth setup, trigger strategy, secure credentials, observability, recovery, and implementation checklists."
   },
   {
-    "name": "Cloudflare Deploy",
-    "description": "Use this skill when deploying applications to Cloudflare environments, including pre-deploy checks, edge configuration, environment variables, routing, verification, and rollback readiness."
+    "name": "cli-creator",
+    "description": "Use this skill when designing and building durable command-line tools from API docs, OpenAPI specs, SDKs, curl examples, admin tools, web apps, or local scripts, especially when the CLI should expose composable commands, stable JSON output, auth/config handling, install-on-PATH behavior, and a companion skill."
+  },
+  {
+    "name": "cloudflare-deploy",
+    "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare."
   },
   {
     "name": "Cocoindex",
@@ -360,6 +364,38 @@
     "description": "Use this skill when evaluating code-generation or code-understanding models with benchmark design, task suites, scoring rubrics, failure analysis, and regression tracking."
   },
   {
+    "name": "figma",
+    "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting."
+  },
+  {
+    "name": "figma-code-connect-components",
+    "description": "Connects Figma design components to code components using Code Connect mapping tools. Use when user says \"code connect\", \"connect this component to code\", \"map this component\", \"link component to code\", \"create code connect mapping\", or wants to establish mappings between Figma designs and code implementations. For canvas writes via `use_figma`, use `figma-use`."
+  },
+  {
+    "name": "figma-create-design-system-rules",
+    "description": "Generates custom design system rules for the user's codebase. Use when user says \"create design system rules\", \"generate rules for my project\", \"set up design rules\", \"customize design system guidelines\", or wants to establish project-specific conventions for Figma-to-code workflows. Requires Figma MCP server connection."
+  },
+  {
+    "name": "figma-create-new-file",
+    "description": "Create a new blank Figma file. Use when the user wants to create a new Figma design or FigJam file, or when you need a new file before calling use_figma. Handles plan resolution via whoami if needed. Usage — /figma-create-new-file [editorType] [fileName] (e.g. /figma-create-new-file figjam My Whiteboard)"
+  },
+  {
+    "name": "figma-generate-design",
+    "description": "Use this skill alongside figma-use when the task involves translating an application page, view, or multi-section layout into Figma. Triggers: 'write to Figma', 'create in Figma from code', 'push page to Figma', 'take this app/page and build it in Figma', 'create a screen', 'build a landing page in Figma', 'update the Figma screen to match code'. This is the preferred workflow skill whenever the user wants to build or update a full page, screen, or view in Figma from code or a description. Discovers design system components, variables, and styles via search_design_system, imports them, and assembles screens incrementally section-by-section using design system tokens instead of hardcoded values."
+  },
+  {
+    "name": "figma-generate-library",
+    "description": "Build or update a professional-grade design system in Figma from a codebase. Use when the user wants to create variables/tokens, build component libraries, set up theming (light/dark modes), document foundations, or reconcile gaps between code and Figma. This skill teaches WHAT to build and in WHAT ORDER — it complements the `figma-use` skill which teaches HOW to call the Plugin API. Both skills should be loaded together."
+  },
+  {
+    "name": "figma-implement-design",
+    "description": "Translates Figma designs into production-ready application code with 1:1 visual fidelity. Use when implementing UI code from Figma files, when user mentions \"implement design\", \"generate code\", \"implement component\", provides Figma URLs, or asks to build components matching Figma specs. For Figma canvas writes via `use_figma`, use `figma-use`."
+  },
+  {
+    "name": "figma-use",
+    "description": "**MANDATORY prerequisite** — you MUST invoke this skill BEFORE every `use_figma` tool call. NEVER call `use_figma` directly without loading this skill first. Skipping it causes common, hard-to-debug failures. Trigger whenever the user wants to perform a write action or a unique read action that requires JavaScript execution in the Figma file context — e.g. create/edit/delete nodes, set up variables or tokens, build components and variants, modify auto-layout or fills, bind variables to properties, or inspect file structure programmatically."
+  },
+  {
     "name": "Fine Tuning with TRL",
     "description": "Use this skill when fine-tuning language models with TRL, including dataset formatting, SFT or preference training setup, trainer configuration, evaluation, and deployment tradeoffs."
   },
@@ -396,6 +432,14 @@
     "description": "Use this skill when managing GitHub issues with structured triage, prioritization, assignment, labels, status tracking, duplicates, and actionable next steps."
   },
   {
+    "name": "gh-address-comments",
+    "description": "Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in."
+  },
+  {
+    "name": "gh-fix-ci",
+    "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL."
+  },
+  {
     "name": "GitHub Automation",
     "description": "Use this skill when automating GitHub workflows for issues, pull requests, labels, releases, repository hygiene, or operational guardrails around GitHub actions and repository maintenance."
   },
@@ -422,6 +466,10 @@
   {
     "name": "Idapython",
     "description": "Use this skill when automating reverse-engineering workflows in IDA with IDAPython, including analysis scripts, renaming, pattern extraction, navigation, and repeatable binary-inspection tasks."
+  },
+  {
+    "name": "Image Generation",
+    "description": "Use this skill when generating or editing raster images for project assets, mockups, photos, illustrations, textures, sprites, transparent-background cutouts, or visual variants where bitmap output is more appropriate than repo-native SVG, vector, HTML, CSS, or canvas work."
   },
   {
     "name": "Implement Flet Extension",
@@ -464,6 +512,10 @@
     "description": "Use this skill when working with Juicebox V5 or Revnet protocol fees, including NANA fees, Revnet cash-out fees, REV loans, variable loan fees, and related UI integration."
   },
   {
+    "name": "jupyter-notebook",
+    "description": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook."
+  },
+  {
     "name": "Management",
     "description": "Use this skill when giving management guidance on team leadership, operating cadence, delegation, feedback, planning, organizational effectiveness, or manager decision-making."
   },
@@ -496,8 +548,28 @@
     "description": "Use this skill when screening incoming NDAs and classifying clauses or whole agreements as standard, needs review, or significant risk based on practical legal triage signals."
   },
   {
+    "name": "netlify-deploy",
+    "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys."
+  },
+  {
     "name": "Network Info",
     "description": "Use this skill when interpreting network facts during troubleshooting, including IPs, routes, interfaces, DNS, connectivity clues, failure boundaries, and which details matter before drawing conclusions."
+  },
+  {
+    "name": "notion-knowledge-capture",
+    "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking."
+  },
+  {
+    "name": "notion-meeting-intelligence",
+    "description": "Prepare meeting materials with Notion context and Codex research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees."
+  },
+  {
+    "name": "notion-research-documentation",
+    "description": "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations."
+  },
+  {
+    "name": "notion-spec-to-implementation",
+    "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them."
   },
   {
     "name": "Objectpool",
@@ -512,6 +584,10 @@
     "description": "Use this skill when implementing OpenAI image generation workflows, including request structure, prompt handling, image creation, editing, variants, and integration steps."
   },
   {
+    "name": "openai-docs",
+    "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations, help choosing the latest model for a use case, or model upgrade and prompt-upgrade guidance; prioritize OpenAI docs MCP tools, use bundled references only as helper context, and restrict any fallback browsing to official OpenAI domains."
+  },
+  {
     "name": "Optimizing Database Connection Pool",
     "description": "Use this skill when reasoning about database connection-pool sizing and behavior before changing configuration, including workload-aware limits, timeouts, leak detection, saturation, and failure modes."
   },
@@ -524,8 +600,8 @@
     "description": "Use this skill when giving parenting guidance on age-appropriate behavior support, family routines, communication strategies, child context, burnout, and avoiding common advice pitfalls."
   },
   {
-    "name": "PDF",
-    "description": "Use this skill when a PDF is an input or requested output, including text or table extraction, merge or split operations, rotation, watermarks, form filling, encryption, image extraction, OCR, or PDF generation."
+    "name": "pdf",
+    "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction."
   },
   {
     "name": "Personal Trainer",
@@ -588,8 +664,8 @@
     "description": "Use this skill when deploying to Railway, including environment checks, service configuration, health verification, rollout observation, logs, and rollback readiness."
   },
   {
-    "name": "Render Deploy",
-    "description": "Use this skill when deploying to Render, including environment validation, service settings, health checks, logs, rollout verification, and rollback conditions."
+    "name": "render-deploy",
+    "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform."
   },
   {
     "name": "Resume Handoff",
@@ -598,6 +674,26 @@
   {
     "name": "Sandbox SDK",
     "description": "Use this skill when building secure code-execution systems with a Sandbox SDK, including sandbox lifecycle, command execution, file operations, code interpreters, preview URLs, and untrusted-code boundaries."
+  },
+  {
+    "name": "screenshot",
+    "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed."
+  },
+  {
+    "name": "security-best-practices",
+    "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks."
+  },
+  {
+    "name": "security-ownership-map",
+    "description": "Analyze git repositories to build a security ownership topology (people-to-file), compute bus factor and sensitive-code ownership, and export CSV/JSON for graph databases and visualization. Trigger only when the user explicitly wants a security-oriented ownership or bus-factor analysis grounded in git history (for example: orphaned sensitive code, security maintainers, CODEOWNERS reality checks for risk, sensitive hotspots, or ownership clusters). Do not trigger for general maintainer lists or non-security ownership questions."
+  },
+  {
+    "name": "security-threat-model",
+    "description": "Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities, abuse paths, and mitigations, and writes a concise Markdown threat model. Trigger only when the user explicitly asks to threat model a codebase or path, enumerate threats/abuse paths, or perform AppSec threat modeling. Do not trigger for general architecture summaries, code review, or non-security design work."
+  },
+  {
+    "name": "sentry",
+    "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry CLI; perform read-only queries using the `sentry` command."
   },
   {
     "name": "Sherpa ONNX TTS",
@@ -610,6 +706,10 @@
   {
     "name": "Solidity Security",
     "description": "Use this skill when auditing or hardening Solidity smart contracts against reentrancy, access-control flaws, arithmetic bugs, unsafe upgrades, oracle risks, fund-management failures, or common EVM vulnerabilities."
+  },
+  {
+    "name": "speech",
+    "description": "Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run the bundled CLI (`scripts/text_to_speech.py`) with built-in voices and require `OPENAI_API_KEY` for live calls. Custom voice creation is out of scope."
   },
   {
     "name": "Spot",
@@ -646,6 +746,10 @@
   {
     "name": "Trading Signal",
     "description": "Use this skill when retrieving or interpreting on-chain smart-money trading signals, including buy or sell direction, trigger price, current price, max gain, exit rate, and token tags."
+  },
+  {
+    "name": "transcribe",
+    "description": "Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text from recordings, or label speakers in interviews or meetings."
   },
   {
     "name": "Triggers",
@@ -698,6 +802,10 @@
   {
     "name": "XLSX",
     "description": "Use this skill when creating, editing, or auditing .xlsx spreadsheets, especially financial models, formulas, formatting, workbook structure, validation, and zero-error spreadsheet outputs."
+  },
+  {
+    "name": "yeet",
+    "description": "Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using the GitHub CLI (`gh`)."
   },
   {
     "name": "Yoga",
