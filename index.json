@@ -124,10 +124,6 @@
     "description": "Use this skill when translating a book, chapter, or long-form document into another language while preserving structure, formatting, terminology consistency, and document continuity."
   },
   {
-    "name": "Broken Authentication Testing",
-    "description": "Use this skill when designing security tests for login, session, token, MFA, logout, refresh, invitation, and account-recovery flows where authentication bypass or account-takeover risk matters."
-  },
-  {
     "name": "Browser Extension Developer",
     "description": "Use this skill when building or reviewing browser extensions that need extension-specific guidance for runtime boundaries, permissions, content scripts, background scripts, messaging, storage, security, or distribution."
   },
@@ -142,10 +138,6 @@
   {
     "name": "Canva",
     "description": "Use this skill when using the Canva Connect API to manage Canva designs, assets, exports, folders, and template-driven document or PDF automation workflows."
-  },
-  {
-    "name": "Cargo Fuzz",
-    "description": "Use this skill when setting up or running Rust fuzz testing with cargo-fuzz to find crashes, panics, parser edge cases, unsafe assumptions, and vulnerability-prone inputs."
   },
   {
     "name": "CDC",
@@ -416,10 +408,6 @@
     "description": "Use this skill when generating or validating Sparkle appcast metadata for macOS auto-updates, including signatures, versions, release notes, enclosure URLs, and update compatibility."
   },
   {
-    "name": "GeniML",
-    "description": "Use this skill when applying machine learning to genomic interval data, including Region2Vec embeddings, BEDspace joint embeddings, BED files, consensus intervals, and scATAC-seq analysis."
-  },
-  {
     "name": "GeoPandas",
     "description": "Use this skill when working with GeoPandas geospatial workflows, including CRS handling, joins, overlays, geometry cleanup, spatial indexing, file formats, and map-ready data preparation."
   },
@@ -580,10 +568,6 @@
     "description": "Use this skill when designing observability for services with logs, metrics, traces, alert thresholds, dashboards, SLO signals, and actionable incident-response context."
   },
   {
-    "name": "OpenAI Image Gen",
-    "description": "Use this skill when implementing OpenAI image generation workflows, including request structure, prompt handling, image creation, editing, variants, and integration steps."
-  },
-  {
     "name": "openai-docs",
     "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations, help choosing the latest model for a use case, or model upgrade and prompt-upgrade guidance; prioritize OpenAI docs MCP tools, use bundled references only as helper context, and restrict any fallback browsing to official OpenAI domains."
   },
@@ -696,10 +680,6 @@
     "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry CLI; perform read-only queries using the `sentry` command."
   },
   {
-    "name": "Sherpa ONNX TTS",
-    "description": "Use this skill when building, packaging, integrating, or troubleshooting Sherpa ONNX text-to-speech pipelines, including model assets, runtime output quality, CI setup, and deployment failures."
-  },
-  {
     "name": "Shopify",
     "description": "Use this skill when building Shopify apps, themes, checkout/admin/POS extensions, Shopify Functions, Liquid templates, Polaris UIs, GraphQL Admin API integrations, webhooks, billing, or metafields."
   },
@@ -782,10 +762,6 @@
   {
     "name": "Workout Logger",
     "description": "Use this skill when turning messy workout information into clear logs, comparing user-provided sessions, surfacing trends or likely PRs, and suggesting realistic next-session steps."
-  },
-  {
-    "name": "Wrangler",
-    "description": "Use this skill when building or deploying Cloudflare Workers with Wrangler, including local iteration, configuration, bindings, environments, secrets, and release verification."
   },
   {
     "name": "Write Script MySQL",
