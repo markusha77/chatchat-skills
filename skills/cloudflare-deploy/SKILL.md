@@ -1,102 +1,227 @@
 ---
 id: cloudflare-deploy
-name: Cloudflare Deploy
-description: Use this skill when deploying applications to Cloudflare environments, including pre-deploy checks, edge configuration, environment variables, routing, verification, and rollback readiness.
-category: DevOps
+name: cloudflare-deploy
+description: Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.
+category: OpenAI
+author: openai
 ---
 
 # Cloudflare Deploy
 
-Execute Cloudflare deployments with predictable verification and controlled rollback.
+Consolidated skill for building on the Cloudflare platform. Use decision trees below to find the right product, then load detailed references.
 
-## When to Use
+## Prerequisites
 
-- You are deploying or updating workloads on Cloudflare.
-- You need a repeatable release process for edge or serverless services.
-- You want post-deploy validation tied to user-facing behavior.
+- When sandboxing blocks the deployment network calls, rerun with `sandbox_permissions=require_escalated`.
+- The deployment might take a few minutes. Use appropriate timeout values.
 
-## Workflow
+## Authentication (Required Before Deploy)
 
-1. **Confirm deployment target, environment, and release scope.** Distinguish Workers (serverless functions at the edge) from Pages (static or full-stack sites). Workers use `wrangler deploy`; Pages use `wrangler pages deploy` or Git integration. Verify `wrangler.toml` has `compatibility_date` set; missing it causes runtime errors.
+Verify auth before `wrangler deploy`, `wrangler pages deploy`, or `npm run deploy`:
 
-2. **Validate configuration inputs and secrets.** Check KV, R2, D1, and other bindings in `wrangler.toml` match deployed resources. Run `wrangler kv:namespace list`, `wrangler r2 bucket list`, `wrangler d1 list` to confirm bindings exist. Validate secrets with `wrangler secret list` (values are hidden; ensure keys exist).
-
-3. **Run pre-deploy checks and expected-behavior smoke tests.** Use `wrangler dev` locally to test bindings and routes. Run `wrangler deploy --dry-run --outdir=dist` to validate build without deploying. Verify route patterns (e.g., `example.com/*`) do not conflict with existing routes.
-
-4. **Deploy with staged verification checkpoints.** Deploy to a staging or preview environment first. Use `wrangler tail` for live debugging during verification. Confirm routes in Cloudflare dashboard: Workers & Pages -> your worker -> Settings -> Triggers. Check that the deployed script matches the expected version.
-
-5. **Trigger rollback when failure thresholds are reached.** Use version rollback (Workers: Versions tab), route revert, or cache purge as needed. Document thresholds (e.g., error rate > 5%, latency p99 > 2s).
-
-## Common Pitfalls
-
-- **Stale DNS cache after route changes.** Route updates can take minutes to propagate. Avoid assuming immediate effect; verify in dashboard and with `curl` from multiple locations.
-- **Missing compatibility_date in wrangler.toml.** Workers require `compatibility_date` for runtime behavior. Deploying without it can cause undefined behavior or failures.
-- **Deploying without testing bindings.** KV/R2/D1 bindings must exist before deploy. A typo in a binding name fails at runtime, not at deploy.
-- **Forgetting to purge CDN cache.** After static asset or Worker response changes, purge cache via dashboard (Caching -> Configuration -> Purge Everything) or API to avoid serving stale content.
-
-## Wrangler Commands and Dashboard Verification
-
-**Deploy:**
 ```bash
-wrangler deploy                    # Workers
-wrangler pages deploy dist        # Pages (static)
-wrangler deploy --env staging     # Environment-specific
+npx wrangler whoami    # Shows account if authenticated
 ```
 
-**Validation and debugging:**
-```bash
-wrangler dev                      # Local dev with bindings
-wrangler tail                    # Live log stream
-wrangler kv:namespace list
-wrangler r2 bucket list
-wrangler d1 list
-wrangler secret list
+Not authenticated? → `references/wrangler/auth.md`
+- Interactive/local: `wrangler login` (one-time OAuth)
+- CI/CD: Set `CLOUDFLARE_API_TOKEN` env var
+
+## Quick Decision Trees
+
+### "I need to run code"
+
+```
+Need to run code?
+├─ Serverless functions at the edge → workers/
+├─ Full-stack web app with Git deploys → pages/
+├─ Stateful coordination/real-time → durable-objects/
+├─ Long-running multi-step jobs → workflows/
+├─ Run containers → containers/
+├─ Multi-tenant (customers deploy code) → workers-for-platforms/
+├─ Scheduled tasks (cron) → cron-triggers/
+├─ Lightweight edge logic (modify HTTP) → snippets/
+├─ Process Worker execution events (logs/observability) → tail-workers/
+└─ Optimize latency to backend infrastructure → smart-placement/
 ```
 
-**Dashboard verification:** Workers & Pages -> select service -> Triggers (routes), Settings (bindings), Metrics (requests/errors). Caching -> Purge Everything when needed.
+### "I need to store data"
 
-## Rollback Strategy
-
-- **Version rollback (Workers):** Dashboard -> Workers & Pages -> your worker -> Versions -> select previous version -> Deploy. Restores prior script without code change.
-- **Route revert:** Remove or adjust route in Triggers to point to previous worker or disable. Use when route config is wrong.
-- **Cache purge:** Caching -> Purge Everything (or Purge by URL). Use when static assets or cached responses are stale; does not revert Worker code.
-
-## Output Format
-
-```markdown
-## Release Scope
-- Service: <name>
-- Type: Workers | Pages
-- Environment: <target>
-
-## Pre-Deploy Checks
-- [ ] wrangler.toml validated (compatibility_date, bindings)
-- [ ] KV/R2/D1 bindings exist and match config
-- [ ] Secrets validated
-- [ ] Local smoke test (wrangler dev) pass
-- [ ] Route patterns verified (no conflicts)
-
-## Deploy
-- Command: <wrangler deploy or pages deploy>
-- [ ] Staging/preview deployed first
-
-## Verification
-- [ ] Critical route check (curl from edge)
-- [ ] wrangler tail shows expected behavior
-- [ ] Dashboard: Triggers, bindings, metrics
-- [ ] Error rate and latency within threshold
-
-## Rollback
-- Trigger: <condition, e.g., error rate > 5%>
-- Action: <version rollback | route revert | cache purge>
-- [ ] Rollback steps documented and tested
+```
+Need storage?
+├─ Key-value (config, sessions, cache) → kv/
+├─ Relational SQL → d1/ (SQLite) or hyperdrive/ (existing Postgres/MySQL)
+├─ Object/file storage (S3-compatible) → r2/
+├─ Message queue (async processing) → queues/
+├─ Vector embeddings (AI/semantic search) → vectorize/
+├─ Strongly-consistent per-entity state → durable-objects/ (DO storage)
+├─ Secrets management → secrets-store/
+├─ Streaming ETL to R2 → pipelines/
+└─ Persistent cache (long-term retention) → cache-reserve/
 ```
 
-## Constraints
+### "I need AI/ML"
 
-- Do not skip environment-specific validation.
-- Keep rollback criteria objective and measurable.
-- Document assumptions around DNS, caching, and edge behavior.
-- Always set compatibility_date in wrangler.toml.
-- Validate bindings before deploy; test with wrangler dev.
-- Purge cache when static or cached content changes.
+```
+Need AI?
+├─ Run inference (LLMs, embeddings, images) → workers-ai/
+├─ Vector database for RAG/search → vectorize/
+├─ Build stateful AI agents → agents-sdk/
+├─ Gateway for any AI provider (caching, routing) → ai-gateway/
+└─ AI-powered search widget → ai-search/
+```
+
+### "I need networking/connectivity"
+
+```
+Need networking?
+├─ Expose local service to internet → tunnel/
+├─ TCP/UDP proxy (non-HTTP) → spectrum/
+├─ WebRTC TURN server → turn/
+├─ Private network connectivity → network-interconnect/
+├─ Optimize routing → argo-smart-routing/
+├─ Optimize latency to backend (not user) → smart-placement/
+└─ Real-time video/audio → realtimekit/ or realtime-sfu/
+```
+
+### "I need security"
+
+```
+Need security?
+├─ Web Application Firewall → waf/
+├─ DDoS protection → ddos/
+├─ Bot detection/management → bot-management/
+├─ API protection → api-shield/
+├─ CAPTCHA alternative → turnstile/
+└─ Credential leak detection → waf/ (managed ruleset)
+```
+
+### "I need media/content"
+
+```
+Need media?
+├─ Image optimization/transformation → images/
+├─ Video streaming/encoding → stream/
+├─ Browser automation/screenshots → browser-rendering/
+└─ Third-party script management → zaraz/
+```
+
+### "I need infrastructure-as-code"
+
+```
+Need IaC? → pulumi/ (Pulumi), terraform/ (Terraform), or api/ (REST API)
+```
+
+## Product Index
+
+### Compute & Runtime
+| Product | Reference |
+|---------|-----------|
+| Workers | `references/workers/` |
+| Pages | `references/pages/` |
+| Pages Functions | `references/pages-functions/` |
+| Durable Objects | `references/durable-objects/` |
+| Workflows | `references/workflows/` |
+| Containers | `references/containers/` |
+| Workers for Platforms | `references/workers-for-platforms/` |
+| Cron Triggers | `references/cron-triggers/` |
+| Tail Workers | `references/tail-workers/` |
+| Snippets | `references/snippets/` |
+| Smart Placement | `references/smart-placement/` |
+
+### Storage & Data
+| Product | Reference |
+|---------|-----------|
+| KV | `references/kv/` |
+| D1 | `references/d1/` |
+| R2 | `references/r2/` |
+| Queues | `references/queues/` |
+| Hyperdrive | `references/hyperdrive/` |
+| DO Storage | `references/do-storage/` |
+| Secrets Store | `references/secrets-store/` |
+| Pipelines | `references/pipelines/` |
+| R2 Data Catalog | `references/r2-data-catalog/` |
+| R2 SQL | `references/r2-sql/` |
+
+### AI & Machine Learning
+| Product | Reference |
+|---------|-----------|
+| Workers AI | `references/workers-ai/` |
+| Vectorize | `references/vectorize/` |
+| Agents SDK | `references/agents-sdk/` |
+| AI Gateway | `references/ai-gateway/` |
+| AI Search | `references/ai-search/` |
+
+### Networking & Connectivity
+| Product | Reference |
+|---------|-----------|
+| Tunnel | `references/tunnel/` |
+| Spectrum | `references/spectrum/` |
+| TURN | `references/turn/` |
+| Network Interconnect | `references/network-interconnect/` |
+| Argo Smart Routing | `references/argo-smart-routing/` |
+| Workers VPC | `references/workers-vpc/` |
+
+### Security
+| Product | Reference |
+|---------|-----------|
+| WAF | `references/waf/` |
+| DDoS Protection | `references/ddos/` |
+| Bot Management | `references/bot-management/` |
+| API Shield | `references/api-shield/` |
+| Turnstile | `references/turnstile/` |
+
+### Media & Content
+| Product | Reference |
+|---------|-----------|
+| Images | `references/images/` |
+| Stream | `references/stream/` |
+| Browser Rendering | `references/browser-rendering/` |
+| Zaraz | `references/zaraz/` |
+
+### Real-Time Communication
+| Product | Reference |
+|---------|-----------|
+| RealtimeKit | `references/realtimekit/` |
+| Realtime SFU | `references/realtime-sfu/` |
+
+### Developer Tools
+| Product | Reference |
+|---------|-----------|
+| Wrangler | `references/wrangler/` |
+| Miniflare | `references/miniflare/` |
+| C3 | `references/c3/` |
+| Observability | `references/observability/` |
+| Analytics Engine | `references/analytics-engine/` |
+| Web Analytics | `references/web-analytics/` |
+| Sandbox | `references/sandbox/` |
+| Workerd | `references/workerd/` |
+| Workers Playground | `references/workers-playground/` |
+
+### Infrastructure as Code
+| Product | Reference |
+|---------|-----------|
+| Pulumi | `references/pulumi/` |
+| Terraform | `references/terraform/` |
+| API | `references/api/` |
+
+### Other Services
+| Product | Reference |
+|---------|-----------|
+| Email Routing | `references/email-routing/` |
+| Email Workers | `references/email-workers/` |
+| Static Assets | `references/static-assets/` |
+| Bindings | `references/bindings/` |
+| Cache Reserve | `references/cache-reserve/` |
+
+## Troubleshooting
+
+### Escalated Network Access
+
+If deployment fails due to network issues (timeouts, DNS errors, connection resets), rerun the deploy with escalated permissions (use `sandbox_permissions=require_escalated`). The deploy requires escalated network access when sandbox networking blocks outbound requests.
+
+Example guidance to the user:
+
+```
+The deploy needs escalated network access to deploy to Cloudflare. I can rerun the command with escalated permissions—want me to proceed?
+```
