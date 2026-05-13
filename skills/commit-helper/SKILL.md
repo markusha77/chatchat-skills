@@ -3,10 +3,6 @@ id: commit-helper
 name: Commit Helper
 description: Use this skill when turning actual code changes into focused commit plans or commit messages, splitting unrelated changes, applying Conventional Commits, or adding reviewer-ready scope and risk notes.
 category: Development
-requires: ["git diff or staged changes", "commit intent", "issue or ticket reference (optional)"]
-examples:
-  - Draft Conventional Commit messages for staged changes that include API and migration updates.
-  - Split a mixed diff into multiple coherent commits with clear rationale and verification notes.
 ---
 
 # Commit Helper

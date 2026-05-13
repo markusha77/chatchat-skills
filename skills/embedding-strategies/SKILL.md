@@ -3,10 +3,6 @@ id: embedding-strategies
 name: Embedding Strategies
 description: Use this skill when selecting, evaluating, or operating embedding strategies, including model choice, chunking, vector dimensions, metadata, retrieval quality, and cost or latency tradeoffs.
 category: Data & AI
-requires: []
-examples:
-  - "Choose an embedding strategy for multilingual document search."
-  - "How do I evaluate chunking and embedding model quality?"
 ---
 
 # Embedding Strategies

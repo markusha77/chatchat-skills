@@ -3,10 +3,6 @@ id: dust-hive
 name: Dust Hive
 description: Use this skill when working in or reasoning about dust-hive development environments, including isolated Dust instances, port allocation, test execution, and repository-specific environment behavior.
 category: Development
-requires: []
-examples:
-  - "How do I run tests in dust-hive?"
-  - "Explain port allocation in dust-hive"
 ---
 
 # dust-hive

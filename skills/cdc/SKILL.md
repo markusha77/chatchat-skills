@@ -3,10 +3,6 @@ id: cdc
 name: CDC
 description: Use this skill when designing or implementing change data capture, including source logs, event ordering, snapshots, schema changes, downstream consumers, and replay-safe data pipelines.
 category: Data & AI
-requires: []
-examples:
-  - "Recommend a CDC architecture for syncing Postgres to a warehouse."
-  - "How should I handle deduplication and replay in a CDC pipeline?"
 ---
 
 # CDC

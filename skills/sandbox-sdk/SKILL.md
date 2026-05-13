@@ -3,10 +3,6 @@ id: sandbox-sdk
 name: Sandbox SDK
 description: Use this skill when building secure code-execution systems with a Sandbox SDK, including sandbox lifecycle, command execution, file operations, code interpreters, preview URLs, and untrusted-code boundaries.
 category: Development
-requires: []
-examples:
-  - "How do I run Python code in Cloudflare Sandbox?"
-  - "Set up secure code execution with Sandbox SDK"
 ---
 
 # Cloudflare Sandbox SDK

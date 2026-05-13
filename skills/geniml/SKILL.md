@@ -3,10 +3,6 @@ id: geniml
 name: GeniML
 description: Use this skill when applying machine learning to genomic interval data, including Region2Vec embeddings, BEDspace joint embeddings, BED files, consensus intervals, and scATAC-seq analysis.
 category: Research
-requires: []
-examples:
-  - Train a Region2Vec model on my collection of BED files.
-  - How do I perform joint region and metadata embedding using BEDspace?
 ---
 
 # Geniml: Genomic Interval Machine Learning

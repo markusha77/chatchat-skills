@@ -3,10 +3,6 @@ id: cocoindex
 name: Cocoindex
 description: Use this skill when building data indexing workflows with CocoIndex, including source ingestion, transformations, incremental updates, schema choices, and retrieval-oriented pipeline behavior.
 category: Data & AI
-requires: []
-examples:
-  - "Design a CocoIndex schema for semantic search over docs."
-  - "What is a good ingestion and reindex strategy in CocoIndex?"
 ---
 
 # Cocoindex

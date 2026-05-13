@@ -3,11 +3,6 @@ id: python-testing
 name: Python Testing
 description: Use this skill when designing Python tests that are clear, maintainable, and sensitive to Python-specific failure patterns such as fixtures, parametrization, side effects, exceptions, and stateful runtime behavior.
 category: Testing & Security
-requires: []
-examples:
-  - "Help me write tests for this Python module."
-  - "What Python test cases are missing here?"
-  - "Review this pytest-style test plan for fixture and state issues."
 ---
 
 # Python Testing

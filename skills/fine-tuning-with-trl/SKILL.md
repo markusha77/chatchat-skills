@@ -3,10 +3,6 @@ id: fine-tuning-with-trl
 name: Fine Tuning with TRL
 description: Use this skill when fine-tuning language models with TRL, including dataset formatting, SFT or preference training setup, trainer configuration, evaluation, and deployment tradeoffs.
 category: Data & AI
-requires: []
-examples:
-  - "Plan a TRL fine-tuning run with safe default hyperparameters."
-  - "How do I validate and ship a model fine-tuned with TRL?"
 ---
 
 # Fine Tuning with TRL

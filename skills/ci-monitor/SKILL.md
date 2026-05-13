@@ -3,10 +3,6 @@ id: ci-monitor
 name: CI Monitor
 description: Use this skill when monitoring CI pipelines for failures, regressions, instability, flaky jobs, and ownership signals, then prioritizing fixes with clear evidence and next actions.
 category: DevOps
-requires: []
-examples:
-  - Monitor our CI failures and suggest prioritized remediation.
-  - Create a CI health checklist with alert thresholds and owner actions.
 ---
 
 # CI Monitor

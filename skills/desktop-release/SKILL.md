@@ -3,10 +3,6 @@ id: desktop-release
 name: Desktop Release
 description: Use this skill when planning or executing desktop application releases, including repeatable builds, signing, packaging, release candidates, rollout checks, and cross-platform production readiness.
 category: DevOps
-requires: []
-examples:
-  - Prepare a cross-platform Electron release with code signing, notarization, and staged rollout notes.
-  - Build a release checklist that validates auto-update feeds and rollback readiness.
 ---
 
 # Desktop Release

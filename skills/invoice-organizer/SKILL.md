@@ -3,10 +3,6 @@ id: invoice-organizer
 name: Invoice Organizer
 description: Use this skill when organizing invoices and receipts for tax preparation by extracting key fields, normalizing filenames, grouping records, and producing accountant-ready CSV output.
 category: Business
-requires: []
-examples:
-  - "Organize these invoices for taxes: extract date/vendor/amount, rename consistently, and sort into year/category folders."
-  - "Extract vendor, date, and total from these receipts and generate a CSV summary for my accountant."
 ---
 
 # Invoice Organizer

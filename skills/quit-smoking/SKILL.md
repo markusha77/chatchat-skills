@@ -3,11 +3,6 @@ id: quit-smoking
 name: Quit Smoking
 description: Use this skill when supporting cigarette or nicotine cessation with craving support, practical replacement strategies, trigger planning, smoke-free routines, relapse prevention, and recovery guidance.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me quit smoking"
-  - "I have a cigarette craving right now"
-  - "What helps during the first week smoke-free?"
 author: "clawd-team"
 version: "1.0.0"
 ---

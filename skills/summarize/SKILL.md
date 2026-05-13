@@ -4,10 +4,6 @@ category: Content & Media
 author: openclaw
 name: Summarize
 description: Use this skill when summarizing URLs, local files, podcasts, YouTube links, videos, or transcripts, including link overviews, best-effort transcript extraction, and summarize.sh workflows.
-requires: ["url", "document"]
-examples:
-  - "Summarize this URL in 10 bullet points: https://example.com"
-  - "Extract the transcript from this YouTube link and then summarize the key points."
 ---
 
 # Summarize

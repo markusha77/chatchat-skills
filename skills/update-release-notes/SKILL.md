@@ -3,10 +3,6 @@ id: update-release-notes
 name: Update Release Notes
 description: Use this skill when release notes must explain what changed, who is affected, what readers should do next, and any user-facing impact, migration concern, rollout caveat, or risk area.
 category: Tools
-requires: []
-examples:
-  - "Help me turn this set of changes into clear release notes."
-  - "Review these release notes so they explain impact, risk, and upgrade implications clearly."
 ---
 
 # Update Release Notes

@@ -3,10 +3,6 @@ id: syncable-entity-builder-and-validator
 name: Syncable Entity Builder And Validator
 description: Use this skill when creating validation logic or migration action builders for syncable entities in Twenty, including entity shape, sync rules, migration actions, and validator behavior.
 category: Development
-requires: []
-examples:
-  - "Create validation for syncable entities in Twenty"
-  - "Build migration actions for Twenty syncable entities"
 ---
 
 # Syncable Entity: Builder & Validation (Step 3/6)

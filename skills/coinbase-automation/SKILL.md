@@ -3,10 +3,6 @@ id: coinbase-automation
 name: Coinbase Automation
 description: Use this skill when automating browser wallet workflows for AI agents across wallets such as MetaMask, Rabby, Phantom, Trust Wallet, OKX, or Coinbase, including EVM, Solana, guardrails, spend limits, chain allowlists, and approvals.
 category: Blockchain
-requires: []
-examples:
-  - "Configure MetaMask for agent wallet automation"
-  - "Set up spend limits and chain allowlist for my agent wallet"
 ---
 
 # WalletPilot

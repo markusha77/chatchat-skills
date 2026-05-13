@@ -3,10 +3,6 @@ id: binance
 name: Binance
 description: Use this skill when building, evaluating, or tuning a Polymarket BTC 1h Up/Down trading strategy that uses Binance market data as the resolution or pricing anchor.
 category: Blockchain
-requires: []
-examples:
-  - "Compute fair probability for BTC 1h Up/Down from Binance klines"
-  - "Explain my recent Polymarket fills with Binance context"
 ---
 
 # Polymarket Trader

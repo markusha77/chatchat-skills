@@ -5,13 +5,6 @@ description: Use this skill when integrating BAP-578 smart contract reads or wri
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "Add Web3 support for BAP-578 to my Next.js app"
-  - "Build a mint page for Non-Fungible Agents"
-  - "Connect wallet to BNB Chain and read agent data"
-  - "Create a dashboard to manage my NFA agents"
-  - "How do I call createAgent from the frontend?"
-  - "Set up wagmi and viem for BSC"
 ---
 
 # Frontend Web3 for BAP-578

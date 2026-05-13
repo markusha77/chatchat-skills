@@ -3,10 +3,6 @@ id: distributed-tracing
 name: Distributed Tracing
 description: Use this skill when instrumenting distributed systems with traces that expose latency, errors, dependency bottlenecks, service boundaries, and incident diagnostics.
 category: DevOps
-requires: []
-examples:
-  - Add OpenTelemetry tracing to API, worker, and database calls with trace context propagation.
-  - Build a trace-based triage flow to isolate p95 latency regressions after deployment.
 ---
 
 # Distributed Tracing

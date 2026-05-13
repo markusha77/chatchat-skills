@@ -3,10 +3,6 @@ id: multi-cloud-architecture
 name: Multi-Cloud Architecture
 description: Use this skill when designing or evaluating multi-cloud architectures, workload placement, shared control planes, failover patterns, vendor-risk tradeoffs, compliance constraints, or cross-cloud resilience.
 category: DevOps
-requires: []
-examples:
-  - Propose active-passive failover between two cloud providers.
-  - Define a service placement strategy across clouds by workload type.
 ---
 
 # Multi-Cloud Architecture

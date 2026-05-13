@@ -3,10 +3,6 @@ category: Content & Media
 id: web-fetch
 name: Web Fetch
 description: Use this skill when fetching readable web page content from a URL without browser automation, especially for lightweight extraction, text cleanup, or summarization inputs.
-requires: ["url"]
-examples:
-  - "Fetch this URL and extract the readable text content: https://example.com"
-  - "Download this page and save the extracted text to output.txt: https://example.com"
 ---
 
 # Web Fetch

@@ -5,11 +5,6 @@ description: Use this skill when tracking meme-token launches, hot narratives, m
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0
-requires: []
-examples:
-  - Show newly created Solana meme tokens on Pump.fun with high bonding-curve progress.
-  - Find BSC meme tokens that are finalizing migration and filter out dev wash trading.
-  - List viral hot topics on Solana ranked by net inflow with top associated tokens.
 ---
 
 # Meme Rush Skill

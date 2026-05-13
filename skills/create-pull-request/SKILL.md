@@ -3,13 +3,6 @@ id: create-pull-request
 name: Create Pull Request
 description: Use this skill when preparing GitHub pull requests with clear summaries, scoped changes, test plans, reviewer context, risk notes, and links to relevant issues or evidence.
 category: Development
-requires:
-  - git branch with committed changes
-  - repository owner/name
-  - base branch and target branch
-examples:
-  - Create a pull request from my current branch with a concise summary and test plan.
-  - Draft a GitHub PR body for these changes and include rollout and verification steps.
 ---
 
 # Create Pull Request

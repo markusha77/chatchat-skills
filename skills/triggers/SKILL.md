@@ -3,10 +3,6 @@ id: triggers
 name: Triggers
 description: Use this skill when designing, reviewing, or validating event triggers, schedule triggers, automation jobs, CI/CD pipeline triggers, deployment workflows, and their edge cases.
 category: DevOps
-requires: []
-examples:
-  - Define trigger conditions for a deployment pipeline across pull requests, merges, and tags.
-  - Review an automation trigger setup that is running too often and causing unnecessary cost.
 ---
 
 # Triggers

@@ -3,10 +3,6 @@ id: entry-point-analyzer
 name: Entry Point Analyzer
 description: Use this skill when analyzing smart contract codebases to identify externally callable state-changing entry points, categorize access levels, exclude read-only functions, and produce structured audit findings.
 category: Blockchain
-requires: []
-examples:
-  - "Find all state-changing entry points in this Solidity contract"
-  - "Analyze attack surface of this smart contract"
 ---
 
 # Entry Point Analyzer

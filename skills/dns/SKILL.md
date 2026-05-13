@@ -3,10 +3,6 @@ id: dns
 name: DNS
 description: Use this skill when understanding or troubleshooting DNS behavior across records, delegation, caching, propagation, resolution paths, and common domain misconfigurations.
 category: Tools
-requires: []
-examples:
-  - "Help me troubleshoot why this domain is not resolving the way I expect."
-  - "Review this DNS setup for common mistakes around records, delegation, and propagation."
 ---
 
 # DNS

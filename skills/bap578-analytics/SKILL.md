@@ -5,13 +5,6 @@ description: Use this skill when defining metrics, building indexers, creating d
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "How many BAP-578 agents have been minted?"
-  - "Build an analytics dashboard for NFA"
-  - "Track treasury revenue from agent mints"
-  - "Index BAP-578 events"
-  - "What is the TVL in NFA agents?"
-  - "Show minting activity over time"
 ---
 
 # BAP-578 Analytics & Indexing

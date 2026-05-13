@@ -5,10 +5,6 @@ name: Canva
 version: 1.0.0
 description: Use this skill when using the Canva Connect API to manage Canva designs, assets, exports, folders, and template-driven document or PDF automation workflows.
 author: clawdbot
-requires: ["canva design id"]
-examples:
-  - "List my Canva designs in the 'Marketing' folder and export the latest one as a PDF."
-  - "Create a new Canva design from a template, autofill it with this data, and export as PNG."
 ---
 
 # Canva Connect

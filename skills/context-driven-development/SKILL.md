@@ -3,10 +3,6 @@ id: context-driven-development
 name: Context Driven Development
 description: Use this skill when implementing or maintaining project context as a managed artifact alongside code, especially Conductor setup, context documents, team onboarding, and consistent AI-assisted development workflows.
 category: Development
-requires: []
-examples:
-  - "Help me with context driven development."
-  - "Use context-driven-development for this task."
 version: "1.0.0"
 ---
 

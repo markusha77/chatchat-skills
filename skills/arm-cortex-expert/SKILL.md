@@ -3,10 +3,6 @@ id: arm-cortex-expert
 name: Arm Cortex Expert
 description: Use this skill when designing or optimizing embedded firmware for ARM Cortex MCUs, including memory layout, timing, interrupts, peripherals, low-power behavior, and hardware-adjacent debugging.
 category: Development
-requires: ["mcu model", "firmware objective", "peripheral requirements"]
-examples:
-  - "For STM32F4, design firmware structure for sensor sampling + BLE transmission with low power constraints."
-  - "Review this Cortex-M ISR strategy and suggest optimizations for latency and memory safety."
 ---
 
 # Arm Cortex Expert

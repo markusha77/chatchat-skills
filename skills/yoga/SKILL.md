@@ -3,11 +3,6 @@ id: yoga
 name: Yoga
 description: Use this skill when giving yoga guidance on pose alignment, sequencing, breathwork, modifications, props, level-appropriate practice planning, and safety-aware instruction.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me sequence a short yoga session."
-  - "Check my alignment for this pose."
-  - "Suggest modifications for a beginner yoga practice."
 ---
 
 ## Alignment Principles

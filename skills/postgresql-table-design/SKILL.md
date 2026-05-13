@@ -3,11 +3,6 @@ id: postgresql-table-design
 name: PostgreSQL Table Design
 description: Use this skill when reasoning about individual PostgreSQL tables and nearby relationships, including keys, constraints, column types, normalization, query-aware indexes, and migration-ready schema decisions.
 category: Databases
-requires: []
-examples:
-  - "Design this PostgreSQL table for me."
-  - "How should this Postgres table be structured?"
-  - "Review this table definition for keys, constraints, and indexes."
 ---
 
 # PostgreSQL Table Design

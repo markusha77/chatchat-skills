@@ -3,11 +3,6 @@ id: property-based-testing
 name: Property Based Testing
 description: Use this skill when designing tests around invariants, generated inputs, shrinking, edge-case discovery, and regression checks instead of hand-picking every case one by one.
 category: Testing & Security
-requires: []
-examples:
-  - "Help me find good properties for this function."
-  - "Convert this example-based test into a property-based test."
-  - "What invariants should I test for this algorithm?"
 ---
 
 # Property Based Testing

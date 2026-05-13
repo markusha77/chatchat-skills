@@ -3,10 +3,6 @@ id: cloudflare-deploy
 name: Cloudflare Deploy
 description: Use this skill when deploying applications to Cloudflare environments, including pre-deploy checks, edge configuration, environment variables, routing, verification, and rollback readiness.
 category: DevOps
-requires: []
-examples:
-  - Prepare a safe Cloudflare deployment checklist for this project.
-  - Create a Cloudflare release plan with verification and rollback criteria.
 ---
 
 # Cloudflare Deploy

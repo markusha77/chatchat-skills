@@ -5,13 +5,6 @@ description: Use this skill when planning, implementing, testing, or executing s
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "How to upgrade the BAP-578 contract"
-  - "Write a V2 implementation for NFA"
-  - "Is it safe to upgrade the proxy?"
-  - "Add a new feature to BAP-578 via upgrade"
-  - "How to preserve state during upgrade"
-  - "What is the UUPS upgrade pattern?"
 ---
 
 # BAP-578 Contract Upgrade

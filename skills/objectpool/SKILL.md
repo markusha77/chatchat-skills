@@ -3,10 +3,6 @@ id: objectpool
 name: Objectpool
 description: Use this skill when implementing low-allocation .NET patterns with Span, ArrayPool, ObjectPool, pooling lifecycles, memory reuse, or allocation-sensitive performance work.
 category: Development
-requires: []
-examples:
-  - "How do I use ArrayPool in .NET for zero-allocation?"
-  - "Implement ObjectPool for memory efficiency"
 ---
 
 # .NET Memory Efficiency, Zero Allocation

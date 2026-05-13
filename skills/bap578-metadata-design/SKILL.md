@@ -5,13 +5,6 @@ description: Use this skill when crafting BAP-578 AgentMetadata identity data, i
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "Design a persona for my BAP-578 agent"
-  - "What should I put in the AgentMetadata fields?"
-  - "How to structure the vault for an NFA agent"
-  - "Create a financial advisor agent persona"
-  - "What format should the persona JSON be?"
-  - "How to store agent data on IPFS"
 ---
 
 # BAP-578 Metadata & Persona Design

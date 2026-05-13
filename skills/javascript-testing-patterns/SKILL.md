@@ -3,11 +3,6 @@ id: javascript-testing-patterns
 name: JavaScript Testing Patterns
 description: Use this skill when JavaScript-specific runtime behavior makes generic test advice too shallow, including async behavior, timers, modules, mocks, browser-like environments, and stateful edge cases.
 category: Testing & Security
-requires: []
-examples:
-  - "What testing patterns fit this JavaScript module?"
-  - "Help me test this async JavaScript behavior."
-  - "Review these JS tests for brittle mocks and timer issues."
 ---
 
 # JavaScript Testing Patterns

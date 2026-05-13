@@ -46,93 +46,25 @@ jobs:
             if (!fmMatch) continue;
 
             const fm = {};
-            let currentKey = null;
             for (const line of fmMatch[1].split(/\r?\n/)) {
               if (!line.trim()) continue;
-              const arrMatch = line.match(/^\s*-\s+(.*)$/);
-              if (arrMatch && currentKey) {
-                if (!Array.isArray(fm[currentKey])) fm[currentKey] = [];
-                fm[currentKey].push(arrMatch[1].trim());
-                continue;
-              }
               const kvMatch = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
               if (!kvMatch) continue;
               const key = kvMatch[1];
               const val = kvMatch[2];
-              if (val === '') {
-                fm[key] = [];
-                currentKey = key;
-              } else {
+              if (val !== '') {
                 const trimmed = val.trim();
-                const isInlineArray =
-                  (key === 'requires' || key === 'examples') &&
-                  trimmed.startsWith('[') &&
-                  trimmed.endsWith(']');
-
-                if (isInlineArray) {
-                  let arr = null;
+                let scalar = trimmed;
+                if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
                   try {
-                    const parsed = JSON.parse(trimmed);
-                    if (Array.isArray(parsed)) {
-                      arr = parsed.map((x) => String(x));
-                    }
-                  } catch (_) {}
-
-                  if (!arr) {
-                    const inner = trimmed.slice(1, -1).trim();
-                    if (!inner) {
-                      arr = [];
-                    } else {
-                      const parts = [];
-                      let buf = '';
-                      let quote = null;
-                      for (let i = 0; i < inner.length; i++) {
-                        const ch = inner[i];
-                        if (quote) {
-                          if (ch === quote && inner[i - 1] !== '\\') {
-                            quote = null;
-                          }
-                          buf += ch;
-                          continue;
-                        }
-
-                        if (ch === '"' || ch === "'") {
-                          quote = ch;
-                          buf += ch;
-                          continue;
-                        }
-
-                        if (ch === ',') {
-                          parts.push(buf.trim());
-                          buf = '';
-                          continue;
-                        }
-
-                        buf += ch;
-                      }
-                      if (buf.trim()) parts.push(buf.trim());
-
-                      arr = parts
-                        .map((s) => s.replace(/^['\"]|['\"]$/g, '').trim())
-                        .filter(Boolean);
-                    }
-                  }
-
-                  fm[key] = arr;
-                } else {
-                  let scalar = trimmed;
-                  if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
-                    try {
-                      scalar = JSON.parse(trimmed);
-                    } catch (_) {
-                      scalar = trimmed.replace(/^['\"]|['\"]$/g, '');
-                    }
-                  } else {
+                    scalar = JSON.parse(trimmed);
+                  } catch (_) {
                     scalar = trimmed.replace(/^['\"]|['\"]$/g, '');
                   }
-                  fm[key] = scalar;
+                } else {
+                  scalar = trimmed.replace(/^['\"]|['\"]$/g, '');
                 }
-                currentKey = null;
+                fm[key] = scalar;
               }
             }
 

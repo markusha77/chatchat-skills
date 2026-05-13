@@ -3,10 +3,6 @@ id: content-design
 name: Content Design
 description: Use this skill when writing, reviewing, or auditing product UI copy such as button labels, error messages, tooltips, empty states, modal copy, placeholders, confirmation dialogs, onboarding text, or i18n strings.
 category: Documentation
-requires: []
-examples:
-  - "Help me with content design."
-  - "Use content-design for this task."
 ---
 
 # n8n content design

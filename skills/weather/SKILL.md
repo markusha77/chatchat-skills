@@ -3,10 +3,6 @@ id: weather
 name: Weather
 description: Use this skill when retrieving current weather or forecasts through wttr.in or Open-Meteo, including location-based conditions, forecast summaries, and lightweight weather lookup workflows.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me with weather."
-  - "Use weather for this task."
 ---
 
 # Weather Skill

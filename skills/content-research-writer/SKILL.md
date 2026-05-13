@@ -3,10 +3,6 @@ category: Content & Media
 id: content-research-writer
 name: Content Research Writer
 description: Use this skill when writing research-backed content that needs source discovery, citations, hooks, outlines, section-by-section iteration, or editorial feedback during drafting.
-requires: ["text"]
-examples:
-  - "Help me outline and draft a newsletter about AI safety, with citations and section-by-section feedback."
-  - "Research this topic, add reputable citations, and strengthen the intro hook for my article draft."
 ---
 
 # Content Research Writer

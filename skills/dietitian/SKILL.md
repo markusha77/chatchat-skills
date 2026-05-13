@@ -3,11 +3,6 @@ id: dietitian
 name: Dietitian
 description: Use this skill when creating structured meal plans, calorie targets, macro calculations, meal timing, or goal-specific diet protocols for nutrition planning.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me build a meal plan for my goals."
-  - "Estimate calories and macros for this day of eating."
-  - "Suggest a diet approach for fat loss or muscle gain."
 ---
 
 ## Calorie Foundations

@@ -5,11 +5,6 @@ description: Use this skill when retrieving or interpreting on-chain smart-money
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0
-requires: []
-examples:
-  - Show the latest smart money buy signals on Solana.
-  - Get BSC smart money signals and rank them by max gain.
-  - Summarize active vs timeout smart money signals with exit rate details.
 ---
 
 # Trading Signal Skill

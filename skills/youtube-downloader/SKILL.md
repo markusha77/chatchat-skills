@@ -3,10 +3,6 @@ category: Content & Media
 id: youtube-downloader
 name: Youtube Downloader
 description: Use this skill when downloading YouTube video or audio, choosing quality or formats such as mp4, webm, mkv, or mp3, saving media locally, or troubleshooting YouTube download options.
-requires: ["youtube url"]
-examples:
-  - "Download this YouTube video in 1080p MP4: https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-  - "Download audio-only as MP3 from this link and save it to ./out/: https://youtu.be/dQw4w9WgXcQ"
 ---
 
 # YouTube Video Downloader

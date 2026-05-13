@@ -3,10 +3,6 @@ id: content-hash-cache-pattern
 name: Content Hash Cache Pattern
 description: Use this skill when implementing content-hash caching for AI or data systems, including cache keys, invalidation, reproducibility, artifact reuse, and avoiding stale outputs.
 category: Data & AI
-requires: []
-examples:
-  - "Design a content-hash cache for expensive LLM responses."
-  - "How should I version and invalidate hash-based caches safely?"
 ---
 
 # Content Hash Cache Pattern

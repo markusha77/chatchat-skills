@@ -3,10 +3,6 @@ id: debugging
 name: Debugging
 description: Use this skill when a systematic debugging approach is needed, using hypothesis-driven investigation, evidence gathering, reproduction quality, and safe narrowing instead of random fixes or shallow symptom chasing.
 category: Tools
-requires: []
-examples:
-  - "Help me debug this issue methodically instead of guessing fixes."
-  - "Turn this vague failure report into a disciplined debugging plan."
 ---
 
 # Debugging

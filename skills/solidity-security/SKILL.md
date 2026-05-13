@@ -3,10 +3,6 @@ id: solidity-security
 name: Solidity Security
 description: Use this skill when auditing or hardening Solidity smart contracts against reentrancy, access-control flaws, arithmetic bugs, unsafe upgrades, oracle risks, fund-management failures, or common EVM vulnerabilities.
 category: Blockchain
-requires: []
-examples:
-  - "Audit this smart contract for reentrancy vulnerabilities"
-  - "How do I implement checks-effects-interactions pattern?"
 ---
 
 # Solidity Security

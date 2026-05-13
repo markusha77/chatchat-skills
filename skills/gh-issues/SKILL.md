@@ -3,13 +3,6 @@ id: gh-issues
 name: GH Issues
 description: Use this skill when managing GitHub issues with structured triage, prioritization, assignment, labels, status tracking, duplicates, and actionable next steps.
 category: Development
-requires:
-  - repository owner/name
-  - issue triage scope (labels/priorities)
-  - backlog timeframe or milestone window
-examples:
-  - Triage open GitHub issues and propose labels, priorities, and owners.
-  - Create an issue management workflow with backlog, in-progress, and done states.
 ---
 
 # GH Issues

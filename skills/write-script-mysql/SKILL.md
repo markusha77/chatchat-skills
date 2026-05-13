@@ -3,11 +3,6 @@ id: write-script-mysql
 name: Write Script MySQL
 description: Use this skill when drafting or reviewing MySQL SQL scripts in a way that makes engine behavior, locking risk, compatibility, rollout sequencing, and reviewability visible.
 category: Databases
-requires: []
-examples:
-  - "Help me write a MySQL script for this change."
-  - "Review this MySQL SQL script for safety and rollback issues."
-  - "What should this MySQL script include?"
 ---
 
 # Write Script MySQL

@@ -3,10 +3,6 @@ id: azure-sdk-mgmt-pr-review
 name: Azure Sdk Mgmt Pr Review
 description: Use this skill when reviewing Azure SDK management-plane pull requests for API compatibility, naming conventions, generated-code expectations, breaking changes, and SDK quality standards.
 category: Development
-requires: []
-examples:
-  - "Help me with azure sdk mgmt pr review."
-  - "Use azure-sdk-mgmt-pr-review for this task."
 ---
 
 # Azure .NET Mgmt SDK PR Review

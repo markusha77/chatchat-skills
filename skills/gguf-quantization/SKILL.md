@@ -3,10 +3,6 @@ id: gguf-quantization
 name: Gguf Quantization
 description: Use this skill when planning or executing GGUF model quantization, including quantization type selection, accuracy checks, latency and memory tradeoffs, and deployment validation.
 category: Development
-requires: ["source model path", "target quantization format", "hardware/runtime target"]
-examples:
-  - "Quantize this model to GGUF Q4_K_M for CPU inference and compare quality with Q5."
-  - "Recommend GGUF quantization settings for this chatbot workload on 16GB RAM."
 ---
 
 # Gguf Quantization

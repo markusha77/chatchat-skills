@@ -3,10 +3,6 @@ id: observability-engineer
 name: Observability Engineer
 description: Use this skill when designing observability for services with logs, metrics, traces, alert thresholds, dashboards, SLO signals, and actionable incident-response context.
 category: DevOps
-requires: []
-examples:
-  - Create an observability plan for this service with metrics, logs, traces, and alerts.
-  - Define SLO-driven alerting and dashboard checks for this backend before launch.
 ---
 
 # Observability Engineer

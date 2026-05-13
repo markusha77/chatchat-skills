@@ -3,10 +3,6 @@ id: deployment-patterns
 name: Deployment Patterns
 description: Use this skill when deploying data or AI systems to production, including artifact promotion, environment parity, model/data dependencies, rollback, monitoring, and release safety.
 category: Data & AI
-requires: []
-examples:
-  - "Recommend a deployment pattern for a low-latency AI API."
-  - "How should I roll out model updates with safe rollback?"
 ---
 
 # Deployment Patterns

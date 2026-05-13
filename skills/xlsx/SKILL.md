@@ -3,10 +3,6 @@ id: xlsx
 name: XLSX
 description: Use this skill when creating, editing, or auditing .xlsx spreadsheets, especially financial models, formulas, formatting, workbook structure, validation, and zero-error spreadsheet outputs.
 category: Business
-requires: [".xlsx"]
-examples:
-  - "Audit this workbook for #REF!/#DIV/0! errors and fix formulas while preserving formatting."
-  - "Build a simple financial model in Excel following blue/black/green conventions and validate there are zero formula errors."
 ---
 
 # Requirements for Outputs

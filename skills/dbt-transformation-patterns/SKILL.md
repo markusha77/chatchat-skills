@@ -3,10 +3,6 @@ id: dbt-transformation-patterns
 name: dbt Transformation Patterns
 description: Use this skill when designing dbt projects, models, staging layers, marts, tests, documentation, naming conventions, incremental models, and transformation structure.
 category: Data & AI
-requires: []
-examples:
-  - "Propose dbt transformation patterns for staging and marts."
-  - "How do I structure dbt tests and incremental models?"
 ---
 
 # dbt Transformation Patterns

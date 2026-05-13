@@ -3,10 +3,6 @@ id: jb-protocol-fees
 name: JB Protocol Fees
 description: Use this skill when working with Juicebox V5 or Revnet protocol fees, including NANA fees, Revnet cash-out fees, REV loans, variable loan fees, and related UI integration.
 category: Blockchain
-requires: []
-examples:
-  - "Calculate net payout amount after Juicebox V5 fees"
-  - "Build a cash out UI with fee breakdown display"
 ---
 
 # Juicebox V5 & Revnet Protocol Fees

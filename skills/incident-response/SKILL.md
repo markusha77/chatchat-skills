@@ -3,10 +3,6 @@ id: incident-response
 name: Incident Response
 description: Use this skill when leading or structuring incident response, including triage, containment, communications, recovery, severity assessment, timelines, and post-incident follow-up.
 category: DevOps
-requires: []
-examples:
-  - Guide me through handling a production incident from detection to resolution.
-  - Create an incident response checklist with stakeholder communications.
 ---
 
 # Incident Response

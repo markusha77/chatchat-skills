@@ -5,14 +5,6 @@ description: Use this skill when planning monetization, pricing, treasury flows,
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "How do I monetize BAP-578 agents?"
-  - "What's the revenue model for NFA?"
-  - "How does the treasury work?"
-  - "Plan a free-mint launch campaign"
-  - "How to price agent minting?"
-  - "What are the operating costs for NFA?"
-  - "How to build an agent marketplace?"
 ---
 
 # BAP-578 Business & Monetization

@@ -3,10 +3,6 @@ id: planning-agent
 name: Planning Agent
 description: Use this skill when generating project-aware unit tests through a research, planning, implementation, and verification pipeline that must fit the target language and repository conventions.
 category: Development
-requires: []
-examples:
-  - "Help me with planning agent."
-  - "Use planning-agent for this task."
 ---
 
 # Polyglot Test Generation Skill

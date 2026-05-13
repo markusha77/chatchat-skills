@@ -3,10 +3,6 @@ id: nda-triage
 name: Nda Triage
 description: Use this skill when screening incoming NDAs and classifying clauses or whole agreements as standard, needs review, or significant risk based on practical legal triage signals.
 category: Business
-requires: []
-examples:
-  - "Help me with nda triage."
-  - "Use nda-triage for this task."
 ---
 
 # NDA Triage Skill

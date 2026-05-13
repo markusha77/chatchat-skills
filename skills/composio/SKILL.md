@@ -3,10 +3,6 @@ id: composio
 name: Composio
 description: Use this skill when implementing app integrations with Composio, including tool configuration, auth flows, connected accounts, action execution, and integration reliability.
 category: Data & AI
-requires: []
-examples:
-  - "Help me integrate Slack and Notion actions using Composio."
-  - "What is the best way to handle retries and auth in Composio workflows?"
 ---
 
 # Composio

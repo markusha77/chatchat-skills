@@ -3,10 +3,6 @@ id: database-schema-designer
 name: Database Schema Designer
 description: Use this skill when designing database schemas for data and AI systems, including entities, relationships, keys, constraints, indexes, and query or analytics access patterns.
 category: Data & AI
-requires: []
-examples:
-  - "Design a schema for event tracking and ML feature generation."
-  - "How should I index and partition this schema for scale?"
 ---
 
 # Database Schema Designer

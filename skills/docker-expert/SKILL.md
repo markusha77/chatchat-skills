@@ -3,10 +3,6 @@ id: docker-expert
 name: Docker Expert
 description: Use this skill when containerizing services or debugging Docker workflows, including production Dockerfiles, Compose setups, reproducible builds, secure defaults, image size, caching, and runtime behavior.
 category: DevOps
-requires: []
-examples:
-  - Create a multi-stage Dockerfile for a Node.js API with minimal runtime image size and non-root execution.
-  - Diagnose why a container works locally but fails in CI due to missing build context files.
 ---
 
 # Docker Expert
