@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wrangler"
+  short_description: "Building or deploying Cloudflare Workers with Wrangler, including local iteration, configuration, bindings, environments, secrets, and release verification."
+  default_prompt: "Build or deploying Cloudflare Workers with Wrangler, including local iteration, configuration, bindings, environments, secrets, and release verification."

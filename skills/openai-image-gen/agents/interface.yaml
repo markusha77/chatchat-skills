@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpenAI Image Gen"
+  short_description: "Implementing OpenAI image generation workflows, including request structure, prompt handling, image creation, editing, variants, and integration steps."
+  default_prompt: "Implement OpenAI image generation workflows, including request structure, prompt handling, image creation, editing, variants, and integration steps."
