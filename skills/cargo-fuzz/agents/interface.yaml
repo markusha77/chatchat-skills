@@ -1,4 +1,0 @@
-interface:
-  display_name: "Cargo Fuzz"
-  short_description: "Setting up or running Rust fuzz testing with cargo-fuzz to find crashes, panics, parser edge cases, unsafe assumptions, and vulnerability-prone inputs."
-  default_prompt: "Set up or running Rust fuzz testing with cargo-fuzz to find crashes, panics, parser edge cases, unsafe assumptions, and vulnerability-prone inputs."

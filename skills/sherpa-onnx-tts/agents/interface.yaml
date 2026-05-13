@@ -1,4 +1,0 @@
-interface:
-  display_name: "Sherpa ONNX TTS"
-  short_description: "Building, packaging, integrating, or troubleshooting Sherpa ONNX text-to-speech pipelines, including model assets, runtime output quality, CI setup, and deployment failures."
-  default_prompt: "Build, packaging, integrating, or troubleshooting Sherpa ONNX text-to-speech pipelines, including model assets, runtime output quality, CI setup, and deployment failures."

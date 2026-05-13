@@ -1,4 +1,0 @@
-interface:
-  display_name: "Broken Authentication Testing"
-  short_description: "Designing security tests for login, session, token, MFA, logout, refresh, invitation, and account-recovery flows where authentication bypass or account-takeover risk matters."
-  default_prompt: "Design security tests for login, session, token, MFA, logout, refresh, invitation, and account-recovery flows where authentication bypass or account-takeover risk matters."
