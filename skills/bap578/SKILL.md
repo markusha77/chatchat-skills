@@ -5,16 +5,6 @@ description: Use this skill when users ask about BAP-578, Non-Fungible Agents, o
 category: Blockchain
 author: community
 version: 2.0.0
-examples:
-  - "What is BAP-578?"
-  - "Explain Non-Fungible Agents"
-  - "How does the dual-path architecture work?"
-  - "Explain Merkle tree learning in BAP-578"
-  - "How can I trust an agent NFT?"
-  - "What can a BAP-578 agent do?"
-  - "How does agent memory work on-chain?"
-  - "What is composable intelligence?"
-  - "How do circuit breakers protect agents?"
 ---
 
 # BAP-578 Non-Fungible Agents (NFA)

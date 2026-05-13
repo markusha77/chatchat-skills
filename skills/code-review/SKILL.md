@@ -3,10 +3,6 @@ id: code-review
 name: Code Review
 description: Use this skill when reviewing a code change for correctness, behavioral risk, maintainability, unclear contracts, missing verification, and findings-first feedback rather than style polish.
 category: Tools
-requires: []
-examples:
-  - "Review this code change and tell me the highest-risk issues first."
-  - "What should I focus on in this pull request beyond style comments?"
 ---
 
 # Code Review

@@ -3,10 +3,6 @@ id: defi-protocol-templates
 name: DeFi Protocol Templates
 description: Use this skill when implementing DeFi protocol templates for staking, AMMs, governance, or lending systems with production-oriented contract structure and security considerations.
 category: Blockchain
-requires: []
-examples:
-  - "Implement a staking contract with reward distribution"
-  - "Create an AMM pool with Uniswap V2 patterns"
 ---
 
 # DeFi Protocol Templates

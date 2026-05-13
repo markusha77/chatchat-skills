@@ -3,10 +3,6 @@ id: dependency-upgrade
 name: Dependency Upgrade
 description: Use this skill when upgrading dependencies with risk-aware batching, compatibility checks, lockfile review, migration notes, and verification steps for routine updates or major-version changes.
 category: DevOps
-requires: []
-examples:
-  - Group npm dependency updates into safe batches and produce a verification plan for CI and smoke tests.
-  - Plan a major framework upgrade by identifying breaking changes and codemod opportunities.
 ---
 
 # Dependency Upgrade

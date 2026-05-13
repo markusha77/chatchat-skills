@@ -3,10 +3,6 @@ id: bonero-miner
 name: Bonero Miner
 description: Use this skill when setting up or troubleshooting Bonero mining, wallets, daemons, RandomX CPU mining, or Monero-style private cryptocurrency workflows for AI agents.
 category: Blockchain
-requires: []
-examples:
-  - "How do I start mining Bonero with my CPU?"
-  - "Create a Bonero wallet and set up the mining daemon"
 version: 2.0.0
 ---
 

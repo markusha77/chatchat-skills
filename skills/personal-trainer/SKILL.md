@@ -3,11 +3,6 @@ id: personal-trainer
 name: Personal Trainer
 description: Use this skill when designing workout programs, explaining exercises, tracking progress, adapting training based on feedback, or planning strength and conditioning routines.
 category: Lifestyle
-requires: []
-examples:
-  - "Build me a simple training program."
-  - "How should I adjust this workout plan?"
-  - "Explain how to do this exercise safely."
 ---
 
 ## Information to Gather First

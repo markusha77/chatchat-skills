@@ -3,11 +3,6 @@ id: cpp-testing
 name: C++ Testing
 description: Use this skill when designing C++ tests where memory ownership, lifetime, undefined behavior, boundary conditions, concurrency, isolation seams, or deterministic behavior matter.
 category: Testing & Security
-requires: []
-examples:
-  - "Help me write tests for this C++ class."
-  - "What C++ edge cases should these tests cover?"
-  - "Review this C++ test plan for lifetime and ownership risks."
 ---
 
 # C++ Testing

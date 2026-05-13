@@ -3,11 +3,6 @@ id: optimizing-database-connection-pool
 name: Optimizing Database Connection Pool
 description: Use this skill when reasoning about database connection-pool sizing and behavior before changing configuration, including workload-aware limits, timeouts, leak detection, saturation, and failure modes.
 category: Databases
-requires: []
-examples:
-  - "Help me tune my database connection pool."
-  - "Why is this app saturating its DB connections?"
-  - "Review this connection-pooling setup for bottlenecks."
 ---
 
 # Optimizing Database Connection Pool

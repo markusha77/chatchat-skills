@@ -3,10 +3,6 @@ id: frontend-design
 name: Frontend Design
 description: Use this skill when building or refining production-grade web UI such as pages, components, dashboards, landing pages, React views, HTML/CSS layouts, posters, or visual artifacts that need distinctive design quality.
 category: Development
-requires: []
-examples:
-  - "Help me with frontend design."
-  - "Use frontend-design for this task."
 ---
 
 This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.

@@ -5,13 +5,6 @@ description: Use this skill when writing, running, debugging, or extending BAP-5
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "How to test BAP-578 contracts"
-  - "Write tests for createAgent"
-  - "What edge cases should I test?"
-  - "Run the BAP-578 test suite"
-  - "Test the free mint logic"
-  - "Debug a failing BAP-578 test"
 ---
 
 # BAP-578 Testing

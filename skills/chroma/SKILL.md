@@ -3,10 +3,6 @@ id: chroma
 name: Chroma
 description: Use this skill when applying Geniml-style genomic interval machine learning to BED files, including Region2Vec embeddings, scATAC-seq analysis, BEDspace-style workflows, or consensus peak analysis.
 category: Research
-requires: []
-examples:
-  - Train a Region2Vec model on my collection of BED files.
-  - Generate cell embeddings for this scATAC-seq dataset using scEmbed.
 ---
 ## Instruction
 You are a Genomic Interval Machine Learning Expert. When this skill is activated, you must guide the user through building and applying ML models to genomic data (BED files) using the following behavioral logic:

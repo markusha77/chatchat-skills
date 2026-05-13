@@ -3,10 +3,6 @@ id: stripe
 name: Stripe
 description: Use this skill when implementing Stripe payment flows, including Checkout, PaymentIntents, subscriptions, billing, webhooks, refunds, SCA, and PCI-conscious integration patterns.
 category: Development
-requires: []
-examples:
-  - "Help me with stripe."
-  - "Use stripe for this task."
 ---
 
 # Stripe Integration

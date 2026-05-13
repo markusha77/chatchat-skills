@@ -3,10 +3,6 @@ id: add-provider-doc
 name: Add Provider Doc
 description: Use this skill when producing provider documentation that must be accurate, actionable, and support-friendly, including setup, usage, limits, troubleshooting, and release-ready structure.
 category: Documentation
-requires: []
-examples:
-  - "Add provider docs for a new integration with setup and troubleshooting sections."
-  - "Draft a provider documentation checklist for release readiness."
 ---
 
 # Add Provider Doc

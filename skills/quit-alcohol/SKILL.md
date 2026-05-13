@@ -3,11 +3,6 @@ id: quit-alcohol
 name: Quit Alcohol
 description: Use this skill when supporting alcohol reduction or sobriety with planning, craving management, trigger review, safer next steps, relapse prevention, and recovery milestones.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me stop drinking"
-  - "I need support for alcohol cravings tonight"
-  - "Give me a realistic first step for quitting alcohol"
 author: "clawd-team"
 version: "1.0.0"
 ---

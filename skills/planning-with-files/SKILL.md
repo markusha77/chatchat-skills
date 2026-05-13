@@ -3,10 +3,6 @@ id: planning-with-files
 name: Planning With Files
 description: Use this skill when complex work needs persistent markdown planning files as working memory, including task plans, notes, deliverables, checkpoint updates, and file-backed execution loops.
 category: Development
-requires: []
-examples:
-  - "Help me with planning with files."
-  - "Use planning-with-files for this task."
 ---
 
 # Planning with Files

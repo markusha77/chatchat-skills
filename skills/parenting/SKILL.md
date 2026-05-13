@@ -3,11 +3,6 @@ id: parenting
 name: Parenting
 description: Use this skill when giving parenting guidance on age-appropriate behavior support, family routines, communication strategies, child context, burnout, and avoiding common advice pitfalls.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me handle this parenting situation."
-  - "What is age-appropriate here?"
-  - "Give me a calmer response to this behavior issue."
 ---
 
 ## Before Giving Advice

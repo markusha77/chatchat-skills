@@ -5,11 +5,6 @@ description: Use this skill when searching or researching tokens by keyword, con
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0
-requires: []
-examples:
-  - Search for a token by symbol across BSC, Base, and Solana and show top matches.
-  - Get metadata and live market data for this contract on Base.
-  - Fetch 1h candlestick data for this token on BSC for technical analysis.
 ---
 
 # Query Token Info Skill

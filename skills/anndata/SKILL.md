@@ -3,10 +3,6 @@ id: anndata
 name: AnnData
 description: Use this skill when working with AnnData in scalable single-cell workflows, including backed mode, layers, obs/var metadata, sparse matrices, batch processing, and Scanpy-style pipelines.
 category: Data & AI
-requires: [".h5ad"]
-examples:
-  - "Show me best practices for organizing AnnData objects."
-  - "How do I optimize AnnData workflows for large single-cell datasets?"
 ---
 
 # AnnData

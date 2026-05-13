@@ -5,11 +5,6 @@ description: Use this skill when checking token security before swaps or trades,
 category: Blockchain
 author: binance-web3-team
 version: 1.4.0
-requires: []
-examples:
-  - Check if this BSC token is safe before I buy it.
-  - Audit this Base token contract for honeypot and scam risk.
-  - Run a token security check on this Solana contract and summarize the risk items.
 ---
 
 # Query Token Audit Skill

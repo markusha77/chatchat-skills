@@ -3,10 +3,6 @@ id: resume-handoff
 name: Resume Handoff
 description: Use this skill when creating or loading AI session handoffs, saving context before pausing, nearing context limits, resuming complex work, or preserving decisions, files changed, blockers, and next steps.
 category: Development
-requires: []
-examples:
-  - "Help me with resume handoff."
-  - "Use resume-handoff for this task."
 ---
 
 # Handoff

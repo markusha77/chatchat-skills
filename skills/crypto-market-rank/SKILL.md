@@ -5,11 +5,6 @@ description: Use this skill when retrieving or interpreting crypto market rankin
 category: Blockchain
 author: binance-web3-team
 version: 2.0.0
-requires: []
-examples:
-  - Show the top trending tokens on BSC and Base for the last 24h.
-  - Rank Solana tokens by smart money inflow and summarize the key movers.
-  - List the top trader PnL leaderboard addresses on Solana for the last 30d.
 ---
 
 # Crypto Market Rank Skill

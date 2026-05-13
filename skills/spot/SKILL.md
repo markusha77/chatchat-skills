@@ -5,11 +5,6 @@ description: Use this skill when making Binance Spot API requests, signing authe
 category: Blockchain
 author: Binance
 version: 1.0.1
-requires: []
-examples:
-  - Get exchange info and ticker data for BTCUSDT.
-  - Place a test order on testnet and verify order status.
-  - Check account balances and open spot orders.
 ---
 
 # Binance Spot Skill

@@ -3,10 +3,6 @@ id: ai-product
 name: AI Product
 description: Use this skill when planning, shipping, or improving AI products, including product strategy, user workflows, evaluation loops, model capability boundaries, UX risks, and release tradeoffs.
 category: Data & AI
-requires: []
-examples:
-  - "Help me define an AI product MVP and roadmap."
-  - "How should I prioritize model, data, and UX work for my AI product?"
 ---
 
 # AI Product

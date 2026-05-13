@@ -3,10 +3,6 @@ id: agent-load-balancer
 name: Agent Load Balancer
 description: Use this skill when designing load balancing or traffic distribution for AI agents, including routing policies, reliability targets, latency control, throughput scaling, and demand-aware failover.
 category: DevOps
-requires: []
-examples:
-  - Propose a load balancing strategy for this agent system under peak traffic.
-  - Build a rollout plan for weighted routing between two agent backends.
 ---
 
 # Agent Load Balancer

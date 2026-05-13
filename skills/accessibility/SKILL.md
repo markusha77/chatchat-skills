@@ -3,10 +3,6 @@ id: accessibility
 name: Accessibility
 description: Use this skill when implementing or reviewing VS Code accessibility surfaces, including help dialogs, accessible views, verbosity settings, accessibility signals, ARIA alerts, keyboard navigation, labels, and roles.
 category: Development
-requires: []
-examples:
-  - "Help me with accessibility."
-  - "Use accessibility for this task."
 ---
 
 When adding a **new interactive UI surface** to VS Code — a panel, view, widget, editor overlay, dialog, or any rich focusable component the user interacts with — you **must** provide three accessibility components (if they do not already exist for the feature):

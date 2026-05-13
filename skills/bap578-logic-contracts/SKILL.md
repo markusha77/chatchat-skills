@@ -5,13 +5,6 @@ description: Use this skill when designing, building, deploying, binding, or rev
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "How do logic contracts work in BAP-578?"
-  - "Build an autonomous agent with a logic contract"
-  - "Bind a logic contract to my NFA agent"
-  - "What can a logic contract do for an agent?"
-  - "Create a DeFi auto-compounder logic contract"
-  - "Is it safe to bind a logic contract?"
 ---
 
 # BAP-578 Logic Contracts

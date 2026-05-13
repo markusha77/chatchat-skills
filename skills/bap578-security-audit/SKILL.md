@@ -5,13 +5,6 @@ description: Use this skill when auditing, hardening, or verifying the security 
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "Audit the BAP-578 contract for vulnerabilities"
-  - "Is the NFA contract secure?"
-  - "What are the attack vectors for BAP-578?"
-  - "Review access control in the agent contract"
-  - "Check for reentrancy in BAP-578"
-  - "How safe is the upgrade mechanism?"
 ---
 
 # BAP-578 Security Audit

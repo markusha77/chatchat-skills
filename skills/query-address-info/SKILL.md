@@ -5,11 +5,6 @@ description: Use this skill when querying on-chain wallet addresses for active t
 category: Blockchain
 author: binance-web3-team
 version: 1.0.0
-requires: []
-examples:
-  - Show all token holdings for this wallet on BSC: 0x0000000000000000000000000000000000000001.
-  - Get this address portfolio on Base with token prices and 24h percent change.
-  - Query Solana wallet assets and summarize biggest positions by value.
 ---
 
 # Query Address Info Skill

@@ -3,10 +3,6 @@ id: render-deploy
 name: Render Deploy
 description: Use this skill when deploying to Render, including environment validation, service settings, health checks, logs, rollout verification, and rollback conditions.
 category: DevOps
-requires: []
-examples:
-  - Help me deploy this service on Render with a safe rollout plan.
-  - Build a Render deployment checklist with post-deploy verification steps.
 ---
 
 # Render Deploy

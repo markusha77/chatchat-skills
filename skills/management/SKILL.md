@@ -3,11 +3,6 @@ id: management
 name: Management
 description: Use this skill when giving management guidance on team leadership, operating cadence, delegation, feedback, planning, organizational effectiveness, or manager decision-making.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me handle this team management problem."
-  - "Give me a framework for leading through change."
-  - "How should a manager respond in this situation?"
 ---
 
 ## For Individual Contributors: Navigating Upward

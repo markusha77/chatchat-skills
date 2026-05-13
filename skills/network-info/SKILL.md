@@ -3,10 +3,6 @@ id: network-info
 name: Network Info
 description: Use this skill when interpreting network facts during troubleshooting, including IPs, routes, interfaces, DNS, connectivity clues, failure boundaries, and which details matter before drawing conclusions.
 category: Tools
-requires: []
-examples:
-  - "Help me reason about these network details and where the failure boundary probably is."
-  - "What network information matters most when troubleshooting this connectivity issue?"
 ---
 
 # Network Info

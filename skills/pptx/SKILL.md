@@ -3,10 +3,6 @@ id: pptx
 category: Content & Media
 name: Pptx
 description: Use this skill when a PowerPoint .pptx file, slide deck, presentation, pitch deck, template, speaker notes, slide text, comments, or deck conversion is an input or requested output.
-requires: [".pptx"]
-examples:
-  - "Read this .pptx and summarize each slide, including speaker notes."
-  - "Create a 10-slide pitch deck from this outline and export it as a .pptx."
 ---
 
 # PPTX Skill

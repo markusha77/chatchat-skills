@@ -3,10 +3,6 @@ id: mutation-testing
 name: Mutation Testing
 description: Use this skill when planning or executing mutation testing to evaluate whether a test suite catches meaningful defects, especially when coverage is high but confidence is low.
 category: DevOps
-requires: []
-examples:
-  - Run mutation testing on a critical module to identify weak assertions.
-  - Define mutation score thresholds for CI quality gates.
 ---
 
 # Mutation Testing

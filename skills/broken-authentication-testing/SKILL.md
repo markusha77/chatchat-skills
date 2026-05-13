@@ -3,11 +3,6 @@ id: broken-authentication-testing
 name: Broken Authentication Testing
 description: Use this skill when designing security tests for login, session, token, MFA, logout, refresh, invitation, and account-recovery flows where authentication bypass or account-takeover risk matters.
 category: Testing & Security
-requires: []
-examples:
-  - "How should I test this auth flow for weaknesses?"
-  - "What broken-authentication cases should I check?"
-  - "Review this login and session design for security test coverage."
 ---
 
 # Broken Authentication Testing

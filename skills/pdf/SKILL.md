@@ -3,10 +3,6 @@ id: pdf
 category: Content & Media
 name: PDF
 description: Use this skill when a PDF is an input or requested output, including text or table extraction, merge or split operations, rotation, watermarks, form filling, encryption, image extraction, OCR, or PDF generation.
-requires: [".pdf"]
-examples:
-  - "Extract all tables from this PDF into a CSV, and also summarize the document."
-  - "Merge these three PDFs into one, rotate the first page 90 degrees, and add a watermark."
 ---
 
 # PDF Processing Guide

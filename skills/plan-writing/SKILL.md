@@ -3,10 +3,6 @@ id: plan-writing
 name: Plan Writing
 description: Use this skill when turning a complex task into a structured execution plan with clear steps, dependencies, assumptions, risks, verification, and progress-tracking criteria.
 category: Development
-requires: []
-examples:
-  - "Help me with plan writing."
-  - "Use plan-writing for this task."
 ---
 
 # Plan Writing

@@ -3,10 +3,6 @@ id: templates
 name: Templates
 description: Use this skill when creating or maintaining reusable infrastructure, CI/CD, service, or pipeline templates with governance, versioning, rollout consistency, and environment provisioning.
 category: Documentation
-requires: []
-examples:
-  - Build a deployment template that standardizes service build, test, and rollout steps.
-  - Refactor duplicated infrastructure snippets into a single reusable template.
 ---
 
 # Templates

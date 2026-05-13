@@ -3,10 +3,6 @@ id: dailydev
 name: Daily.dev
 description: Use this skill when accessing current developer content from daily.dev, including popular or personalized feeds, community-validated articles, tech trend briefings, stack-based feeds, and API-token-safe workflows.
 category: Research
-requires: []
-examples:
-  - What is trending in AI development on daily.dev today?
-  - Summarize the latest articles about cybersecurity from my daily.dev feed.
 ---
 
 # daily.dev API for AI Agents

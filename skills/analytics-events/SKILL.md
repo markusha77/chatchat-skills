@@ -3,10 +3,6 @@ id: analytics-events
 name: Analytics Events
 description: Use this skill when keeping analytics instrumentation accurate, consistent, and release-ready across event definitions, tracking plans, schemas, implementation, QA, and governance.
 category: DevOps
-requires: []
-examples:
-  - "Design analytics events for this feature and provide a validation checklist."
-  - "Audit current analytics instrumentation and identify gaps before release."
 ---
 
 # Analytics Events

@@ -3,11 +3,6 @@ id: database-migrations
 name: Database Migrations
 description: Use this skill when planning safe schema or data migrations without assuming direct execution access, including rollout sequencing, backfills, compatibility windows, validation queries, and rollback awareness.
 category: Databases
-requires: []
-examples:
-  - "Help me plan a safe schema migration."
-  - "What rollout steps should I use for this database change?"
-  - "Review this migration plan for risk and rollback gaps."
 ---
 
 # Database Migrations

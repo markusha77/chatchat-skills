@@ -3,11 +3,6 @@ id: quit-caffeine
 name: Quit Caffeine
 description: Use this skill when helping reduce caffeine gradually, manage withdrawal, replace the habit with lower-friction alternatives, protect sleep, and maintain energy during tapering.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me cut back on caffeine"
-  - "What should I do about caffeine withdrawal?"
-  - "Make me a gentler caffeine reduction plan"
 author: "clawd-team"
 version: "1.0.0"
 ---

@@ -5,14 +5,6 @@ description: Use this skill when reading, verifying, scanning, querying, indexin
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "Scan a BAP-578 agent by token ID"
-  - "Read on-chain metadata for an NFA agent"
-  - "Verify vault integrity for a BAP-578 agent"
-  - "List all agents owned by an address"
-  - "Get the event history for a specific agent"
-  - "Build an indexer for BAP-578 events"
-  - "How many agents have been minted?"
 ---
 
 # BAP-578 On-Chain Scanner

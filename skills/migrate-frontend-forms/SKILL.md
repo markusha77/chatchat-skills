@@ -3,10 +3,6 @@ id: migrate-frontend-forms
 name: Migrate Frontend Forms
 description: Use this skill when migrating frontend forms, form libraries, validation schemas, submission flows, or accessibility behavior while minimizing regressions in production systems.
 category: Development
-requires: ["current form implementation files", "target form library/schema choice", "submission api contract"]
-examples:
-  - Migrate a React form from Formik to React Hook Form while preserving validation and error UX.
-  - Replace legacy API form payload mapping with schema-driven submission in CI-verified steps.
 ---
 
 # Migrate Frontend Forms

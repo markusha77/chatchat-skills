@@ -3,10 +3,6 @@ id: coding-agent
 name: Coding Agent
 description: Use this skill when designing, evaluating, or improving coding agents, including task decomposition, tool use, repo navigation, verification loops, autonomy boundaries, and agent behavior quality.
 category: Data & AI
-requires: []
-examples:
-  - "Design a coding agent loop with planning, execution, and verification."
-  - "How can I evaluate and improve a coding agent's reliability?"
 ---
 
 # Coding Agent

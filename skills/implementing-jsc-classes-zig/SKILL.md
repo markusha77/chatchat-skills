@@ -3,10 +3,6 @@ id: implementing-jsc-classes-zig
 name: Implementing JSC Classes Zig
 description: Use this skill when implementing JavaScriptCore class bindings in Zig, including memory ownership, method exposure, property behavior, callbacks, and runtime safety.
 category: Development
-requires: ["jsc class interface design", "zig binding/runtime files", "memory and lifecycle rules"]
-examples:
-  - "Implement this JSC class in Zig with constructor, methods, and property accessors."
-  - "Review this Zig JSC binding for GC safety and exception propagation."
 ---
 
 # Implementing JSC Classes Zig

@@ -5,10 +5,6 @@ name: Technical Writer
 description: Use this skill when writing or improving technical documentation, including READMEs, API references, tutorials, user guides, conceptual docs, examples, and developer-facing explanations.
 author: awesome-llm-apps
 version: "1.0.0"
-requires: ["text"]
-examples:
-  - "Draft a README for this project with installation, quickstart, and common usage examples."
-  - "Write API documentation for these endpoints, including request/response examples and error cases."
 ---
 
 # Technical Writer

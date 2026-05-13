@@ -3,10 +3,6 @@ id: shopify
 name: Shopify
 description: Use this skill when building Shopify apps, themes, checkout/admin/POS extensions, Shopify Functions, Liquid templates, Polaris UIs, GraphQL Admin API integrations, webhooks, billing, or metafields.
 category: Development
-requires: []
-examples:
-  - "Help me with shopify."
-  - "Use shopify for this task."
 ---
 
 # Shopify Development Skill

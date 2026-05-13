@@ -3,10 +3,6 @@ id: geopandas
 name: GeoPandas
 description: Use this skill when working with GeoPandas geospatial workflows, including CRS handling, joins, overlays, geometry cleanup, spatial indexing, file formats, and map-ready data preparation.
 category: Data & AI
-requires: []
-examples:
-  - "Help me build a GeoPandas workflow for spatial joins."
-  - "How do I handle CRS conversion and geometry validity checks?"
 ---
 
 # GeoPandas

@@ -3,11 +3,6 @@ id: write-script-postgresql
 name: Write Script PostgreSQL
 description: Use this skill when drafting or reviewing PostgreSQL SQL scripts with PostgreSQL-aware syntax, safe sequencing, transactional expectations, migration logic, and reviewable rollout risk.
 category: Databases
-requires: []
-examples:
-  - "Help me write a PostgreSQL script for this change."
-  - "Review this Postgres SQL script for safety and correctness."
-  - "How should I structure this PostgreSQL migration script?"
 ---
 
 # Write Script PostgreSQL

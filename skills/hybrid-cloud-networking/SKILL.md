@@ -3,10 +3,6 @@ id: hybrid-cloud-networking
 name: Hybrid Cloud Networking
 description: Use this skill when designing or troubleshooting hybrid cloud networking across on-prem and cloud environments, including secure connectivity, routing, VPN or Direct Connect style links, and traffic diagnostics.
 category: DevOps
-requires: []
-examples:
-  - Design a hybrid network path for private app traffic between on-prem datacenter and cloud VPC.
-  - Troubleshoot intermittent connectivity between Kubernetes services in cloud and legacy on-prem APIs.
 ---
 
 # Hybrid Cloud Networking

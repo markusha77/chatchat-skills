@@ -3,10 +3,6 @@ id: airbnb-search
 name: Airbnb Search
 description: Use this skill when comparing Airbnb-style accommodation options or short-term stays, using prices, ratings, locations, availability context, direct links, and recommendation tradeoffs.
 category: Business
-requires: []
-examples:
-  - "Help me shortlist Airbnb stays in Bangalore for a 5-day work trip."
-  - "Compare these Airbnb options and recommend the best one for a family trip."
 ---
 
 # Airbnb Search

@@ -3,11 +3,6 @@ id: gardening
 name: Gardening
 description: Use this skill when answering gardening questions about plant care, soil management, seasonal timing, pest control, pruning, propagation, or garden planning.
 category: Lifestyle
-requires: []
-examples:
-  - "Why are my tomato leaves turning yellow?"
-  - "Help me plan a small vegetable garden."
-  - "What should I plant this season?"
 ---
 
 ## Soil Fundamentals

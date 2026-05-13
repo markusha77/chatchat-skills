@@ -5,13 +5,6 @@ description: Use this skill when deploying, verifying, configuring, or validatin
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "Deploy BAP-578 to testnet"
-  - "How to deploy the NFA contract"
-  - "Verify BAP-578 deployment"
-  - "Set up Hardhat for BNB Chain"
-  - "What's the deployment checklist?"
-  - "Configure the treasury after deployment"
 ---
 
 # BAP-578 Deployment

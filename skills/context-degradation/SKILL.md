@@ -3,11 +3,6 @@ id: context-degradation
 name: Context Degradation
 description: Use this skill when diagnosing context-failure patterns in long agent workflows, including lost-in-middle, context poisoning, distraction, clash, degraded outputs, and context-engineering mitigations.
 category: Lifestyle
-requires: []
-examples:
-  - "Diagnose this long-context failure in an agent workflow."
-  - "Is this a lost-in-the-middle problem, poisoning, or distraction?"
-  - "Help me design around context degradation in this system."
 ---
 
 ## When to Use This Skill

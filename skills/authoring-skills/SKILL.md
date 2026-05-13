@@ -3,10 +3,6 @@ id: authoring-skills
 name: Authoring Skills
 description: Use this skill when creating or modifying agent skills, especially SKILL.md frontmatter, trigger descriptions, naming conventions, skill versus AGENTS.md boundaries, and local skill structure.
 category: Documentation
-requires: []
-examples:
-  - "Help me with authoring skills."
-  - "Use authoring-skills for this task."
 ---
 
 # Authoring Skills

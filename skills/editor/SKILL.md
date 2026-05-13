@@ -5,10 +5,6 @@ name: Editor
 description: Use this skill when editing or proofreading prose for clarity, grammar, style, readability, tone, structure, or publication readiness.
 author: awesome-llm-apps
 version: "1.0.0"
-requires: ["text"]
-examples:
-  - "Proofread and edit this document for clarity and grammar without changing the meaning."
-  - "Revise this paragraph to be more concise and professional, and explain the key changes."
 ---
 
 # Editor

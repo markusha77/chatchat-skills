@@ -3,10 +3,6 @@ id: docx
 category: Content & Media
 name: Docx
 description: Use this skill when creating, reading, editing, formatting, merging, converting, inspecting, or generating Word .docx documents with headings, tables, page numbers, letterheads, or other document structure.
-requires: [".docx"]
-examples:
-  - "Create a professional .docx proposal with headings, a table of contents, and page numbers."
-  - "Extract the text from this .docx and rewrite it for clarity while preserving structure."
 ---
 
 # DOCX creation, editing, and analysis

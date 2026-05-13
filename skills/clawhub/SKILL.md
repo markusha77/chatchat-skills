@@ -3,10 +3,6 @@ id: clawhub
 name: ClawHub
 description: Use this skill when configuring, operating, or troubleshooting ClawHub integrations and workflow execution, including auth setup, trigger strategy, secure credentials, observability, recovery, and implementation checklists.
 category: Data & AI
-requires: []
-examples:
-  - "Help me set up a ClawHub workflow with secure credentials."
-  - "How do I troubleshoot failed runs in ClawHub integrations?"
 ---
 
 # ClawHub

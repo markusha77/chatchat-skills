@@ -3,10 +3,6 @@ id: eval-harness
 name: Eval Harness
 description: Use this skill when building or running evaluation harnesses, including datasets, scorers, baselines, regression tracking, model comparisons, and reproducible evaluation workflows.
 category: Data & AI
-requires: []
-examples:
-  - "Create an eval harness to compare two model versions."
-  - "How do I add regression checks and pass/fail thresholds?"
 ---
 
 # Eval Harness

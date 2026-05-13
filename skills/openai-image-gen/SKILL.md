@@ -4,10 +4,6 @@ category: Content & Media
 author: openclaw
 name: OpenAI Image Gen
 description: Use this skill when implementing OpenAI image generation workflows, including request structure, prompt handling, image creation, editing, variants, and integration steps.
-requires: ["prompt"]
-examples:
-  - "Generate 8 images with model gpt-image-1 and save them to ./out/images."
-  - "Create 4 variations of this prompt and render them, then summarize the outputs."
 ---
 
 # OpenAI Image Gen

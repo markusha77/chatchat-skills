@@ -5,13 +5,6 @@ description: Use this skill when designing, modeling, or operating BAP-578 agent
 category: Blockchain
 author: community
 version: 1.0.0
-examples:
-  - "How do agents pay each other in BAP-578?"
-  - "Design an agent reputation system"
-  - "Build an agent service marketplace"
-  - "How does agent-to-agent economy work?"
-  - "Model the economic incentives for NFA"
-  - "What are the agent economy design patterns?"
 ---
 
 # BAP-578 Agent Economy

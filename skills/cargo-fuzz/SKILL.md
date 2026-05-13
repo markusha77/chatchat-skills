@@ -3,10 +3,6 @@ id: cargo-fuzz
 name: Cargo Fuzz
 description: Use this skill when setting up or running Rust fuzz testing with cargo-fuzz to find crashes, panics, parser edge cases, unsafe assumptions, and vulnerability-prone inputs.
 category: Development
-requires: ["rust crate path", "target function or parser", "sample input corpus (optional)"]
-examples:
-  - "Configure cargo-fuzz for this Rust parser and generate an initial corpus strategy."
-  - "Help me triage this fuzz-discovered crash and propose a safe fix with regression tests."
 ---
 
 # Cargo Fuzz

@@ -3,10 +3,6 @@ id: railway-deployment
 name: Railway Deployment
 description: Use this skill when deploying to Railway, including environment checks, service configuration, health verification, rollout observation, logs, and rollback readiness.
 category: DevOps
-requires: []
-examples:
-  - Help me deploy this app to Railway with a safe pre-deploy checklist.
-  - Create a Railway deployment runbook with verification and rollback steps.
 ---
 
 # Railway Deployment

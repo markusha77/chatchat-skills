@@ -3,13 +3,6 @@ id: parallel-feature-development
 name: Parallel Feature Development
 description: Use this skill when coordinating multiple concurrent features, stacked PRs, branch strategy, dependency sequencing, integration checkpoints, feature flags, or release timing without destabilizing main.
 category: Development
-requires:
-  - feature branch list and dependency map
-  - target release window and merge policy
-  - required test suites and integration gates
-examples:
-  - Plan parallel work for three related features without blocking releases.
-  - Set up a branch and merge workflow that minimizes integration conflicts.
 ---
 
 # Parallel Feature Development

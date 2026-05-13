@@ -3,10 +3,6 @@ id: goldenseed
 name: Goldenseed
 description: Use this skill when deterministic entropy streams are needed for reproducible tests, procedural generation, hash verification, or statistically balanced random-like sequences where cryptographic security is not required.
 category: Blockchain
-requires: []
-examples:
-  - "Generate reproducible random numbers for testing"
-  - "Use GoldenSeed for procedural world generation"
 version: 1.0.0
 author: beanapologist
 ---

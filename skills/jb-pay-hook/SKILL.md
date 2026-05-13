@@ -3,10 +3,6 @@ id: jb-pay-hook
 name: JB Pay Hook
 description: Use this skill when generating or evaluating custom Juicebox V5 pay hooks from natural-language specs, including IJBPayHook/IJBRulesetDataHook contracts, Foundry tests, and checks against off-the-shelf hook options.
 category: Blockchain
-requires: []
-examples:
-  - "Create a pay hook that routes 10% of payments to a charity address"
-  - "Build a hook that mints a custom ERC20 token proportional to payments"
 ---
 
 # Juicebox V5 Pay Hook Generator

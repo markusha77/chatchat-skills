@@ -5,10 +5,6 @@ name: Content Creator
 description: Use this skill when creating audience-focused blog posts, social posts, newsletters, marketing copy, hooks, outlines, and calls to action.
 author: awesome-llm-apps
 version: "1.0.0"
-requires: ["text"]
-examples:
-  - "Write a LinkedIn post announcing our new feature, with a strong hook and a clear CTA."
-  - "Draft a 1,200-word blog post outline and introduction about benefits of customer onboarding."
 ---
 
 # Content Creator

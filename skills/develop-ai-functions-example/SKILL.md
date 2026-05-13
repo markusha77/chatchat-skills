@@ -3,10 +3,6 @@ id: develop-ai-functions-example
 name: Develop AI Functions Example
 description: Use this skill when designing or implementing AI function and tool interfaces with clear schemas, deterministic behavior, safe error handling, and examples for assistants or agent workflows.
 category: Development
-requires: ["function/tool requirements", "json schema for parameters", "target integration api"]
-examples:
-  - Define a weather lookup tool schema and implement validation, retries, and structured errors.
-  - Convert a prompt-only workflow into function calls for search, retrieval, and action execution.
 ---
 
 # Develop AI Functions Example

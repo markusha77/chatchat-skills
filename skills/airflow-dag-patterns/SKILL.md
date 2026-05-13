@@ -3,10 +3,6 @@ id: airflow-dag-patterns
 name: Airflow DAG Patterns
 description: Use this skill when designing or reviewing Apache Airflow DAGs for scheduling, retries, task dependencies, idempotency, backfills, sensors, and production reliability.
 category: Data & AI
-requires: []
-examples:
-  - "Design an Airflow DAG for daily ETL with retries and alerts."
-  - "What DAG patterns should I use for backfills and idempotent tasks?"
 ---
 
 # Airflow DAG Patterns

@@ -3,11 +3,6 @@ id: workout-logger
 name: Workout Logger
 description: Use this skill when turning messy workout information into clear logs, comparing user-provided sessions, surfacing trends or likely PRs, and suggesting realistic next-session steps.
 category: Lifestyle
-requires: []
-examples:
-  - "Help me log today's workout clearly"
-  - "Compare these two workout sessions"
-  - "Suggest a simple workout based on my goal"
 author: "clawd-team"
 version: "1.0.0"
 ---

@@ -3,10 +3,6 @@ id: durable-objects
 name: Durable Objects
 description: Use this skill when implementing or operating Cloudflare Durable Objects for strongly consistent coordination, stateful workflows, actor-style services, single-writer state, or low-latency edge logic.
 category: Development
-requires: ["durable object use case", "cloudflare worker project context", "entity keying strategy"]
-examples:
-  - Design a room-based collaboration service where each room maps to one Durable Object instance.
-  - Migrate in-memory worker state to Durable Objects with alarms and persistence semantics.
 ---
 
 # Durable Objects
