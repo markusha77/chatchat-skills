@@ -1,11 +1,8 @@
 ---
 id: frontend-web3-bap578
 name: Frontend Web3 for BAP-578
-description: >
-  Build a Next.js frontend to interact with the BAP-578 Non-Fungible Agents
-  contract on BNB Chain. Covers wallet connection, chain setup, ABI integration,
-  React hooks for minting and management, and UI patterns for agent identity.
-category: BAP-578
+description: Use this skill when integrating BAP-578 smart contract reads or writes into a Next.js or React frontend, including wallet connection, chain setup, ABI wiring, hooks, minting flows, and agent-management UI.
+category: Blockchain
 author: community
 version: 1.0.0
 examples:

@@ -15,14 +15,18 @@ A skill is a set of natural language instructions that guide an AI agent's behav
 
 ## Skill File Format
 
-Each skill lives in its own directory: `skills/{skill-id}/SKILL.md`
+Each skill lives in its own directory directly under `skills/`, with a `SKILL.md` entrypoint. Support folders such as `scripts/`, `references/`, and `assets/` belong to that skill and are not indexed separately:
+
+- `skills/{skill-id}/SKILL.md`
+- `skills/{skill-id}/references/{supporting-file}`
+- `skills/{skill-id}/scripts/{supporting-script}`
 
 ```markdown
 ---
 id: your-skill-id
 name: Your Skill Name
 description: A concise description of what this skill does (shown to the LLM).
-category: productivity
+category: Development
 author: your-github-username
 version: 1.0.0
 requires: []
@@ -41,10 +45,10 @@ Include any specific formatting, steps, or constraints.
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `id` | string | Unique identifier (lowercase, hyphens). Must match the directory name. |
+| `id` | string | Unique identifier (lowercase, hyphens). Must match the skill directory name. |
 | `name` | string | Human-readable display name |
 | `description` | string | What the skill does (max 200 chars). This is shown to the LLM as the tool description. |
-| `category` | string | One of: `productivity`, `development`, `communication`, `writing`, `research`, `other` |
+| `category` | string | One of the supported Skills Store categories listed below. |
 
 ### Optional Frontmatter Fields
 
@@ -57,12 +61,18 @@ Include any specific formatting, steps, or constraints.
 
 ### Categories
 
-- **productivity** -- Task management, planning, organization
-- **development** -- Coding, debugging, code review, DevOps
-- **communication** -- Email drafting, messaging, social media
-- **writing** -- Content creation, editing, summarization
-- **research** -- Data analysis, fact-checking, literature review
-- **other** -- Everything else
+- **Lifestyle**
+- **Blockchain**
+- **Databases**
+- **Research**
+- **Content & Media**
+- **Documentation**
+- **Testing & Security**
+- **DevOps**
+- **Data & AI**
+- **Business**
+- **Development**
+- **Tools**
 
 ## Guidelines
 

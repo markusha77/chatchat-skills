@@ -1,11 +1,8 @@
 ---
 id: bap578-testing
 name: BAP-578 Testing
-description: >
-  Testing strategies for BAP-578 Non-Fungible Agents. Covers unit tests,
-  integration tests, upgrade tests, and edge cases using Hardhat and Chai.
-  Use when writing, running, or debugging tests for BAP-578 contracts.
-category: BAP-578
+description: Use this skill when writing, running, debugging, or extending BAP-578 Non-Fungible Agent tests, including infrastructure setup, function coverage, edge cases, upgrades, gas profiling, and Hardhat workflows.
+category: Blockchain
 author: community
 version: 1.0.0
 examples:
